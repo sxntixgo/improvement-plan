@@ -132,9 +132,52 @@
 - [LangChain Security Best Practices](https://python.langchain.com/docs/security)
 - Build and break tutorial (hands-on)
 
-**Week 21: Adversarial ML & Production**
-- NVIDIA Adversarial ML (optional) OR Free: Hugging Face tutorials
-- AI Engineering (Huyen) - Focus on Ch 7-10 (Safety, Security, Testing)
+**Week 21: ML Supply Chain & Production Security**
+
+**Monday-Tuesday (6 hours): ML Supply Chain Security**
+- **Why:** Most AI security incidents involve supply chain compromises
+- **Topics:**
+  - Malicious models on Hugging Face/GitHub
+  - Pickle vulnerabilities in PyTorch/TensorFlow model files
+  - Backdoored model weights and how to detect them
+  - Dataset poisoning (e.g., BadNets, poisoned ImageNet)
+  - Dependency vulnerabilities in ML libraries
+  - Model provenance and verification
+
+**Hands-On:**
+1. Scan Hugging Face models for security issues (3 hours)
+   - Use `safetensors` instead of pickle
+   - Verify model cards and provenance
+   - Check for suspicious file patterns
+   - Review model code for unsafe operations
+2. Build a model verification tool (3 hours)
+   - Python script to scan model files
+   - Check dependencies for known CVEs
+   - Verify digital signatures (if available)
+
+**Resources (FREE):**
+- [Hugging Face Model Security](https://huggingface.co/docs/hub/security)
+- [OWASP ML Top 10 - Supply Chain](https://owasp.org/www-project-machine-learning-security-top-10/)
+- [Pickle Exploit Examples](https://github.com/trhacknon/pickle-exploit)
+- Blog: "Attacking ML Supply Chain" articles
+
+**Wednesday-Friday (6 hours): Production AI & Deployment Security**
+- AI Engineering (Huyen) - Focus on security chapters:
+  - Ch 7: Model Deployment (API security, rate limiting)
+  - Ch 8: Data Distribution Shifts (detecting attacks in production)
+  - Ch 10: Infrastructure and Tooling (container security, secrets)
+
+**Weekend (6 hours): MLOps Security**
+- CI/CD pipeline security for ML
+- Secrets management (API keys, model weights)
+- Container security for ML workloads
+- Monitoring for attacks in production
+- Optional: NVIDIA Adversarial ML course OR Hugging Face adversarial tutorials
+
+**Deliverables:**
+- Model verification tool (Python script)
+- Blog post: "ML Supply Chain Security Checklist"
+- Obsidian notes: "How to Verify ML Model Safety"
 
 -----
 
@@ -166,6 +209,7 @@
 |Prompt injection PoC (Python)|Working exploit with automation      |GitHub            |
 |**Vulnerable LangChain app** |**RAG app + attack documentation**   |**GitHub + Blog** |
 |**RAG poisoning exploit**    |**Inject malicious docs into vector DB**|**GitHub**     |
+|**Model verification tool**  |**Scan Hugging Face models for security issues**|**GitHub**|
 |HackAPrompt solutions        |Documented attack strategies         |Blog post + GitHub|
 |Red team assessment          |Full AI security assessment report   |Blog post         |
 |Jailbreak taxonomy           |Categorized attack techniques        |GitHub            |
@@ -188,6 +232,9 @@
 - **Agent Exploits:** Making LLM agents call unintended tools
 - **Memory Attacks:** Corrupting conversation history
 - **LangChain Security:** Framework-specific vulnerabilities
+- **ML Supply Chain:** Malicious models, pickle exploits, backdoors
+- **Model Verification:** How to safely download and use ML models
+- **Dataset Poisoning:** BadNets and poisoned training data
 
 **Now you're applying them hands-on:**
 - Building exploits with Python
@@ -195,6 +242,8 @@
 - Building AND attacking LangChain apps
 - RAG poisoning techniques
 - Agent manipulation
+- Verifying ML model security (supply chain)
+- Building model scanning tools
 - Automating attacks
 - Writing security assessments
 - Defensive recommendations
@@ -210,6 +259,8 @@ Before moving to JavaScript (Track 6), you should be able to:
 - ✅ **Build a LangChain RAG application from scratch**
 - ✅ **Execute RAG poisoning attacks**
 - ✅ **Exploit LLM agents and manipulate tool usage**
+- ✅ **Verify ML model security and detect malicious models**
+- ✅ **Understand pickle exploits and safetensors**
 - ✅ Execute jailbreaking attacks against LLMs
 - ✅ Document security findings professionally
 - ✅ Provide defensive recommendations
@@ -221,6 +272,7 @@ Before moving to JavaScript (Track 6), you should be able to:
 - HTB Academy certification/completion (if available)
 - **Vulnerable LangChain app + attack write-up** ← NEW
 - **RAG poisoning PoC** ← NEW
-- 3-5 blog posts on AI security
+- **Model verification tool (Python)** ← NEW
+- 3-5 blog posts on AI security (including ML supply chain)
 - GitHub repo with security tools and PoCs
 - Professional red team assessment report
