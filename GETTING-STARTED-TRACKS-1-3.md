@@ -80,24 +80,39 @@ These aren't technical skills - they're **learning accelerators** that compound 
 
 ### Week 2: Zettelkasten Method + Setup
 
+**IMPORTANT: Install Obsidian on Monday morning BEFORE reading!**
+
+**Monday Morning (30 min):**
+- Install Obsidian
+- Create new vault called "learning-system"
+- Create first note: "How to Take Smart Notes - Reading Notes"
+- You'll take all your notes in Obsidian while reading (meta-learning!)
+
 **Weekdays (Mon-Fri): 8 hours**
 - Read "How to Take Smart Notes" - all chapters
 - Apply speed reading techniques from Week 1
-- Take notes IN Obsidian as you read (meta!)
+- **CRITICAL: Take notes IN Obsidian as you read**
+  - Practice the Zettelkasten method while learning it
+  - Create fleeting notes → literature notes → permanent notes
+  - Link ideas as you go
+- By Friday, you'll have 10-15 notes and understand the system
 
 **Saturday: 5 hours**
-- Install Obsidian
-- Explore interface and core features
+- Review your notes from the week
 - Watch: "Linking Your Thinking" intro videos (YouTube)
-- Set up basic vault structure
+  - [Obsidian for Beginners](https://www.youtube.com/watch?v=QgbLb6QCK88)
+  - [Zettelkasten in Obsidian](https://www.youtube.com/watch?v=E6ySG7xYgjY)
+- Reorganize/refine your notes based on what you learned
+- Set up basic folder structure (can be minimal)
 
 **Sunday: 5 hours**
 - Install core plugins:
-  - Dataview
-  - Templater
-  - Obsidian Git
-  - Excalidraw (optional)
-  - Kanban (optional)
+  - Dataview (query your notes)
+  - Templater (automate note creation)
+  - Obsidian Git (backup to GitHub)
+  - Excalidraw (optional - diagrams)
+  - Kanban (optional - task tracking)
+- Practice using each plugin with your existing notes
 
 ### Week 3: PARA Method + Sync
 
@@ -220,12 +235,21 @@ completed: {{date}}
 ## Would I Recommend?
 ```
 
+### Additional Video Resources (Optional)
+
+Watch these if you need visual learning:
+- [Obsidian for Beginners (30 min)](https://www.youtube.com/watch?v=QgbLb6QCK88) - Basic setup
+- [Zettelkasten in Obsidian (15 min)](https://www.youtube.com/watch?v=E6ySG7xYgjY) - Note-taking method
+- [PARA Method in Obsidian (20 min)](https://www.youtube.com/watch?v=ctetnQfSdfM) - Folder structure
+- [Linking Your Thinking (playlist)](https://www.youtube.com/c/LinkingYourThinking) - Advanced techniques
+
 ### Week 2-3 Deliverable
 - [ ] Obsidian installed with PARA structure
 - [ ] 5 core plugins configured
 - [ ] 3 templates created (daily, learning, book review)
 - [ ] Sync working across devices
-- [ ] Notes from Week 1-2 captured in system
+- [ ] At least 20 notes created from your reading
+- [ ] Notes are linked together (not just isolated files)
 
 -----
 
@@ -267,15 +291,67 @@ completed: {{date}}
 **Weekend: Practice - 10 hours**
 
 **Saturday: 5 hours**
-- Pick a codebase (GitHub repo or your own code)
-- Practice all 7 patterns on it:
-  - EXPLAIN - "Explain what this module does"
-  - REVIEW - "Review this code for security issues"
-  - REFACTOR - "Refactor this function for clarity"
-  - TEST - "Generate pytest tests for this"
-  - OPTIMIZE - "Find performance bottlenecks"
-  - FIX - Find a bug, ask Claude to fix it
-  - CREATE - "Add a new feature to this"
+- Pick a codebase to practice on:
+  - **Option 1:** Clone a popular Python repo (e.g., [Flask](https://github.com/pallets/flask), [Requests](https://github.com/psf/requests))
+  - **Option 2:** Use your own existing code
+  - **Option 3:** Start a small project (port scanner, log parser)
+
+- Practice all 7 patterns (spend ~40 min on each):
+
+  **1. EXPLAIN** (40 min)
+  ```
+  Prompt: "Explain what the [module/class] does in this file: [path]
+  Include: purpose, main functions, data flow"
+  ```
+
+  **2. REVIEW** (40 min)
+  ```
+  Prompt: "Review this code for:
+  - Security vulnerabilities
+  - Performance issues
+  - Best practice violations
+  File: [path]"
+  ```
+
+  **3. REFACTOR** (40 min)
+  ```
+  Prompt: "Refactor this function for:
+  - Better readability
+  - Single responsibility principle
+  - Type hints
+  File: [path], Function: [name]"
+  ```
+
+  **4. TEST** (40 min)
+  ```
+  Prompt: "Generate pytest unit tests for [function/class]
+  Include: edge cases, error handling, mocking
+  File: [path]"
+  ```
+
+  **5. OPTIMIZE** (40 min)
+  ```
+  Prompt: "Find performance bottlenecks in this code:
+  - Time complexity issues
+  - Unnecessary loops
+  - Better data structures
+  File: [path]"
+  ```
+
+  **6. FIX** (40 min)
+  ```
+  Find a bug (or introduce one), then:
+  Prompt: "This code has a bug where [describe issue]
+  Debug and fix: [code snippet or file path]"
+  ```
+
+  **7. CREATE** (40 min)
+  ```
+  Prompt: "Add a new feature: [describe feature]
+  Requirements: [list constraints]
+  Context: [relevant files/architecture]
+  Success criteria: [expected behavior]"
+  ```
 
 **Sunday: 5 hours**
 - Practice cost-aware prompting:
