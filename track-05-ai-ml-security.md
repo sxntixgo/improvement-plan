@@ -15,14 +15,20 @@
 
 |Phase|Weeks|Focus                   |
 |-----|-----|------------------------|
-|1    |15-16|ML Fundamentals         |
-|2    |17-18|LLM Security Foundations|
-|3    |19-20|Adversarial ML          |
-|4    |21-22|Hands-on Red Teaming    |
+|1    |16-17|ML Fundamentals         |
+|2    |18-19|HTB Academy Labs        |
+|3    |20-21|Adversarial ML          |
+|4    |22-23|Advanced Red Teaming    |
 
 -----
 
 ## Resources
+
+### Primary Platform
+
+|Resource             |Cost        |Focus                           |
+|---------------------|------------|--------------------------------|
+|HTB Academy AI Red Teamer|~$20/month × 2|Hands-on labs, prompt injection, model attacks|
 
 ### Free Resources
 
@@ -36,84 +42,140 @@
 
 ### Books
 
-|Resource                                      |Cost         |Focus                  |
-|----------------------------------------------|-------------|-----------------------|
-|Developer's Playbook for LLM Security (Wilson)|Already owned|Practical LLM security |
-|AI Engineering (Huyen)                        |~$50         |Production AI systems  |
-|Red Teaming AI (Dursey)                       |~$50         |Red teaming (July 2026)|
+|Resource                                      |Cost         |Status/Focus              |
+|----------------------------------------------|-------------|--------------------------|
+|Developer's Playbook for LLM Security (Wilson)|Already owned|✅ Read in Track 3.5      |
+|AI Engineering (Huyen)                        |~$50         |Production AI systems     |
+|Red Teaming AI (Dursey)                       |~$50         |Red teaming (July 2026)   |
 
-### Paid Courses
+### Optional Paid Courses
 
-|Resource             |Cost|Focus                 |
-|---------------------|----|----------------------|
-|NVIDIA Adversarial ML|$90 |Adversarial techniques|
+|Resource             |Cost|Focus                 |Note                     |
+|---------------------|----|----------------------|-------------------------|
+|NVIDIA Adversarial ML|$90 |Adversarial techniques|Optional - can use free resources|
 
 -----
 
-## Phase 1: ML Fundamentals (Weeks 15-16)
+## Phase 1: ML Fundamentals (Weeks 16-17)
 
 |Week|Focus                                |Resource               |
 |----|-------------------------------------|-----------------------|
-|15  |Deep Learning basics, neural networks|Fast.ai Part 1         |
-|16  |NLP, transformers, attention         |Hugging Face NLP Course|
+|16  |Deep Learning basics, neural networks|Fast.ai Part 1         |
+|17  |NLP, transformers, attention         |Hugging Face NLP Course|
+
+**Note:** You already understand LLM vulnerabilities from Track 3.5 (Wilson book). Now you're building the ML foundation to exploit them.
 
 -----
 
-## Phase 2: LLM Security Foundations (Weeks 17-18)
+## Phase 2: HTB Academy AI Red Teamer Labs (Weeks 18-19)
 
-|Week|Focus                                   |Resource                             |
-|----|----------------------------------------|-------------------------------------|
-|17  |OWASP LLM Top 10, common vulnerabilities|OWASP LLM Top 10                     |
-|18  |LLM threat modeling, attack surfaces    |Developer's Playbook for LLM Security|
+**Primary Resource:** HTB Academy AI Red Teamer Path (~$20/month subscription)
 
-**Key Vulnerabilities to Study:**
+|Week|Focus                                |HTB Modules                      |
+|----|-------------------------------------|---------------------------------|
+|18  |Prompt injection, jailbreaking       |HTB: Introduction to Red Teaming AI, Prompt Injection labs|
+|19  |Model privacy attacks, adversarial AI|HTB: Model extraction, Data poisoning labs|
 
-- Prompt injection (direct & indirect)
-- Training data extraction
-- Model inversion
-- Jailbreaking techniques
-- Data poisoning
+**What You'll Do:**
+- Complete hands-on labs attacking real AI systems
+- Build prompt injection exploits (using Python from Track 4!)
+- Test jailbreaking techniques against LLMs
+- Execute model privacy attacks
+- Document findings in Obsidian
+
+**Key Skills Developed:**
+- Practical exploitation (not just theory)
+- Python for AI security tooling
+- Attack documentation and reporting
+- Defensive recommendations
+
+**Supplement with OWASP LLM Top 10:** Review concepts as you encounter them in labs
 
 -----
 
-## Phase 3: Adversarial ML (Weeks 19-20)
+## Phase 3: Adversarial ML & Production Systems (Weeks 20-21)
 
 |Week|Focus                                 |Resource                    |
 |----|--------------------------------------|----------------------------|
-|19  |Adversarial examples, evasion attacks |NVIDIA Adversarial ML course|
-|20  |Robustness testing, defense techniques|AI Engineering (Huyen)      |
+|20  |Adversarial examples, evasion attacks |NVIDIA Adversarial ML (optional) OR Free: Hugging Face adversarial tutorials|
+|21  |Production AI systems, robustness     |AI Engineering (Huyen) - Focus on Ch 7-10 (Safety, Security, Testing)|
+
+**Huyen Book Approach:**
+- Don't read cover-to-cover
+- Focus on security-relevant chapters:
+  - Chapter 7: Model Deployment
+  - Chapter 8: Data Distribution Shifts
+  - Chapter 9: Continual Learning
+  - Chapter 10: Infrastructure and Tooling
+- Use for reference when building projects
 
 -----
 
-## Phase 4: Hands-on Red Teaming (Weeks 21-22)
+## Phase 4: Advanced Red Teaming & CTF (Weeks 22-23)
 
-|Week|Focus                  |Resource             |
-|----|-----------------------|---------------------|
-|21  |HackAPrompt challenges |hackaprompt.com      |
-|22  |Crucible CTF challenges|crucible.dreadnode.io|
+|Week|Focus                        |Resource             |
+|----|-----------------------------|---------------------|
+|22  |HackAPrompt challenges       |hackaprompt.com      |
+|23  |Crucible CTF + HTB capstone  |crucible.dreadnode.io + HTB final project|
+
+**Week 22: HackAPrompt**
+- Complete as many levels as possible
+- Use Python skills to automate attacks
+- Document successful prompts in Obsidian
+- Blog post: "My HackAPrompt Solutions"
+
+**Week 23: Advanced Challenges**
+- Crucible CTF challenges
+- HTB Academy capstone project (if available)
+- Build final portfolio piece: Full AI red team assessment
 
 -----
 
 ## Projects & Outputs
 
-|Project             |Output                           |Share    |
-|--------------------|---------------------------------|---------|
-|Prompt injection PoC|Working demo                     |GitHub   |
-|Jailbreak taxonomy  |Documentation                    |Blog post|
-|Red team report     |Full assessment of public LLM app|Blog post|
+|Project                      |Output                               |Share             |
+|-----------------------------|-------------------------------------|------------------|
+|HTB Academy lab completions  |All modules completed                |HTB profile       |
+|Prompt injection PoC (Python)|Working exploit with automation      |GitHub            |
+|HackAPrompt solutions        |Documented attack strategies         |Blog post + GitHub|
+|Red team assessment          |Full AI security assessment report   |Blog post         |
+|Jailbreak taxonomy           |Categorized attack techniques        |GitHub            |
 
 -----
 
 ## Key Concepts
 
-- **Prompt Injection:** Direct vs indirect, universal suffixes
-- **Jailbreaking:** DAN, roleplay, encoding bypasses
-- **Data Extraction:** Training data memorization, model inversion
-- **Adversarial Examples:** Perturbations, transferability
-- **Model Security:** Access controls, rate limiting, input validation
+**You already learned these in Track 3.5 (Wilson book):**
+- Prompt Injection (direct vs indirect)
+- Jailbreaking techniques
+- Training data extraction
+- Model inversion
+- Data poisoning
+
+**Now you're applying them hands-on:**
+- Building exploits with Python
+- Testing real AI systems in HTB labs
+- Automating attacks
+- Writing security assessments
+- Defensive recommendations
 
 -----
 
 ## Checkpoint
 
-You should be able to conduct basic AI red team assessments and understand LLM vulnerability classes.
+Before moving to JavaScript (Track 6), you should be able to:
+
+- ✅ Complete HTB Academy AI Red Teamer modules
+- ✅ Build prompt injection exploits using Python
+- ✅ Execute jailbreaking attacks against LLMs
+- ✅ Document security findings professionally
+- ✅ Provide defensive recommendations
+- ✅ Solve HackAPrompt challenges
+- ✅ Conduct full AI security assessment
+- ✅ Explain adversarial ML attack vectors
+
+**Portfolio pieces:**
+- HTB Academy certification/completion (if available)
+- 3-5 blog posts on AI security
+- GitHub repo with security tools and PoCs
+- Professional red team assessment report

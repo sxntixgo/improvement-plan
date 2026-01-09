@@ -14,18 +14,19 @@
 
 ## Priority Order & Timeline
 
-|Track|Name                  |Weeks|Duration|File                         |
-|-----|----------------------|-----|--------|-----------------------------|
-|1    |Reading Skills        |1    |1 week  |<track-01-reading-skills.md> |
-|2    |Note-Taking (Obsidian)|2-3  |2 weeks |<track-02-note-taking.md>    |
-|3    |Claude Code           |4    |1 week  |<track-03-claude-code.md>    |
-|4    |Python Core           |5-14 |10 weeks|<track-04-python-core.md>    |
-|5    |AI/ML Security        |15-22|8 weeks |<track-05-ai-ml-security.md> |
-|6    |JavaScript/Node.js    |23-42|20 weeks|<track-06-javascript.md>     |
-|7    |Python Advanced       |43-50|8 weeks |<track-07-python-advanced.md>|
-|8    |Go/Golang             |51-62|12 weeks|<track-08-golang.md>         |
+|Track|Name                  |Weeks |Duration|File                            |
+|-----|----------------------|------|--------|--------------------------------|
+|1    |Reading Skills        |1     |1 week  |<track-01-reading-skills.md>    |
+|2    |Note-Taking (Obsidian)|2-3   |2 weeks |<track-02-note-taking.md>       |
+|3    |Claude Code           |4     |1 week  |<track-03-claude-code.md>       |
+|3.5  |LLM Security Primer   |5     |1 week  |<track-3.5-llm-security-primer.md>|
+|4    |Python Core           |6-15  |10 weeks|<track-04-python-core.md>       |
+|5    |AI/ML Security        |16-23 |8 weeks |<track-05-ai-ml-security.md>    |
+|6    |JavaScript/Node.js    |24-43 |20 weeks|<track-06-javascript.md>        |
+|7    |Python Advanced       |44-51 |8 weeks |<track-07-python-advanced.md>   |
+|8    |Go/Golang             |52-63 |12 weeks|<track-08-golang.md>            |
 
-**Total Duration:** 62 weeks (~15 months)
+**Total Duration:** 63 weeks (~15 months)
 
 -----
 
@@ -44,9 +45,11 @@
 ```
 Reading → Note-Taking → Claude Code
                               ↓
+                    LLM Security Primer (Wilson book) ← Security context
+                              ↓
                     Python Core (TDD, pytest, architecture)
                               ↓
-                    AI/ML Security ← requires Python testing skills
+                    AI/ML Security (HTB Academy + hands-on) ← requires Python
                               ↓
                     JavaScript/Node.js
                               ↓
