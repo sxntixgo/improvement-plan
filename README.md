@@ -24,9 +24,9 @@
 |6    |LLM Security Primer   |6     |1 week  |<track-06-llm-security-primer.md>|
 |7    |Python Core           |7-16  |10 weeks|<track-07-python-core.md>       |
 |8    |AI/ML Security        |17-24 |8 weeks |<track-08-ai-ml-security.md>    |
-|9    |JavaScript/Node.js    |25-44 |20 weeks|<track-09-javascript.md>        |
-|10   |Python Advanced       |45-52 |8 weeks |<track-10-python-advanced.md>   |
-|11   |Go Deep Dive          |53-64 |12 weeks|<track-11-golang.md>            |
+|9    |Python Advanced       |25-32 |8 weeks |<track-09-python-advanced.md>   |
+|10   |Go Deep Dive          |33-44 |12 weeks|<track-10-golang.md>            |
+|11   |JavaScript/Node.js    |45-64 |20 weeks|<track-11-javascript.md>        |
 
 **Total Duration:** 64 weeks (~15 months)
 
@@ -57,11 +57,11 @@ Reading → Note-Taking → Claude Code
                               ↓
                     AI/ML Security (HTB Academy + hands-on) ← requires Python
                               ↓
-                    JavaScript/Node.js
+                    Python Advanced (AST, async) ← asyncio for concurrent attacks
                               ↓
-                    Python Advanced (AST, async) ← nice-to-have, not blocking
+                    Go Deep Dive ← Build on crash course (only 28 weeks later)
                               ↓
-                    Go Deep Dive
+                    JavaScript/Node.js ← Web security context
 ```
 
 **Why Git is distributed:**
@@ -72,9 +72,13 @@ Reading → Note-Taking → Claude Code
 - Learn progressively as needed, not all at once
 
 **Why Python is split:**
-
 - **Python Core** (Track 7): TDD + pytest + architecture — essential for reviewing ML code
-- **Python Advanced** (Track 10): AST + async — useful but not required for AI red teaming
+- **Python Advanced** (Track 9): AST + async — asyncio immediately useful for concurrent attack tools
+
+**Why Go comes before JavaScript:**
+- You use Go daily at work starting Week 5
+- Go Deep Dive (Week 33) reinforces crash course while skills are still fresh (28-week gap vs 48-week gap)
+- JavaScript is valuable but less urgent for AI red teaming role
 
 -----
 
