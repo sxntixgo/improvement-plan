@@ -21,12 +21,12 @@
 |3    |Claude Code           |4     |1 week  |<track-03-claude-code.md>       |
 |4    |Go Crash Course       |5     |1 week  |<track-04-go-crash-course.md>   |
 |5    |Git Mastery           |5,7,10,16|Distributed|<track-05-git-mastery.md>   |
-|6    |LLM Security Primer   |6     |1 week  |<track-3.5-llm-security-primer.md>|
-|7    |Python Core           |7-16  |10 weeks|<track-04-python-core.md>       |
-|8    |AI/ML Security        |17-24 |8 weeks |<track-05-ai-ml-security.md>    |
-|9    |JavaScript/Node.js    |25-44 |20 weeks|<track-06-javascript.md>        |
-|10   |Python Advanced       |45-52 |8 weeks |<track-07-python-advanced.md>   |
-|11   |Go Deep Dive          |53-64 |12 weeks|<track-08-golang.md>            |
+|6    |LLM Security Primer   |6     |1 week  |<track-06-llm-security-primer.md>|
+|7    |Python Core           |7-16  |10 weeks|<track-07-python-core.md>       |
+|8    |AI/ML Security        |17-24 |8 weeks |<track-08-ai-ml-security.md>    |
+|9    |JavaScript/Node.js    |25-44 |20 weeks|<track-09-javascript.md>        |
+|10   |Python Advanced       |45-52 |8 weeks |<track-10-python-advanced.md>   |
+|11   |Go Deep Dive          |53-64 |12 weeks|<track-11-golang.md>            |
 
 **Total Duration:** 64 weeks (~15 months)
 
