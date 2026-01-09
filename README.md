@@ -19,16 +19,16 @@
 |1    |Reading Skills        |1     |1 week  |<track-01-reading-skills.md>    |
 |2    |Note-Taking (Obsidian)|2-3   |2 weeks |<track-02-note-taking.md>       |
 |3    |Claude Code           |4     |1 week  |<track-03-claude-code.md>       |
-|4    |Go Crash Course       |5     |1 week  |<track-04-go-crash-course.md>   |
-|5    |Git Mastery           |5,7,10,16|Distributed|<track-05-git-mastery.md>   |
-|6    |LLM Security Primer   |6     |1 week  |<track-06-llm-security-primer.md>|
-|7    |Python Core           |7-16  |10 weeks|<track-07-python-core.md>       |
-|8    |AI/ML Security        |17-24 |8 weeks |<track-08-ai-ml-security.md>    |
-|9    |Python Advanced       |25-32 |8 weeks |<track-09-python-advanced.md>   |
-|10   |Go Deep Dive          |33-44 |12 weeks|<track-10-golang.md>            |
-|11   |JavaScript/Node.js    |45-64 |20 weeks|<track-11-javascript.md>        |
+|4    |Git Mastery           |5     |1 week  |<track-04-git-mastery.md>       |
+|5    |Go Crash Course       |6     |1 week  |<track-05-go-crash-course.md>   |
+|6    |LLM Security Primer   |7     |1 week  |<track-06-llm-security-primer.md>|
+|7    |Python Core           |8-17  |10 weeks|<track-07-python-core.md>       |
+|8    |AI/ML Security        |18-25 |8 weeks |<track-08-ai-ml-security.md>    |
+|9    |Python Advanced       |26-33 |8 weeks |<track-09-python-advanced.md>   |
+|10   |Go Deep Dive          |34-45 |12 weeks|<track-10-golang.md>            |
+|11   |JavaScript/Node.js    |46-65 |20 weeks|<track-11-javascript.md>        |
 
-**Total Duration:** 64 weeks (~15 months)
+**Total Duration:** 65 weeks (~15 months)
 
 -----
 
@@ -47,9 +47,9 @@
 ```
 Reading → Note-Taking → Claude Code
                               ↓
-                    Go Crash Course ← For immediate work needs
+                    Git Mastery ← Foundation for all development
                               ↓
-                    Git Mastery (distributed learning) ← Progressive Git skills
+                    Go Crash Course ← For immediate work needs
                               ↓
                     LLM Security Primer (Wilson book) ← Security context
                               ↓
@@ -64,20 +64,18 @@ Reading → Note-Taking → Claude Code
                     JavaScript/Node.js ← Web security context
 ```
 
-**Why Git is distributed:**
-- **Week 5 (Friday):** Git Basics - Chapter 2 (2 hrs)
-- **Week 7 (Sunday):** Branching - Chapter 3 (1 hr)
-- **Week 10 (Sunday):** Distributed Git - Chapter 5 (1 hr)
-- **Week 16 (Sunday):** Git Tools - Chapter 7 (1 hr)
-- Learn progressively as needed, not all at once
+**Why Git comes before Go:**
+- Git is foundational for ALL development work (including Go contributions at work)
+- Concentrated 18-hour week for better retention vs scattered learning
+- Needed immediately for managing code, contributing to repos, collaborating
 
 **Why Python is split:**
 - **Python Core** (Track 7): TDD + pytest + architecture — essential for reviewing ML code
 - **Python Advanced** (Track 9): AST + async — asyncio immediately useful for concurrent attack tools
 
 **Why Go comes before JavaScript:**
-- You use Go daily at work starting Week 5
-- Go Deep Dive (Week 33) reinforces crash course while skills are still fresh (28-week gap vs 48-week gap)
+- You use Go daily at work starting Week 6
+- Go Deep Dive (Week 34) reinforces crash course while skills are still fresh (28-week gap vs 48-week gap)
 - JavaScript is valuable but less urgent for AI red teaming role
 
 -----
