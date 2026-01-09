@@ -20,12 +20,13 @@
 |2    |Note-Taking (Obsidian)|2-3   |2 weeks |<track-02-note-taking.md>       |
 |3    |Claude Code           |4     |1 week  |<track-03-claude-code.md>       |
 |4    |Go Crash Course       |5     |1 week  |<track-04-go-crash-course.md>   |
-|5    |LLM Security Primer   |6     |1 week  |<track-3.5-llm-security-primer.md>|
-|6    |Python Core           |7-16  |10 weeks|<track-04-python-core.md>       |
-|7    |AI/ML Security        |17-24 |8 weeks |<track-05-ai-ml-security.md>    |
-|8    |JavaScript/Node.js    |25-44 |20 weeks|<track-06-javascript.md>        |
-|9    |Python Advanced       |45-52 |8 weeks |<track-07-python-advanced.md>   |
-|10   |Go Deep Dive          |53-64 |12 weeks|<track-08-golang.md>            |
+|5    |Git Mastery           |5,7,10,16|Distributed|<track-05-git-mastery.md>   |
+|6    |LLM Security Primer   |6     |1 week  |<track-3.5-llm-security-primer.md>|
+|7    |Python Core           |7-16  |10 weeks|<track-04-python-core.md>       |
+|8    |AI/ML Security        |17-24 |8 weeks |<track-05-ai-ml-security.md>    |
+|9    |JavaScript/Node.js    |25-44 |20 weeks|<track-06-javascript.md>        |
+|10   |Python Advanced       |45-52 |8 weeks |<track-07-python-advanced.md>   |
+|11   |Go Deep Dive          |53-64 |12 weeks|<track-08-golang.md>            |
 
 **Total Duration:** 64 weeks (~15 months)
 
@@ -48,6 +49,8 @@ Reading → Note-Taking → Claude Code
                               ↓
                     Go Crash Course ← For immediate work needs
                               ↓
+                    Git Mastery (distributed learning) ← Progressive Git skills
+                              ↓
                     LLM Security Primer (Wilson book) ← Security context
                               ↓
                     Python Core (TDD, pytest, architecture)
@@ -58,13 +61,20 @@ Reading → Note-Taking → Claude Code
                               ↓
                     Python Advanced (AST, async) ← nice-to-have, not blocking
                               ↓
-                    Go/Golang
+                    Go Deep Dive
 ```
+
+**Why Git is distributed:**
+- **Week 5 (Friday):** Git Basics - Chapter 2 (2 hrs)
+- **Week 7 (Sunday):** Branching - Chapter 3 (1 hr)
+- **Week 10 (Sunday):** Distributed Git - Chapter 5 (1 hr)
+- **Week 16 (Sunday):** Git Tools - Chapter 7 (1 hr)
+- Learn progressively as needed, not all at once
 
 **Why Python is split:**
 
-- **Python Core** (Track 4): TDD + pytest + architecture — essential for reviewing ML code
-- **Python Advanced** (Track 7): AST + async — useful but not required for AI red teaming
+- **Python Core** (Track 7): TDD + pytest + architecture — essential for reviewing ML code
+- **Python Advanced** (Track 10): AST + async — useful but not required for AI red teaming
 
 -----
 
@@ -76,7 +86,9 @@ Reading → Note-Taking → Claude Code
 |Speed Reading (Knight)                        |Reading Skills|
 |How to Take Smart Notes (Ahrens)              |Note-Taking   |
 |Building a Second Brain (Forte)               |Note-Taking   |
+|Pro Git (Chacon & Straub)                     |Git Mastery   |
 |Developer's Playbook for LLM Security (Wilson)|AI/ML         |
+|Test-Driven Development with Python (Percival)|Python Core   |
 |Node.js: The Comprehensive Guide (Springer)   |JavaScript    |
 |Web Development with Node and Express (Brown) |JavaScript    |
 |You Don't Know JS 1st edition (Simpson)       |JavaScript    |
