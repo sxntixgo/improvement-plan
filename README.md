@@ -104,19 +104,6 @@ Reading → Note-Taking → Claude Code
 
 -----
 
-## Source Conversations
-
-|Topic                     |Link                                                       |
-|--------------------------|-----------------------------------------------------------|
-|Note-Taking / Obsidian    |https://claude.ai/chat/449c1db6-8e29-42dc-96f4-2cdeaa3422c1|
-|JavaScript Mastery Plan   |https://claude.ai/chat/1d05e1a4-d947-481a-b05c-d6ac49ff9fad|
-|Python Improvement Plan   |https://claude.ai/chat/7fab6ef6-5e5c-419a-9386-2176b62f1cbb|
-|AI Red Teaming/ML Security|https://claude.ai/chat/e6025024-ecd2-4088-9a0a-728267736d8b|
-|Go/Golang Learning        |https://claude.ai/chat/087a2c91-7cb9-403e-a749-163dae635363|
-|Consolidated Plan v2      |https://claude.ai/chat/7a1879d4-720d-4189-841f-27a2ec7cc70a|
-
------
-
 ## Downtime Reading List
 
 Passive content for commutes, lunch breaks, or when you need a break from active learning.
