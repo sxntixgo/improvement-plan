@@ -4,6 +4,42 @@
 
 -----
 
+## TL;DR - You Already Own Most Books!
+
+**Books you already own:**
+- ✅ Percival (TDD with Python)
+- ✅ Wilson (LLM Security)
+- ✅ Brown (Node/Express)
+- ✅ Eloquent JavaScript
+- ✅ YDKJS 1st edition
+- ✅ Black Hat Go
+- ✅ Plus all Track 1-2 books
+
+**Recommendation:** Use courses for PRIMARY learning, keep your owned books as REFERENCES
+
+### The Optimal Approach
+
+**Spend:** +$10 more than your original $270 book budget = **$280 total**
+
+**Get:**
+- 60+ more hours for hands-on coding
+- TestDriven.io microservices course
+- HTB Academy AI red teaming labs + certification
+- Zero To Mastery Node.js (NASA app, multiplayer game)
+- Real Python subscription (covers 2 tracks)
+
+**Skip buying:**
+- ❌ Huyen ($50 saved) - HTB Academy is better
+- ❌ Fowler ($50 saved) - Real Python asyncio course is enough
+
+**Books to still buy:**
+- ✅ Okken (pytest) - $40 - Best reference after TAU course
+- ✅ All Go books - $130 - Optimal for Track 8
+
+**Net result:** Same money, 50% more coding time, better portfolio
+
+-----
+
 ## Time Savings Philosophy
 
 **Reading a technical book:** ~1-2 hours per 50 pages (slower, passive)
@@ -227,16 +263,20 @@
 
 ### High-Value Replacements (DO THESE)
 
-|Track|Replace This           |With This                |Time Saved|Cost Change|
-|-----|-----------------------|-------------------------|----------|-----------|
-|4    |Percival TDD book      |TestDriven.io            |+10 hrs   |+$30       |
-|5    |Wilson + Huyen books   |HTB Academy              |+10 hrs   |-$10       |
-|6    |Eloquent JS            |The Odin Project         |+30 hrs   |FREE       |
-|6    |Brown Express book     |Zero To Mastery          |+0 hrs    |+$40       |
-|7    |Fowler asyncio (primary)|Real Python course      |+10 hrs   |+$10*      |
+**IMPORTANT:** You already own Percival, Wilson, Brown, Eloquent JS, YDKJS, and Black Hat Go!
+
+|Track|You Own This           |Primary Learning         |Use Book As|Cost      |
+|-----|-----------------------|-------------------------|-----------|----------|
+|4    |Percival TDD ✅         |TestDriven.io (course)   |Reference  |+$30      |
+|5    |Wilson LLM ✅           |HTB Academy (course)     |Reference  |+$40      |
+|6    |Eloquent JS ✅          |The Odin Project (FREE)  |Theory deep-dive|$0  |
+|6    |Brown Express ✅        |Zero To Mastery (course) |Reference  |+$40      |
+|7    |Need to buy Fowler     |Real Python (course)     |Skip buying|-$50 saved|
 
 **Total time saved: ~60 hours**
-**Total cost change: +$70 BUT covers 4 tracks**
+**Total cost for courses: +$110** (TestDriven.io, HTB, ZTM, Real Python)
+**Total books NOT bought: -$100** (Skip Huyen, Skip Fowler)
+**Net additional cost: +$10**
 
 *Real Python covers both Track 4 and Track 7
 
@@ -364,34 +404,47 @@
 
 ## Final Budget Comparison
 
-### Original Plan
-|Track|Books   |Courses|Total|
-|-----|--------|-------|-----|
-|4    |$40     |$0     |$40  |
-|5    |$140    |$0     |$140 |
-|6    |$0      |$0     |$0   |
-|7    |$50     |$0     |$50  |
-|8    |$130    |$0     |$130 |
-|**Total**|**$360**|**$0**|**$360**|
+### Original Plan (Books to Purchase)
+|Track|Books to Buy|Courses|Total|Notes|
+|-----|------------|-------|-----|-----|
+|1-3  |$0          |$0     |$0   |All books owned|
+|4    |Okken $40   |$0     |$40  |Percival owned ✅|
+|5    |Huyen $50   |$0     |$50  |Wilson owned ✅|
+|6    |$0          |$0     |$0   |All books owned ✅|
+|7    |Fowler $50  |$0     |$50  ||
+|8    |$130        |$0     |$130 |Black Hat Go owned ✅|
+|**Total**|**$270**|**$0**|**$270**||
 
-### Optimized Plan
-|Track|Books|Courses              |Total|
-|-----|-----|---------------------|-----|
-|4    |$40  |Real Python $60*     |$100 |
-|5    |$0   |HTB $40 + NVIDIA $90†|$130 |
-|6    |$0   |ZTM $40              |$40  |
-|7    |$0   |(Real Python shared*)|$0   |
-|8    |$130 |$0                   |$130 |
-|**Total**|**$170**|**$190**|**$360**|
+### Optimized Plan (Course-First Approach)
+|Track|Books to Buy|Courses              |Total|What You Save|
+|-----|------------|---------------------|-----|-------------|
+|1-3  |$0          |$0                   |$0   ||
+|4    |Okken $40   |TestDriven $30 + Real Python $60*|$130|Use Percival as reference|
+|5    |Skip Huyen  |HTB $40 + NVIDIA $90†|$130|Use Wilson as reference, **save $50**|
+|6    |$0          |ZTM $40              |$40  |Use owned books as reference|
+|7    |Skip Fowler |Real Python (shared*)|$0   |**Save $50**|
+|8    |$130        |$0                   |$130 |Books optimal here|
+|**Total**|**$170**|**$220**|**$280**|**Save $100 on books!**|
 
-*Real Python subscription covers both Track 4 and Track 7
-†NVIDIA course optional
+*Real Python subscription ($60/year) covers both Track 4 and Track 7
+†NVIDIA course optional ($90) - consider skipping and using free resources
 
-**Same total cost ($360), but:**
-- 53% less book reading time
-- 60+ more hours for hands-on coding
-- Better portfolio projects
-- More industry-relevant skills (HTB certification, ZTM projects)
+### Cost Comparison Summary
+
+**Original book budget:** $270
+**Optimized budget:** $280 (+$10)
+
+**What you get for +$10:**
+- ✅ 60+ more hours for hands-on coding
+- ✅ Better portfolio projects (NASA app, multiplayer game, microservices)
+- ✅ HTB Academy certification potential
+- ✅ Industry-relevant hands-on experience
+- ✅ 50% less passive reading, more active building
+
+**If you skip NVIDIA course ($90):**
+**Optimized budget:** $190 (-$80 vs original!)
+- Still get all the benefits above
+- Use free OWASP, Fast.ai, and Hugging Face resources instead
 
 -----
 
