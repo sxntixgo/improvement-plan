@@ -1,590 +1,138 @@
-# Git Mastery Guide - Using Pro Git Book
+# Track 4: Git Mastery (Week 5)
 
-**Book You Own:** Pro Git by Scott Chacon and Ben Straub
+**Duration:** 1 week | **Total:** 18 hours
+**Approach:** Hands-on, project-based learning
 
-**Purpose:** Git is essential throughout ALL tracks (Python, JavaScript, Go). This guide provides a progressive learning path using your Pro Git book.
-
-**Learning Strategy:** Learn Git progressively as you need it, not all at once.
-
------
-
-## Git Learning Timeline
-
-### Week 5 (Go Crash Course): Git Basics - 2 hours
-**When:** Friday of Week 5
-**Why:** Immediate need for work contributions
-**Pro Git:** Chapter 2 (Git Basics)
-**Focus:** Daily workflow commands
-
-### Week 7 (Python Core Start): Branching - 1 hour
-**When:** Sunday of Week 7
-**Why:** Managing Python projects and experiments
-**Pro Git:** Chapter 3 (Git Branching)
-**Focus:** Feature branches, merging
-
-### Week 10 (Mid Python Core): Collaboration - 1 hour
-**When:** Sunday of Week 10
-**Why:** Contributing to open source, portfolio projects
-**Pro Git:** Chapter 5 (Distributed Git)
-**Focus:** Forking, pull requests, code review
-
-### Week 16 (Before AI/ML): Advanced Topics - 1 hour
-**When:** Sunday of Week 16
-**Why:** Managing complex projects, undoing mistakes
-**Pro Git:** Chapter 7 (Git Tools)
-**Focus:** Stashing, rewriting history, debugging
-
-### Ongoing: Reference as Needed
-**Chapters 6, 8-10:** GitHub, server setup, internals (reference when needed)
+**You Own:** Pro Git by Scott Chacon and Ben Straub (reference)
 
 -----
 
-## Chapter 2: Git Basics (Week 5 - Friday)
+## Why Git Before Go?
 
-**Time:** 2 hours
-**Priority:** HIGH - Essential for work
-
-### What to Read (Pages 18-52)
-
-**Section 2.1: Getting a Git Repository (15 min)**
-```bash
-# Initialize new repo
-git init
-
-# Clone existing repo
-git clone https://github.com/user/repo.git
-```
-
-**Section 2.2: Recording Changes (30 min) - MOST IMPORTANT**
-
-**The Four File States:**
-1. Untracked - Not in Git
-2. Unmodified - Tracked, no changes
-3. Modified - Changed but not staged
-4. Staged - Ready to commit
-
-**Essential Commands:**
-```bash
-# Check status
-git status
-
-# Stage files
-git add filename.go
-git add .              # Stage all
-
-# Commit
-git commit -m "Clear, descriptive message"
-
-# Skip staging area (use carefully)
-git commit -a -m "Message"
-
-# Remove files
-git rm filename.go
-git rm --cached file   # Keep file but untrack it
-
-# Move/rename files
-git mv old_name.go new_name.go
-```
-
-**Section 2.3: Viewing Commit History (20 min)**
-```bash
-# View commits
-git log
-git log --oneline              # Condensed
-git log --graph --oneline      # Visual branch structure
-git log -p -2                  # Last 2 commits with diffs
-git log --since=2.weeks        # Time-based filtering
-git log --author="Your Name"   # By author
-```
-
-**Section 2.4: Undoing Things (30 min) - CRITICAL**
-```bash
-# Amend last commit (add forgotten file or fix message)
-git commit --amend
-
-# Unstage a file
-git reset HEAD filename.go
-
-# Discard changes in working directory (DESTRUCTIVE!)
-git checkout -- filename.go
-
-# Better alternative (Git 2.23+)
-git restore --staged filename.go    # Unstage
-git restore filename.go              # Discard changes
-```
-
-**Section 2.5: Working with Remotes (20 min)**
-```bash
-# View remotes
-git remote -v
-
-# Add remote
-git remote add origin https://github.com/user/repo.git
-
-# Fetch (download but don't merge)
-git fetch origin
-
-# Pull (fetch + merge)
-git pull origin main
-
-# Push
-git push origin main
-git push -u origin feature-branch  # Set upstream
-```
-
-**Section 2.6: Tagging (5 min) - SKIP for now**
-Read later when you need releases
-
-**Section 2.7: Git Aliases (5 min) - OPTIONAL**
-```bash
-# Useful shortcuts
-git config --global alias.co checkout
-git config --global alias.br branch
-git config --global alias.ci commit
-git config --global alias.st status
-```
-
-### Week 5 Exercises (30 min)
-
-**After reading Chapter 2, practice:**
-
-1. **Create test repository** (10 min)
-```bash
-mkdir git-practice
-cd git-practice
-git init
-echo "# Git Practice" > README.md
-git add README.md
-git commit -m "Initial commit"
-```
-
-2. **Practice workflow** (15 min)
-```bash
-# Create file
-echo "Hello Git" > test.txt
-git status
-git add test.txt
-git commit -m "Add test file"
-
-# Modify file
-echo "More content" >> test.txt
-git status
-git diff
-git add test.txt
-git commit -m "Update test file"
-
-# View history
-git log --oneline
-```
-
-3. **Practice undoing** (5 min)
-```bash
-# Make a mistake
-echo "Oops" >> test.txt
-git status
-
-# Undo it
-git restore test.txt
-git status
-```
-
-### Week 5 Deliverable
-- [ ] Read Pro Git Chapter 2 (Git Basics)
-- [ ] Completed practice exercises
-- [ ] Can: clone, add, commit, push, pull
-- [ ] Understand: staging area, commit history, undoing changes
+Git is foundational for ALL development work:
+- Essential for contributing to company Go projects (Week 6)
+- Needed for managing Python, JavaScript projects
+- Required for portfolio, open source contributions
+- Concentrated learning beats scattered sessions
 
 -----
 
-## Chapter 3: Git Branching (Week 7 - Sunday)
+## Learning Strategy: Hands-On First, Reference Second
 
-**Time:** 1 hour
-**Priority:** HIGH - Essential for feature development
+**Primary Learning (12 hours):** Interactive, project-based tutorials
+**Reference Reading (6 hours):** Pro Git book for depth and context
 
-### What to Read (Pages 53-90)
-
-**Section 3.1: Branches in a Nutshell (20 min)**
-
-**Key Concept:** Branches are lightweight pointers to commits
-
-```bash
-# Create branch
-git branch feature-name
-
-# Switch to branch
-git checkout feature-name
-
-# Create and switch (shortcut)
-git checkout -b feature-name
-
-# Modern alternative (Git 2.23+)
-git switch feature-name
-git switch -c feature-name  # Create and switch
-```
-
-**Section 3.2: Basic Branching and Merging (25 min) - MOST IMPORTANT**
-
-**Workflow:**
-```bash
-# Start new feature
-git checkout -b feature/add-login
-
-# Make changes
-git add .
-git commit -m "Add login form"
-
-# Switch back to main
-git checkout main
-
-# Merge feature
-git merge feature/add-login
-
-# Delete merged branch
-git branch -d feature/add-login
-```
-
-**Handling Merge Conflicts:**
-```bash
-# When merge has conflicts
-git merge feature-branch
-# CONFLICT in file.py
-
-# Open file, resolve conflicts
-# Look for <<<<<<< HEAD markers
-# Choose which code to keep
-# Remove conflict markers
-
-# Mark as resolved
-git add file.py
-git commit -m "Merge feature-branch, resolve conflicts"
-```
-
-**Section 3.3: Branch Management (10 min)**
-```bash
-# List branches
-git branch              # Local branches
-git branch -v           # With last commit
-git branch -a           # Include remote branches
-
-# See merged/unmerged
-git branch --merged
-git branch --no-merged
-
-# Delete branch
-git branch -d branch-name   # Safe delete (merged only)
-git branch -D branch-name   # Force delete
-```
-
-**Section 3.4-3.5: Branching Workflows (5 min) - SKIM**
-Read about common workflows:
-- Long-running branches (main, develop)
-- Topic branches (feature, bugfix)
-
-**Section 3.6: Remote Branches (15 min)**
-```bash
-# Push branch to remote
-git push origin feature-branch
-git push -u origin feature-branch  # Set upstream
-
-# Track remote branch
-git checkout -b feature origin/feature
-
-# Modern alternative
-git switch -c feature origin/feature
-
-# Delete remote branch
-git push origin --delete feature-branch
-```
-
-**Section 3.7: Rebasing (SKIP for now)**
-Read later when comfortable with merging
-
-### Week 7 Exercises (15 min)
-
-**Practice branching workflow:**
-```bash
-# Create feature branch
-git checkout -b feature/test-feature
-
-# Make changes
-echo "Feature code" > feature.py
-git add feature.py
-git commit -m "Add feature"
-
-# Switch to main
-git checkout main
-
-# Merge feature
-git merge feature/test-feature
-
-# Delete branch
-git branch -d feature/test-feature
-```
-
-### Week 7 Deliverable
-- [ ] Read Pro Git Chapter 3 (Branching)
-- [ ] Can create and switch branches
-- [ ] Can merge branches
-- [ ] Can resolve merge conflicts
-- [ ] Understand feature branch workflow
+This approach matches your "learn by doing" preference while keeping Pro Git as valuable reference.
 
 -----
 
-## Chapter 5: Distributed Git (Week 10 - Sunday)
+## Week 5 Schedule
 
-**Time:** 1 hour
-**Priority:** MEDIUM - For collaboration
+### Monday-Tuesday: Git Immersion Labs (6 hours)
 
-### What to Read (Pages 130-167)
+**Resource:** [Git Immersion](https://gitimmersion.com/) - FREE ⭐
 
-**Section 5.1: Distributed Workflows (10 min) - SKIM**
-Understand different team workflows:
-- Centralized workflow
-- Integration-manager workflow
-- Dictator and lieutenants workflow
+**50+ hands-on labs** that build real Git skills through practice.
 
-**Section 5.2: Contributing to a Project (30 min) - IMPORTANT**
+**Monday (3 hours):**
+- **Lab 1-10:** Setup and basics (30 min)
+  - Install Git, configure
+  - Create repository
+  - Add, commit, status
+  - Stage changes
+- **Lab 11-20:** History and structure (1 hour)
+  - View commit history
+  - Aliases for efficiency
+  - Getting old versions
+  - Tagging versions
+  - Understanding .git directory
+- **Lab 21-30:** Branching basics (1.5 hours)
+  - Undoing local changes
+  - Undoing committed changes
+  - Removing commits from branch
+  - Amending commits
+  - Moving files
 
-**Forking Workflow:**
-```bash
-# 1. Fork repository on GitHub (web UI)
+**Tuesday (3 hours):**
+- **Lab 31-40:** Advanced branching (1.5 hours)
+  - Creating branches
+  - Navigating branches
+  - Merging branches
+  - Resolving conflicts (CRITICAL)
+  - Rebasing vs merging
+- **Lab 41-50:** Remote repositories (1.5 hours)
+  - Cloning repositories
+  - Remote branches
+  - Fetching changes
+  - Pulling changes
+  - Pushing to remotes
+  - Hosting Git repos
 
-# 2. Clone YOUR fork
-git clone https://github.com/YOUR-USERNAME/repo.git
-
-# 3. Add upstream remote
-git remote add upstream https://github.com/ORIGINAL-OWNER/repo.git
-
-# 4. Keep your fork synced
-git fetch upstream
-git checkout main
-git merge upstream/main
-
-# 5. Create feature branch
-git checkout -b feature/my-contribution
-
-# 6. Make changes and commit
-git add .
-git commit -m "Add my contribution"
-
-# 7. Push to YOUR fork
-git push origin feature/my-contribution
-
-# 8. Create Pull Request (web UI)
-```
-
-**Commit Guidelines:**
-- Clear, descriptive commit messages
-- One logical change per commit
-- Test before committing
-- Follow project's contribution guidelines
-
-**Section 5.3: Maintaining a Project (20 min) - SKIM**
-Read if you maintain open source projects:
-- Reviewing pull requests
-- Merging contributions
-- Tagging releases
-
-### Week 10 Exercises (15 min)
-
-**Practice forking workflow:**
-1. Fork a small open source project
-2. Clone your fork
-3. Add upstream remote
-4. Create feature branch
-5. Make small change (fix typo, update docs)
-6. Push to your fork
-7. Create pull request
-
-### Week 10 Deliverable
-- [ ] Read Pro Git Chapter 5 (Distributed Git)
-- [ ] Understand forking workflow
-- [ ] Can sync fork with upstream
-- [ ] Created at least one pull request
-- [ ] Understand contribution guidelines
+**Deliverable:** Completed 50 Git Immersion labs, built real repositories
 
 -----
 
-## Chapter 7: Git Tools (Week 16 - Sunday)
+### Wednesday-Thursday: Learn Git Branching (6 hours)
 
-**Time:** 1 hour
-**Priority:** MEDIUM - Advanced topics
+**Resource:** [Learn Git Branching](https://learngitbranching.js.org/) - FREE ⭐
 
-### What to Read (Pages 201-270)
+**Visual, interactive sandbox** - perfect for understanding branching deeply.
 
-**Section 7.1: Revision Selection (10 min)**
-```bash
-# Specify commits
-git show HEAD           # Latest commit
-git show HEAD~2         # 2 commits ago
-git show main~3         # 3 commits back on main
-git show abc1234        # By SHA hash
+**Wednesday (3 hours):**
 
-# Ranges
-git log main..feature   # Commits in feature not in main
-```
+**Main Section (2 hours):**
+- **Introduction Sequence** (30 min)
+  - 1.1: Introduction to Git Commits
+  - 1.2: Branching in Git
+  - 1.3: Merging in Git
+  - 1.4: Rebase Introduction
+- **Ramping Up** (45 min)
+  - 2.1: Detach yo' HEAD
+  - 2.2: Relative Refs (^)
+  - 2.3: Relative Refs #2 (~)
+  - 2.4: Reversing Changes
+- **Moving Work Around** (45 min)
+  - 3.1: Cherry-pick
+  - 3.2: Interactive Rebase
 
-**Section 7.2: Interactive Staging (10 min)**
-```bash
-# Interactively stage parts of files
-git add -p
+**Remote Section (1 hour):**
+- **Push & Pull** (30 min)
+  - 1.1: Clone Intro
+  - 1.2: Remote Branches
+  - 1.3: Git Fetch
+  - 1.4: Git Pull
+  - 1.5: Simulating Collaboration
+- **To Origin and Beyond** (30 min)
+  - 2.1: Push Master
+  - 2.2: Merging with Remotes
+  - 2.3: Remote Tracking
 
-# Useful for committing related changes separately
-```
+**Thursday (3 hours):**
 
-**Section 7.3: Stashing (15 min) - VERY USEFUL**
-```bash
-# Save work temporarily
-git stash
+**Remote Advanced (1.5 hours):**
+- **Advanced Origin** (45 min)
+  - 3.1: Push Arguments
+  - 3.2: Push Arguments Expanded
+  - 3.3: Fetch Arguments
+  - 3.4: Source of Nothing
+  - 3.5: Pull Arguments
+- **Remote Workflows** (45 min)
+  - Complete remaining remote challenges
 
-# List stashes
-git stash list
+**Practice Scenarios (1.5 hours):**
+- Work through all "Practice" levels
+- Focus on scenarios you'll encounter at work
+- Build muscle memory for common workflows
 
-# Apply stash
-git stash pop            # Apply and remove
-git stash apply          # Apply and keep
-
-# Stash with message
-git stash save "Work in progress on feature X"
-
-# Apply specific stash
-git stash apply stash@{1}
-
-# Drop stash
-git stash drop stash@{0}
-```
-
-**Section 7.4: Cleaning (5 min)**
-```bash
-# Remove untracked files (DESTRUCTIVE)
-git clean -n     # Dry run (shows what would be deleted)
-git clean -f     # Actually delete
-git clean -fd    # Include directories
-```
-
-**Section 7.5: Signing Work (SKIP)**
-Read if you need GPG signing
-
-**Section 7.6: Searching (10 min)**
-```bash
-# Search code
-git grep "function_name"
-git grep -n "TODO"      # With line numbers
-
-# Search commit messages
-git log --grep="fix bug"
-
-# Search code in history
-git log -S "function_name"  # When function was added/removed
-```
-
-**Section 7.7: Rewriting History (15 min) - USE WITH CAUTION**
-```bash
-# Amend last commit
-git commit --amend
-
-# Interactive rebase (reorder, squash, edit commits)
-git rebase -i HEAD~3
-
-# NEVER rewrite history that's been pushed and shared!
-```
-
-**Section 7.8-7.14: Advanced Topics (5 min each) - SKIM**
-- Reset Demystified
-- Merging strategies
-- Rerere (Reuse Recorded Resolution)
-- Debugging with Git
-- Submodules
-- Bundling
-- Replace
-
-### Week 16 Deliverable
-- [ ] Read Pro Git Chapter 7 (Git Tools)
-- [ ] Can use git stash effectively
-- [ ] Can search code and history
-- [ ] Understand when NOT to rewrite history
-- [ ] Know where to look for advanced features
+**Deliverable:** All main challenges completed, visual understanding of Git operations
 
 -----
 
-## Reference: Essential Git Commands
+### Friday: Company Workflow + GitHub Practice (3 hours)
 
-### Daily Workflow
-```bash
-# Status and changes
-git status
-git diff
-git diff --staged
+**Morning (1.5 hours): Learn Your Company's Git Workflow**
 
-# Add and commit
-git add filename
-git add .
-git commit -m "Message"
-
-# Push and pull
-git pull origin main
-git push origin feature-branch
-```
-
-### Branching
-```bash
-# Branch management
-git branch                    # List
-git branch feature-name       # Create
-git checkout feature-name     # Switch
-git checkout -b feature-name  # Create and switch
-git branch -d feature-name    # Delete
-
-# Merging
-git merge feature-name
-```
-
-### Undoing
-```bash
-# Unstage
-git restore --staged filename
-
-# Discard changes
-git restore filename
-
-# Amend commit
-git commit --amend
-
-# Stash
-git stash
-git stash pop
-```
-
-### Remote
-```bash
-# Remote management
-git remote -v
-git remote add origin URL
-git fetch origin
-git pull origin main
-git push origin main
-```
-
-### History
-```bash
-# View commits
-git log
-git log --oneline
-git log --graph --oneline
-git log -p
-
-# Search
-git grep "search term"
-git log --grep="commit message search"
-```
-
------
-
-## Company-Specific Git Workflow
-
-**Week 5 Friday: Learn your company's workflow**
-
-### Questions to Ask Team Lead:
+**Questions to Ask Team Lead:**
 1. What branching strategy? (GitFlow, GitHub Flow, trunk-based?)
 2. Branch naming convention? (feature/, bugfix/, hotfix/?)
 3. Commit message format? (Conventional Commits?)
@@ -593,7 +141,7 @@ git log --grep="commit message search"
 6. Any Git hooks or pre-commit checks?
 7. Main branch name? (main, master, develop?)
 
-### Common Workflows:
+**Common Workflows:**
 
 **GitHub Flow (Simple):**
 ```bash
@@ -612,8 +160,225 @@ git log --grep="commit message search"
 3. git add . && git commit -m "Add feature"
 4. git push origin feature/my-feature
 5. # Create PR to develop branch
-6. # After approval, merge to develop
-7. # Release: merge develop → release → main
+```
+
+**Practice with real company repo:**
+- Clone a company repository
+- Create a test branch
+- Make a small change (comment, docs)
+- Push and create draft PR
+- Ask teammate to review workflow (don't merge)
+
+**Afternoon (1.5 hours): GitHub Real-World Practice**
+
+**Exercise 1: Fork and Contribute (45 min)**
+1. Find a beginner-friendly open source project
+   - [First Timers Only](https://www.firsttimersonly.com/)
+   - [Good First Issue](https://goodfirstissue.dev/)
+2. Fork the repository
+3. Clone your fork
+4. Add upstream remote
+5. Create feature branch
+6. Make small contribution (fix typo, update docs)
+7. Push to your fork
+8. Create pull request
+
+**Exercise 2: Handle Merge Conflicts (45 min)**
+```bash
+# Create test repo to practice conflicts
+mkdir conflict-practice
+cd conflict-practice
+git init
+
+# Create file on main
+echo "Line 1" > file.txt
+git add file.txt
+git commit -m "Initial commit"
+
+# Create branch 1
+git checkout -b branch1
+echo "Line 2 from branch1" >> file.txt
+git add file.txt
+git commit -m "Add line from branch1"
+
+# Create branch 2 from main
+git checkout main
+git checkout -b branch2
+echo "Line 2 from branch2" >> file.txt
+git add file.txt
+git commit -m "Add line from branch2"
+
+# Try to merge - conflict!
+git checkout main
+git merge branch1  # Success
+git merge branch2  # CONFLICT!
+
+# Resolve conflict
+# Edit file.txt
+# Remove <<<<<<, ======, >>>>>> markers
+# Keep desired content
+git add file.txt
+git commit -m "Resolve merge conflict"
+```
+
+**Deliverable:**
+- Understand company Git workflow
+- Created at least one real pull request
+- Resolved merge conflicts successfully
+
+-----
+
+### Weekend: Pro Git Reference Reading (3 hours)
+
+**Saturday (1.5 hours): Core Concepts**
+
+**Pro Git Chapter 2: Git Basics (1 hour)**
+- Pages 18-52
+- Focus on sections you didn't fully understand from Git Immersion
+- **2.2: Recording Changes** - Deep dive on staging area
+- **2.4: Undoing Things** - When to use reset vs restore vs revert
+- **2.5: Working with Remotes** - Understanding fetch vs pull
+
+**Pro Git Chapter 3: Branching (30 min)**
+- Pages 53-75 (Sections 3.1-3.2 only)
+- **3.1: Branches in a Nutshell** - How Git stores branches
+- **3.2: Basic Branching and Merging** - Theory behind what you practiced
+
+**Sunday (1.5 hours): Collaboration & Tools**
+
+**Pro Git Chapter 5: Distributed Git (45 min)**
+- Pages 130-155 (Sections 5.1-5.2 only)
+- **5.1: Distributed Workflows** - Different team structures
+- **5.2: Contributing to a Project** - Best practices, commit guidelines
+
+**Pro Git Chapter 7: Git Tools (45 min)**
+- Pages 201-230 (Selected sections)
+- **7.3: Stashing** - Saving work temporarily
+- **7.6: Searching** - Finding code in history
+- **7.7: Rewriting History** - When and when NOT to
+
+**Deliverable:** Deeper understanding of Git internals, ready for advanced scenarios
+
+-----
+
+## Essential Git Commands Reference
+
+### Daily Workflow
+```bash
+# Status and changes
+git status
+git diff                    # Changes not staged
+git diff --staged           # Changes staged for commit
+
+# Add and commit
+git add filename
+git add .                   # Add all changes
+git commit -m "Message"
+git commit -am "Message"    # Add and commit tracked files
+
+# Push and pull
+git pull origin main
+git push origin feature-branch
+git push -u origin feature-branch  # Set upstream
+```
+
+### Branching
+```bash
+# Create and switch
+git branch feature-name              # Create
+git checkout feature-name            # Switch
+git checkout -b feature-name         # Create and switch
+git switch feature-name              # Modern alternative
+git switch -c feature-name           # Create and switch
+
+# Merge and delete
+git merge feature-name
+git branch -d feature-name           # Delete (safe)
+git branch -D feature-name           # Force delete
+
+# List branches
+git branch                  # Local
+git branch -a               # All (including remote)
+git branch -v               # With last commit
+```
+
+### Undoing Changes
+```bash
+# Unstage files
+git restore --staged filename
+git reset HEAD filename              # Old way
+
+# Discard changes in working directory
+git restore filename
+git checkout -- filename             # Old way
+
+# Amend last commit
+git commit --amend
+git commit --amend --no-edit         # Keep message
+
+# Undo commits
+git reset HEAD~1                     # Keep changes
+git reset --hard HEAD~1              # Discard changes (DESTRUCTIVE!)
+git revert HEAD                      # Create new commit that undoes
+```
+
+### Stashing
+```bash
+# Save work temporarily
+git stash
+git stash save "Description"
+
+# List and apply
+git stash list
+git stash pop                        # Apply and remove
+git stash apply                      # Apply and keep
+git stash drop                       # Delete stash
+```
+
+### Remotes
+```bash
+# Remote management
+git remote -v
+git remote add origin URL
+git remote add upstream URL
+git remote remove origin
+
+# Fetch and pull
+git fetch origin
+git fetch upstream
+git pull origin main
+git pull --rebase origin main        # Avoid merge commits
+```
+
+### History and Search
+```bash
+# View commits
+git log
+git log --oneline
+git log --graph --oneline --all
+git log -p                           # With diffs
+git log --since=2.weeks
+git log --author="Name"
+
+# Search
+git grep "search term"
+git log --grep="commit message search"
+git log -S "function_name"           # When code was added/removed
+```
+
+### Collaboration
+```bash
+# Forking workflow
+git clone https://github.com/YOUR-USERNAME/repo.git
+git remote add upstream https://github.com/ORIGINAL/repo.git
+git fetch upstream
+git merge upstream/main
+
+# Creating PRs
+git checkout -b feature/description
+# Make changes
+git push origin feature/description
+# Create PR via GitHub UI
 ```
 
 -----
@@ -627,109 +392,156 @@ git pull origin main
 git pull --rebase origin main
 ```
 
-### "Merge conflict"
+### "Merge conflict in file.txt"
 ```bash
 # 1. Open conflicted file
-# 2. Look for <<<<<<< and >>>>>>> markers
+# 2. Look for <<<<<<< HEAD and >>>>>>> markers
 # 3. Edit file to resolve
-# 4. Remove markers
+# 4. Remove conflict markers
 # 5. Stage and commit
-git add filename
+git add file.txt
 git commit -m "Resolve merge conflict"
 ```
 
 ### "I committed to wrong branch"
 ```bash
 # If not pushed yet:
-git log  # Copy commit SHA
+git log                              # Copy commit SHA
 git checkout correct-branch
 git cherry-pick <commit-SHA>
 git checkout wrong-branch
-git reset --hard HEAD~1  # Remove commit from wrong branch
+git reset --hard HEAD~1              # Remove from wrong branch
 ```
 
-### "I need to undo last commit"
+### "I need to undo last commit but keep changes"
 ```bash
-# Keep changes (unstage)
 git reset HEAD~1
-
-# Discard changes (DESTRUCTIVE)
-git reset --hard HEAD~1
+# Changes are now unstaged
 ```
 
-### "I pushed sensitive data"
+### "I need to undo last commit completely"
 ```bash
-# Contact team lead immediately!
-# May need to rewrite history and force push
-# Or rotate credentials if exposed
+git reset --hard HEAD~1              # DESTRUCTIVE!
 ```
 
------
+### "I pushed sensitive data (API key, password)"
+```bash
+# 1. IMMEDIATELY rotate credentials
+# 2. Contact team lead
+# 3. May need to rewrite history and force push
+# 4. Consider using git-secrets or pre-commit hooks
+```
 
-## Pro Git Book Reading Schedule
+### "Detached HEAD state"
+```bash
+# You're not on a branch
+# To keep changes:
+git checkout -b new-branch-name
 
-| Week | Chapter | Topic | Time | When |
-|------|---------|-------|------|------|
-| 5 | 2 | Git Basics | 2 hrs | Friday |
-| 7 | 3 | Branching | 1 hr | Sunday |
-| 10 | 5 | Distributed Git | 1 hr | Sunday |
-| 16 | 7 | Git Tools | 1 hr | Sunday |
-| Later | 1 | Getting Started | 30 min | Reference |
-| Later | 4 | Git Server | Skip | Unless managing servers |
-| Later | 6 | GitHub | 1 hr | If using GitHub Enterprise features |
-| Later | 8 | Customizing Git | 30 min | When needed |
-| Later | 9 | Git Internals | 1 hr | Optional deep dive |
-| Later | 10 | Appendices | - | Reference |
+# To discard changes:
+git checkout main
+```
 
 -----
 
 ## Success Metrics
 
-### After Week 5 (Git Basics):
-- [ ] Can clone, add, commit, push, pull
-- [ ] Understand staging area
-- [ ] Can view and search commit history
-- [ ] Can undo mistakes safely
-
-### After Week 7 (Branching):
-- [ ] Can create and switch branches
-- [ ] Can merge branches
+### By End of Week 5:
+- [ ] Completed Git Immersion (50 labs)
+- [ ] Completed Learn Git Branching (all main challenges)
+- [ ] Understand company Git workflow
+- [ ] Created at least one pull request
 - [ ] Can resolve merge conflicts
-- [ ] Understand feature branch workflow
+- [ ] Can use stash effectively
+- [ ] Read Pro Git Chapters 2, 3, 5, 7 (selected sections)
+- [ ] Confident with Git for daily work
 
-### After Week 10 (Collaboration):
-- [ ] Can fork repositories
-- [ ] Can sync fork with upstream
-- [ ] Can create pull requests
-- [ ] Understand code review process
-
-### After Week 16 (Advanced):
-- [ ] Can use git stash effectively
-- [ ] Can search code and history
-- [ ] Know advanced Git features
-- [ ] Confident with Git for all projects
+### Skills Checklist:
+- [ ] Clone, add, commit, push, pull
+- [ ] Create and switch branches
+- [ ] Merge branches
+- [ ] Resolve conflicts
+- [ ] Fork and sync repositories
+- [ ] Create pull requests
+- [ ] Use git stash
+- [ ] Undo mistakes safely
+- [ ] Search commit history
+- [ ] Follow company workflow
 
 -----
 
-## Additional Resources
+## Resources
 
-**Free Online:**
-- [Git Documentation](https://git-scm.com/doc)
-- [GitHub Skills](https://skills.github.com/)
-- [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)
-- [Learn Git Branching](https://learngitbranching.js.org/) - Interactive visual tutorial
+### Primary (Hands-On):
+- **[Git Immersion](https://gitimmersion.com/)** - FREE - 50 hands-on labs
+- **[Learn Git Branching](https://learngitbranching.js.org/)** - FREE - Visual interactive
+- **[GitHub Skills](https://skills.github.com/)** - FREE - Official GitHub tutorials
 
-**Your Book:**
-- Pro Git (free online): https://git-scm.com/book/en/v2
-- Pro Git (your physical copy): Use for deep reading
+### Reference:
+- **Pro Git Book** (you own this)
+  - Online free version: https://git-scm.com/book/en/v2
+  - Use for deep dives and reference
+- **[Git Documentation](https://git-scm.com/doc)** - Official docs
+- **[Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials)** - Excellent guides
 
-**Cheat Sheets:**
-- [GitHub Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+### Cheat Sheets:
+- [GitHub Git Cheat Sheet (PDF)](https://education.github.com/git-cheat-sheet-education.pdf)
 - [Atlassian Git Cheat Sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 
+### Practice Projects:
+- [First Timers Only](https://www.firsttimersonly.com/) - Beginner-friendly open source
+- [Good First Issue](https://goodfirstissue.dev/) - Curated easy issues
+- [Up For Grabs](https://up-for-grabs.net/) - Projects wanting contributions
+
 -----
 
-## Remember
+## Why This Approach Works
+
+**Hands-On First:**
+- Git Immersion: Learn by building real repos
+- Learn Git Branching: Visual understanding of operations
+- Muscle memory through repetition
+
+**Reference Second:**
+- Pro Git provides depth after hands-on practice
+- Theory makes more sense after doing
+- Use as reference throughout other tracks
+
+**Project-Based:**
+- Build real repositories
+- Create actual pull requests
+- Solve real merge conflicts
+- Practice company workflow
+
+**Matches Your Learning Style:**
+- You prefer "learning using projects to follow along"
+- Interactive tutorials > passive reading
+- Do first, understand deeply second
+
+-----
+
+## Pro Git Reading Schedule (Reference)
+
+Use Pro Git as reference throughout other tracks:
+
+| When | Chapter | Topic | Why |
+|------|---------|-------|-----|
+| Week 5 | 2, 3, 5, 7 | Core Git | Foundation |
+| Week 8 | 6 | GitHub | When starting Python projects |
+| Week 18 | 8 | Customizing Git | When building AI/ML tools |
+| Later | 1 | Getting Started | History and concepts |
+| Later | 9 | Git Internals | Optional deep dive |
+
+-----
+
+## Next Steps
+
+**After Week 5:**
+- Use Git daily for all projects (Go, Python, JavaScript)
+- Contribute to open source (builds portfolio)
+- Practice advanced features as needed
+- Reference Pro Git when stuck
+- Share Git knowledge with colleagues
 
 **Git Philosophy:**
 - Commit early, commit often
@@ -740,4 +552,16 @@ git reset --hard HEAD~1
 - Never force push to shared branches
 - When in doubt, ask for help!
 
-**Pro Git is your reference** - you don't need to memorize everything. Learn the basics, then look up advanced features when you need them.
+-----
+
+## Week 5 Daily Schedule Summary
+
+**Monday (3 hrs):** Git Immersion Labs 1-30
+**Tuesday (3 hrs):** Git Immersion Labs 31-50
+**Wednesday (3 hrs):** Learn Git Branching (Main Section)
+**Thursday (3 hrs):** Learn Git Branching (Remote + Practice)
+**Friday (3 hrs):** Company workflow + GitHub practice
+**Saturday (1.5 hrs):** Pro Git Chapters 2-3 (reference reading)
+**Sunday (1.5 hrs):** Pro Git Chapters 5, 7 (reference reading)
+
+**Total: 18 hours of focused, hands-on Git mastery**
