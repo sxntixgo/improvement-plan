@@ -56,7 +56,7 @@ Your company uses Go for development. This crash course gets you **functional at
 - Identify patterns used at work
 - Ask senior devs for "good example files" to study
 
-### Thursday-Friday (4 hours): Concurrency + Git Essentials
+### Thursday-Friday (4 hours): Concurrency Basics
 
 **Thursday (2 hours): Go Concurrency Basics**
 - Goroutines (concurrent functions)
@@ -68,74 +68,16 @@ Your company uses Go for development. This crash course gets you **functional at
 - Go by Example: Goroutines, Channels, Channel Buffering, Select
 - Tour of Go: Concurrency section
 
-**Friday (2 hours): Git Essentials for Work**
+**Friday (2 hours): Advanced Go Patterns**
+- Error handling patterns
+- Interface design
+- Common Go idioms
+- Read company Go code with Claude Code
 
-**You have "Pro Git" book - use it as reference**
-
-**Focus on practical commands you'll use daily:**
-
-**Basic Workflow (30 min):**
-```bash
-# Clone repository
-git clone [url]
-
-# Create feature branch
-git checkout -b feature/my-change
-
-# Stage and commit
-git add .
-git commit -m "Description"
-
-# Push to remote
-git push origin feature/my-change
-```
-
-**Branching (30 min):**
-```bash
-# See all branches
-git branch -a
-
-# Switch branches
-git checkout main
-git checkout develop
-
-# Pull latest
-git pull origin main
-
-# Merge branches
-git merge feature/my-change
-```
-
-**Essential Commands (30 min):**
-```bash
-# Status
-git status
-git diff
-
-# History
-git log --oneline
-git log --graph
-
-# Undo changes
-git checkout -- file.go  # Discard local changes
-git reset HEAD file.go   # Unstage
-git revert [commit]      # Undo commit
-
-# Stash (save work temporarily)
-git stash
-git stash pop
-```
-
-**Company-Specific (30 min):**
-- Ask team: What's your Git workflow? (GitFlow? Feature branches?)
-- How to create pull requests?
-- Any Git hooks or pre-commit checks?
-- Code review process?
-
-**Pro Git Book Reference:**
-- Chapter 2: Git Basics (read this)
-- Chapter 3: Git Branching (skim)
-- Chapters 1, 4-10: Skip for now, reference later
+**Resources:**
+- [Effective Go](https://go.dev/doc/effective_go)
+- Company codebase examples
+- Ask senior devs for "good files to study"
 
 ### Weekend (10 hours): Practice + Company Projects
 
@@ -205,22 +147,6 @@ CREATE: "Build a simple Go HTTP server that:
 
 -----
 
-## Git Integration Notes
-
-**You'll use Git throughout all tracks:**
-- Week 5 (Go): Learn basics for work
-- Week 7+ (Python): Git for personal projects
-- Week 25+ (JavaScript): Git for portfolio
-- Ongoing: Pro Git book as reference
-
-**Pro Git Reading Plan:**
-- **Week 5 (now):** Chapter 2 (Git Basics) - 1 hour
-- **Week 7:** Chapter 3 (Branching) - 1 hour
-- **Week 10:** Chapter 5 (Distributed Git) - 1 hour
-- **Later:** Reference as needed
-
------
-
 ## Key Go Concepts (Crash Course Level)
 
 **Syntax:**
@@ -262,10 +188,7 @@ if err != nil {
 - [Go Documentation](https://go.dev/doc/) - Official docs
 - [Effective Go](https://go.dev/doc/effective_go) - Best practices
 
-### Books You Own
-- **Pro Git** - For Git fundamentals (Chapter 2 this week)
-
-### For Later (Week 53-64: Go Deep Dive)
+### For Later (Weeks 34-45: Go Deep Dive)
 - Learning Go, 2nd ed (Bodner) - $50
 - Let's Go (Alex Edwards) - $40
 - Black Hat Go - Already owned!
@@ -275,13 +198,13 @@ if err != nil {
 
 ## Deliverables
 
-**By end of Week 5, you should have:**
+**By end of Week 6, you should have:**
 - [ ] Completed Tour of Go
 - [ ] Worked through Go by Example (key sections)
 - [ ] Built a simple Go tool (HTTP server or CLI)
 - [ ] **Made first contribution to company codebase** (even if tiny!)
-- [ ] Comfortable with basic Git workflow
 - [ ] Can read and understand company's Go code with Claude Code
+- [ ] Comfortable using Git from Track 4 for Go projects
 
 **NOT expected:**
 - ❌ Go expert
@@ -319,13 +242,13 @@ Follow our company's style guide"
 
 -----
 
-## Week 5 Checklist
+## Week 6 Checklist
 
 ### Learning
 - [ ] Complete Tour of Go (3 hrs)
 - [ ] Work through Go by Example (3 hrs)
 - [ ] Understand goroutines and channels (2 hrs)
-- [ ] Learn Git basics from Pro Git Ch 2 (2 hrs)
+- [ ] Learn Go patterns and idioms (2 hrs)
 
 ### Practice
 - [ ] Build simple Go tool (5 hrs)
@@ -336,24 +259,24 @@ Follow our company's style guide"
 - [ ] Can read Go code
 - [ ] Can make small changes
 - [ ] Understand basic concurrency
-- [ ] Know Git workflow for work
+- [ ] Know company's Git workflow (from Track 4)
 - [ ] Can use Claude Code with Go effectively
 
 -----
 
 ## What's Next?
 
-**Week 6: LLM Security Primer**
+**Week 7: LLM Security Primer**
 - Read Wilson's book
 - Build security context for Python learning
 - Continue using Go at work (with Claude Code assistance)
 
-**Weeks 7-16: Python Core**
+**Weeks 8-17: Python Core**
 - Focus on AI red teaming skills
 - Keep using Go at work daily
 - You'll be functional in Go by now
 
-**Weeks 53-64: Go Deep Dive**
+**Weeks 34-45: Go Deep Dive**
 - Come back for advanced Go
 - Security tool building (Black Hat Go)
 - Become Go expert
@@ -369,18 +292,18 @@ Follow our company's style guide"
 4. Read other people's PRs - see how they write Go
 5. Don't try to learn everything - focus on what you need today
 
-**For Git:**
-1. Commit often, push frequently
-2. Write clear commit messages: "Fix bug in user handler"
-3. Create small PRs (easier to review)
-4. Pull before you push (avoid conflicts)
-5. When stuck: `git status` is your friend
+**For Git at Work:**
+1. You learned Git in Track 4 (Week 5) - apply those skills here
+2. Use company's Git workflow (GitFlow, feature branches, etc.)
+3. Write clear commit messages: "Fix bug in user handler"
+4. Create small PRs (easier to review)
+5. Reference Pro Git book when you encounter advanced scenarios
 
 **For Learning:**
 - You're NOT trying to master Go this week
 - Goal: Be productive at work while continuing AI red teaming path
 - Claude Code is your safety net
-- Week 53-64 is when you'll become a Go expert
+- Weeks 34-45 is when you'll become a Go expert
 
 -----
 
@@ -388,8 +311,8 @@ Follow our company's style guide"
 
 **This week: $0**
 - All resources are free
-- Using books you already own (Pro Git)
-- Go books purchased later (Week 53-64)
+- Git already learned in Track 4 (Week 5)
+- Go books purchased later (Weeks 34-45)
 
 -----
 
@@ -399,7 +322,7 @@ Follow our company's style guide"
 - ✅ Can read Go code at work
 - ✅ Can make small changes/fixes
 - ✅ Submitted at least one PR (even if tiny)
-- ✅ Comfortable with Git basics
+- ✅ Using Git effectively (from Track 4)
 - ✅ Can use Claude Code with Go
 
 **Stretch goals:**

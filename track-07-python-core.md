@@ -22,9 +22,9 @@ These skills are essential for AI red teaming:
 
 |Phase|Weeks|Focus                |Key Resource                                                 |
 |-----|-----|---------------------|-------------------------------------------------------------|
-|1A   |5-8  |TDD Methodology      |Test-Driven Development with Python, 3rd ed (Percival) - FREE|
-|1B   |9-10 |pytest Mastery       |Python Testing with pytest, 2nd ed (Okken) - ~$40            |
-|2    |11-14|Architecture Patterns|Architecture Patterns with Python - FREE                     |
+|1A   |8-11 |TDD Methodology      |Test-Driven Development with Python, 3rd ed (Percival) - FREE|
+|1B   |12-13|pytest Mastery       |Python Testing with pytest, 2nd ed (Okken) - ~$40            |
+|2    |14-17|Architecture Patterns|Architecture Patterns with Python - FREE                     |
 
 -----
 
@@ -59,6 +59,16 @@ These skills are essential for AI red teaming:
 |6   |5-8     |Forms, input validation, database     |
 |7   |9-12    |Refactoring, deployment               |
 |8   |13-16   |Advanced testing patterns             |
+
+**Book Structure:**
+- **Part I (Ch 1-8):** The Basics of TDD and Django
+- **Part II (Ch 9-12):** Going to Production
+- **Part III (Ch 13-16):** Forms and Validation
+- **Part IV (Ch 17-27):** Advanced Topics in Testing (optional for later)
+
+**This track covers Parts I-III** (Chapters 1-16), which provide core TDD skills.
+
+**Part IV (Chapters 17-27)** covers advanced topics like spiking, mocking, outside-in development, and CI - these are optional and can be studied later if needed.
 
 **Project:** Build a security tool with TDD (port scanner, log parser)
 
