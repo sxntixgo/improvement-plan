@@ -1,4 +1,4 @@
-# Track 6: JavaScript/Node.js
+# Track 11: JavaScript/Node.js
 
 **Duration:** 20 weeks | **Hours/week:** 18 | **Priority:** MEDIUM
 **Goal:** Full-stack JS for security tooling
@@ -15,10 +15,10 @@
 
 |Phase|Weeks|Focus                  |
 |-----|-----|-----------------------|
-|1    |23-30|JavaScript Fundamentals|
-|2    |31-34|Node.js & Express      |
-|3    |35-38|Advanced Patterns      |
-|4    |39-42|Security Focus         |
+|1    |46-53|JavaScript Fundamentals|
+|2    |54-57|Node.js & Express      |
+|3    |58-61|Advanced Patterns      |
+|4    |62-65|Security Focus         |
 
 -----
 
@@ -60,59 +60,59 @@
 
 -----
 
-## Phase 1: JavaScript Fundamentals (Weeks 23-30)
+## Phase 1: JavaScript Fundamentals (Weeks 46-53)
 
 **Primary Resource:** Eloquent JavaScript (project-driven, matches your learning style)
 
 |Week|Chapters|Focus                                  |
 |----|--------|---------------------------------------|
-|23  |1-3     |Values, program structure, functions   |
-|24  |4-5     |Data structures, higher-order functions|
-|25  |6-7     |Objects, project: robot                |
-|26  |8-9     |Bugs/errors, regex                     |
-|27  |10-11   |Modules, async programming             |
-|28  |12-13   |Project: programming language          |
-|29  |14-15   |Browser, DOM                           |
-|30  |16-18   |Events, project: platform game         |
+|46  |1-3     |Values, program structure, functions   |
+|47  |4-5     |Data structures, higher-order functions|
+|48  |6-7     |Objects, project: robot                |
+|49  |8-9     |Bugs/errors, regex                     |
+|50  |10-11   |Modules, async programming             |
+|51  |12-13   |Project: programming language          |
+|52  |14-15   |Browser, DOM                           |
+|53  |16-18   |Events, project: platform game         |
 
 **Supplement:** JavaScript30 challenges alongside reading
 
 -----
 
-## Phase 2: Node.js & Express (Weeks 31-34)
+## Phase 2: Node.js & Express (Weeks 54-57)
 
 **Primary Resource:** Web Development with Node and Express (Brown) - Already owned
 
 |Week|Focus                             |
 |----|----------------------------------|
-|31  |Node.js basics, npm, modules      |
-|32  |Express setup, routing, middleware|
-|33  |Templating, forms, sessions       |
-|34  |REST APIs, authentication         |
+|54  |Node.js basics, npm, modules      |
+|55  |Express setup, routing, middleware|
+|56  |Templating, forms, sessions       |
+|57  |REST APIs, authentication         |
 
 **Reference:** Node.js: The Comprehensive Guide (Springer)
 
 -----
 
-## Phase 3: Advanced Patterns (Weeks 35-38)
+## Phase 3: Advanced Patterns (Weeks 58-61)
 
 |Week|Focus                |Resource                         |
 |----|---------------------|---------------------------------|
-|35  |Event loop deep dive |YDKJS 1st ed: Async & Performance|
-|36  |Design patterns      |Node.js Design Patterns          |
-|37  |Streams, buffers     |Springer book chapters           |
-|38  |Testing (Jest, Mocha)|Hands-on                         |
+|58  |Event loop deep dive |YDKJS 1st ed: Async & Performance|
+|59  |Design patterns      |Node.js Design Patterns          |
+|60  |Streams, buffers     |Springer book chapters           |
+|61  |Testing (Jest, Mocha)|Hands-on                         |
 
 -----
 
-## Phase 4: Security Focus (Weeks 39-42)
+## Phase 4: Security Focus (Weeks 62-65)
 
 |Week|Focus                                 |
 |----|--------------------------------------|
-|39  |Node.js security best practices       |
-|40  |OWASP Node.js cheatsheet              |
-|41  |Prototype pollution, injection attacks|
-|42  |Security code review practice         |
+|62  |Node.js security best practices       |
+|63  |OWASP Node.js cheatsheet              |
+|64  |Prototype pollution, injection attacks|
+|65  |Security code review practice         |
 
 -----
 
