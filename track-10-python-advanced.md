@@ -1,4 +1,4 @@
-# Track 9: Python Advanced
+# Track 10: Python Advanced
 
 **Duration:** 8 weeks | **Total:** ~144 hours
 **Weekly breakdown:** 8 hrs weekdays + 5 hrs Sat + 5 hrs Sun
@@ -27,8 +27,8 @@ You can do effective AI red teaming without these, but they're valuable for:
 
 |Phase|Weeks|Focus             |Key Resource                          |
 |-----|-----|------------------|--------------------------------------|
-|3    |26-29|Code Quality / AST|DeepSource AST tutorial + Ruff - FREE |
-|4    |30-33|Async Python      |Beazley workshops + Fowler book - ~$50|
+|3    |27-30|Code Quality / AST|DeepSource AST tutorial + Ruff - FREE |
+|4    |31-34|Async Python      |Beazley workshops + Fowler book - ~$50|
 
 -----
 
@@ -53,7 +53,7 @@ You can do effective AI red teaming without these, but they're valuable for:
 
 -----
 
-## Phase 3: Code Quality / AST (Weeks 26-29)
+## Phase 3: Code Quality / AST (Weeks 27-30)
 
 **Resources:**
 
@@ -63,16 +63,16 @@ You can do effective AI red teaming without these, but they're valuable for:
 
 |Week|Focus                             |
 |----|----------------------------------|
-|26  |Python AST basics, ast module     |
-|27  |Writing custom lint rules with AST|
-|28  |Semgrep rule authoring            |
-|29  |Integration with CI/CD            |
+|27  |Python AST basics, ast module     |
+|28  |Writing custom lint rules with AST|
+|29  |Semgrep rule authoring            |
+|30  |Integration with CI/CD            |
 
 **Project:** Custom linter rule (Semgrep or AST-based)
 
 -----
 
-## Phase 4: Async Python (Weeks 30-33)
+## Phase 4: Async Python (Weeks 31-34)
 
 **Resources:**
 
@@ -81,10 +81,10 @@ You can do effective AI red teaming without these, but they're valuable for:
 
 |Week|Focus                               |
 |----|------------------------------------|
-|30  |asyncio fundamentals, event loop    |
-|31  |async/await patterns, tasks         |
-|32  |Concurrent HTTP requests, aiohttp   |
-|33  |Building async tools, error handling|
+|31  |asyncio fundamentals, event loop    |
+|32  |async/await patterns, tasks         |
+|33  |Concurrent HTTP requests, aiohttp   |
+|34  |Building async tools, error handling|
 
 **Project:** Async Security Scanner Orchestrator
 

@@ -1,4 +1,4 @@
-# Track 4: Python Core
+# Track 8: Python Core
 
 **Duration:** 10 weeks | **Total:** ~180 hours
 **Weekly breakdown:** 8 hrs weekdays + 5 hrs Sat + 5 hrs Sun
@@ -22,9 +22,9 @@ These skills are essential for AI red teaming:
 
 |Phase|Weeks|Focus                |Key Resource                                                 |
 |-----|-----|---------------------|-------------------------------------------------------------|
-|1A   |8-11 |TDD Methodology      |Test-Driven Development with Python, 3rd ed (Percival) - FREE|
-|1B   |12-13|pytest Mastery       |Python Testing with pytest, 2nd ed (Okken) - ~$40            |
-|2    |14-17|Architecture Patterns|Architecture Patterns with Python - FREE                     |
+|1A   |9-12 |TDD Methodology      |Test-Driven Development with Python, 3rd ed (Percival) - FREE|
+|1B   |13-14|pytest Mastery       |Python Testing with pytest, 2nd ed (Okken) - ~$40            |
+|2    |15-18|Architecture Patterns|Architecture Patterns with Python - FREE                     |
 
 -----
 
@@ -49,16 +49,16 @@ These skills are essential for AI red teaming:
 
 -----
 
-## Phase 1A: TDD Methodology (Weeks 5-8)
+## Phase 1A: TDD Methodology (Weeks 9-12)
 
 **Resource:** Test-Driven Development with Python, 3rd ed (Percival) - FREE at obeythetestinggoat.com
 
 |Week|Chapters|Focus                                 |
 |----|--------|--------------------------------------|
-|5   |1-4     |Red-Green-Refactor, first Django tests|
-|6   |5-8     |Forms, input validation, database     |
-|7   |9-12    |Refactoring, deployment               |
-|8   |13-16   |Advanced testing patterns             |
+|9   |1-4     |Red-Green-Refactor, first Django tests|
+|10  |5-8     |Forms, input validation, database     |
+|11  |9-12    |Refactoring, deployment               |
+|12  |13-16   |Advanced testing patterns             |
 
 **Book Structure:**
 - **Part I (Ch 1-8):** The Basics of TDD and Django
@@ -74,27 +74,27 @@ These skills are essential for AI red teaming:
 
 -----
 
-## Phase 1B: pytest Mastery (Weeks 9-10)
+## Phase 1B: pytest Mastery (Weeks 13-14)
 
 **Resource:** Python Testing with pytest, 2nd ed (Okken) - ~$40
 
 |Week|Chapters|Focus                    |
 |----|--------|-------------------------|
-|9   |1-6     |Fixtures, parametrization|
-|10  |7-12    |Plugins, CI integration  |
+|13  |1-6     |Fixtures, parametrization|
+|14  |7-12    |Plugins, CI integration  |
 
 -----
 
-## Phase 2: Architecture Patterns (Weeks 11-14)
+## Phase 2: Architecture Patterns (Weeks 15-18)
 
 **Resource:** Architecture Patterns with Python (Cosmic Python) - FREE at cosmicpython.com
 
 |Week|Chapters|Focus                              |
 |----|--------|-----------------------------------|
-|11  |1-3     |Domain modeling, repository pattern|
-|12  |4-6     |Service layer, unit of work        |
-|13  |7-9     |Aggregates, events                 |
-|14  |10-12   |CQRS, event-driven architecture    |
+|15  |1-3     |Domain modeling, repository pattern|
+|16  |4-6     |Service layer, unit of work        |
+|17  |7-9     |Aggregates, events                 |
+|18  |10-12   |CQRS, event-driven architecture    |
 
 **Project:** Security Findings Aggregator (Semgrep, Dependabot integration)
 

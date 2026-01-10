@@ -1,4 +1,4 @@
-# Track 3.5: LLM Security Primer
+# Track 7: LLM Security Primer
 
 **Duration:** 1 week | **Total:** 18 hours
 **Weekly breakdown:** 8 hrs weekdays + 5 hrs Sat + 5 hrs Sun

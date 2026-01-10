@@ -1,4 +1,4 @@
-# Track 10: Go/Golang
+# Track 11: Go/Golang
 
 **Duration:** 12 weeks | **Hours/week:** 18 | **Priority:** LOWER
 **Goal:** Build security tools
@@ -15,9 +15,9 @@
 
 |Phase|Weeks|Focus          |
 |-----|-----|---------------|
-|1    |34-37|Go Fundamentals|
-|2    |38-41|Web Development|
-|3    |42-45|Security Tools |
+|1    |35-38|Go Fundamentals|
+|2    |39-42|Web Development|
+|3    |43-46|Security Tools |
 
 -----
 
@@ -41,46 +41,46 @@
 
 -----
 
-## Phase 1: Go Fundamentals (Weeks 34-37)
+## Phase 1: Go Fundamentals (Weeks 35-38)
 
 **Primary Resource:** Learning Go, 2nd ed (Bodner)
 
 |Week|Focus                            |
 |----|---------------------------------|
-|34  |Syntax, types, control flow      |
-|35  |Functions, structs, interfaces   |
-|36  |Concurrency: goroutines, channels|
-|37  |Error handling, testing          |
+|35  |Syntax, types, control flow      |
+|36  |Functions, structs, interfaces   |
+|37  |Concurrency: goroutines, channels|
+|38  |Error handling, testing          |
 
 **Supplement:** Go by Example + Exercism for practice
 
 -----
 
-## Phase 2: Web Development (Weeks 38-41)
+## Phase 2: Web Development (Weeks 39-42)
 
 **Primary Resource:** Let's Go (Alex Edwards) - ~$40
 
 |Week|Focus                   |
 |----|------------------------|
-|38  |HTTP basics, routing    |
-|39  |Templates, middleware   |
-|40  |Database integration    |
-|41  |Authentication, sessions|
+|39  |HTTP basics, routing    |
+|40  |Templates, middleware   |
+|41  |Database integration    |
+|42  |Authentication, sessions|
 
 **Project:** Simple web application
 
 -----
 
-## Phase 3: Security Tools (Weeks 42-45)
+## Phase 3: Security Tools (Weeks 43-46)
 
 **Primary Resource:** Black Hat Go - Already owned
 
 |Week|Focus                      |
 |----|---------------------------|
-|42  |TCP/UDP clients and servers|
-|43  |HTTP clients, scraping     |
-|44  |DNS, SMB, databases        |
-|45  |Packet processing, plugins |
+|43  |TCP/UDP clients and servers|
+|44  |HTTP clients, scraping     |
+|45  |DNS, SMB, databases        |
+|46  |Packet processing, plugins |
 
 -----
 

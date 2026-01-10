@@ -21,14 +21,15 @@
 |3    |Claude Code           |4     |1 week  |<track-03-claude-code.md>       |
 |4    |Git Mastery           |5     |1 week  |<track-04-git-mastery.md>       |
 |5    |Go Crash Course       |6     |1 week  |<track-05-go-crash-course.md>   |
-|6    |LLM Security Primer   |7     |1 week  |<track-06-llm-security-primer.md>|
-|7    |Python Core           |8-17  |10 weeks|<track-07-python-core.md>       |
-|8    |AI/ML Security        |18-25 |8 weeks |<track-08-ai-ml-security.md>    |
-|9    |Python Advanced       |26-33 |8 weeks |<track-09-python-advanced.md>   |
-|10   |Go Deep Dive          |34-45 |12 weeks|<track-10-golang.md>            |
-|11   |JavaScript/Node.js    |46-65 |20 weeks|<track-11-javascript.md>        |
+|6    |Docker Essentials     |7     |1 week  |<track-06-docker-essentials.md> |
+|7    |LLM Security Primer   |8     |1 week  |<track-07-llm-security-primer.md>|
+|8    |Python Core           |9-18  |10 weeks|<track-08-python-core.md>       |
+|9    |AI/ML Security        |19-26 |8 weeks |<track-09-ai-ml-security.md>    |
+|10   |Python Advanced       |27-34 |8 weeks |<track-10-python-advanced.md>   |
+|11   |Go Deep Dive          |35-46 |12 weeks|<track-11-golang.md>            |
+|12   |JavaScript/Node.js    |47-66 |20 weeks|<track-12-javascript.md>        |
 
-**Total Duration:** 65 weeks (~15 months)
+**Total Duration:** 66 weeks (~15 months)
 
 -----
 
@@ -51,6 +52,8 @@ Reading → Note-Taking → Claude Code
                               ↓
                     Go Crash Course ← For immediate work needs
                               ↓
+                    Docker Essentials ← Infrastructure for all projects
+                              ↓
                     LLM Security Primer (Wilson book) ← Security context
                               ↓
                     Python Core (TDD, pytest, architecture)
@@ -64,18 +67,24 @@ Reading → Note-Taking → Claude Code
                     JavaScript/Node.js ← Web security context
 ```
 
-**Why Git comes before Go:**
-- Git is foundational for ALL development work (including Go contributions at work)
-- Concentrated 18-hour week for better retention vs scattered learning
-- Needed immediately for managing code, contributing to repos, collaborating
+**Why Git and Docker early:**
+- **Git** is foundational for ALL development work (code management, collaboration)
+- **Docker** enables containerized dev environments, ML deployment, security labs
+- Both learned early = available for all future tracks (Python, ML, security testing)
+- Concentrated 18-hour weeks for better retention vs scattered learning
+
+**Why Docker comes after Go (Week 7):**
+- Go needed immediately for work (Week 6)
+- Docker learned once = used throughout Python (Weeks 9-18), ML (Weeks 19-26), and all projects
+- Week 7 is perfect timing: after immediate work tools, before Python projects begin
 
 **Why Python is split:**
-- **Python Core** (Track 7): TDD + pytest + architecture — essential for reviewing ML code
-- **Python Advanced** (Track 9): AST + async — asyncio immediately useful for concurrent attack tools
+- **Python Core** (Track 8): TDD + pytest + architecture — essential for reviewing ML code
+- **Python Advanced** (Track 10): AST + async — asyncio immediately useful for concurrent attack tools
 
 **Why Go comes before JavaScript:**
 - You use Go daily at work starting Week 6
-- Go Deep Dive (Week 34) reinforces crash course while skills are still fresh (28-week gap vs 48-week gap)
+- Go Deep Dive (Week 35) reinforces crash course while skills are still fresh (29-week gap vs 41-week gap)
 - JavaScript is valuable but less urgent for AI red teaming role
 
 -----

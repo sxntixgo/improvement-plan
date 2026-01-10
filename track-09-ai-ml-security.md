@@ -1,4 +1,4 @@
-# Track 5: AI/ML Security
+# Track 9: AI/ML Security
 
 **Duration:** 8 weeks | **Hours/week:** 18 | **Priority:** HIGH
 **Goal:** AI red teaming skills
@@ -15,17 +15,17 @@
 
 |Phase|Weeks|Focus                           |AI Engineering Chapters|
 |-----|-----|--------------------------------|-----------------------|
-|1    |18-19|ML Fundamentals                 |Ch 2: Foundation Models|
-|2    |20-21|HTB Academy Labs                |-                      |
-|3    |22-23|RAG/Agents + Supply Chain       |Ch 6: RAG/Agents       |
-|4    |24-25|Evaluation + Advanced CTF       |Ch 3-5, 7, 9-10        |
+|1    |19-20|ML Fundamentals                 |Ch 2: Foundation Models|
+|2    |21-22|HTB Academy Labs                |-                      |
+|3    |23-24|RAG/Agents + Supply Chain       |Ch 6: RAG/Agents       |
+|4    |25-26|Evaluation + Advanced CTF       |Ch 3-5, 7, 9-10        |
 
 **AI Engineering Book Usage (7 chapters, ~18 hours):**
-- **Week 19:** Ch 2 (Foundation Models) - 4 hrs
-- **Week 22:** Ch 6 (RAG and Agents) - 4 hrs ⭐ CRITICAL
-- **Week 23:** Ch 5 (Prompt Engineering) - 4 hrs ⭐ CRITICAL for attacks
-- **Week 23:** Ch 7, 9, 10 (Production systems) - 6 hrs
-- **Week 24:** Ch 3-4 (Evaluation) - 4 hrs
+- **Week 20:** Ch 2 (Foundation Models) - 4 hrs
+- **Week 23:** Ch 6 (RAG and Agents) - 4 hrs ⭐ CRITICAL
+- **Week 24:** Ch 5 (Prompt Engineering) - 4 hrs ⭐ CRITICAL for attacks
+- **Week 24:** Ch 7, 9, 10 (Production systems) - 6 hrs
+- **Week 25:** Ch 3-4 (Evaluation) - 4 hrs
 
 -----
 
@@ -63,20 +63,20 @@
 
 -----
 
-## Phase 1: ML Fundamentals (Weeks 18-19)
+## Phase 1: ML Fundamentals (Weeks 19-20)
 
 |Week|Focus                                |Resource               |Hours|
 |----|-------------------------------------|-----------------------|-----|
-|18  |Deep Learning basics, neural networks|Fast.ai Part 1         |18   |
-|19  |NLP, transformers, foundation models |Hugging Face NLP + **AI Engineering Ch 2**|18|
+|19  |Deep Learning basics, neural networks|Fast.ai Part 1         |18   |
+|20  |NLP, transformers, foundation models |Hugging Face NLP + **AI Engineering Ch 2**|18|
 
-**Week 18: Deep Learning Foundations**
+**Week 19: Deep Learning Foundations**
 - Fast.ai Practical Deep Learning Part 1
 - Focus on neural networks, training, evaluation
 - Hands-on: Build and train simple models
 - Understand loss functions, optimization
 
-**Week 19: Foundation Models Deep Dive**
+**Week 20: Foundation Models Deep Dive**
 
 **Monday-Wednesday (6 hours): Hugging Face NLP Course**
 - Transformers architecture
@@ -105,7 +105,7 @@ You already understand LLM vulnerabilities from Track 6 (Wilson book). Now you'r
 
 -----
 
-## Phase 2: HTB Academy AI Red Teamer Labs (Weeks 20-21)
+## Phase 2: HTB Academy AI Red Teamer Labs (Weeks 21-22)
 
 **Primary Resource:** HTB Academy AI Red Teamer Path (~$20/month subscription)
 
@@ -131,14 +131,14 @@ You already understand LLM vulnerabilities from Track 6 (Wilson book). Now you'r
 
 -----
 
-## Phase 3: Production LLM Apps & Supply Chain (Weeks 22-23)
+## Phase 3: Production LLM Apps & Supply Chain (Weeks 23-24)
 
 |Week|Focus                                 |Resource                    |
 |----|--------------------------------------|----------------------------|
-|22  |**RAG & Agent security**              |**AI Engineering Ch 6 + LangChain hands-on**|
-|23  |**ML Supply Chain security**          |**Hands-on exploits + verification tools**|
+|23  |**RAG & Agent security**              |**AI Engineering Ch 6 + LangChain hands-on**|
+|24  |**ML Supply Chain security**          |**Hands-on exploits + verification tools**|
 
-**Week 22: RAG & Agent Security - CRITICAL** ⭐
+**Week 23: RAG & Agent Security - CRITICAL** ⭐
 
 **Why This Week:**
 - Most production LLM apps use RAG (Retrieval Augmented Generation)
@@ -216,7 +216,7 @@ Now that you understand RAG/agent architecture, build one:
 - 5+ attack vectors documented
 - Defensive recommendations
 
-**Week 23: ML Supply Chain & Production Security**
+**Week 24: ML Supply Chain & Production Security**
 
 **Why This Week:**
 - Most AI security incidents involve supply chain compromises (not novel attacks)
@@ -321,14 +321,14 @@ This is THE chapter for AI red teaming - covers prompt injection attacks!
 
 -----
 
-## Phase 4: Evaluation & Advanced CTF (Weeks 24-25)
+## Phase 4: Evaluation & Advanced CTF (Weeks 25-26)
 
 |Week|Focus                               |Resource             |
 |----|------------------------------------|--------------------|
-|24  |Evaluation methodology + HackAPrompt|AI Engineering Ch 3-4 + hackaprompt.com|
-|25  |Crucible CTF + Final Assessment     |crucible.dreadnode.io + Portfolio project|
+|25  |Evaluation methodology + HackAPrompt|AI Engineering Ch 3-4 + hackaprompt.com|
+|26  |Crucible CTF + Final Assessment     |crucible.dreadnode.io + Portfolio project|
 
-**Week 24: Evaluation & HackAPrompt**
+**Week 25: Evaluation & HackAPrompt**
 
 **Monday-Tuesday (4 hours): AI Engineering Ch 3-4 - Evaluation** ⭐
 
@@ -364,7 +364,7 @@ This is THE chapter for AI red teaming - covers prompt injection attacks!
 - **Build evaluation pipeline:** Automated testing of your solutions
 - Blog post: "My HackAPrompt Solutions + Success Rate Analysis"
 
-**Week 25: Advanced CTF & Final Portfolio**
+**Week 26: Advanced CTF & Final Portfolio**
 
 **Monday-Wednesday (6 hours): Crucible CTF**
 - [Crucible by Dreadnode](https://crucible.dreadnode.io/)
