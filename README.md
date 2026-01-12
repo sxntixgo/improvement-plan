@@ -267,7 +267,7 @@ Passive content for commutes, lunch breaks, or when you need a break from active
 |----------------------------------|-----------------------------------------|--------|
 |**Revolución Scaloni**            |Underdog story, finishing strong         |⭐⭐⭐|
 |**Measure What Matters** (Doerr)  |OKRs, measuring progress to completion   |⭐⭐   |
-|**Buffett** (biography)           |Long-term thinking, compounding knowledge|⭐⭐   |
+|**The Snowball** (Buffett bio)    |Long-term thinking, compounding knowledge|⭐⭐   |
 
 **Best for this phase:** Revolución Scaloni (Argentina's journey = your journey)
 
@@ -302,6 +302,10 @@ Passive content for commutes, lunch breaks, or when you need a break from active
 - **Weeks 9-11:** Legacy (~200 pages)
 - **Weeks 12-14:** Leaders Eat Last (~350 pages)
 - **Continue pattern through 66 weeks...**
+
+**Note on longer books:**
+- **The Snowball** (~900 pages) - Plan 4-6 weeks at bedtime pace
+- **This Time Is Different** (~400 pages) - Plan 3-4 weeks
 
 **You own ~25 books = can easily cover 1-2 per month throughout your journey**
 
