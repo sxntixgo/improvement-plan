@@ -27,7 +27,7 @@
 |9    |AI/ML Security        |19-26 |8 weeks |<track-09-ai-ml-security.md>    |
 |10   |Python Advanced       |27-34 |8 weeks |<track-10-python-advanced.md>   |
 |11   |Go Deep Dive          |35-46 |12 weeks|<track-11-golang.md>            |
-|12   |JavaScript/Node.js    |47-66 |20 weeks|<track-12-javascript.md>        |
+|12   |JavaScript/TypeScript |47-66 |20 weeks|<track-12-javascript.md>        |
 
 **Total Duration:** 66 weeks (~15 months)
 
@@ -64,7 +64,7 @@ Reading → Note-Taking → Claude Code
                               ↓
                     Go Deep Dive ← Build on crash course (only 28 weeks later)
                               ↓
-                    JavaScript/Node.js ← Web security context
+                    JavaScript/TypeScript ← Web security context
 ```
 
 **Why Git and Docker early:**
@@ -85,7 +85,8 @@ Reading → Note-Taking → Claude Code
 **Why Go comes before JavaScript:**
 - You use Go daily at work starting Week 6
 - Go Deep Dive (Week 35) reinforces crash course while skills are still fresh (29-week gap vs 41-week gap)
-- JavaScript is valuable but less urgent for AI red teaming role
+- JavaScript/TypeScript is valuable but less urgent for AI red teaming role
+- TypeScript used in modern LLM tools (LangChain, Vercel AI SDK)
 
 -----
 
