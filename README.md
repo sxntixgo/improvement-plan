@@ -207,3 +207,127 @@ Passive content for commutes, lunch breaks, or when you need a break from active
 |---------------------------------|-----------------------------------|--------------|
 |How AI Works (Kneusel)           |Conceptual AI primer, no heavy math|Before Track 5|
 |AI Snake Oil (Narayanan & Kapoor)|Critical thinking about AI claims  |Anytime       |
+
+-----
+
+## Leadership Reading List (Bedtime Reading)
+
+**Purpose:** Non-technical books for mental break and building discipline/leadership mindset
+
+**Books you already own, organized by learning phase:**
+
+### Phase 1: Foundation (Weeks 1-10)
+**Goal:** Build systems, establish standards, create habits
+
+|Book                            |Why Read Now                                  |Priority|
+|--------------------------------|----------------------------------------------|--------|
+|**The Score Takes Care of Itself** (Walsh)|Building your 66-week system, standards of performance|⭐⭐⭐|
+|**Atomic Habits** (Clear)       |Establishing daily learning habits            |⭐⭐⭐|
+|**High Output Management** (Grove)|Managing your learning as a high-output system|⭐⭐   |
+
+**Start with:** The Score Takes Care of Itself (perfect for Week 1!)
+
+### Phase 2: Long-Term Discipline (Weeks 11-20)
+**Goal:** Stay disciplined through longer tracks (Python Core)
+
+|Book                    |Why Read Now                                    |Priority|
+|------------------------|------------------------------------------------|--------|
+|**Legacy** (All Blacks) |Long-term excellence, "sweep the sheds" mindset |⭐⭐⭐|
+|**Leaders Eat Last** (Sinek)|Service mindset, taking care of yourself       |⭐⭐   |
+|**High Performance**    |Sustaining high performance over time           |⭐⭐   |
+
+**Best for this phase:** Legacy (discipline + humility for the long journey)
+
+### Phase 3: Pushing Through (Weeks 21-30)
+**Goal:** AI/ML Security + Python Advanced (harder material)
+
+|Book                         |Why Read Now                                |Priority|
+|-----------------------------|---------------------------------------------|--------|
+|**The Captains Class** (Walker)|Leadership from any position, perseverance |⭐⭐⭐|
+|**Start With Why** (Sinek)   |Remember your purpose when it gets hard     |⭐⭐   |
+|**Elon Musk**                |Pushing boundaries, learning hard things    |⭐⭐   |
+
+**Best for this phase:** The Captains Class (championship teams = long-term commitment)
+
+### Phase 4: Mastery (Weeks 31-46)
+**Goal:** Go Deep Dive (becoming expert)
+
+|Book                                 |Why Read Now                          |Priority|
+|-------------------------------------|--------------------------------------|--------|
+|**Paradigma Guardiola**              |Mastery, systems thinking (Spanish)   |⭐⭐⭐|
+|**Marcelo Bielsa: Los 11 Caminos al Gol**|Tactics, depth, mastery (Spanish)|⭐⭐   |
+|**Creativity Inc** (Catmull)         |Building something excellent          |⭐⭐   |
+
+**Best for this phase:** Paradigma Guardiola (systems mastery like your Go mastery)
+
+### Phase 5: Finishing Strong (Weeks 47-66)
+**Goal:** JavaScript/TypeScript (final 20 weeks)
+
+|Book                              |Why Read Now                             |Priority|
+|----------------------------------|-----------------------------------------|--------|
+|**Revolución Scaloni**            |Underdog story, finishing strong         |⭐⭐⭐|
+|**Measure What Matters** (Doerr)  |OKRs, measuring progress to completion   |⭐⭐   |
+|**Buffett** (biography)           |Long-term thinking, compounding knowledge|⭐⭐   |
+
+**Best for this phase:** Revolución Scaloni (Argentina's journey = your journey)
+
+### Anytime Reads (No Specific Phase)
+
+|Book                              |Why                                      |
+|----------------------------------|-----------------------------------------|
+|**Six Thinking Hats** (de Bono)   |Problem-solving frameworks (short)       |
+|**The 21 Irrefutable Laws**       |General leadership principles            |
+|**The Southwest Airlines Way**    |Culture, consistency                     |
+|**The Firm**                      |Business strategy                        |
+|**The Founders Dilemma**          |Startup lessons                          |
+|**The Startup Game**              |Entrepreneurship                         |
+|**Get Scalable**                  |Scaling systems                          |
+|**The Design of Extraordinary Things**|Design thinking                     |
+
+### Save for Later (After 66 Weeks)
+|Book                        |Why Wait                                |
+|----------------------------|----------------------------------------|
+|**This Time Is Different**  |Economics/finance, heavy reading        |
+
+-----
+
+## Recommended Reading Pace
+
+**Typical bedtime reading:** 20-30 pages per night = finish 250-page book in ~2 weeks
+
+**Suggested schedule:**
+- **Weeks 1-2:** The Score Takes Care of Itself (~250 pages)
+- **Weeks 3-5:** Atomic Habits (~300 pages)
+- **Weeks 6-8:** High Output Management (~250 pages)
+- **Weeks 9-11:** Legacy (~200 pages)
+- **Weeks 12-14:** Leaders Eat Last (~350 pages)
+- **Continue pattern through 66 weeks...**
+
+**You own ~25 books = can easily cover 1-2 per month throughout your journey**
+
+-----
+
+## Why This Reading List Works
+
+**Mental Break:**
+- No coding/technical content before bed
+- Inspires without stressing
+- Better sleep vs reading technical docs
+
+**Leadership Development:**
+- Build discipline for 66-week journey
+- Learn from sports (your interest)
+- Develop leadership mindset for senior roles
+
+**Phase Alignment:**
+- Books match what you're going through
+- "The Score Takes Care of Itself" perfect for Week 1 (building systems)
+- "Legacy" perfect for Weeks 11+ (long-term excellence)
+- "Revolución Scaloni" perfect for final stretch (underdog finishing strong)
+
+**Spanish Books:**
+- Paradigma Guardiola, Revolución Scaloni, Bielsa book
+- Great if Spanish is your language
+- Sports leadership from your culture
+
+-----
