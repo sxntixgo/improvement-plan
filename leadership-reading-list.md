@@ -73,12 +73,12 @@
 ### Priority 3: Perseverance & Growth (Weeks 26-40)
 **Focus:** Pushing through harder material (Python Advanced, early Go Deep Dive)
 
-- [x] **Marcelo Bielsa: Los 11 Caminos al Gol** (Spanish) - STARTED
+- [x] **Marcelo Bielsa: Los 11 Caminos al Gol** - STARTED
   - Tactics, depth, obsessive mastery
   - Continue reading during Go Deep Dive
   - Key lesson: Preparation and tactical depth
 
-- [ ] **Paradigma Guardiola** (Pep Guardiola - Spanish)
+- [ ] **Paradigma Guardiola** (Pep Guardiola)
   - Mastery, systems thinking, evolution
   - ~300 pages | Est. 3 weeks
   - **PERFECT for Go Deep Dive mastery phase**
@@ -101,7 +101,7 @@
 ### Priority 4: Finishing Strong (Weeks 41-66)
 **Focus:** Final stretch through Go Deep Dive and JavaScript/TypeScript
 
-- [ ] **Revolución Scaloni** (Argentina's World Cup - Spanish)
+- [ ] **Revolución Scaloni** (Argentina's World Cup)
   - Underdog story, team building, finishing strong
   - ~250 pages | Est. 2 weeks
   - **SAVE FOR JAVASCRIPT/TYPESCRIPT FINAL WEEKS**
@@ -263,14 +263,14 @@ Final 26 weeks (Weeks 41-66) through Go Deep Dive and JavaScript/TypeScript:
 
 ## Quick Reference: Books by Type
 
-### Sports Leadership (Your Strength - 7 books)
+### Sports Leadership (7 books)
 - [x] The Southwest Airlines Way
 - [ ] The Score Takes Care of Itself (Bill Walsh - 49ers)
 - [ ] Legacy (All Blacks rugby)
 - [x] The Captains Class (championship teams)
-- [x] Marcelo Bielsa: Los 11 Caminos al Gol (Spanish)
-- [ ] Paradigma Guardiola (Pep Guardiola - Spanish)
-- [ ] Revolución Scaloni (Argentina World Cup - Spanish)
+- [x] Marcelo Bielsa: Los 11 Caminos al Gol
+- [ ] Paradigma Guardiola (Pep Guardiola)
+- [ ] Revolución Scaloni (Argentina World Cup)
 
 ### Systems & Execution (5 books)
 - [ ] Atomic Habits
@@ -297,11 +297,6 @@ Final 26 weeks (Weeks 41-66) through Go Deep Dive and JavaScript/TypeScript:
 - [ ] The Startup Game
 - [ ] Six Thinking Hats
 - [ ] This Time Is Different (after 66 weeks)
-
-### Spanish Books (3 books - Great if Spanish is your language!)
-- [x] Marcelo Bielsa: Los 11 Caminos al Gol
-- [ ] Paradigma Guardiola
-- [ ] Revolución Scaloni
 
 -----
 
@@ -363,6 +358,5 @@ Final 26 weeks (Weeks 41-66) through Go Deep Dive and JavaScript/TypeScript:
 
 **Notes:**
 - User prefers sports leadership (has 7 sports books)
-- Has 3 Spanish books (native language?)
 - Already engaged (started 3 books)
 - Ready for systematic approach

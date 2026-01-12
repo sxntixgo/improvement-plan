@@ -237,7 +237,7 @@ Passive content for commutes, lunch breaks, or when you need a break from active
 
 **Reading Pace:** 20-30 pages/night = 1 book every 2-4 weeks = 20-25 books over 66 weeks
 
-**Your Strength:** 7 sports leadership books (including 3 in Spanish!)
+**Your Strength:** 7 sports leadership books
 
 **Full details, checklists, and reading order:** See [leadership-reading-list.md](leadership-reading-list.md)
 
