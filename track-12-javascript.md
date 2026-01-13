@@ -50,6 +50,14 @@
 |Web Development with Node and Express (Brown)|2    |Project-driven|
 |You Don't Know JS 1st edition (Simpson)      |1,4  |Deep dive     |
 |Node.js: The Comprehensive Guide (Springer)  |2-4  |Reference     |
+|JavaScript and jQuery (Jon Duckett)          |1    |Visual supplement (OPTIONAL)|
+
+**Note on Duckett book:**
+- **Use ONLY as visual supplement** during Weeks 47-50 (JavaScript basics)
+- ✅ Good for: Visual explanations, diagrams, color-coded examples when Eloquent JavaScript is confusing
+- ❌ Skip entirely: All jQuery sections (second half of book) - jQuery is outdated
+- ⚠️ Don't replace: This is NOT a substitute for Eloquent JavaScript
+- **How to use:** If a concept (closures, prototypes, etc.) isn't clicking in Eloquent JavaScript, flip to Duckett for the visual explanation, then return to Eloquent JavaScript
 
 ### Free Resources (TypeScript)
 
