@@ -19,14 +19,17 @@
 |1    |Reading Skills        |1     |1 week  |<track-01-reading-skills.md>    |
 |2    |Note-Taking (Obsidian)|2-3   |2 weeks |<track-02-note-taking.md>       |
 |3    |Claude Code           |4     |1 week  |<track-03-claude-code.md>       |
-|3.5  |LLM Security Primer   |5     |1 week  |<track-3.5-llm-security-primer.md>|
-|4    |Python Core           |6-15  |10 weeks|<track-04-python-core.md>       |
-|5    |AI/ML Security        |16-23 |8 weeks |<track-05-ai-ml-security.md>    |
-|6    |JavaScript/Node.js    |24-43 |20 weeks|<track-06-javascript.md>        |
-|7    |Python Advanced       |44-51 |8 weeks |<track-07-python-advanced.md>   |
-|8    |Go/Golang             |52-63 |12 weeks|<track-08-golang.md>            |
+|4    |Git Mastery           |5     |1 week  |<track-04-git-mastery.md>       |
+|5    |Go Crash Course       |6     |1 week  |<track-05-go-crash-course.md>   |
+|6    |Docker Essentials     |7     |1 week  |<track-06-docker-essentials.md> |
+|7    |LLM Security Primer   |8     |1 week  |<track-07-llm-security-primer.md>|
+|8    |Python Core           |9-18  |10 weeks|<track-08-python-core.md>       |
+|9    |AI/ML Security        |19-26 |8 weeks |<track-09-ai-ml-security.md>    |
+|10   |Python Advanced       |27-34 |8 weeks |<track-10-python-advanced.md>   |
+|11   |Go Deep Dive          |35-46 |12 weeks|<track-11-golang.md>            |
+|12   |JavaScript/TypeScript |47-66 |20 weeks|<track-12-javascript.md>        |
 
-**Total Duration:** 63 weeks (~15 months)
+**Total Duration:** 66 weeks (~15 months)
 
 -----
 
@@ -45,23 +48,45 @@
 ```
 Reading → Note-Taking → Claude Code
                               ↓
+                    Git Mastery ← Foundation for all development
+                              ↓
+                    Go Crash Course ← For immediate work needs
+                              ↓
+                    Docker Essentials ← Infrastructure for all projects
+                              ↓
                     LLM Security Primer (Wilson book) ← Security context
                               ↓
                     Python Core (TDD, pytest, architecture)
                               ↓
                     AI/ML Security (HTB Academy + hands-on) ← requires Python
                               ↓
-                    JavaScript/Node.js
+                    Python Advanced (AST, async) ← asyncio for concurrent attacks
                               ↓
-                    Python Advanced (AST, async) ← nice-to-have, not blocking
+                    Go Deep Dive ← Build on crash course (only 28 weeks later)
                               ↓
-                    Go/Golang
+                    JavaScript/TypeScript ← Web security context
 ```
 
-**Why Python is split:**
+**Why Git and Docker early:**
+- **Git** is foundational for ALL development work (code management, collaboration)
+- **Docker** enables containerized dev environments, ML deployment, security labs
+- Both learned early = available for all future tracks (Python, ML, security testing)
+- Concentrated 18-hour weeks for better retention vs scattered learning
 
-- **Python Core** (Track 4): TDD + pytest + architecture — essential for reviewing ML code
-- **Python Advanced** (Track 7): AST + async — useful but not required for AI red teaming
+**Why Docker comes after Go (Week 7):**
+- Go needed immediately for work (Week 6)
+- Docker learned once = used throughout Python (Weeks 9-18), ML (Weeks 19-26), and all projects
+- Week 7 is perfect timing: after immediate work tools, before Python projects begin
+
+**Why Python is split:**
+- **Python Core** (Track 8): TDD + pytest + architecture — essential for reviewing ML code
+- **Python Advanced** (Track 10): AST + async — asyncio immediately useful for concurrent attack tools
+
+**Why Go comes before JavaScript:**
+- You use Go daily at work starting Week 6
+- Go Deep Dive (Week 35) reinforces crash course while skills are still fresh (29-week gap vs 41-week gap)
+- JavaScript/TypeScript is valuable but less urgent for AI red teaming role
+- TypeScript used in modern LLM tools (LangChain, Vercel AI SDK)
 
 -----
 
@@ -73,7 +98,9 @@ Reading → Note-Taking → Claude Code
 |Speed Reading (Knight)                        |Reading Skills|
 |How to Take Smart Notes (Ahrens)              |Note-Taking   |
 |Building a Second Brain (Forte)               |Note-Taking   |
+|Pro Git (Chacon & Straub)                     |Git Mastery   |
 |Developer's Playbook for LLM Security (Wilson)|AI/ML         |
+|Test-Driven Development with Python (Percival)|Python Core   |
 |Node.js: The Comprehensive Guide (Springer)   |JavaScript    |
 |Web Development with Node and Express (Brown) |JavaScript    |
 |You Don't Know JS 1st edition (Simpson)       |JavaScript    |
@@ -167,3 +194,38 @@ Passive content for commutes, lunch breaks, or when you need a break from active
 |---------------------------------|-----------------------------------|--------------|
 |How AI Works (Kneusel)           |Conceptual AI primer, no heavy math|Before Track 5|
 |AI Snake Oil (Narayanan & Kapoor)|Critical thinking about AI claims  |Anytime       |
+
+-----
+
+## Leadership Reading List (Bedtime Reading)
+
+**27 leadership/business books you already own** - organized for bedtime reading throughout your 66-week journey.
+
+**See detailed reading list with checklists:** [leadership-reading-list.md](leadership-reading-list.md)
+
+### Quick Summary
+
+**Books Currently Reading:**
+- [x] The Southwest Airlines Way
+- [x] The Captains Class
+- [x] Marcelo Bielsa: Los 11 Caminos al Gol
+
+**Next Book to Start:**
+- [ ] **The Score Takes Care of Itself** (Bill Walsh) - Perfect for Week 1!
+
+### Reading by Phase
+
+|Phase|Weeks|Priority Books|
+|-----|-----|--------------|
+|Foundation|1-10|Score Takes Care of Itself, Atomic Habits, High Output Management|
+|Discipline|11-25|Legacy, Captains Class, Leaders Eat Last, Start With Why|
+|Mastery|26-40|Bielsa, Paradigma Guardiola, Creativity Inc, Elon Musk|
+|Finishing|41-66|Revolución Scaloni, Measure What Matters, The Snowball|
+
+**Reading Pace:** 20-30 pages/night = 1 book every 2-4 weeks = 20-25 books over 66 weeks
+
+**Your Strength:** 7 sports leadership books
+
+**Full details, checklists, and reading order:** See [leadership-reading-list.md](leadership-reading-list.md)
+
+-----
