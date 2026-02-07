@@ -122,6 +122,58 @@ These skills are essential for AI red teaming:
 
 -----
 
+## Claude Code Integration
+
+Use Claude Code as a **continuous accelerator** throughout Python Core:
+
+**Learning Python as a Go Developer:**
+```
+EXPLAIN: "I'm a Go developer learning Python. Explain how Python's
+error handling (try/except) compares to Go's (err != nil) pattern.
+Show equivalent code side by side."
+
+REVIEW: "Review this Python code from a Go developer's perspective.
+Flag any 'Go-isms' I'm bringing over that aren't Pythonic."
+```
+
+**TDD with Claude Code:**
+```
+TEST: "Generate pytest test cases for this function using
+table-driven tests (similar to Go's table-driven test pattern).
+Include edge cases and error conditions."
+
+CREATE: "Write a Python function that [requirement] using TDD.
+Start with the test, then implement. Use pytest fixtures."
+```
+
+**Architecture with Claude Code:**
+```
+EXPLAIN: "Compare Go's interface pattern (implicit satisfaction)
+with Python's Protocol/ABC pattern. When should I use each?"
+
+REFACTOR: "Refactor this Python code to use the repository pattern.
+I'm familiar with this from Go — show me the Pythonic equivalent."
+```
+
+**CLAUDE.md for Python Projects:**
+Create a CLAUDE.md for each Python project:
+```markdown
+# Python Project
+
+# Build & Test
+- `pytest` to run all tests
+- `pytest --cov` for coverage
+- `ruff check .` for linting
+- `mypy .` for type checking
+
+# Code Style
+- Type hints on all public functions
+- pytest fixtures over setUp/tearDown
+- Repository pattern for data access
+```
+
+-----
+
 ## Checkpoint
 
 Before moving to AI/ML Security, you should be able to:

@@ -1,4 +1,4 @@
-# Track 4: Go Crash Course (For Work)
+# Track 5: Go Crash Course (For Work)
 
 **Duration:** 1 week | **Total:** 18 hours
 **Weekly breakdown:** 8 hrs weekdays + 5 hrs Sat + 5 hrs Sun
@@ -20,7 +20,26 @@ Your company uses Go for development. This crash course gets you **functional at
 - Make small changes and fixes
 - Use Claude Code effectively with Go
 - Collaborate with Go developers
-- **NOT become a Go expert** (that's Week 53-64)
+- **NOT become a Go expert** (that's Track 11: Go Deep Dive, Weeks 35-48)
+
+-----
+
+## Self-Assessment: Skip What You Already Know
+
+You've been using Go at work and building tools with Claude Code. Don't waste time on material you've already internalized.
+
+```
+Before starting, can you:
+- [ ] Read and understand Go code at work?
+- [ ] Write basic Go functions with error handling?
+- [ ] Use goroutines and channels?
+- [ ] Write Go tests?
+- [ ] Navigate your company's Go codebase?
+
+If you checked 4-5: Skip to Saturday (build a tool + contribute to company codebase).
+If you checked 2-3: Do the abbreviated version (skip Tour of Go, focus on gaps).
+If you checked 0-1: Follow the full crash course below.
+```
 
 -----
 
@@ -188,7 +207,7 @@ if err != nil {
 - [Go Documentation](https://go.dev/doc/) - Official docs
 - [Effective Go](https://go.dev/doc/effective_go) - Best practices
 
-### For Later (Weeks 34-45: Go Deep Dive)
+### For Later (Track 11: Go Deep Dive, Weeks 35-48)
 - Learning Go, 2nd ed (Bodner) - $50
 - Let's Go (Alex Edwards) - $40
 - Black Hat Go - Already owned!
@@ -276,9 +295,10 @@ Follow our company's style guide"
 - Keep using Go at work daily
 - You'll be functional in Go by now
 
-**Weeks 35-46: Go Deep Dive**
+**Weeks 35-48: Go Deep Dive + Go for AI Security**
 - Come back for advanced Go
 - Security tool building (Black Hat Go)
+- Build Go-based LLM security tools
 - Become Go expert
 
 -----
@@ -303,7 +323,7 @@ Follow our company's style guide"
 - You're NOT trying to master Go this week
 - Goal: Be productive at work while continuing AI red teaming path
 - Claude Code is your safety net
-- Weeks 34-45 is when you'll become a Go expert
+- Weeks 35-48 is when you'll become a Go expert
 
 -----
 
@@ -312,7 +332,7 @@ Follow our company's style guide"
 **This week: $0**
 - All resources are free
 - Git already learned in Track 4 (Week 5)
-- Go books purchased later (Weeks 34-45)
+- Go books purchased later (Track 11, Weeks 35-48)
 
 -----
 

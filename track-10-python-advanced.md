@@ -7,7 +7,7 @@
 
 -----
 
-## Why After JavaScript?
+## Why After AI/ML Security?
 
 These are advanced topics that build on your core Python skills but aren't required for ML/AI work:
 

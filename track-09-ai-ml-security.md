@@ -97,7 +97,7 @@
 - Document foundation model concepts in Obsidian
 
 **Why This Matters:**
-You already understand LLM vulnerabilities from Track 6 (Wilson book). Now you're building the ML foundation to:
+You already understand LLM vulnerabilities from Track 7: LLM Security Primer (Wilson book). Now you're building the ML foundation to:
 - Understand HOW models work internally (better attacks)
 - Know training data vulnerabilities
 - Exploit model architecture weaknesses
@@ -116,7 +116,7 @@ You already understand LLM vulnerabilities from Track 6 (Wilson book). Now you'r
 
 **What You'll Do:**
 - Complete hands-on labs attacking real AI systems
-- Build prompt injection exploits (using Python from Track 4!)
+- Build prompt injection exploits (using Python from Track 8!)
 - Test jailbreaking techniques against LLMs
 - Execute model privacy attacks
 - Document findings in Obsidian
@@ -226,7 +226,7 @@ Now that you understand RAG/agent architecture, build one:
 **Monday-Tuesday (6 hours): ML Supply Chain Attacks - Hands-On**
 
 **Theory (1 hour):**
-Review supply chain concepts from Track 6 (Wilson book Chapter 8):
+Review supply chain concepts from Track 7: LLM Security Primer (Wilson book Chapter 8):
 - Malicious models and backdoored weights
 - Pickle exploits in PyTorch/TensorFlow
 - Poisoned datasets
@@ -373,7 +373,33 @@ This is THE chapter for AI red teaming - covers prompt injection attacks!
 - Document novel attack vectors discovered
 - Compare with other solutions
 
-**Thursday-Weekend (12 hours): Final Red Team Assessment Portfolio Piece**
+**Thursday-Friday (4 hours): Claude Code SDK - Automated Red Team Agent**
+
+**Why This Matters:**
+You've been building tools with Claude Code throughout this plan. Now combine that experience with your AI security skills to build an automated red team agent using the Claude Agent SDK.
+
+**Build: Automated Prompt Injection Testing Agent**
+1. **Agent Design (1 hour)**
+   - Define agent that systematically tests LLM defenses
+   - Input: target API endpoint + test case library
+   - Output: structured report with findings and severity
+
+2. **Implementation (2 hours)**
+   - Use Claude Agent SDK to build the agent
+   - Agent chains multiple attack patterns automatically
+   - Logs all attempts and responses
+   - Classifies results (success/partial/blocked)
+
+3. **Testing & Documentation (1 hour)**
+   - Test against your own vulnerable RAG app (from Week 23)
+   - Document the agent architecture
+   - Add to GitHub portfolio
+
+**Deliverable:** Working automated red team agent (unique portfolio piece combining Claude Code + AI security)
+
+-----
+
+**Weekend (8 hours): Final Red Team Assessment Portfolio Piece**
 
 Build comprehensive AI security assessment:
 
@@ -423,7 +449,7 @@ Build comprehensive AI security assessment:
 
 ## Key Concepts
 
-**From Track 6 (Wilson book - Theory):**
+**From Track 7: LLM Security Primer (Wilson book - Theory):**
 - Prompt Injection (direct vs indirect)
 - Jailbreaking techniques
 - OWASP LLM Top 10
@@ -518,4 +544,5 @@ Before moving to Python Advanced (Track 10), you should be able to:
 - Crucible CTF writeups (GitHub)
 - **Professional red team assessment report (portfolio)**
 - 5+ blog posts on AI security topics
+- **Automated red team agent built with Claude Code SDK (GitHub)**
 - GitHub repo with security tools and PoCs
