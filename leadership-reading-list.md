@@ -2,7 +2,7 @@
 
 **Purpose:** Non-technical books for mental break and building discipline/leadership mindset throughout your 66-week learning journey
 
-**Total Books:** 27 books you already own
+**Total Books:** 28 books (27 you already own + 1 to purchase ~$25)
 **Reading Pace:** 20-30 pages per night = 1 book every 2-4 weeks
 **Goal:** Read 1-2 leadership books per month alongside technical learning
 
@@ -130,6 +130,12 @@
 ### Anytime Reads (No Specific Phase)
 **Read these whenever you need the specific lesson or have a gap between priority books**
 
+- [ ] **A Philosophy of Software Design** (John Ousterhout)
+  - Managing complexity, deep vs shallow modules, strategic programming
+  - ~180 pages | Est. 1-2 weeks
+  - **SHORT - Great complement to Track 8 Go architecture**
+  - Key lesson: Complexity is the root of all software problems; design it out
+
 - [ ] **Six Thinking Hats** (Edward de Bono)
   - Problem-solving frameworks
   - ~200 pages | Est. 1-2 weeks
@@ -159,7 +165,7 @@
   - Design thinking, user experience
   - Est. 2-3 weeks
 
-**Anytime Total:** 7 books
+**Anytime Total:** 8 books
 
 -----
 
@@ -272,10 +278,11 @@ Final 26 weeks (Weeks 41-66) through Go Deep Dive and JavaScript/TypeScript:
 - [ ] Paradigma Guardiola (Pep Guardiola)
 - [ ] Revolución Scaloni (Argentina World Cup)
 
-### Systems & Execution (5 books)
+### Systems & Execution (6 books)
 - [ ] Atomic Habits
 - [ ] High Output Management (Andy Grove)
 - [ ] Measure What Matters (OKRs)
+- [ ] A Philosophy of Software Design (Ousterhout)
 - [ ] Get Scalable
 - [ ] The Design of Extraordinary Things
 
