@@ -1,7 +1,7 @@
-# Track 11: Go Security Tools + Go for AI Security
+# Track 11: Go Security Tools (Black Hat Go)
 
-**Duration:** 6 weeks | **Hours/week:** 18 | **Priority:** HIGH
-**Goal:** Build security tools in Go and apply Go to AI red teaming
+**Duration:** 4 weeks | **Hours/week:** 18 | **Priority:** HIGH
+**Goal:** Build offensive security tools in Go
 
 **Weekly Schedule:**
 
@@ -11,23 +11,17 @@
 
 -----
 
-## Why Now?
+## Why Right After Track 8?
 
-You have deep Go foundations from Track 8 (Weeks 9-20) and AI/ML security knowledge from Track 10 (Weeks 29-36). Now you combine them:
+You just spent 12 weeks mastering Go foundations and software architecture. Your Go skills are at their peak. This is the ideal time to apply them to security:
 
 - **Black Hat Go** teaches offensive security tool building in Go
-- **Go for AI Security** applies Go's concurrency model to LLM security testing
-- You've been writing Go at work for 30+ weeks — this track pushes you into expert territory
 - Go's goroutines are perfect for concurrent security scanning
+- Clean architecture patterns from Track 8 apply directly to tool design
+- You'll produce 4 portfolio-ready security tools in 4 weeks
+- No context-switching — 16+ continuous weeks of Go mastery (Tracks 8 + 11)
 
------
-
-## Phase Overview
-
-|Phase|Weeks|Focus                    |Key Resource                 |
-|-----|-----|-------------------------|-----------------------------|
-|1    |37-40|Security Tools (Black Hat Go)|Black Hat Go - Already owned|
-|2    |41-42|Go for AI Security       |Hands-on projects            |
+**Note:** Go for AI Security (LLM testing tools in Go) comes later as a capstone in Track 10, after you've learned AI/ML security concepts.
 
 -----
 
@@ -40,11 +34,20 @@ You have deep Go foundations from Track 8 (Weeks 9-20) and AI/ML security knowle
 
 -----
 
-## Phase 1: Security Tools with Black Hat Go (Weeks 37-40)
+## Phase Overview
+
+|Week|Focus                      |Key Output                          |
+|----|---------------------------|------------------------------------|
+|21  |TCP/UDP clients and servers|Concurrent port scanner             |
+|22  |HTTP clients, scraping     |Web reconnaissance tool             |
+|23  |DNS, SMB, databases        |DNS enumeration tool                |
+|24  |Packet processing, plugins |Custom security scanner (capstone)  |
+
+-----
 
 **Primary Resource:** Black Hat Go (Steele et al.) - Already owned
 
-### Week 37: TCP/UDP Networking
+### Week 21: TCP/UDP Networking
 
 |Day|Hours|Focus|
 |---|-----|-----|
@@ -59,7 +62,7 @@ You have deep Go foundations from Track 8 (Weeks 9-20) and AI/ML security knowle
 - Banner grabbing and service detection
 - Timeout handling with context
 
-### Week 38: HTTP Clients & Scraping
+### Week 22: HTTP Clients & Scraping
 
 |Day|Hours|Focus|
 |---|-----|-----|
@@ -68,7 +71,7 @@ You have deep Go foundations from Track 8 (Weeks 9-20) and AI/ML security knowle
 |Fri|2|Proxy awareness, TLS configuration|
 |Weekend|6|Project: Web reconnaissance tool|
 
-### Week 39: DNS, SMB, and Databases
+### Week 23: DNS, SMB, and Databases
 
 |Day|Hours|Focus|
 |---|-----|-----|
@@ -77,99 +80,23 @@ You have deep Go foundations from Track 8 (Weeks 9-20) and AI/ML security knowle
 |Fri|2|Practice: Combine tools into recon pipeline|
 |Weekend|6|Project: DNS enumeration tool with concurrent lookups|
 
-### Week 40: Packet Processing & Plugins
+### Week 24: Packet Processing & Plugins (Capstone)
 
 |Day|Hours|Focus|
 |---|-----|-----|
 |Mon-Tue|6|Raw packet capture and injection|
 |Wed-Thu|4|Plugin architecture with Go plugins|
 |Fri|2|Build extensible scanner framework|
-|Weekend|6|Project: Custom security scanner with plugin support|
+|Weekend|6|Capstone: Custom security scanner with plugin support|
 
------
-
-## Phase 2: Go for AI Security (Weeks 41-42)
-
-**Why This Phase:**
-No one else is building AI security tools in Go. Most AI red teamers only use Python. Your Go skills give you a unique edge:
-- Go's concurrency model is ideal for parallel prompt injection testing
-- Go binaries are easy to distribute (no Python environment needed)
-- Go's performance handles high-volume API testing efficiently
-- gRPC security testing is natural in Go (gRPC is a Go-native technology)
-
-### Week 41: Go-Based LLM Security Testing Tools
-
-|Day|Hours|Focus|
-|---|-----|-----|
-|Mon-Tue|6|Build concurrent prompt injection tester|
-|Wed-Thu|4|Go HTTP client for LLM API interaction (OpenAI, Anthropic APIs)|
-|Fri|2|gRPC security testing patterns|
-|Weekend|6|Project: LLM API fuzzer with goroutines|
-
-**Concurrent Prompt Injection Tester:**
-```go
-type TestCase struct {
-    Name     string
-    Prompt   string
-    Expected string // "blocked", "leaked", "safe"
-}
-
-type Result struct {
-    TestCase TestCase
-    Response string
-    Status   string // "pass", "fail", "error"
-    Duration time.Duration
-}
-
-func RunTests(ctx context.Context, cases []TestCase, workers int) []Result {
-    // Fan-out: distribute test cases to worker goroutines
-    // Fan-in: collect results through channel
-    // Context: cancel all workers on timeout
-}
-```
-
-**Key Features:**
-- Fan-out/fan-in pattern for parallel testing
-- Rate limiting to avoid API throttling
-- Structured logging of all attempts
-- JSON/CSV report generation
-- Configurable test case library (YAML/JSON input)
-
-### Week 42: Capstone — Go AI Red Team Tool
-
-|Day|Hours|Focus|
-|---|-----|-----|
-|Mon-Tue|6|Design and build complete AI red team CLI tool|
-|Wed-Thu|4|Add reporting, configuration, Docker packaging|
-|Fri|2|Write comprehensive tests|
-|Weekend|6|Polish, document, blog post|
-
-**Capstone: Go AI Red Team CLI Tool**
-
-Combines everything from this track into a single portfolio piece:
-
-**Features:**
-- Concurrent LLM endpoint testing (goroutines)
-- Multiple attack pattern libraries (prompt injection, jailbreak, exfiltration)
-- Configurable via YAML
-- Structured JSON reports with severity ratings
-- Rate limiting and retry logic
-- Docker multi-stage build
+**Capstone Project:**
+Build an extensible Go security scanner that combines techniques from Weeks 21-23:
+- Plugin architecture for different scan types
+- Concurrent scanning with goroutine worker pools
 - Clean architecture (from Track 8)
-
-**Tech Stack:**
-- cobra for CLI framework
-- slog for structured logging
-- testify for testing
-- net/http for API interaction
-- goroutines + channels for concurrency
-- CLAUDE.md for project configuration
-
-**Deliverable:**
-- GitHub repo with full codebase
-- Blog post: "Building an AI Red Team Tool in Go"
-- Docker image published
-- Unique portfolio piece (AI security + Go = rare combination)
+- Structured JSON output
+- Docker multi-stage build
+- CLAUDE.md for the project
 
 -----
 
@@ -177,12 +104,10 @@ Combines everything from this track into a single portfolio piece:
 
 |Project                    |Week |Output                          |Share             |
 |---------------------------|-----|--------------------------------|------------------|
-|Concurrent port scanner    |37   |CLI tool with goroutines        |GitHub            |
-|Web reconnaissance tool    |38   |HTTP recon tool                 |GitHub            |
-|DNS enumeration tool       |39   |Concurrent DNS scanner          |GitHub            |
-|Custom security scanner    |40   |Plugin-based scanner framework  |GitHub + Blog post|
-|LLM API fuzzer             |41   |Concurrent prompt injection tester|GitHub           |
-|Go AI Red Team CLI Tool    |42   |Complete AI security tool       |GitHub + Blog post|
+|Concurrent port scanner    |21   |CLI tool with goroutines        |GitHub            |
+|Web reconnaissance tool    |22   |HTTP recon tool                 |GitHub            |
+|DNS enumeration tool       |23   |Concurrent DNS scanner          |GitHub            |
+|Custom security scanner    |24   |Plugin-based scanner framework  |GitHub + Blog post|
 
 -----
 
@@ -201,16 +126,6 @@ REVIEW: "Review this Go security tool for:
 - Input validation"
 ```
 
-**AI Security Tool Development:**
-```
-CREATE: "Build a Go CLI tool that tests LLM API endpoints for prompt
-injection vulnerabilities. Use goroutines for parallel testing.
-Accept test cases from a YAML config file."
-
-TEST: "Generate table-driven tests for this LLM testing function.
-Include: timeout cases, rate limit cases, malformed response cases."
-```
-
 -----
 
 ## Go Code Review Checklist (Security Focus)
@@ -226,7 +141,12 @@ Include: timeout cases, rate limit cases, malformed response cases."
 - [ ] SQL injection (parameterized queries)?
 - [ ] Command injection (proper escaping)?
 - [ ] TLS verification not disabled?
-- [ ] Rate limiting on API calls?
+
+-----
+
+## What's Next?
+
+After this track, you'll learn Python (Track 9) and AI/ML Security (Track 10). At the end of Track 10, you'll come back to Go to build **AI security tools in Go** — combining your Go mastery with your new AI red teaming skills. That capstone produces a unique portfolio piece: an LLM security testing CLI tool built with goroutines.
 
 -----
 
@@ -236,8 +156,7 @@ After completing this track, you should be able to:
 
 - [ ] Build offensive security tools in Go (Black Hat Go patterns)
 - [ ] Use Go's concurrency model for parallel security scanning
-- [ ] Build Go tools that test LLM APIs for vulnerabilities
+- [ ] Build TCP/UDP, HTTP, and DNS security tools
 - [ ] Create distributable security tool binaries
 - [ ] Apply clean architecture to security tool projects
 - [ ] Review Go security code for common vulnerabilities
-- [ ] Combine Go expertise with AI red teaming knowledge (unique skill)

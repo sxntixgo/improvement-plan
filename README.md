@@ -35,10 +35,10 @@ The restructured plan teaches architecture in Go first (Track 8), then transfers
 |6    |Docker Essentials                         |7     |1 week   |[track-06-docker-essentials.md](track-06-docker-essentials.md)|
 |7    |LLM Security Primer                       |8     |1 week   |[track-07-llm-security-primer.md](track-07-llm-security-primer.md)|
 |8    |Go Foundations + Software Architecture    |9-20  |12 weeks |[track-08-go-foundations-architecture.md](track-08-go-foundations-architecture.md)|
-|9    |Python Core + TDD                         |21-28 |8 weeks  |[track-09-python-core.md](track-09-python-core.md)|
+|11   |Go Security Tools (Black Hat Go)          |21-24 |4 weeks  |[track-11-go-security.md](track-11-go-security.md)|
 |     |**Break**                                 |      |1 week   |                                           |
-|10   |AI/ML Security                            |29-36 |8 weeks  |[track-10-ai-ml-security.md](track-10-ai-ml-security.md)|
-|11   |Go Security Tools + Go for AI Security    |37-42 |6 weeks  |[track-11-go-security.md](track-11-go-security.md)|
+|9    |Python Core + TDD                         |25-32 |8 weeks  |[track-09-python-core.md](track-09-python-core.md)|
+|10   |AI/ML Security + Go for AI Security       |33-42 |10 weeks |[track-10-ai-ml-security.md](track-10-ai-ml-security.md)|
 |     |**Break**                                 |      |1 week   |                                           |
 |12   |Python Advanced                           |43-48 |6 weeks  |[track-12-python-advanced.md](track-12-python-advanced.md)|
 |13   |JavaScript/TypeScript                     |49-62 |14 weeks |[track-13-javascript.md](track-13-javascript.md)|
@@ -50,7 +50,7 @@ The restructured plan teaches architecture in Go first (Track 8), then transfers
 
 |Language          |Tracks                              |Total Weeks|
 |------------------|------------------------------------|-----------|
-|Go                |5 (crash) + 8 (foundations/arch) + 11 (security)|19 weeks|
+|Go                |5 (crash) + 8 (foundations/arch) + 11 (Black Hat Go) + 10 capstone (2 wks)|19 weeks|
 |Python            |9 (core + TDD) + 12 (advanced)     |14 weeks   |
 |JavaScript/TypeScript|13                               |14 weeks   |
 
@@ -71,7 +71,7 @@ The restructured plan teaches architecture in Go first (Track 8), then transfers
 1. **Go is front-loaded as the work language.** Track 8 is 12 weeks of Go + software architecture, taught together.
 2. **Software architecture is learned in Go, not just Python.** Design patterns, clean architecture, and project structure are all practiced in Go first.
 3. **Python Core compressed from 10 to 8 weeks.** Architecture concepts already learned in Go transfer directly; Python track focuses on Python-specific idioms, TDD, and pytest.
-4. **Go Security replaces old Go Deep Dive (6 weeks).** Includes Black Hat Go material plus Go for AI Security, a unique combination for the AI red teaming role.
+4. **Go Security (Track 11) placed right after Go Foundations (Track 8).** 16+ continuous weeks of Go mastery with no context-switching. Black Hat Go builds directly on Track 8 architecture skills. Go for AI Security (2 weeks) is a capstone in Track 10, after learning AI security concepts.
 5. **Python Advanced compressed from 8 to 6 weeks.** Go concurrency knowledge (goroutines, channels) transfers to Python asyncio, reducing ramp-up time.
 6. **JS/TS compressed from 20 to 14 weeks.** Focused on what matters for web security context.
 7. **Claude Code track updated for advanced users.** Assumes existing experience; focuses on power-user workflows and automation.
@@ -97,11 +97,11 @@ Reading → Note-Taking → Claude Code Advanced
                               ↓
                     Go Foundations + Software Architecture ← Work language + architecture
                               ↓
+                    Go Security Tools (Black Hat Go) ← 16+ weeks continuous Go mastery
+                              ↓
                     Python Core + TDD ← Architecture transfers from Go
                               ↓
-                    AI/ML Security (HTB Academy + hands-on) ← requires Python
-                              ↓
-                    Go Security Tools + Go for AI Security ← Black Hat Go + AI tools
+                    AI/ML Security + Go for AI Security ← requires Python; Go capstone at end
                               ↓
                     Python Advanced (AST, async) ← Go concurrency knowledge transfers
                               ↓
@@ -112,7 +112,8 @@ Reading → Note-Taking → Claude Code Advanced
 - You write Go at work every day. Learning architecture in Go means immediate application on the job.
 - Go Crash Course (Track 5) fills gaps in your existing knowledge with a self-assessment gate.
 - Go Foundations + Software Architecture (Track 8) is the longest single track at 12 weeks because it carries dual purpose: deep Go mastery and software design principles.
-- Go Security Tools (Track 11) comes after AI/ML Security so you can build Go-based AI security tools, a rare and valuable skill set.
+- Go Security Tools (Track 11) is placed **immediately after Track 8** to maintain momentum — 16+ continuous weeks of Go with no context-switching.
+- Go for AI Security (Track 10 capstone, Weeks 41-42) comes after AI/ML Security so you can build Go-based AI security tools, a rare and valuable skill set.
 
 **Why architecture is taught in Go, then transferred:**
 - Learning architecture in your strongest language reduces cognitive load.

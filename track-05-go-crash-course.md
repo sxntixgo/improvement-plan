@@ -20,7 +20,7 @@ Your company uses Go for development. This crash course gets you **functional at
 - Make small changes and fixes
 - Use Claude Code effectively with Go
 - Collaborate with Go developers
-- **NOT become a Go expert** (that's Track 11: Go Deep Dive, Weeks 35-48)
+- **NOT become a Go expert** (that's Track 8: Go Foundations, Weeks 9-20)
 
 -----
 
@@ -207,7 +207,7 @@ if err != nil {
 - [Go Documentation](https://go.dev/doc/) - Official docs
 - [Effective Go](https://go.dev/doc/effective_go) - Best practices
 
-### For Later (Track 11: Go Deep Dive, Weeks 35-48)
+### For Track 8 (Go Foundations + Architecture, Weeks 9-20)
 - Learning Go, 2nd ed (Bodner) - $50
 - Let's Go (Alex Edwards) - $40
 - Black Hat Go - Already owned!
@@ -290,16 +290,18 @@ Follow our company's style guide"
 - Build security context for Python learning
 - Continue using Go at work (with Claude Code assistance)
 
-**Weeks 9-18: Python Core**
+**Weeks 9-20: Go Foundations + Software Architecture (Track 8)**
+- Deep Go language mastery
+- Clean architecture, DDD, testing
+- Immediately applicable to your daily work
+
+**Weeks 21-24: Go Security Tools (Track 11)**
+- Black Hat Go — build offensive security tools
+- 16+ continuous weeks of Go mastery!
+
+**Weeks 25-32: Python Core (Track 9)**
 - Focus on AI red teaming skills
 - Keep using Go at work daily
-- You'll be functional in Go by now
-
-**Weeks 35-48: Go Deep Dive + Go for AI Security**
-- Come back for advanced Go
-- Security tool building (Black Hat Go)
-- Build Go-based LLM security tools
-- Become Go expert
 
 -----
 
@@ -323,7 +325,7 @@ Follow our company's style guide"
 - You're NOT trying to master Go this week
 - Goal: Be productive at work while continuing AI red teaming path
 - Claude Code is your safety net
-- Weeks 35-48 is when you'll become a Go expert
+- Weeks 9-24 is when you'll become a Go expert
 
 -----
 
@@ -332,7 +334,7 @@ Follow our company's style guide"
 **This week: $0**
 - All resources are free
 - Git already learned in Track 4 (Week 5)
-- Go books purchased later (Track 11, Weeks 35-48)
+- Go books purchased for Track 8 (Week 9)
 
 -----
 

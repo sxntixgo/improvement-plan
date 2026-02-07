@@ -314,14 +314,14 @@ All 10 recommendations have been implemented in the restructured plan:
 ```
 Weeks 1-8:    Foundation (Tracks 1-7)
 Weeks 9-20:   Go Foundations + Software Architecture (Track 8) ← NEW
-Weeks 21-28:  Python Core + TDD (Track 9, compressed)
-Week 28.5:    Break week
-Weeks 29-36:  AI/ML Security (Track 10)
-Weeks 37-42:  Go Security Tools + Go for AI Security (Track 11)
-Week 42.5:    Break week
+Weeks 21-24:  Go Security Tools / Black Hat Go (Track 11) ← right after Track 8
+              Break week
+Weeks 25-32:  Python Core + TDD (Track 9, compressed)
+Weeks 33-42:  AI/ML Security + Go for AI Security capstone (Track 10)
+              Break week
 Weeks 43-48:  Python Advanced (Track 12, compressed)
 Weeks 49-62:  JavaScript/TypeScript (Track 13, compressed)
-Week 56.5:    Break week (mid-JS/TS)
+              Break week (mid-JS/TS)
 ```
 
 **New allocation:**

@@ -24,9 +24,9 @@ You already know software architecture from Track 8 (clean architecture, DDD, re
 
 |Phase|Weeks|Focus                |Key Resource                                                 |
 |-----|-----|---------------------|-------------------------------------------------------------|
-|1A   |21-24|TDD Methodology      |Test-Driven Development with Python, 3rd ed (Percival) - FREE|
-|1B   |25-26|pytest Mastery       |Python Testing with pytest, 2nd ed (Okken) - ~$40            |
-|2    |27-28|Architecture in Python|Architecture Patterns with Python - FREE (accelerated)       |
+|1A   |25-28|TDD Methodology      |Test-Driven Development with Python, 3rd ed (Percival) - FREE|
+|1B   |29-30|pytest Mastery       |Python Testing with pytest, 2nd ed (Okken) - ~$40            |
+|2    |31-32|Architecture in Python|Architecture Patterns with Python - FREE (accelerated)       |
 
 -----
 
@@ -51,16 +51,16 @@ You already know software architecture from Track 8 (clean architecture, DDD, re
 
 -----
 
-## Phase 1A: TDD Methodology (Weeks 21-24)
+## Phase 1A: TDD Methodology (Weeks 25-28)
 
 **Resource:** Test-Driven Development with Python, 3rd ed (Percival) - FREE at obeythetestinggoat.com
 
 |Week|Chapters|Focus                                 |
 |----|--------|--------------------------------------|
-|21  |1-4     |Red-Green-Refactor, first Django tests|
-|22  |5-8     |Forms, input validation, database     |
-|23  |9-12    |Refactoring, deployment               |
-|24  |13-16   |Advanced testing patterns             |
+|25  |1-4     |Red-Green-Refactor, first Django tests|
+|26  |5-8     |Forms, input validation, database     |
+|27  |9-12    |Refactoring, deployment               |
+|28  |13-16   |Advanced testing patterns             |
 
 **Book Structure:**
 - **Part I (Ch 1-8):** The Basics of TDD and Django
@@ -76,18 +76,18 @@ You already know software architecture from Track 8 (clean architecture, DDD, re
 
 -----
 
-## Phase 1B: pytest Mastery (Weeks 25-26)
+## Phase 1B: pytest Mastery (Weeks 29-30)
 
 **Resource:** Python Testing with pytest, 2nd ed (Okken) - ~$40
 
 |Week|Chapters|Focus                    |
 |----|--------|-------------------------|
-|25  |1-6     |Fixtures, parametrization|
-|26  |7-12    |Plugins, CI integration  |
+|29  |1-6     |Fixtures, parametrization|
+|30  |7-12    |Plugins, CI integration  |
 
 -----
 
-## Phase 2: Architecture Patterns in Python (Weeks 27-28)
+## Phase 2: Architecture Patterns in Python (Weeks 31-32)
 
 **Resource:** Architecture Patterns with Python (Cosmic Python) - FREE at cosmicpython.com
 
@@ -96,8 +96,8 @@ You already learned architecture in Go (Track 8). This phase focuses on the **Py
 
 |Week|Chapters|Focus                                     |
 |----|--------|------------------------------------------|
-|27  |1-6     |Domain modeling, repository, service layer — the Pythonic way|
-|28  |7-12    |Events, CQRS — advanced patterns (skim what you know, deep dive on new concepts)|
+|31  |1-6     |Domain modeling, repository, service layer — the Pythonic way|
+|32  |7-12    |Events, CQRS — advanced patterns (skim what you know, deep dive on new concepts)|
 
 **Key Mappings from Go → Python:**
 - Go interfaces → Python Protocols / ABCs

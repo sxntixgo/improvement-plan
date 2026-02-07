@@ -1,6 +1,6 @@
 # Track 10: AI/ML Security
 
-**Duration:** 8 weeks | **Hours/week:** 18 | **Priority:** HIGH
+**Duration:** 10 weeks | **Hours/week:** 18 | **Priority:** HIGH
 **Goal:** AI red teaming skills
 
 **Weekly Schedule:**
@@ -15,17 +15,18 @@
 
 |Phase|Weeks|Focus                           |AI Engineering Chapters|
 |-----|-----|--------------------------------|-----------------------|
-|1    |29-30|ML Fundamentals                 |Ch 2: Foundation Models|
-|2    |31-32|HTB Academy Labs                |-                      |
-|3    |33-34|RAG/Agents + Supply Chain       |Ch 6: RAG/Agents       |
-|4    |35-36|Evaluation + Advanced CTF       |Ch 3-5, 7, 9-10        |
+|1    |33-34|ML Fundamentals                 |Ch 2: Foundation Models|
+|2    |35-36|HTB Academy Labs                |-                      |
+|3    |37-38|RAG/Agents + Supply Chain       |Ch 6: RAG/Agents       |
+|4    |39-40|Evaluation + Advanced CTF       |Ch 3-5, 7, 9-10        |
+|5    |41-42|Go for AI Security (Capstone)   |Hands-on projects      |
 
 **AI Engineering Book Usage (7 chapters, ~18 hours):**
-- **Week 30:** Ch 2 (Foundation Models) - 4 hrs
-- **Week 33:** Ch 6 (RAG and Agents) - 4 hrs CRITICAL
-- **Week 34:** Ch 5 (Prompt Engineering) - 4 hrs CRITICAL for attacks
-- **Week 34:** Ch 7, 9, 10 (Production systems) - 6 hrs
-- **Week 35:** Ch 3-4 (Evaluation) - 4 hrs
+- **Week 34:** Ch 2 (Foundation Models) - 4 hrs
+- **Week 37:** Ch 6 (RAG and Agents) - 4 hrs CRITICAL
+- **Week 38:** Ch 5 (Prompt Engineering) - 4 hrs CRITICAL for attacks
+- **Week 38:** Ch 7, 9, 10 (Production systems) - 6 hrs
+- **Week 39:** Ch 3-4 (Evaluation) - 4 hrs
 
 -----
 
@@ -63,20 +64,20 @@
 
 -----
 
-## Phase 1: ML Fundamentals (Weeks 29-30)
+## Phase 1: ML Fundamentals (Weeks 33-34)
 
 |Week|Focus                                |Resource               |Hours|
 |----|-------------------------------------|-----------------------|-----|
-|29  |Deep Learning basics, neural networks|Fast.ai Part 1         |18   |
-|30  |NLP, transformers, foundation models |Hugging Face NLP + **AI Engineering Ch 2**|18|
+|33  |Deep Learning basics, neural networks|Fast.ai Part 1         |18   |
+|34  |NLP, transformers, foundation models |Hugging Face NLP + **AI Engineering Ch 2**|18|
 
-**Week 29: Deep Learning Foundations**
+**Week 33: Deep Learning Foundations**
 - Fast.ai Practical Deep Learning Part 1
 - Focus on neural networks, training, evaluation
 - Hands-on: Build and train simple models
 - Understand loss functions, optimization
 
-**Week 30: Foundation Models Deep Dive**
+**Week 34: Foundation Models Deep Dive**
 
 **Monday-Wednesday (6 hours): Hugging Face NLP Course**
 - Transformers architecture
@@ -105,14 +106,14 @@ You already understand LLM vulnerabilities from Track 7: LLM Security Primer (Wi
 
 -----
 
-## Phase 2: HTB Academy AI Red Teamer Labs (Weeks 31-32)
+## Phase 2: HTB Academy AI Red Teamer Labs (Weeks 35-36)
 
 **Primary Resource:** HTB Academy AI Red Teamer Path (~$20/month subscription)
 
 |Week|Focus                                |HTB Modules                      |
 |----|-------------------------------------|---------------------------------|
-|31  |Prompt injection, jailbreaking       |HTB: Introduction to Red Teaming AI, Prompt Injection labs|
-|32  |Model privacy attacks, adversarial AI|HTB: Model extraction, Data poisoning labs|
+|35  |Prompt injection, jailbreaking       |HTB: Introduction to Red Teaming AI, Prompt Injection labs|
+|36  |Model privacy attacks, adversarial AI|HTB: Model extraction, Data poisoning labs|
 
 **What You'll Do:**
 - Complete hands-on labs attacking real AI systems
@@ -131,14 +132,14 @@ You already understand LLM vulnerabilities from Track 7: LLM Security Primer (Wi
 
 -----
 
-## Phase 3: Production LLM Apps & Supply Chain (Weeks 33-34)
+## Phase 3: Production LLM Apps & Supply Chain (Weeks 37-38)
 
 |Week|Focus                                 |Resource                    |
 |----|--------------------------------------|----------------------------|
-|33  |**RAG & Agent security**              |**AI Engineering Ch 6 + LangChain hands-on**|
-|34  |**ML Supply Chain security**          |**Hands-on exploits + verification tools**|
+|37  |**RAG & Agent security**              |**AI Engineering Ch 6 + LangChain hands-on**|
+|38  |**ML Supply Chain security**          |**Hands-on exploits + verification tools**|
 
-**Week 33: RAG & Agent Security - CRITICAL**
+**Week 37: RAG & Agent Security - CRITICAL**
 
 **Why This Week:**
 - Most production LLM apps use RAG (Retrieval Augmented Generation)
@@ -216,7 +217,7 @@ Now that you understand RAG/agent architecture, build one:
 - 5+ attack vectors documented
 - Defensive recommendations
 
-**Week 34: ML Supply Chain & Production Security**
+**Week 38: ML Supply Chain & Production Security**
 
 **Why This Week:**
 - Most AI security incidents involve supply chain compromises (not novel attacks)
@@ -320,14 +321,14 @@ This is THE chapter for AI red teaming - covers prompt injection attacks!
 
 -----
 
-## Phase 4: Evaluation & Advanced CTF (Weeks 35-36)
+## Phase 4: Evaluation & Advanced CTF (Weeks 39-40)
 
 |Week|Focus                               |Resource             |
 |----|------------------------------------|--------------------|
-|35  |Evaluation methodology + HackAPrompt|AI Engineering Ch 3-4 + hackaprompt.com|
-|36  |Crucible CTF + Final Assessment     |crucible.dreadnode.io + Portfolio project|
+|39  |Evaluation methodology + HackAPrompt|AI Engineering Ch 3-4 + hackaprompt.com|
+|40  |Crucible CTF + Final Assessment     |crucible.dreadnode.io + Portfolio project|
 
-**Week 35: Evaluation & HackAPrompt**
+**Week 39: Evaluation & HackAPrompt**
 
 **Monday-Tuesday (4 hours): AI Engineering Ch 3-4 - Evaluation**
 
@@ -363,7 +364,7 @@ This is THE chapter for AI red teaming - covers prompt injection attacks!
 - **Build evaluation pipeline:** Automated testing of your solutions
 - Blog post: "My HackAPrompt Solutions + Success Rate Analysis"
 
-**Week 36: Advanced CTF & Final Portfolio**
+**Week 40: Advanced CTF & Final Portfolio**
 
 **Monday-Wednesday (6 hours): Crucible CTF**
 - [Crucible by Dreadnode](https://crucible.dreadnode.io/)
@@ -390,7 +391,7 @@ You've been building tools with Claude Code throughout this plan. Now combine th
    - Classifies results (success/partial/blocked)
 
 3. **Testing & Documentation (1 hour)**
-   - Test against your own vulnerable RAG app (from Week 33)
+   - Test against your own vulnerable RAG app (from Week 37)
    - Document the agent architecture
    - Add to GitHub portfolio
 
@@ -429,20 +430,109 @@ Build comprehensive AI security assessment:
 
 -----
 
+## Phase 5: Go for AI Security (Weeks 41-42)
+
+**Why Now:**
+You now have deep Go skills (Tracks 8 + 11) AND AI/ML security knowledge (Phase 1-4). This is where you combine them to build something no one else is building: AI security tools in Go.
+
+Most AI red teamers only use Python. Your Go skills give you a unique edge:
+- Go's concurrency model is ideal for parallel prompt injection testing
+- Go binaries are easy to distribute (no Python environment needed)
+- Go's performance handles high-volume API testing efficiently
+- gRPC security testing is natural in Go (gRPC is a Go-native technology)
+
+### Week 41: Go-Based LLM Security Testing Tools
+
+|Day|Hours|Focus|
+|---|-----|-----|
+|Mon-Tue|6|Build concurrent prompt injection tester|
+|Wed-Thu|4|Go HTTP client for LLM API interaction (OpenAI, Anthropic APIs)|
+|Fri|2|gRPC security testing patterns|
+|Weekend|6|Project: LLM API fuzzer with goroutines|
+
+**Concurrent Prompt Injection Tester:**
+```go
+type TestCase struct {
+    Name     string
+    Prompt   string
+    Expected string // "blocked", "leaked", "safe"
+}
+
+type Result struct {
+    TestCase TestCase
+    Response string
+    Status   string // "pass", "fail", "error"
+    Duration time.Duration
+}
+
+func RunTests(ctx context.Context, cases []TestCase, workers int) []Result {
+    // Fan-out: distribute test cases to worker goroutines
+    // Fan-in: collect results through channel
+    // Context: cancel all workers on timeout
+}
+```
+
+**Key Features:**
+- Fan-out/fan-in pattern for parallel testing
+- Rate limiting to avoid API throttling
+- Structured logging of all attempts
+- JSON/CSV report generation
+- Configurable test case library (YAML/JSON input)
+
+### Week 42: Capstone — Go AI Red Team CLI Tool
+
+|Day|Hours|Focus|
+|---|-----|-----|
+|Mon-Tue|6|Design and build complete AI red team CLI tool|
+|Wed-Thu|4|Add reporting, configuration, Docker packaging|
+|Fri|2|Write comprehensive tests|
+|Weekend|6|Polish, document, blog post|
+
+**Capstone: Go AI Red Team CLI Tool**
+
+Combines Go mastery + AI security knowledge into a single portfolio piece:
+
+**Features:**
+- Concurrent LLM endpoint testing (goroutines)
+- Multiple attack pattern libraries (prompt injection, jailbreak, exfiltration)
+- Configurable via YAML
+- Structured JSON reports with severity ratings
+- Rate limiting and retry logic
+- Docker multi-stage build
+- Clean architecture (from Track 8)
+
+**Tech Stack:**
+- cobra for CLI framework
+- slog for structured logging
+- testify for testing
+- net/http for API interaction
+- goroutines + channels for concurrency
+- CLAUDE.md for project configuration
+
+**Deliverable:**
+- GitHub repo with full codebase
+- Blog post: "Building an AI Red Team Tool in Go"
+- Docker image published
+- Unique portfolio piece (AI security + Go = rare combination)
+
+-----
+
 ## Projects & Outputs
 
 |Week|Project                      |Output                               |Share             |
 |----|-----------------------------|-------------------------------------|------------------|
-|31-32|HTB Academy lab completions |All modules completed                |HTB profile       |
-|31-32|Prompt injection PoC (Python)|Working exploit with automation      |GitHub            |
-|33  |**Vulnerable RAG app**       |**Document QA + LLM agent**          |**GitHub**        |
-|33  |**RAG/Agent attacks**        |**5+ attack vectors documented**     |**GitHub + Blog** |
-|34  |**Malicious pickle exploit** |**PyTorch RCE demonstration**        |**Demo only**     |
-|34  |**Model verification tool**  |**Scan Hugging Face models**         |**GitHub**        |
-|35  |**Attack evaluation pipeline**|**Automated testing framework**     |**GitHub**        |
-|35  |HackAPrompt solutions        |Documented strategies + success rates|Blog + GitHub     |
-|36  |Crucible CTF solutions       |Novel attack vectors                 |GitHub            |
-|36  |**Red team assessment**      |**Professional security report**     |**Portfolio**     |
+|35-36|HTB Academy lab completions |All modules completed                |HTB profile       |
+|35-36|Prompt injection PoC (Python)|Working exploit with automation      |GitHub            |
+|37  |**Vulnerable RAG app**       |**Document QA + LLM agent**          |**GitHub**        |
+|37  |**RAG/Agent attacks**        |**5+ attack vectors documented**     |**GitHub + Blog** |
+|38  |**Malicious pickle exploit** |**PyTorch RCE demonstration**        |**Demo only**     |
+|38  |**Model verification tool**  |**Scan Hugging Face models**         |**GitHub**        |
+|39  |**Attack evaluation pipeline**|**Automated testing framework**     |**GitHub**        |
+|39  |HackAPrompt solutions        |Documented strategies + success rates|Blog + GitHub     |
+|40  |Crucible CTF solutions       |Novel attack vectors                 |GitHub            |
+|40  |**Red team assessment**      |**Professional security report**     |**Portfolio**     |
+|41  |LLM API fuzzer               |Concurrent prompt injection tester   |GitHub            |
+|42  |**Go AI Red Team CLI Tool**  |**Complete AI security tool in Go**  |**GitHub + Blog** |
 
 -----
 
@@ -509,7 +599,7 @@ How do adversarial documents manipulate embedding similarity?"
 
 ## Checkpoint
 
-Before moving to Track 11: Go Security Tools, you should be able to:
+Before moving to Track 12: Python Advanced, you should be able to:
 
 **Technical Skills:**
 - Understand foundation model internals (training, scaling, sampling)
@@ -539,5 +629,6 @@ Before moving to Track 11: Go Security Tools, you should be able to:
 - Model verification tool (GitHub)
 - Attack evaluation pipeline (GitHub)
 - Automated red team agent built with Claude Code SDK (GitHub)
+- **Go AI Red Team CLI Tool (GitHub + Blog post)**
 - Professional red team assessment report (portfolio)
 - 5+ blog posts on AI security topics
