@@ -159,16 +159,9 @@ Reading → Note-Taking → Claude Code Advanced
 |Let's Go (Edwards)                        |~$40 |Track 8: Go Foundations + Architecture   |
 |Python Testing with pytest, 2nd ed (Okken)|~$40 |Track 9: Python Core + TDD              |
 |AI Engineering (Huyen)                    |~$50 |Track 10: AI/ML Security                |
-|Using Asyncio in Python (Fowler)          |~$50 |Track 12: Python Advanced               |
+|Red Teaming AI (Dursey)                   |~$50 |Track 10: AI/ML Security (releases July 2026)|
 
 **Total: ~$270**
-
-**Optional:**
-
-|Book                            |Cost|When                                |
-|--------------------------------|----|------------------------------------|
-|How AI Works (Kneusel)          |~$30|Read before Track 7 (downtime)      |
-|Python Tools for Data Scientists|~$30|Only if you need NumPy/Pandas for ML|
 
 -----
 

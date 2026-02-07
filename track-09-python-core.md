@@ -47,7 +47,6 @@ You already know software architecture from Track 8 (clean architecture, DDD, re
 |Resource                   |Cost        |Focus               |
 |---------------------------|------------|--------------------|
 |ArjanCodes (YouTube)       |Free        |Clean code, patterns|
-|TCM Security Python courses|Subscription|Security tooling    |
 
 -----
 

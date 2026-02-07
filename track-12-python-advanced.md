@@ -31,19 +31,15 @@ You already understand concurrency deeply from Go (goroutines, channels, fan-out
 |Phase|Weeks|Focus             |Key Resource                          |
 |-----|-----|------------------|--------------------------------------|
 |1    |43-45|Code Quality / AST|DeepSource AST tutorial + Ruff - FREE |
-|2    |46-48|Async Python      |Beazley workshops + Fowler book - ~$50|
+|2    |46-48|Async Python      |David Beazley workshops (YouTube) - FREE|
 
 -----
 
 ## Books
 
-|Book                            |Cost|Phase    |Project-Driven?       |
-|--------------------------------|----|---------|----------------------|
-|Using Asyncio in Python (Fowler)|~$50|2        |Yes (examples)        |
-|Fluent Python, 2nd ed (Ramalho) |~$50|Reference|No (reference)        |
-|Black Hat Python, 2nd ed        |~$35|Security |Yes (security tools)  |
+No books required for this track. David Beazley's free workshops and online documentation are sufficient.
 
-**Total Book Cost:** ~$50-135 (Fowler required, others optional)
+**Total Book Cost:** $0
 
 -----
 
@@ -79,7 +75,7 @@ You already understand concurrency deeply from Go (goroutines, channels, fan-out
 **Resources:**
 
 - David Beazley workshops (YouTube) - FREE
-- Using Asyncio in Python (Fowler) - ~$50
+- Python asyncio documentation - FREE
 
 |Week|Focus                                         |
 |----|----------------------------------------------|

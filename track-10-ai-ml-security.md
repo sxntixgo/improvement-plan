@@ -56,12 +56,6 @@
 |AI Engineering (Huyen)                        |~$50         |Production AI systems     |
 |Red Teaming AI (Dursey)                       |~$50         |Red teaming (July 2026)   |
 
-### Optional Paid Courses
-
-|Resource             |Cost|Focus                 |Note                     |
-|---------------------|----|----------------------|-------------------------|
-|NVIDIA Adversarial ML|$90 |Adversarial techniques|Optional - can use free resources|
-
 -----
 
 ## Phase 1: ML Fundamentals (Weeks 33-34)
