@@ -147,6 +147,7 @@ Reading → Note-Taking → Claude Code Advanced
 |Web Development with Node and Express (Brown) |Track 13: JavaScript/TypeScript         |
 |Eloquent JavaScript (Haverbeke)               |Track 13: JavaScript/TypeScript         |
 |100 Go Mistakes (Harsanyi)                    |Track 8: Go Foundations + Architecture  |
+|Red Teaming AI (Dursey)                       |Track 10: AI/ML Security                |
 
 -----
 
@@ -158,9 +159,8 @@ Reading → Note-Taking → Claude Code Advanced
 |Let's Go (Edwards)                        |~$40 |Track 8: Go Foundations + Architecture   |
 |Python Testing with pytest, 2nd ed (Okken)|~$40 |Track 9: Python Core + TDD              |
 |AI Engineering (Huyen)                    |~$50 |Track 10: AI/ML Security                |
-|Red Teaming AI (Dursey)                   |~$50 |Track 10: AI/ML Security (releases July 2026)|
 
-**Total: ~$230**
+**Total: ~$180**
 
 -----
 

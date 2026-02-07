@@ -7,7 +7,7 @@
 
 ## TL;DR
 
-**Total budget: ~$230** for 5 remaining books across 65 weeks. The plan prioritizes:
+**Total budget: ~$180** for 4 remaining books across 65 weeks. The plan prioritizes:
 - **Books for Go** — your work language deserves deep reference material
 - **Free resources first** — most tracks use free online books, courses, and workshops
 - **No paid courses or subscriptions needed** — HTB Academy ($20/month × 2) is the only subscription, and it's already budgeted in Track 10
@@ -30,8 +30,9 @@
 |Web Development with Node and Express (Brown) |Track 13: JavaScript/TypeScript      |
 |Eloquent JavaScript (Haverbeke)               |Track 13: JavaScript/TypeScript      |
 |100 Go Mistakes (Harsanyi)                    |Track 8: Go Foundations + Architecture|
+|Red Teaming AI (Dursey)                       |Track 10: AI/ML Security             |
 
-**12 books already owned** covering Tracks 1, 2, 4, 7, 8, 9, 11, and 13.
+**13 books already owned** covering Tracks 1, 2, 4, 7, 8, 9, 10, 11, and 13.
 
 -----
 
@@ -43,9 +44,8 @@
 |Let's Go (Edwards)                        |~$40 |Track 8: Go Foundations + Architecture |Before Week 9        |
 |Python Testing with pytest, 2nd ed (Okken)|~$40 |Track 9: Python Core + TDD            |Before Week 25       |
 |AI Engineering (Huyen)                    |~$50 |Track 10: AI/ML Security              |Before Week 33       |
-|Red Teaming AI (Dursey)                   |~$50 |Track 10: AI/ML Security              |July 2026 (on release)|
 
-**Total: ~$230**
+**Total: ~$180**
 
 -----
 
@@ -102,10 +102,10 @@ This is the biggest book investment because Go is your work language and this is
 - **Video:** ArjanCodes YouTube (free) for clean code patterns
 
 ### Track 10: AI/ML Security (Weeks 33-42)
-**Books to buy:** $100 (Huyen + Dursey)
+**Books to buy:** $50 (Huyen) — Dursey already owned
 
 - **AI Engineering (Huyen):** $50 — essential for understanding production AI systems you'll be attacking. Covers RAG architecture, prompt engineering, evaluation, and inference — all directly relevant to red teaming
-- **Red Teaming AI (Dursey):** $50 — releases July 2026, the first dedicated AI red teaming book. Buy on release
+- **Red Teaming AI (Dursey):** Already owned — the first dedicated AI red teaming book
 - **HTB Academy:** ~$20/month × 2 months — hands-on labs (budgeted separately)
 - **Free:** Fast.ai, Hugging Face NLP course, OWASP LLM Top 10, HackAPrompt, Crucible CTF
 
@@ -146,11 +146,11 @@ You own 3 JS/TS books. YDKJS is free online — no purchase needed.
 |---------------|------|-----------------------------------------------|
 |Go books       |$90   |Bodner ($50) + Edwards ($40) — Harsanyi owned  |
 |Python book    |$40   |Okken pytest                                   |
-|AI/ML books    |$100  |Huyen ($50) + Dursey ($50)                     |
+|AI/ML books    |$50   |Huyen ($50) — Dursey already owned             |
 |HTB Academy    |~$40  |$20/month × 2 months (Track 10)                |
-|**Total**      |**~$270**|                                            |
+|**Total**      |**~$220**|                                            |
 
-**Books you already own:** 12 (worth ~$400+)
+**Books you already own:** 13 (worth ~$450+)
 **Free online resources used:** 15+ (Fast.ai, Hugging Face, Cosmic Python, Percival, Beazley, Odin Project, etc.)
 
 -----
@@ -160,7 +160,7 @@ You own 3 JS/TS books. YDKJS is free online — no purchase needed.
 **Books for depth, free resources for breadth.**
 
 - Go books ($90 remaining) → your work language, worth the investment
-- AI/ML books ($100) → understand the systems you'll attack
+- AI/ML book ($50 remaining) → understand the systems you'll attack
 - pytest book ($40) → essential TDD reference
 - Everything else → free online resources are sufficient
 

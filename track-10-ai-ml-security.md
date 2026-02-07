@@ -54,7 +54,7 @@
 |----------------------------------------------|-------------|--------------------------|
 |Developer's Playbook for LLM Security (Wilson)|Already owned|Read in Track 7           |
 |AI Engineering (Huyen)                        |~$50         |Production AI systems     |
-|Red Teaming AI (Dursey)                       |~$50         |Red teaming (July 2026)   |
+|Red Teaming AI (Dursey)                       |Already owned|Red teaming               |
 
 -----
 
