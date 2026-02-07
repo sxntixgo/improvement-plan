@@ -24,7 +24,7 @@ Your company uses Go for development. This crash course gets you **functional at
 
 -----
 
-## Week 5 Schedule
+## Week 6 Schedule
 
 ### Monday-Wednesday (8 hours): Go Fundamentals
 
@@ -266,17 +266,17 @@ Follow our company's style guide"
 
 ## What's Next?
 
-**Week 7: LLM Security Primer**
+**Week 8: LLM Security Primer**
 - Read Wilson's book
 - Build security context for Python learning
 - Continue using Go at work (with Claude Code assistance)
 
-**Weeks 8-17: Python Core**
+**Weeks 9-18: Python Core**
 - Focus on AI red teaming skills
 - Keep using Go at work daily
 - You'll be functional in Go by now
 
-**Weeks 34-45: Go Deep Dive**
+**Weeks 35-46: Go Deep Dive**
 - Come back for advanced Go
 - Security tool building (Black Hat Go)
 - Become Go expert

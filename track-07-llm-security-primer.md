@@ -21,7 +21,7 @@ This week gives you **security context** before diving into 10 weeks of Python:
 - Use your new Obsidian system to capture insights
 - Practice Claude Code on security concepts
 
-**You'll start Python Core (Week 6) knowing exactly what you're building toward.**
+**You'll start Python Core (Week 9) knowing exactly what you're building toward.**
 
 -----
 
@@ -39,7 +39,7 @@ This is THE practical guide for LLM security, covering:
 
 -----
 
-## Week 5 Schedule
+## Week 8 Schedule
 
 ### Weekdays (Mon-Fri): 8 hours
 
@@ -563,7 +563,7 @@ Before moving to Track 4 (Python Core), you should be able to:
 
 ## What's Next?
 
-**Week 6-15: Python Core**
+**Weeks 9-18: Python Core**
 - You'll learn TDD and pytest (for testing AI systems)
 - Architecture patterns (for understanding ML pipelines)
 - Security code review (essential for AI code)
@@ -623,6 +623,6 @@ Before moving to Track 4 (Python Core), you should be able to:
 - First blog post published
 
 **Motivation:**
-- Excited to start Python Core (Week 6)
+- Excited to start Python Core (Week 9)
 - Clear vision of end goal (AI red teamer)
 - Understand the path from here to there

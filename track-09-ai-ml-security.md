@@ -471,7 +471,7 @@ Build comprehensive AI security assessment:
 
 ## Checkpoint
 
-Before moving to Python Advanced (Track 9), you should be able to:
+Before moving to Python Advanced (Track 10), you should be able to:
 
 **Technical Skills:**
 - ✅ Understand foundation model internals (training, scaling, sampling)
