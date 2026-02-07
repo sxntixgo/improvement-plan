@@ -1,4 +1,4 @@
-# Track 9: AI/ML Security
+# Track 10: AI/ML Security
 
 **Duration:** 8 weeks | **Hours/week:** 18 | **Priority:** HIGH
 **Goal:** AI red teaming skills
@@ -15,17 +15,17 @@
 
 |Phase|Weeks|Focus                           |AI Engineering Chapters|
 |-----|-----|--------------------------------|-----------------------|
-|1    |19-20|ML Fundamentals                 |Ch 2: Foundation Models|
-|2    |21-22|HTB Academy Labs                |-                      |
-|3    |23-24|RAG/Agents + Supply Chain       |Ch 6: RAG/Agents       |
-|4    |25-26|Evaluation + Advanced CTF       |Ch 3-5, 7, 9-10        |
+|1    |29-30|ML Fundamentals                 |Ch 2: Foundation Models|
+|2    |31-32|HTB Academy Labs                |-                      |
+|3    |33-34|RAG/Agents + Supply Chain       |Ch 6: RAG/Agents       |
+|4    |35-36|Evaluation + Advanced CTF       |Ch 3-5, 7, 9-10        |
 
 **AI Engineering Book Usage (7 chapters, ~18 hours):**
-- **Week 20:** Ch 2 (Foundation Models) - 4 hrs
-- **Week 23:** Ch 6 (RAG and Agents) - 4 hrs ⭐ CRITICAL
-- **Week 24:** Ch 5 (Prompt Engineering) - 4 hrs ⭐ CRITICAL for attacks
-- **Week 24:** Ch 7, 9, 10 (Production systems) - 6 hrs
-- **Week 25:** Ch 3-4 (Evaluation) - 4 hrs
+- **Week 30:** Ch 2 (Foundation Models) - 4 hrs
+- **Week 33:** Ch 6 (RAG and Agents) - 4 hrs CRITICAL
+- **Week 34:** Ch 5 (Prompt Engineering) - 4 hrs CRITICAL for attacks
+- **Week 34:** Ch 7, 9, 10 (Production systems) - 6 hrs
+- **Week 35:** Ch 3-4 (Evaluation) - 4 hrs
 
 -----
 
@@ -35,7 +35,7 @@
 
 |Resource             |Cost        |Focus                           |
 |---------------------|------------|--------------------------------|
-|HTB Academy AI Red Teamer|~$20/month × 2|Hands-on labs, prompt injection, model attacks|
+|HTB Academy AI Red Teamer|~$20/month x 2|Hands-on labs, prompt injection, model attacks|
 
 ### Free Resources
 
@@ -51,7 +51,7 @@
 
 |Resource                                      |Cost         |Status/Focus              |
 |----------------------------------------------|-------------|--------------------------|
-|Developer's Playbook for LLM Security (Wilson)|Already owned|✅ Read in Track 3.5      |
+|Developer's Playbook for LLM Security (Wilson)|Already owned|Read in Track 7           |
 |AI Engineering (Huyen)                        |~$50         |Production AI systems     |
 |Red Teaming AI (Dursey)                       |~$50         |Red teaming (July 2026)   |
 
@@ -63,20 +63,20 @@
 
 -----
 
-## Phase 1: ML Fundamentals (Weeks 19-20)
+## Phase 1: ML Fundamentals (Weeks 29-30)
 
 |Week|Focus                                |Resource               |Hours|
 |----|-------------------------------------|-----------------------|-----|
-|19  |Deep Learning basics, neural networks|Fast.ai Part 1         |18   |
-|20  |NLP, transformers, foundation models |Hugging Face NLP + **AI Engineering Ch 2**|18|
+|29  |Deep Learning basics, neural networks|Fast.ai Part 1         |18   |
+|30  |NLP, transformers, foundation models |Hugging Face NLP + **AI Engineering Ch 2**|18|
 
-**Week 19: Deep Learning Foundations**
+**Week 29: Deep Learning Foundations**
 - Fast.ai Practical Deep Learning Part 1
 - Focus on neural networks, training, evaluation
 - Hands-on: Build and train simple models
 - Understand loss functions, optimization
 
-**Week 20: Foundation Models Deep Dive**
+**Week 30: Foundation Models Deep Dive**
 
 **Monday-Wednesday (6 hours): Hugging Face NLP Course**
 - Transformers architecture
@@ -84,7 +84,7 @@
 - Tokenization
 - Pre-training and fine-tuning concepts
 
-**Thursday-Friday (4 hours): AI Engineering Chapter 2** ⭐ NEW
+**Thursday-Friday (4 hours): AI Engineering Chapter 2**
 - **Training data curation** - How LLMs learn (and what can go wrong)
 - **Model architecture decisions** - Understanding model internals
 - **Scaling laws** - How model size affects capabilities and vulnerabilities
@@ -105,18 +105,18 @@ You already understand LLM vulnerabilities from Track 7: LLM Security Primer (Wi
 
 -----
 
-## Phase 2: HTB Academy AI Red Teamer Labs (Weeks 21-22)
+## Phase 2: HTB Academy AI Red Teamer Labs (Weeks 31-32)
 
 **Primary Resource:** HTB Academy AI Red Teamer Path (~$20/month subscription)
 
 |Week|Focus                                |HTB Modules                      |
 |----|-------------------------------------|---------------------------------|
-|20  |Prompt injection, jailbreaking       |HTB: Introduction to Red Teaming AI, Prompt Injection labs|
-|21  |Model privacy attacks, adversarial AI|HTB: Model extraction, Data poisoning labs|
+|31  |Prompt injection, jailbreaking       |HTB: Introduction to Red Teaming AI, Prompt Injection labs|
+|32  |Model privacy attacks, adversarial AI|HTB: Model extraction, Data poisoning labs|
 
 **What You'll Do:**
 - Complete hands-on labs attacking real AI systems
-- Build prompt injection exploits (using Python from Track 8!)
+- Build prompt injection exploits (using Python from Track 9!)
 - Test jailbreaking techniques against LLMs
 - Execute model privacy attacks
 - Document findings in Obsidian
@@ -131,14 +131,14 @@ You already understand LLM vulnerabilities from Track 7: LLM Security Primer (Wi
 
 -----
 
-## Phase 3: Production LLM Apps & Supply Chain (Weeks 23-24)
+## Phase 3: Production LLM Apps & Supply Chain (Weeks 33-34)
 
 |Week|Focus                                 |Resource                    |
 |----|--------------------------------------|----------------------------|
-|23  |**RAG & Agent security**              |**AI Engineering Ch 6 + LangChain hands-on**|
-|24  |**ML Supply Chain security**          |**Hands-on exploits + verification tools**|
+|33  |**RAG & Agent security**              |**AI Engineering Ch 6 + LangChain hands-on**|
+|34  |**ML Supply Chain security**          |**Hands-on exploits + verification tools**|
 
-**Week 23: RAG & Agent Security - CRITICAL** ⭐
+**Week 33: RAG & Agent Security - CRITICAL**
 
 **Why This Week:**
 - Most production LLM apps use RAG (Retrieval Augmented Generation)
@@ -148,7 +148,7 @@ You already understand LLM vulnerabilities from Track 7: LLM Security Primer (Wi
 
 **Learning Strategy: Theory First, Then Attack**
 
-**Monday-Tuesday (4 hours): AI Engineering Chapter 6 - RAG and Agents** ⭐ MUST READ
+**Monday-Tuesday (4 hours): AI Engineering Chapter 6 - RAG and Agents** MUST READ
 - **Retrieval-Augmented Generation (RAG):**
   - Term-based retrievers (BM25, TF-IDF)
   - Embedding-based retrievers (vector databases)
@@ -181,7 +181,7 @@ Now that you understand RAG/agent architecture, build one:
    - Vector database setup (ChromaDB or Pinecone)
    - Document embedding and storage
    - Retrieval chain setup
-   - Query → Retrieve → Generate pipeline
+   - Query -> Retrieve -> Generate pipeline
 
 2. **Build LLM Agent (3 hours)**
    - Agent with tools (calculator, search, Wikipedia)
@@ -216,7 +216,7 @@ Now that you understand RAG/agent architecture, build one:
 - 5+ attack vectors documented
 - Defensive recommendations
 
-**Week 24: ML Supply Chain & Production Security**
+**Week 34: ML Supply Chain & Production Security**
 
 **Why This Week:**
 - Most AI security incidents involve supply chain compromises (not novel attacks)
@@ -249,10 +249,9 @@ Review supply chain concepts from Track 7: LLM Security Primer (Wilson book Chap
 
 **Resources:**
 - [Hugging Face Model Security](https://huggingface.co/docs/hub/security)
-- [Pickle Exploit Examples](https://github.com/trhacknon/pickle-exploit)
 - [SafeTensors Documentation](https://huggingface.co/docs/safetensors/)
 
-**Wednesday-Thursday (4 hours): AI Engineering Ch 5 - Prompt Engineering** ⭐ CRITICAL
+**Wednesday-Thursday (4 hours): AI Engineering Ch 5 - Prompt Engineering** CRITICAL
 
 **Why This Chapter:**
 This is THE chapter for AI red teaming - covers prompt injection attacks!
@@ -267,7 +266,7 @@ This is THE chapter for AI red teaming - covers prompt injection attacks!
   - How models use context
   - **Attacks:** Manipulating examples, context injection
 
-- **Prompt Injection Attacks and Defenses:** ← ESSENTIAL
+- **Prompt Injection Attacks and Defenses:** ESSENTIAL
   - Direct vs indirect injection
   - Adversarial suffixes
   - Delimiter attacks
@@ -321,16 +320,16 @@ This is THE chapter for AI red teaming - covers prompt injection attacks!
 
 -----
 
-## Phase 4: Evaluation & Advanced CTF (Weeks 25-26)
+## Phase 4: Evaluation & Advanced CTF (Weeks 35-36)
 
 |Week|Focus                               |Resource             |
 |----|------------------------------------|--------------------|
-|25  |Evaluation methodology + HackAPrompt|AI Engineering Ch 3-4 + hackaprompt.com|
-|26  |Crucible CTF + Final Assessment     |crucible.dreadnode.io + Portfolio project|
+|35  |Evaluation methodology + HackAPrompt|AI Engineering Ch 3-4 + hackaprompt.com|
+|36  |Crucible CTF + Final Assessment     |crucible.dreadnode.io + Portfolio project|
 
-**Week 25: Evaluation & HackAPrompt**
+**Week 35: Evaluation & HackAPrompt**
 
-**Monday-Tuesday (4 hours): AI Engineering Ch 3-4 - Evaluation** ⭐
+**Monday-Tuesday (4 hours): AI Engineering Ch 3-4 - Evaluation**
 
 **Chapter 3: Evaluation Methodology (2 hours)**
 - Challenges in evaluating foundation models
@@ -364,7 +363,7 @@ This is THE chapter for AI red teaming - covers prompt injection attacks!
 - **Build evaluation pipeline:** Automated testing of your solutions
 - Blog post: "My HackAPrompt Solutions + Success Rate Analysis"
 
-**Week 26: Advanced CTF & Final Portfolio**
+**Week 36: Advanced CTF & Final Portfolio**
 
 **Monday-Wednesday (6 hours): Crucible CTF**
 - [Crucible by Dreadnode](https://crucible.dreadnode.io/)
@@ -391,7 +390,7 @@ You've been building tools with Claude Code throughout this plan. Now combine th
    - Classifies results (success/partial/blocked)
 
 3. **Testing & Documentation (1 hour)**
-   - Test against your own vulnerable RAG app (from Week 23)
+   - Test against your own vulnerable RAG app (from Week 33)
    - Document the agent architecture
    - Add to GitHub portfolio
 
@@ -434,16 +433,16 @@ Build comprehensive AI security assessment:
 
 |Week|Project                      |Output                               |Share             |
 |----|-----------------------------|-------------------------------------|------------------|
-|20-21|HTB Academy lab completions  |All modules completed                |HTB profile       |
-|20-21|Prompt injection PoC (Python)|Working exploit with automation      |GitHub            |
-|22  |**Vulnerable RAG app**       |**Document QA + LLM agent**          |**GitHub**        |
-|22  |**RAG/Agent attacks**        |**5+ attack vectors documented**     |**GitHub + Blog** |
-|23  |**Malicious pickle exploit** |**PyTorch RCE demonstration**        |**Demo only**     |
-|23  |**Model verification tool**  |**Scan Hugging Face models**         |**GitHub**        |
-|24  |**Attack evaluation pipeline**|**Automated testing framework**      |**GitHub**        |
-|24  |HackAPrompt solutions        |Documented strategies + success rates|Blog + GitHub     |
-|25  |Crucible CTF solutions       |Novel attack vectors                 |GitHub            |
-|25  |**Red team assessment**      |**Professional security report**     |**Portfolio**     |
+|31-32|HTB Academy lab completions |All modules completed                |HTB profile       |
+|31-32|Prompt injection PoC (Python)|Working exploit with automation      |GitHub            |
+|33  |**Vulnerable RAG app**       |**Document QA + LLM agent**          |**GitHub**        |
+|33  |**RAG/Agent attacks**        |**5+ attack vectors documented**     |**GitHub + Blog** |
+|34  |**Malicious pickle exploit** |**PyTorch RCE demonstration**        |**Demo only**     |
+|34  |**Model verification tool**  |**Scan Hugging Face models**         |**GitHub**        |
+|35  |**Attack evaluation pipeline**|**Automated testing framework**     |**GitHub**        |
+|35  |HackAPrompt solutions        |Documented strategies + success rates|Blog + GitHub     |
+|36  |Crucible CTF solutions       |Novel attack vectors                 |GitHub            |
+|36  |**Red team assessment**      |**Professional security report**     |**Portfolio**     |
 
 -----
 
@@ -459,8 +458,8 @@ Build comprehensive AI security assessment:
 **From AI Engineering Book (Production):**
 - **Ch 2:** Foundation model internals, training data, scaling laws
 - **Ch 3-4:** Evaluation methodology, testing AI systems objectively
-- **Ch 5:** Prompt engineering, injection attacks and defenses ⭐
-- **Ch 6:** RAG architecture, agents with tools, memory systems ⭐
+- **Ch 5:** Prompt engineering, injection attacks and defenses
+- **Ch 6:** RAG architecture, agents with tools, memory systems
 - **Ch 7:** Finetuning techniques and attack surfaces
 - **Ch 9:** Inference optimization, quantization exploits
 - **Ch 10:** Production architecture, monitoring, attack surfaces
@@ -472,7 +471,7 @@ Build comprehensive AI security assessment:
 - Data poisoning demonstrations
 - Attack automation with Python
 
-**New in Track 8 - Production LLM Security:**
+**Production LLM Security:**
 - **RAG Architecture:** Term-based vs embedding retrievers
 - **RAG Poisoning:** Inject malicious documents into vector DBs
 - **Agent Exploits:** Tool misuse, infinite loops, prompt injection via tools
@@ -483,66 +482,62 @@ Build comprehensive AI security assessment:
 - **Evaluation Pipelines:** Automated attack testing, success rate measurement
 - **Production Attacks:** API exploits, inference DoS, cache poisoning
 
-**Hands-On Skills:**
-- Build RAG apps with LangChain
-- Attack your own applications
-- Create malicious pickle exploits
-- Build model verification tools
-- Automate attacks with Python
-- Measure attack effectiveness
-- Write professional security assessments
-- Provide defensive recommendations
+-----
+
+## Claude Code Integration
+
+Use Claude Code throughout this track:
+
+**Attack Development:**
+```
+CREATE: "Build a Python script that tests an LLM API endpoint
+for prompt injection vulnerabilities. Test these attack patterns:
+[list patterns]. Log all responses for analysis."
+
+REVIEW: "Review this prompt injection exploit for completeness.
+What attack vectors am I missing? Reference OWASP LLM Top 10."
+```
+
+**Learning Acceleration:**
+```
+EXPLAIN: "Explain how RAG poisoning works at a technical level.
+I understand vector databases from building one in LangChain.
+How do adversarial documents manipulate embedding similarity?"
+```
 
 -----
 
 ## Checkpoint
 
-Before moving to Python Advanced (Track 10), you should be able to:
+Before moving to Track 11: Go Security Tools, you should be able to:
 
 **Technical Skills:**
-- ✅ Understand foundation model internals (training, scaling, sampling)
-- ✅ Complete HTB Academy AI Red Teamer modules
-- ✅ Build prompt injection exploits using Python
-- ✅ **Build RAG applications with LangChain from scratch**
-- ✅ **Execute RAG poisoning attacks (document injection, context poisoning)**
-- ✅ **Exploit LLM agents (tool misuse, infinite loops)**
-- ✅ **Attack memory systems (conversation history poisoning)**
-- ✅ **Create malicious pickle exploits (RCE via model loading)**
-- ✅ **Build model verification tools (scan Hugging Face for threats)**
-- ✅ **Understand safetensors vs pickle security**
-- ✅ Execute jailbreaking attacks against production LLMs
-- ✅ Exploit finetuned and quantized models
-- ✅ Attack production AI architectures (APIs, queues, caches)
-- ✅ **Build automated attack evaluation pipelines**
-- ✅ **Measure attack success rates objectively**
+- Understand foundation model internals (training, scaling, sampling)
+- Complete HTB Academy AI Red Teamer modules
+- Build prompt injection exploits using Python
+- Build RAG applications with LangChain from scratch
+- Execute RAG poisoning attacks (document injection, context poisoning)
+- Exploit LLM agents (tool misuse, infinite loops)
+- Attack memory systems (conversation history poisoning)
+- Create malicious pickle exploits (RCE via model loading)
+- Build model verification tools (scan Hugging Face for threats)
+- Execute jailbreaking attacks against production LLMs
+- Build automated attack evaluation pipelines
+- Measure attack success rates objectively
 
 **Practical Experience:**
-- ✅ Solve HackAPrompt challenges with quantified success rates
-- ✅ Complete Crucible CTF challenges
-- ✅ Conduct full professional AI red team assessment
-- ✅ Write security findings with severity ratings
-- ✅ Provide actionable defensive recommendations
-- ✅ Document attack taxonomies
-
-**AI Engineering Book Mastery:**
-- ✅ Ch 2: Foundation model architecture and vulnerabilities
-- ✅ Ch 3-4: Evaluation methodology for AI systems
-- ✅ Ch 5: Prompt engineering attacks and defenses ⭐
-- ✅ Ch 6: RAG and agent attack surfaces ⭐
-- ✅ Ch 7: Finetuning security implications
-- ✅ Ch 9: Inference optimization exploits
-- ✅ Ch 10: Production AI architecture weaknesses
+- Solve HackAPrompt challenges with quantified success rates
+- Complete Crucible CTF challenges
+- Conduct full professional AI red team assessment
+- Write security findings with severity ratings
+- Build automated red team agent with Claude Code SDK
 
 **Portfolio Pieces:**
 - HTB Academy profile with completed modules
-- **Vulnerable RAG app + LLM agent (GitHub)**
-- **RAG/Agent attack documentation (blog post)**
-- **Malicious pickle exploit (private demo)**
-- **Model verification tool (GitHub)**
-- **Attack evaluation pipeline (GitHub)**
-- HackAPrompt solutions with success analysis (blog + GitHub)
-- Crucible CTF writeups (GitHub)
-- **Professional red team assessment report (portfolio)**
+- Vulnerable RAG app + LLM agent (GitHub)
+- RAG/Agent attack documentation (blog post)
+- Model verification tool (GitHub)
+- Attack evaluation pipeline (GitHub)
+- Automated red team agent built with Claude Code SDK (GitHub)
+- Professional red team assessment report (portfolio)
 - 5+ blog posts on AI security topics
-- **Automated red team agent built with Claude Code SDK (GitHub)**
-- GitHub repo with security tools and PoCs

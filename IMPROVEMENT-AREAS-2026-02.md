@@ -2,7 +2,7 @@
 
 **Date:** February 7, 2026
 **Focus:** Areas of improvement considering daily Go usage at work and existing Claude Code tooling experience
-**Status:** Actionable recommendations
+**Status:** IMPLEMENTED - All recommendations applied to the plan
 
 ---
 
@@ -293,27 +293,47 @@ This reinforces both languages, produces a great blog post, and helps you decide
 
 ---
 
-## Proposed Revised Timeline (Optional)
+## Implementation Status
 
-If you implement improvements 1, 3, and 5:
+All 10 recommendations have been implemented in the restructured plan:
 
+| # | Improvement | Status | What Changed |
+|---|-------------|--------|-------------|
+| 1 | Go front-loaded | DONE | New Track 8: Go Foundations + Architecture (12 weeks, Weeks 9-20) |
+| 2 | Claude Code track updated | DONE | Track 3 rewritten for advanced users (CLAUDE.md, MCP, SDK, hooks) |
+| 3 | Go + AI Security integration | DONE | Track 11 Phase 2: Go for AI Security (Weeks 41-42) |
+| 4 | Claude Code woven into all tracks | DONE | Integration sections added to Tracks 8, 9, 10, 11, 12 |
+| 5 | JS/TS compressed to 14 weeks | DONE | Track 13: Weeks 49-62 (down from 20 weeks) |
+| 6 | Self-assessment on Go Crash Course | DONE | Track 5 has skip-ahead checklist |
+| 7 | CLAUDE.md strategy for Go | DONE | Track 3 and Track 8 both teach CLAUDE.md for Go projects |
+| 8 | Claude Code SDK for agents | DONE | Track 10 Week 36 has SDK red team agent project |
+| 9 | Cross-references fixed | DONE | All track numbers and week references updated |
+| 10 | Go vs Python concurrency | DONE | Track 12 Week 48 comparison exercise |
+
+**Implemented Timeline:**
 ```
-Weeks 1-8:    Foundation (unchanged)
-Weeks 9-18:   Python Core (unchanged)
-Weeks 19-26:  AI/ML Security (unchanged)
-Week 26.5:    Break week
-Weeks 27-34:  Python Advanced (unchanged)
-Weeks 35-48:  Go Deep Dive + Go for AI Security (14 weeks, expanded)
-Week 48.5:    Break week
-Weeks 49-62:  JavaScript/TypeScript (14 weeks, compressed)
-Weeks 63-64:  Final portfolio + AI red team agent capstone
-Week 64.5:    Break week + job prep
+Weeks 1-8:    Foundation (Tracks 1-7)
+Weeks 9-20:   Go Foundations + Software Architecture (Track 8) ← NEW
+Weeks 21-28:  Python Core + TDD (Track 9, compressed)
+Week 28.5:    Break week
+Weeks 29-36:  AI/ML Security (Track 10)
+Weeks 37-42:  Go Security Tools + Go for AI Security (Track 11)
+Week 42.5:    Break week
+Weeks 43-48:  Python Advanced (Track 12, compressed)
+Weeks 49-62:  JavaScript/TypeScript (Track 13, compressed)
+Week 56.5:    Break week (mid-JS/TS)
 ```
 
-**Total: ~65 weeks** — similar duration, but Go and AI security get proper weight relative to your daily work.
+**New allocation:**
+| Language | Weeks | Change |
+|----------|-------|--------|
+| Go | 19 weeks (Tracks 5, 8, 11) | +6 weeks, front-loaded |
+| Python | 14 weeks (Tracks 9, 12) | -4 weeks, architecture learned in Go |
+| JavaScript/TypeScript | 14 weeks (Track 13) | -6 weeks, compressed |
+| AI/ML Security | 8 weeks (Track 10) | unchanged |
 
 ---
 
 ## Bottom Line
 
-The plan is excellent for someone learning everything from scratch. But **you're not starting from scratch** — you write Go every day and you build with Claude Code. The biggest improvement is to stop treating these as future skills to acquire and start treating them as **existing strengths to deepen and integrate** across the entire plan.
+The plan now treats Go and Claude Code as **existing strengths being deepened**, not future skills to acquire. Go is front-loaded as the work language with software architecture taught in Go first, then transferred to Python and other languages.

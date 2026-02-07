@@ -1,20 +1,22 @@
-# Track 8: Python Core
+# Track 9: Python Core
 
-**Duration:** 10 weeks | **Total:** ~180 hours
+**Duration:** 8 weeks | **Total:** ~144 hours
 **Weekly breakdown:** 8 hrs weekdays + 5 hrs Sat + 5 hrs Sun
 **Priority:** HIGH
-**Goal:** TDD and architecture skills needed for ML/AI work
+**Goal:** TDD and Python skills needed for ML/AI security work
 
 -----
 
-## Why Before ML?
+## Why After Go Architecture?
 
-These skills are essential for AI red teaming:
+You already know software architecture from Track 8 (clean architecture, DDD, repository pattern — all in Go). Now you learn Python with that architectural foundation:
 
-- Testing ML pipelines and model outputs
-- Reviewing AI-generated code
-- Building reliable security tools
-- Understanding codebases you'll be attacking
+- You understand TDD, DI, and interfaces — now learn the Pythonic equivalents
+- Testing ML pipelines and model outputs requires Python
+- Building reliable AI security tools requires Python
+- Understanding codebases you'll be attacking requires Python
+
+**Your advantage:** Architecture patterns transfer directly. You'll learn Python faster because you're learning a language, not learning architecture from scratch.
 
 -----
 
@@ -22,9 +24,9 @@ These skills are essential for AI red teaming:
 
 |Phase|Weeks|Focus                |Key Resource                                                 |
 |-----|-----|---------------------|-------------------------------------------------------------|
-|1A   |9-12 |TDD Methodology      |Test-Driven Development with Python, 3rd ed (Percival) - FREE|
-|1B   |13-14|pytest Mastery       |Python Testing with pytest, 2nd ed (Okken) - ~$40            |
-|2    |15-18|Architecture Patterns|Architecture Patterns with Python - FREE                     |
+|1A   |21-24|TDD Methodology      |Test-Driven Development with Python, 3rd ed (Percival) - FREE|
+|1B   |25-26|pytest Mastery       |Python Testing with pytest, 2nd ed (Okken) - ~$40            |
+|2    |27-28|Architecture in Python|Architecture Patterns with Python - FREE (accelerated)       |
 
 -----
 
@@ -32,9 +34,9 @@ These skills are essential for AI red teaming:
 
 |Book                                                  |Cost       |Phase|Project-Driven?                 |
 |------------------------------------------------------|-----------|-----|--------------------------------|
-|Test-Driven Development with Python, 3rd ed (Percival)|FREE online|1A   |✅ Yes (Django TDD project)      |
-|Python Testing with pytest, 2nd ed (Okken)            |~$40       |1B   |✅ Yes (exercises)               |
-|Architecture Patterns with Python (Cosmic Python)     |FREE online|2    |✅ Yes (builds allocation system)|
+|Test-Driven Development with Python, 3rd ed (Percival)|FREE online|1A   |Yes (Django TDD project)        |
+|Python Testing with pytest, 2nd ed (Okken)            |~$40       |1B   |Yes (exercises)                 |
+|Architecture Patterns with Python (Cosmic Python)     |FREE online|2    |Yes (builds allocation system)  |
 
 **Total Book Cost:** ~$40
 
@@ -49,16 +51,16 @@ These skills are essential for AI red teaming:
 
 -----
 
-## Phase 1A: TDD Methodology (Weeks 9-12)
+## Phase 1A: TDD Methodology (Weeks 21-24)
 
 **Resource:** Test-Driven Development with Python, 3rd ed (Percival) - FREE at obeythetestinggoat.com
 
 |Week|Chapters|Focus                                 |
 |----|--------|--------------------------------------|
-|9   |1-4     |Red-Green-Refactor, first Django tests|
-|10  |5-8     |Forms, input validation, database     |
-|11  |9-12    |Refactoring, deployment               |
-|12  |13-16   |Advanced testing patterns             |
+|21  |1-4     |Red-Green-Refactor, first Django tests|
+|22  |5-8     |Forms, input validation, database     |
+|23  |9-12    |Refactoring, deployment               |
+|24  |13-16   |Advanced testing patterns             |
 
 **Book Structure:**
 - **Part I (Ch 1-8):** The Basics of TDD and Django
@@ -74,29 +76,38 @@ These skills are essential for AI red teaming:
 
 -----
 
-## Phase 1B: pytest Mastery (Weeks 13-14)
+## Phase 1B: pytest Mastery (Weeks 25-26)
 
 **Resource:** Python Testing with pytest, 2nd ed (Okken) - ~$40
 
 |Week|Chapters|Focus                    |
 |----|--------|-------------------------|
-|13  |1-6     |Fixtures, parametrization|
-|14  |7-12    |Plugins, CI integration  |
+|25  |1-6     |Fixtures, parametrization|
+|26  |7-12    |Plugins, CI integration  |
 
 -----
 
-## Phase 2: Architecture Patterns (Weeks 15-18)
+## Phase 2: Architecture Patterns in Python (Weeks 27-28)
 
 **Resource:** Architecture Patterns with Python (Cosmic Python) - FREE at cosmicpython.com
 
-|Week|Chapters|Focus                              |
-|----|--------|-----------------------------------|
-|15  |1-3     |Domain modeling, repository pattern|
-|16  |4-6     |Service layer, unit of work        |
-|17  |7-9     |Aggregates, events                 |
-|18  |10-12   |CQRS, event-driven architecture    |
+**Why only 2 weeks (instead of 4):**
+You already learned architecture in Go (Track 8). This phase focuses on the **Pythonic equivalents** of patterns you already know, not learning architecture from scratch.
 
-**Project:** Security Findings Aggregator (Semgrep, Dependabot integration)
+|Week|Chapters|Focus                                     |
+|----|--------|------------------------------------------|
+|27  |1-6     |Domain modeling, repository, service layer — the Pythonic way|
+|28  |7-12    |Events, CQRS — advanced patterns (skim what you know, deep dive on new concepts)|
+
+**Key Mappings from Go → Python:**
+- Go interfaces → Python Protocols / ABCs
+- Go constructor injection → Python `__init__` injection
+- Go `internal/` package → Python `_private` modules
+- Go table-driven tests → pytest parametrize
+- Go `context.Context` → Python contextvars / dependency injection
+- Go error wrapping → Python exception chaining (`raise ... from`)
+
+**Project:** Security Findings Aggregator (Semgrep, Dependabot integration) — apply architecture patterns
 
 -----
 
@@ -176,9 +187,10 @@ Create a CLAUDE.md for each Python project:
 
 ## Checkpoint
 
-Before moving to AI/ML Security, you should be able to:
+Before moving to Track 10: AI/ML Security, you should be able to:
 
 - Write tests before code (TDD red-green-refactor)
 - Use pytest fixtures and parametrization
 - Structure code with repository pattern and service layers
 - Review Python code for quality and security issues
+- Map Go architecture patterns to Pythonic equivalents
