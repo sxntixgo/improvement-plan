@@ -7,7 +7,7 @@
 
 ## TL;DR
 
-**Total budget: ~$270** for 6 books across 65 weeks. The plan prioritizes:
+**Total budget: ~$230** for 5 remaining books across 65 weeks. The plan prioritizes:
 - **Books for Go** — your work language deserves deep reference material
 - **Free resources first** — most tracks use free online books, courses, and workshops
 - **No paid courses or subscriptions needed** — HTB Academy ($20/month × 2) is the only subscription, and it's already budgeted in Track 10
@@ -30,8 +30,9 @@
 |Web Development with Node and Express (Brown) |Track 13: JavaScript/TypeScript      |
 |You Don't Know JS 1st edition (Simpson)       |Track 13: JavaScript/TypeScript      |
 |Eloquent JavaScript (Haverbeke)               |Track 13: JavaScript/TypeScript      |
+|100 Go Mistakes (Harsanyi)                    |Track 8: Go Foundations + Architecture|
 
-**12 books already owned** covering Tracks 1, 2, 4, 7, 9, 11, and 13.
+**13 books already owned** covering Tracks 1, 2, 4, 7, 8, 9, 11, and 13.
 
 -----
 
@@ -40,13 +41,12 @@
 |Book                                      |Cost |Track                                  |When to Buy         |
 |------------------------------------------|-----|---------------------------------------|---------------------|
 |Learning Go, 2nd ed (Bodner)              |~$50 |Track 8: Go Foundations + Architecture |Before Week 9        |
-|100 Go Mistakes (Harsanyi)                |~$40 |Track 8: Go Foundations + Architecture |Before Week 9        |
 |Let's Go (Edwards)                        |~$40 |Track 8: Go Foundations + Architecture |Before Week 9        |
 |Python Testing with pytest, 2nd ed (Okken)|~$40 |Track 9: Python Core + TDD            |Before Week 25       |
 |AI Engineering (Huyen)                    |~$50 |Track 10: AI/ML Security              |Before Week 33       |
 |Red Teaming AI (Dursey)                   |~$50 |Track 10: AI/ML Security              |July 2026 (on release)|
 
-**Total: ~$270**
+**Total: ~$230**
 
 -----
 
@@ -81,11 +81,11 @@
 - Track 7: Wilson LLM Security book (owned)
 
 ### Track 8: Go Foundations + Architecture (Weeks 9-20)
-**Books to buy:** $130 (Bodner + Harsanyi + Edwards)
+**Books to buy:** $90 (Bodner + Edwards) — 100 Go Mistakes already owned
 
 This is the biggest book investment because Go is your work language and this is a 12-week track:
 - **Learning Go (Bodner):** Primary Go language reference — practical, idiomatic
-- **100 Go Mistakes (Harsanyi):** Code review companion — reference throughout career
+- **100 Go Mistakes (Harsanyi):** Already owned — code review companion, reference throughout career
 - **Let's Go (Edwards):** Web development in Go — project-driven, builds real app
 
 **Why books over courses for Go:**
@@ -146,13 +146,13 @@ You own 4 JS/TS books. No purchases needed.
 
 |Category       |Cost  |Details                                        |
 |---------------|------|-----------------------------------------------|
-|Go books       |$130  |Bodner ($50) + Harsanyi ($40) + Edwards ($40)  |
+|Go books       |$90   |Bodner ($50) + Edwards ($40) — Harsanyi owned  |
 |Python book    |$40   |Okken pytest                                   |
 |AI/ML books    |$100  |Huyen ($50) + Dursey ($50)                     |
 |HTB Academy    |~$40  |$20/month × 2 months (Track 10)                |
-|**Total**      |**~$310**|                                            |
+|**Total**      |**~$270**|                                            |
 
-**Books you already own:** 12 (worth ~$400+)
+**Books you already own:** 13 (worth ~$440+)
 **Free online resources used:** 15+ (Fast.ai, Hugging Face, Cosmic Python, Percival, Beazley, Odin Project, etc.)
 
 -----
@@ -161,7 +161,7 @@ You own 4 JS/TS books. No purchases needed.
 
 **Books for depth, free resources for breadth.**
 
-- Go books ($130) → your work language, worth the investment
+- Go books ($90 remaining) → your work language, worth the investment
 - AI/ML books ($100) → understand the systems you'll attack
 - pytest book ($40) → essential TDD reference
 - Everything else → free online resources are sufficient
