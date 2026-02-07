@@ -145,7 +145,6 @@ Reading → Note-Taking → Claude Code Advanced
 |Black Hat Go (Steele et al.)                  |Track 11: Go Security Tools             |
 |Node.js: The Comprehensive Guide (Springer)   |Track 13: JavaScript/TypeScript         |
 |Web Development with Node and Express (Brown) |Track 13: JavaScript/TypeScript         |
-|You Don't Know JS 1st edition (Simpson)       |Track 13: JavaScript/TypeScript         |
 |Eloquent JavaScript (Haverbeke)               |Track 13: JavaScript/TypeScript         |
 |100 Go Mistakes (Harsanyi)                    |Track 8: Go Foundations + Architecture  |
 

@@ -28,11 +28,10 @@
 |Black Hat Go (Steele et al.)                  |Track 11: Go Security Tools          |
 |Node.js: The Comprehensive Guide (Springer)   |Track 13: JavaScript/TypeScript      |
 |Web Development with Node and Express (Brown) |Track 13: JavaScript/TypeScript      |
-|You Don't Know JS 1st edition (Simpson)       |Track 13: JavaScript/TypeScript      |
 |Eloquent JavaScript (Haverbeke)               |Track 13: JavaScript/TypeScript      |
 |100 Go Mistakes (Harsanyi)                    |Track 8: Go Foundations + Architecture|
 
-**13 books already owned** covering Tracks 1, 2, 4, 7, 8, 9, 11, and 13.
+**12 books already owned** covering Tracks 1, 2, 4, 7, 8, 9, 11, and 13.
 
 -----
 
@@ -133,12 +132,11 @@ You already understand concurrency from Go (goroutines, channels, fan-out/fan-in
 **Books to buy:** $0
 
 - **Eloquent JavaScript:** Already owned
-- **YDKJS 1st edition:** Already owned
 - **Node.js Comprehensive Guide (Springer):** Already owned
 - **Web Dev with Node/Express (Brown):** Already owned
-- **Free:** The Odin Project, JavaScript30, TypeScript Handbook
+- **Free:** You Don't Know JS Yet (free on GitHub), The Odin Project, JavaScript30, TypeScript Handbook
 
-You own 4 JS/TS books. No purchases needed.
+You own 3 JS/TS books. YDKJS is free online — no purchase needed.
 
 -----
 
@@ -152,7 +150,7 @@ You own 4 JS/TS books. No purchases needed.
 |HTB Academy    |~$40  |$20/month × 2 months (Track 10)                |
 |**Total**      |**~$270**|                                            |
 
-**Books you already own:** 13 (worth ~$440+)
+**Books you already own:** 12 (worth ~$400+)
 **Free online resources used:** 15+ (Fast.ai, Hugging Face, Cosmic Python, Percival, Beazley, Odin Project, etc.)
 
 -----
