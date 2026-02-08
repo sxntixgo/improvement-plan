@@ -26,24 +26,25 @@ You already have a crash course foundation from Track 5 (Week 6). Now you go dee
 
 ## Phase Overview
 
-|Phase|Weeks|Focus                    |Key Resource                       |
-|-----|-----|-------------------------|-----------------------------------|
-|1    |9-12 |Go Language Mastery      |Learning Go, 2nd ed (Bodner)       |
-|2    |13-16|Go Software Architecture |Architecture resources + projects   |
-|3    |17-20|Go Web Dev + Production  |Let's Go (Edwards) + 100 Go Mistakes|
+|Phase|Weeks|Focus                    |Key Resource                            |
+|-----|-----|-------------------------|----------------------------------------|
+|1    |9-12 |Go Web App (Learn by Doing)|Let's Go (Edwards)                    |
+|2    |13-16|Go Software Architecture |Architecture resources + projects        |
+|3    |17-20|Go JSON API + Production |Let's Go Further (Edwards) + 100 Go Mistakes|
 
 -----
 
 ## Resources
 
-|Resource                    |Cost         |Phase|Project-Driven?              |
-|----------------------------|-------------|-----|-----------------------------|
-|Learning Go, 2nd ed (Bodner)|~$50         |1    |Yes (structured intro)       |
-|100 Go Mistakes (Harsanyi)  |~$40         |1-3  |Yes (reference throughout)   |
-|Let's Go (Alex Edwards)     |~$40         |3    |Yes (builds full web app)    |
-|Go by Example               |Free         |1    |Yes (exercises)              |
-|Exercism Go Track           |Free         |1    |Yes (mentored)              |
-|Effective Go                |Free         |1-2  |Reference                    |
+|Resource                      |Cost         |Phase|Project-Driven?              |
+|------------------------------|-------------|-----|-----------------------------|
+|Let's Go (Alex Edwards)       |~$40         |1    |Yes (builds full web app)    |
+|Let's Go Further (Alex Edwards)|~$40        |3    |Yes (builds full JSON API)   |
+|Learning Go, 1st ed (Bodner)  |Already owned|1-3  |Reference for fundamentals   |
+|100 Go Mistakes (Harsanyi)    |Already owned|1-3  |Reference throughout         |
+|Go by Example                 |Free         |1    |Yes (exercises)              |
+|Exercism Go Track             |Free         |1    |Yes (mentored)              |
+|Effective Go                  |Free         |1-2  |Reference                    |
 
 **Architecture Resources (Free):**
 - [Go Project Layout](https://github.com/golang-standards/project-layout) - Standard project structure
@@ -55,91 +56,89 @@ You already have a crash course foundation from Track 5 (Week 6). Now you go dee
 
 -----
 
-## Phase 1: Go Language Mastery (Weeks 9-12)
+## Phase 1: Go Web App — Learn by Doing (Weeks 9-12)
 
-**Primary Resource:** Learning Go, 2nd ed (Bodner)
+**Primary Resource:** Let's Go (Alex Edwards) — build a complete web application
+**Reference:** Learning Go, 1st ed (Bodner) — look up fundamentals as needed
 
-### Week 9: Types, Declarations, Control Flow
+You learn Go by building a real web app from Chapter 1. When you hit a concept you don't understand (interfaces, goroutines, error handling), look it up in Bodner. This is faster than reading theory first.
 
-|Day|Hours|Focus|
-|---|-----|-----|
-|Mon-Tue|6|Chapters 1-3: Types, composite types, blocks/control flow|
-|Wed-Thu|4|Chapters 4-5: Functions, closures, defer|
-|Fri|2|Practice: Exercism Go Track (first 10 exercises)|
-|Weekend|6|Build: Refactor a real work function using new patterns|
-
-**CLAUDE.md Integration:**
-```
-REVIEW: "Review this Go function from my work codebase.
-Flag any anti-patterns from '100 Go Mistakes' and suggest
-idiomatic Go alternatives."
-```
-
-**Key Concepts:**
-- Value types vs reference types (when does Go copy?)
-- Slices: capacity, length, and when they share memory
-- Maps: zero values, nil maps vs empty maps
-- Multiple return values, named returns (and when to avoid them)
-
-### Week 10: Structs, Interfaces, Generics
+### Week 9: Project Setup + Routing + Templates
 
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Tue|6|Chapters 6-7: Pointers, structs, methods|
-|Wed-Thu|4|Chapters 8-9: Interfaces, generics|
-|Fri|2|Practice: Exercism (interfaces exercises)|
-|Weekend|6|Build: Interface-driven refactor of work code|
+|Mon-Tue|6|Let's Go Ch 1-3: Project structure, routing, HTML templates|
+|Wed-Thu|4|Let's Go Ch 4: Configuration, error handling, logging|
+|Fri|2|Supplement: Go by Example (types, functions, error handling)|
+|Weekend|6|Extend: Add a new page/route to the app. Exercism (first 5 exercises)|
 
-**Key Concepts:**
-- Pointer receivers vs value receivers (when to use each)
-- Interface satisfaction is implicit — design implications
+**Reference Bodner when you need:**
+- Types, slices, maps (Chapters 1-3)
+- Functions, closures, defer (Chapters 4-5)
+
+### Week 10: Database + Middleware + Sessions
+
+|Day|Hours|Focus|
+|---|-----|-----|
+|Mon-Tue|6|Let's Go Ch 5-7: MySQL, middleware, RESTful routing|
+|Wed-Thu|4|Let's Go Ch 8-9: Sessions, server-side validation|
+|Fri|2|Supplement: Exercism (interfaces exercises)|
+|Weekend|6|Extend: Add a new database model + CRUD to the app|
+
+**Key Concepts (learned through the project):**
+- Structs, methods, interfaces — Edwards teaches these through the app
+- Pointer receivers vs value receivers
+- Interface satisfaction is implicit
 - Accept interfaces, return structs
-- Small interfaces (io.Reader, io.Writer, fmt.Stringer)
-- Generics: type constraints, when to use vs interfaces
+- Dependency injection via struct fields
 
-**Architecture Preview:**
-Interfaces are the foundation of Go architecture. Understanding them deeply now pays off in Phase 2.
+**Reference Bodner when you need:**
+- Pointers, structs, methods (Chapters 6-7)
+- Interfaces (Chapter 8)
 
-### Week 11: Concurrency Deep Dive
+### Week 11: HTTPS + Testing + Authentication
 
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Tue|6|Chapters 12-13: Goroutines, channels, select|
-|Wed-Thu|4|Sync package: WaitGroup, Mutex, Once, errgroup|
-|Fri|2|Concurrency patterns: fan-out/fan-in, pipeline, worker pool|
-|Weekend|6|Build: Concurrent file processor for work|
+|Mon-Tue|6|Let's Go Ch 10-11: HTTPS, testing handlers/middleware|
+|Wed-Thu|4|Let's Go Ch 12-13: Authentication, embedding, file serving|
+|Fri|2|Practice: Write tests for your work code using patterns from the book|
+|Weekend|6|Extend: Add authentication to a work project|
+
+**Key Concepts (learned through the project):**
+- Table-driven tests (Go's signature testing pattern)
+- Test helpers, subtests, httptest package
+- Mocking with interfaces
+- HTTPS/TLS configuration
+
+**100 Go Mistakes Reference (use throughout):**
+- Mistake #2: Unnecessary nested code
+- Mistake #45: Returning a nil receiver
+- Mistake #78: Not using httptest
+
+### Week 12: Concurrency + Polish + Deploy
+
+|Day|Hours|Focus|
+|---|-----|-----|
+|Mon-Tue|6|Bodner Ch 12-13: Goroutines, channels, select (focused study)|
+|Wed-Thu|4|Concurrency patterns: fan-out/fan-in, pipeline, worker pool|
+|Fri|2|Practice: Add concurrency to your Let's Go app (background tasks)|
+|Weekend|6|Capstone: Deploy the app, write tests, clean up code|
 
 **Key Concepts:**
 - Goroutine lifecycle and leaks
 - Buffered vs unbuffered channels
-- Channel direction (send-only, receive-only)
 - Context for cancellation and timeouts
-- sync.WaitGroup, sync.Mutex, sync.Once
-- errgroup for concurrent error handling
+- sync.WaitGroup, errgroup
 - Race detector: `go test -race`
 
-**100 Go Mistakes Reference (use throughout):**
+**100 Go Mistakes Reference:**
 - Mistake #61: Propagating inappropriate context
 - Mistake #66: Using mutexes inaccurately
 - Mistake #69: Forgetting about goroutine leaks
 
-### Week 12: Error Handling, Testing, Modules
-
-|Day|Hours|Focus|
-|---|-----|-----|
-|Mon-Tue|6|Chapters 10-11: Errors, modules, packages|
-|Wed-Thu|4|Chapter 15: Testing — table-driven, subtests, testify|
-|Fri|2|Practice: Write tests for your work code|
-|Weekend|6|Build: Well-tested CLI tool with proper error handling|
-
-**Key Concepts:**
-- Custom error types with `errors.Is` and `errors.As`
-- Error wrapping: `fmt.Errorf("context: %w", err)`
-- Sentinel errors vs error types vs opaque errors
-- Table-driven tests (Go's signature testing pattern)
-- Test helpers, subtests, test fixtures
-- Benchmarks and fuzzing
-- Module management and go.mod
+**Why concurrency last in Phase 1:**
+Edwards doesn't cover concurrency deeply. Use Week 12 to read Bodner's concurrency chapters — by now you have enough Go context from 3 weeks of building to understand goroutines and channels properly.
 
 -----
 
@@ -336,53 +335,54 @@ to the domain package."
 
 -----
 
-## Phase 3: Go Web Development + Production (Weeks 17-20)
+## Phase 3: Go JSON API + Production (Weeks 17-20)
 
-**Primary Resource:** Let's Go (Alex Edwards) - ~$40
+**Primary Resource:** Let's Go Further (Alex Edwards) — build a complete JSON API
 **Reference:** 100 Go Mistakes (Harsanyi) — use throughout
 
-### Week 17: HTTP Basics, Routing, Handlers
+Let's Go Further picks up where Let's Go left off. You build a full JSON API from scratch with production-grade features. Apply the architecture patterns from Phase 2 as you build.
+
+### Week 17: JSON API Foundations
 
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Tue|6|Let's Go: Chapters 1-4 (Foundation setup)|
-|Wed-Thu|4|Routing patterns, ServeMux, path parameters|
-|Fri|2|Practice: Apply clean architecture to Let's Go project|
-|Weekend|6|Build: HTTP server with proper project structure|
+|Mon-Tue|6|Let's Go Further: API setup, JSON encoding/decoding, routing|
+|Wed-Thu|4|Database migrations, SQL queries, CRUD endpoints|
+|Fri|2|Apply: Clean architecture structure from Phase 2 to the project|
+|Weekend|6|Build: Extend the API with a new resource, apply DDD patterns|
 
-### Week 18: Templates, Middleware, Database
-
-|Day|Hours|Focus|
-|---|-----|-----|
-|Mon-Tue|6|Let's Go: Chapters 5-8 (Templates, middleware)|
-|Wed-Thu|4|Database integration with repository pattern|
-|Fri|2|Middleware: logging, recovery, CORS, auth|
-|Weekend|6|Build: Web app with database, applying Week 14 DDD patterns|
-
-### Week 19: Authentication, Sessions, Security
+### Week 18: Filtering, Sorting, Pagination + Validation
 
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Tue|6|Let's Go: Chapters 9-12 (Auth, sessions)|
-|Wed-Thu|4|Security: CSRF, XSS prevention, secure headers|
-|Fri|2|100 Go Mistakes: Security-related chapters|
-|Weekend|6|Build: Secure web app with auth|
+|Mon-Tue|6|Let's Go Further: Query string parsing, filtering, sorting|
+|Wed-Thu|4|Input validation, error handling patterns|
+|Fri|2|100 Go Mistakes: API-related chapters|
+|Weekend|6|Build: Add full CRUD with validation to a work-related API|
 
-### Week 20: Production Readiness + Capstone
+### Week 19: Authentication, Permissions, Rate Limiting
 
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Tue|6|Production: graceful shutdown, health checks, config management|
-|Wed-Thu|4|Observability: structured logging (slog), metrics, tracing|
+|Mon-Tue|6|Let's Go Further: User registration, activation emails|
+|Wed-Thu|4|Authentication tokens, permission-based authorization|
+|Fri|2|Rate limiting, IP-based throttling, CORS|
+|Weekend|6|Build: Add auth + permissions to your Phase 2 API project|
+
+### Week 20: Production Deployment + Capstone
+
+|Day|Hours|Focus|
+|---|-----|-----|
+|Mon-Tue|6|Let's Go Further: Graceful shutdown, metrics, build versioning|
+|Wed-Thu|4|Observability: structured logging (slog), health checks|
 |Fri|2|Docker: multi-stage builds for Go apps|
-|Weekend|6|Capstone: Production-ready Go service (GitHub portfolio piece)|
+|Weekend|6|Capstone: Production-ready Go API (GitHub portfolio piece)|
 
-**Capstone Project: Production Go Service**
-Build a production-ready Go service that demonstrates:
-- Clean architecture / hex architecture
-- Domain-driven design patterns
-- RESTful API with middleware
-- Database integration with repository pattern
+**Capstone Project: Production Go API**
+By Week 20, you've built two complete Go projects (web app + JSON API). Polish the API as your capstone:
+- Clean architecture / hex architecture (Phase 2 patterns)
+- JSON API with authentication, permissions, rate limiting
+- Database with migrations
 - Comprehensive test suite (unit + integration)
 - Docker multi-stage build
 - Structured logging and health checks
@@ -426,12 +426,13 @@ Build a production-ready Go service that demonstrates:
 
 |Project                           |Week |Output                           |Share             |
 |----------------------------------|-----|---------------------------------|------------------|
-|Concurrent file processor         |11   |CLI tool with goroutines         |GitHub            |
-|Well-tested CLI tool              |12   |CLI with proper error handling   |GitHub            |
+|Let's Go web app                  |9-11 |Complete web app (templates, DB, auth)|GitHub        |
+|Concurrency deep dive             |12   |Add goroutines to Let's Go app   |GitHub            |
 |Clean architecture Go project     |13   |Restructured project             |GitHub            |
 |DDD domain model                  |14   |Domain-driven Go service         |GitHub            |
 |REST API with clean architecture  |15-16|Full API with test suite          |GitHub            |
-|Production-ready Go service       |17-20|Capstone: full web service        |GitHub + Blog post|
+|Let's Go Further JSON API         |17-19|Production API (auth, rate limiting)|GitHub          |
+|Production-ready Go API (capstone)|20   |Polished API portfolio piece      |GitHub + Blog post|
 
 -----
 

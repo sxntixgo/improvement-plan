@@ -7,7 +7,7 @@
 
 ## TL;DR
 
-**Total budget: ~$270** for 6 books across 65 weeks. The plan prioritizes:
+**Total budget: ~$170** for 4 remaining books across 65 weeks. The plan prioritizes:
 - **Books for Go** — your work language deserves deep reference material
 - **Free resources first** — most tracks use free online books, courses, and workshops
 - **No paid courses or subscriptions needed** — HTB Academy ($20/month × 2) is the only subscription, and it's already budgeted in Track 10
@@ -28,10 +28,12 @@
 |Black Hat Go (Steele et al.)                  |Track 11: Go Security Tools          |
 |Node.js: The Comprehensive Guide (Springer)   |Track 13: JavaScript/TypeScript      |
 |Web Development with Node and Express (Brown) |Track 13: JavaScript/TypeScript      |
-|You Don't Know JS 1st edition (Simpson)       |Track 13: JavaScript/TypeScript      |
 |Eloquent JavaScript (Haverbeke)               |Track 13: JavaScript/TypeScript      |
+|100 Go Mistakes (Harsanyi)                    |Track 8: Go Foundations + Architecture|
+|Learning Go, 1st ed (Bodner)                  |Track 8: Go Foundations + Architecture|
+|Red Teaming AI (Dursey)                       |Track 10: AI/ML Security             |
 
-**12 books already owned** covering Tracks 1, 2, 4, 7, 9, 11, and 13.
+**14 books already owned** covering Tracks 1, 2, 4, 7, 8, 9, 10, 11, and 13.
 
 -----
 
@@ -39,14 +41,12 @@
 
 |Book                                      |Cost |Track                                  |When to Buy         |
 |------------------------------------------|-----|---------------------------------------|---------------------|
-|Learning Go, 2nd ed (Bodner)              |~$50 |Track 8: Go Foundations + Architecture |Before Week 9        |
-|100 Go Mistakes (Harsanyi)                |~$40 |Track 8: Go Foundations + Architecture |Before Week 9        |
 |Let's Go (Edwards)                        |~$40 |Track 8: Go Foundations + Architecture |Before Week 9        |
+|Let's Go Further (Edwards)                |~$40 |Track 8: Go Foundations + Architecture |Before Week 9        |
 |Python Testing with pytest, 2nd ed (Okken)|~$40 |Track 9: Python Core + TDD            |Before Week 25       |
 |AI Engineering (Huyen)                    |~$50 |Track 10: AI/ML Security              |Before Week 33       |
-|Red Teaming AI (Dursey)                   |~$50 |Track 10: AI/ML Security              |July 2026 (on release)|
 
-**Total: ~$270**
+**Total: ~$170**
 
 -----
 
@@ -81,18 +81,21 @@
 - Track 7: Wilson LLM Security book (owned)
 
 ### Track 8: Go Foundations + Architecture (Weeks 9-20)
-**Books to buy:** $130 (Bodner + Harsanyi + Edwards)
+**Books to buy:** $80 (Let's Go + Let's Go Further) — Bodner 1st ed + Harsanyi already owned
 
 This is the biggest book investment because Go is your work language and this is a 12-week track:
-- **Learning Go (Bodner):** Primary Go language reference — practical, idiomatic
-- **100 Go Mistakes (Harsanyi):** Code review companion — reference throughout career
-- **Let's Go (Edwards):** Web development in Go — project-driven, builds real app
+- **Learning Go, 1st ed (Bodner):** Already owned — fundamentals reference
+- **100 Go Mistakes (Harsanyi):** Already owned — code review companion, reference throughout career
+- **Let's Go (Edwards):** Web development in Go — project-driven, builds complete web app
+- **Let's Go Further (Edwards):** Advanced Go — project-driven, builds full JSON API with auth, rate limiting, graceful shutdown
 
-**Why books over courses for Go:**
-- Limited quality Go courses for your level (you already use Go daily)
-- These books are project-driven with hands-on exercises
+**Why two project-driven books:**
+- You learn best by doing projects, not reading theory
+- Let's Go: builds a complete web app (HTML templates, middleware, sessions, HTTPS)
+- Let's Go Further: builds a JSON API (authentication, permissions, rate limiting, CORS, metrics)
+- Two real projects that teach Go fundamentals through practice
+- Bodner 1st ed (owned) serves as reference when you need to look something up
 - Black Hat Go (owned) adds security context in Track 11
-- No course covers Go + software architecture together
 
 ### Track 9: Python Core + TDD (Weeks 25-32)
 **Books to buy:** $40 (Okken)
@@ -103,10 +106,10 @@ This is the biggest book investment because Go is your work language and this is
 - **Video:** ArjanCodes YouTube (free) for clean code patterns
 
 ### Track 10: AI/ML Security (Weeks 33-42)
-**Books to buy:** $100 (Huyen + Dursey)
+**Books to buy:** $50 (Huyen) — Dursey already owned
 
 - **AI Engineering (Huyen):** $50 — essential for understanding production AI systems you'll be attacking. Covers RAG architecture, prompt engineering, evaluation, and inference — all directly relevant to red teaming
-- **Red Teaming AI (Dursey):** $50 — releases July 2026, the first dedicated AI red teaming book. Buy on release
+- **Red Teaming AI (Dursey):** Already owned — the first dedicated AI red teaming book
 - **HTB Academy:** ~$20/month × 2 months — hands-on labs (budgeted separately)
 - **Free:** Fast.ai, Hugging Face NLP course, OWASP LLM Top 10, HackAPrompt, Crucible CTF
 
@@ -133,12 +136,11 @@ You already understand concurrency from Go (goroutines, channels, fan-out/fan-in
 **Books to buy:** $0
 
 - **Eloquent JavaScript:** Already owned
-- **YDKJS 1st edition:** Already owned
 - **Node.js Comprehensive Guide (Springer):** Already owned
 - **Web Dev with Node/Express (Brown):** Already owned
-- **Free:** The Odin Project, JavaScript30, TypeScript Handbook
+- **Free:** You Don't Know JS Yet (free on GitHub), The Odin Project, JavaScript30, TypeScript Handbook
 
-You own 4 JS/TS books. No purchases needed.
+You own 3 JS/TS books. YDKJS is free online — no purchase needed.
 
 -----
 
@@ -146,13 +148,13 @@ You own 4 JS/TS books. No purchases needed.
 
 |Category       |Cost  |Details                                        |
 |---------------|------|-----------------------------------------------|
-|Go books       |$130  |Bodner ($50) + Harsanyi ($40) + Edwards ($40)  |
+|Go books       |$80   |Let's Go ($40) + Let's Go Further ($40) — Bodner + Harsanyi owned|
 |Python book    |$40   |Okken pytest                                   |
-|AI/ML books    |$100  |Huyen ($50) + Dursey ($50)                     |
+|AI/ML books    |$50   |Huyen ($50) — Dursey already owned             |
 |HTB Academy    |~$40  |$20/month × 2 months (Track 10)                |
-|**Total**      |**~$310**|                                            |
+|**Total**      |**~$210**|                                            |
 
-**Books you already own:** 12 (worth ~$400+)
+**Books you already own:** 14 (worth ~$500+)
 **Free online resources used:** 15+ (Fast.ai, Hugging Face, Cosmic Python, Percival, Beazley, Odin Project, etc.)
 
 -----
@@ -161,8 +163,8 @@ You own 4 JS/TS books. No purchases needed.
 
 **Books for depth, free resources for breadth.**
 
-- Go books ($130) → your work language, worth the investment
-- AI/ML books ($100) → understand the systems you'll attack
+- Go books ($80 remaining) → two project-driven books for your work language
+- AI/ML book ($50 remaining) → understand the systems you'll attack
 - pytest book ($40) → essential TDD reference
 - Everything else → free online resources are sufficient
 
