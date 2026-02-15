@@ -13,30 +13,28 @@
 
 ## Why This Week?
 
-Your company uses Go for development. This crash course gets you **functional at work** while you continue your AI red teaming path.
-
-**Goal:** Minimum viable Go knowledge to:
-- Read and understand Go codebases at work
-- Make small changes and fixes
-- Use Claude Code effectively with Go
-- Collaborate with Go developers
-- **NOT become a Go expert** (that's Track 8: Go Foundations, Weeks 9-20)
+Your company uses Go for development. Claude Code writes the Go, but you need to **understand Go well enough to**:
+- Read and review what Claude Code produces
+- Give Claude Code effective Go-specific direction
+- Understand company Go codebases in code reviews
+- Collaborate with Go developers using the right vocabulary
+- **NOT become a Go expert** (that's Track 8: Software Architecture, Weeks 9-20)
 
 -----
 
 ## Self-Assessment: Skip What You Already Know
 
-You've been using Go at work and building tools with Claude Code. Don't waste time on material you've already internalized.
+You've been directing Claude Code to write Go at work. Don't waste time on material you can already recognize.
 
 ```
 Before starting, can you:
-- [ ] Read and understand Go code at work?
-- [ ] Write basic Go functions with error handling?
-- [ ] Use goroutines and channels?
-- [ ] Write Go tests?
-- [ ] Navigate your company's Go codebase?
+- [ ] Read and understand Go code at work (with or without Claude Code help)?
+- [ ] Identify what a Go function does when you see it?
+- [ ] Understand goroutine/channel concepts (even if you can't write them)?
+- [ ] Navigate your company's Go codebase structure?
+- [ ] Review Go code in PRs and give meaningful feedback?
 
-If you checked 4-5: Skip to Saturday (build a tool + contribute to company codebase).
+If you checked 4-5: Skip to Saturday (review company codebase deeply).
 If you checked 2-3: Do the abbreviated version (skip Tour of Go, focus on gaps).
 If you checked 0-1: Follow the full crash course below.
 ```
@@ -218,18 +216,18 @@ if err != nil {
 ## Deliverables
 
 **By end of Week 6, you should have:**
-- [ ] Completed Tour of Go
-- [ ] Worked through Go by Example (key sections)
-- [ ] Built a simple Go tool (HTTP server or CLI)
-- [ ] **Made first contribution to company codebase** (even if tiny!)
-- [ ] Can read and understand company's Go code with Claude Code
+- [ ] Completed Tour of Go (for reading comprehension)
+- [ ] Reviewed Go by Example (key sections — understand, not memorize)
+- [ ] Directed Claude Code to build a simple Go tool and reviewed the output
+- [ ] Can read and understand company's Go code
+- [ ] Can give Claude Code Go-specific direction at work
 - [ ] Comfortable using Git from Track 4 for Go projects
 
 **NOT expected:**
-- ❌ Go expert
-- ❌ Advanced concurrency patterns
-- ❌ All Go idioms
-- ❌ Deep understanding of Go internals
+- You don't need to write Go from memory
+- You don't need advanced concurrency patterns
+- You don't need all Go idioms memorized
+- Claude Code handles implementation — you handle direction and review
 
 -----
 
@@ -285,23 +283,25 @@ Follow our company's style guide"
 
 ## What's Next?
 
-**Week 8: LLM Security Primer**
-- Read Wilson's book
-- Build security context for Python learning
-- Continue using Go at work (with Claude Code assistance)
+**Week 7: Docker Essentials (Track 6)**
+- Container fundamentals for all future projects
 
-**Weeks 9-20: Go Foundations + Software Architecture (Track 8)**
-- Deep Go language mastery
-- Clean architecture, DDD, testing
+**Week 8: LLM Security Primer (Track 7)**
+- Read Wilson's book — security context for everything ahead
+
+**Weeks 9-20: Software Architecture via Go (Track 8)**
+- Deep architecture understanding: clean arch, DDD, testing
 - Immediately applicable to your daily work
 
-**Weeks 21-24: Go Security Tools (Track 11)**
-- Black Hat Go — build offensive security tools
-- 16+ continuous weeks of Go mastery!
+**Weeks 21-28: AI/ML Security (Track 10)**
+- Your career goal — AI red teaming
+- Architecture knowledge from Track 8 helps you understand AI systems
 
-**Weeks 25-32: Python Core (Track 9)**
-- Focus on AI red teaming skills
-- Keep using Go at work daily
+**Weeks 30-37: Python Core + TDD (Track 9)**
+- Deepen Python understanding after using it in Track 10
+
+**Weeks 38-43: Go Security Tools + AI Capstone (Track 11)**
+- Combine everything into a unique portfolio piece
 
 -----
 

@@ -1,8 +1,8 @@
 # Leadership Reading List (Bedtime Reading)
 
-**Purpose:** Non-technical books for mental break and building discipline/leadership mindset throughout your 66-week learning journey
+**Purpose:** Non-technical books for mental break and building discipline/leadership mindset throughout your 44-week learning journey
 
-**Total Books:** 28 books (27 you already own + 1 to purchase ~$25)
+**Total Books:** 27 books (all already owned)
 **Reading Pace:** 20-30 pages per night = 1 book every 2-4 weeks
 **Goal:** Read 1-2 leadership books per month alongside technical learning
 
@@ -38,8 +38,8 @@
 
 -----
 
-### Priority 2: Long-Term Discipline (Weeks 11-25)
-**Focus:** Sustaining excellence through longer tracks (Python Core, AI/ML)
+### Priority 2: Long-Term Discipline (Weeks 11-20)
+**Focus:** Sustaining excellence through Software Architecture (Track 8)
 
 - [ ] **Legacy** (James Kerr - All Blacks)
   - Long-term excellence, "sweep the sheds" mindset
@@ -70,8 +70,8 @@
 
 -----
 
-### Priority 3: Perseverance & Growth (Weeks 26-40)
-**Focus:** Pushing through harder material (Python Advanced, early Go Deep Dive)
+### Priority 3: Perseverance & Growth (Weeks 21-30)
+**Focus:** Pushing through AI/ML Security (Track 10) and into Python Core
 
 - [x] **Marcelo Bielsa: Los 11 Caminos al Gol** - STARTED
   - Tactics, depth, obsessive mastery
@@ -98,13 +98,13 @@
 
 -----
 
-### Priority 4: Finishing Strong (Weeks 41-66)
-**Focus:** Final stretch through Go Deep Dive and JavaScript/TypeScript
+### Priority 4: Finishing Strong (Weeks 31-44)
+**Focus:** Final stretch through Python Core and Go Security Capstone
 
 - [ ] **Revolución Scaloni** (Argentina's World Cup)
   - Underdog story, team building, finishing strong
   - ~250 pages | Est. 2 weeks
-  - **SAVE FOR JAVASCRIPT/TYPESCRIPT FINAL WEEKS**
+  - **SAVE FOR GO SECURITY CAPSTONE FINAL WEEKS**
   - Key lesson: Belief, persistence, delivering under pressure
 
 - [ ] **Measure What Matters** (John Doerr - OKRs)
@@ -115,7 +115,7 @@
 - [ ] **The Snowball** (Warren Buffett - Schroeder)
   - Long-term thinking, compounding knowledge, patience
   - ~900 pages | Est. 4-6 weeks
-  - **READ WEEKS 54-60** during JavaScript track
+  - **READ WEEKS 36-42** during Python/Go Security tracks
   - Key lesson: Compound interest, think long-term, keep learning
 
 - [ ] **Buffett: The Making of an American Capitalist** (Lowenstein)
@@ -130,11 +130,6 @@
 ### Anytime Reads (No Specific Phase)
 **Read these whenever you need the specific lesson or have a gap between priority books**
 
-- [ ] **A Philosophy of Software Design** (John Ousterhout)
-  - Managing complexity, deep vs shallow modules, strategic programming
-  - ~180 pages | Est. 1-2 weeks
-  - **SHORT - Great complement to Track 8 Go architecture**
-  - Key lesson: Complexity is the root of all software problems; design it out
 
 - [ ] **Six Thinking Hats** (Edward de Bono)
   - Problem-solving frameworks
@@ -241,29 +236,26 @@ Final 26 weeks (Weeks 41-66) through Go Deep Dive and JavaScript/TypeScript:
 - Weeks 7-8: Finish The Captains Class
 - Weeks 9-10: High Output Management
 
-### Weeks 11-25 (Discipline Phase)
+### Weeks 11-20 (Architecture Phase)
 - Weeks 11-12: Legacy
 - Weeks 13-14: Finish Bielsa book
 - Weeks 15-17: Leaders Eat Last
-- Weeks 18-19: Start With Why
-- Weeks 20-22: High Performance
-- Weeks 23-25: Gap / Anytime book
+- Weeks 18-20: Start With Why
 
-### Weeks 26-40 (Mastery Phase)
-- Weeks 26-28: Paradigma Guardiola
-- Weeks 29-31: Creativity Inc
-- Weeks 32-35: Elon Musk
-- Weeks 36-40: Anytime books or re-read favorites
+### Weeks 21-30 (AI/ML + Break Phase)
+- Weeks 21-23: Paradigma Guardiola
+- Weeks 24-26: Creativity Inc
+- Weeks 27-28: High Performance
+- Weeks 29-30: Gap / Anytime book
 
-### Weeks 41-66 (Finishing Phase)
-- Weeks 41-42: Revolución Scaloni
-- Weeks 43-45: Measure What Matters
-- Weeks 46-52: Continue with Anytime books
-- Weeks 53-58: The Snowball (6 weeks during JavaScript)
-- Weeks 59-62: Buffett: Making of American Capitalist
-- Weeks 63-66: Final anytime books, or re-reads
+### Weeks 31-44 (Finishing Phase)
+- Weeks 31-32: Elon Musk
+- Weeks 33-34: Revolución Scaloni
+- Weeks 35-37: Measure What Matters
+- Weeks 38-43: The Snowball (during Go Security + Capstone)
+- Week 44: Re-read favorites
 
-**Total:** You can easily finish 20-25 books during your 66-week journey!
+**Total:** You can finish 15-20 books during your 44-week journey!
 
 -----
 
@@ -278,11 +270,10 @@ Final 26 weeks (Weeks 41-66) through Go Deep Dive and JavaScript/TypeScript:
 - [ ] Paradigma Guardiola (Pep Guardiola)
 - [ ] Revolución Scaloni (Argentina World Cup)
 
-### Systems & Execution (6 books)
+### Systems & Execution (5 books)
 - [ ] Atomic Habits
 - [ ] High Output Management (Andy Grove)
 - [ ] Measure What Matters (OKRs)
-- [ ] A Philosophy of Software Design (Ousterhout)
 - [ ] Get Scalable
 - [ ] The Design of Extraordinary Things
 
@@ -337,8 +328,8 @@ Final 26 weeks (Weeks 41-66) through Go Deep Dive and JavaScript/TypeScript:
 
 ## Success Metrics
 
-**By Week 66, you should have:**
-- ✅ Read 20-25 leadership/business books
+**By Week 44, you should have:**
+- ✅ Read 15-20 leadership/business books
 - ✅ Developed consistent bedtime reading habit
 - ✅ Built leadership mindset for senior roles
 - ✅ Learned from sports leaders (your passion)
@@ -355,15 +346,16 @@ Final 26 weeks (Weeks 41-66) through Go Deep Dive and JavaScript/TypeScript:
 
 ## Update Log
 
-**Last Updated:** January 12, 2026
+**Last Updated:** February 15, 2026
 
 **Current Status:**
 - 3 books started
 - 0 books completed
-- Week 1 starting soon
+- Plan restructured to 44 weeks (architect-focused)
 - Next book: The Score Takes Care of Itself
 
 **Notes:**
 - User prefers sports leadership (has 7 sports books)
 - Already engaged (started 3 books)
-- Ready for systematic approach
+- Plan shortened from 66 to 44 weeks — reading pace adjusted
+- A Philosophy of Software Design moved to Track 8 (technical, not leadership)

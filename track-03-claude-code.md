@@ -2,7 +2,7 @@
 
 **Duration:** 1 week | **Total:** 18 hours
 **Weekly breakdown:** 8 hrs weekdays + 5 hrs Sat + 5 hrs Sun
-**Priority:** CRITICAL
+**Priority:** CRITICAL — THIS IS YOUR PRIMARY TOOL
 
 **Weekly Schedule:**
 
@@ -12,16 +12,17 @@
 
 -----
 
-## Why This Week?
+## Why This Is the Most Important Week
 
-You already build tools with Claude Code — you know the basics (prompt patterns, model selection, core workflows). This week levels you up to **power-user status** with features that compound across every future track.
+**Claude Code is how you build everything.** You don't write code — you direct Claude Code to write it. This week determines how effective you are for the entire 44-week plan and your career.
 
-Claude Code accelerates everything else. Mastering it now means:
+The difference between a mediocre architect and a great one is the quality of their direction. This week teaches you to:
 
-- Faster code review and understanding
-- Assisted project building in Python/JS/Go tracks
-- Better prompt engineering for AI/ML security work
-- Automated workflows for your Go development at work
+- **Give Claude Code precise architectural instructions** via CLAUDE.md files
+- **Review code systematically** instead of accepting whatever Claude Code produces
+- **Build automated workflows** that make your direction more efficient
+- **Use extended thinking** for complex architectural decisions
+- **Build AI agents** (directly relevant to your AI red teaming career)
 
 -----
 
@@ -212,16 +213,15 @@ The Claude Agent SDK lets you build custom AI agents — directly relevant to AI
 
 -----
 
-## Claude Code Integration Across Future Tracks
+## Claude Code as Your Implementation Partner
 
-After this week, use Claude Code as a **continuous accelerator** in every track:
+After this week, Claude Code is your implementation tool in every track:
 
-**Track 5 (Go Crash Course):** CLAUDE.md for company repos, Go code explanation
-**Track 8 (Python Core):** Generate pytest fixtures, compare Python to Go patterns
-**Track 9 (AI/ML Security):** Build automated red team agents with SDK
-**Track 10 (Python Advanced):** AST analysis assistance, async pattern comparison
-**Track 11 (Go Deep Dive):** CLAUDE.md for every project, Go test generation
-**Track 12 (JS/TS):** Scaffold TypeScript projects, cross-language comparisons
+**Track 5 (Go Crash Course):** CLAUDE.md for company repos, Go code review
+**Track 8 (Software Architecture):** Direct Claude Code to build Go projects, review output
+**Track 10 (AI/ML Security):** Build exploit tools, vulnerable apps, red team agents
+**Track 9 (Python Core):** Build Python projects, review for architecture patterns
+**Track 11 (Go Security + AI Capstone):** Build security tools, AI red team CLI tool
 
 -----
 

@@ -2,21 +2,26 @@
 
 **Duration:** 8 weeks | **Total:** ~144 hours
 **Weekly breakdown:** 8 hrs weekdays + 5 hrs Sat + 5 hrs Sun
-**Priority:** HIGH
-**Goal:** TDD and Python skills needed for ML/AI security work
+**Priority:** MEDIUM
+**Goal:** Deepen Python understanding for better AI security tool direction and code review
 
 -----
 
-## Why After Go Architecture?
+## Why After AI/ML Security?
 
-You already know software architecture from Track 8 (clean architecture, DDD, repository pattern — all in Go). Now you learn Python with that architectural foundation:
+You just completed Track 10 (AI/ML Security) where Claude Code wrote Python for HTB labs, LangChain apps, and exploit scripts. Now you understand:
 
-- You understand TDD, DI, and interfaces — now learn the Pythonic equivalents
-- Testing ML pipelines and model outputs requires Python
-- Building reliable AI security tools requires Python
-- Understanding codebases you'll be attacking requires Python
+- **Why Python matters** — you've seen it used for real AI security work
+- **What Python code looks like** — you've reviewed Claude Code's Python output for 8 weeks
+- **Where your gaps are** — you know which Python concepts you need to understand better
 
-**Your advantage:** Architecture patterns transfer directly. You'll learn Python faster because you're learning a language, not learning architecture from scratch.
+This track deepens your ability to:
+- Review Python code Claude Code produces (catch bugs, security issues)
+- Give Claude Code more precise Python architectural direction
+- Understand testing concepts to direct better test strategies
+- Map Go architecture patterns to their Pythonic equivalents
+
+**Your advantage:** You've already used Python tools (via Claude Code) during AI/ML security. Architecture patterns from Go (Track 8) transfer directly. You're deepening understanding, not starting from scratch.
 
 -----
 
@@ -24,9 +29,9 @@ You already know software architecture from Track 8 (clean architecture, DDD, re
 
 |Phase|Weeks|Focus                |Key Resource                                                 |
 |-----|-----|---------------------|-------------------------------------------------------------|
-|1A   |25-28|TDD Methodology      |Test-Driven Development with Python, 3rd ed (Percival) - FREE|
-|1B   |29-30|pytest Mastery       |Python Testing with pytest, 2nd ed (Okken) - ~$40            |
-|2    |31-32|Architecture in Python|Architecture Patterns with Python - FREE (accelerated)       |
+|1A   |30-33|TDD Methodology      |Test-Driven Development with Python, 3rd ed (Percival) - FREE|
+|1B   |34-35|pytest Mastery       |Python Testing with pytest, 2nd ed (Okken) - ~$40            |
+|2    |36-37|Architecture in Python|Architecture Patterns with Python - FREE (accelerated)       |
 
 -----
 
@@ -50,16 +55,18 @@ You already know software architecture from Track 8 (clean architecture, DDD, re
 
 -----
 
-## Phase 1A: TDD Methodology (Weeks 25-28)
+## Phase 1A: TDD Methodology (Weeks 30-33)
 
 **Resource:** Test-Driven Development with Python, 3rd ed (Percival) - FREE at obeythetestinggoat.com
 
+**Your approach as architect:** Read Percival to understand TDD philosophy and testing strategy. You already understand testing architecture from Go (Track 8). Focus on how TDD methodology guides architectural decisions — not on typing Django code.
+
 |Week|Chapters|Focus                                 |
 |----|--------|--------------------------------------|
-|25  |1-4     |Red-Green-Refactor, first Django tests|
-|26  |5-8     |Forms, input validation, database     |
-|27  |9-12    |Refactoring, deployment               |
-|28  |13-16   |Advanced testing patterns             |
+|30  |1-4     |Red-Green-Refactor, first Django tests|
+|31  |5-8     |Forms, input validation, database     |
+|32  |9-12    |Refactoring, deployment               |
+|33  |13-16   |Advanced testing patterns             |
 
 **Book Structure:**
 - **Part I (Ch 1-8):** The Basics of TDD and Django
@@ -75,28 +82,28 @@ You already know software architecture from Track 8 (clean architecture, DDD, re
 
 -----
 
-## Phase 1B: pytest Mastery (Weeks 29-30)
+## Phase 1B: pytest Mastery (Weeks 34-35)
 
 **Resource:** Python Testing with pytest, 2nd ed (Okken) - ~$40
 
 |Week|Chapters|Focus                    |
 |----|--------|-------------------------|
-|29  |1-6     |Fixtures, parametrization|
-|30  |7-12    |Plugins, CI integration  |
+|34  |1-6     |Fixtures, parametrization|
+|35  |7-12    |Plugins, CI integration  |
 
 -----
 
-## Phase 2: Architecture Patterns in Python (Weeks 31-32)
+## Phase 2: Architecture Patterns in Python (Weeks 36-37)
 
 **Resource:** Architecture Patterns with Python (Cosmic Python) - FREE at cosmicpython.com
 
 **Why only 2 weeks (instead of 4):**
-You already learned architecture in Go (Track 8). This phase focuses on the **Pythonic equivalents** of patterns you already know, not learning architecture from scratch.
+You already learned architecture in Go (Track 8) and have used Python tools during AI/ML (Track 10). This phase focuses on the **Pythonic equivalents** of patterns you already know, not learning architecture from scratch.
 
 |Week|Chapters|Focus                                     |
 |----|--------|------------------------------------------|
-|31  |1-6     |Domain modeling, repository, service layer — the Pythonic way|
-|32  |7-12    |Events, CQRS — advanced patterns (skim what you know, deep dive on new concepts)|
+|36  |1-6     |Domain modeling, repository, service layer — the Pythonic way|
+|37  |7-12    |Events, CQRS — advanced patterns (skim what you know, deep dive on new concepts)|
 
 **Key Mappings from Go → Python:**
 - Go interfaces → Python Protocols / ABCs
@@ -186,10 +193,11 @@ Create a CLAUDE.md for each Python project:
 
 ## Checkpoint
 
-Before moving to Track 10: AI/ML Security, you should be able to:
+Before moving to Track 11: Go Security Tools + AI Capstone, you should be able to:
 
-- Write tests before code (TDD red-green-refactor)
-- Use pytest fixtures and parametrization
-- Structure code with repository pattern and service layers
+- Explain TDD methodology (red-green-refactor) to Claude Code
+- Direct Claude Code to use pytest fixtures and parametrization
+- Review Python architecture for repository pattern and service layer violations
 - Review Python code for quality and security issues
 - Map Go architecture patterns to Pythonic equivalents
+- Give Claude Code more precise Python direction than before Track 10
