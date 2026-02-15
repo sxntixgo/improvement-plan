@@ -2,7 +2,7 @@
 
 **Purpose:** Non-technical books for mental break and building discipline/leadership mindset throughout your 44-week learning journey
 
-**Total Books:** 28 books (27 you already own + 1 to purchase ~$25)
+**Total Books:** 27 books (all already owned)
 **Reading Pace:** 20-30 pages per night = 1 book every 2-4 weeks
 **Goal:** Read 1-2 leadership books per month alongside technical learning
 
@@ -130,11 +130,6 @@
 ### Anytime Reads (No Specific Phase)
 **Read these whenever you need the specific lesson or have a gap between priority books**
 
-- [ ] **A Philosophy of Software Design** (John Ousterhout)
-  - Managing complexity, deep vs shallow modules, strategic programming
-  - ~180 pages | Est. 1-2 weeks
-  - **SHORT - Great complement to Track 8 Go architecture**
-  - Key lesson: Complexity is the root of all software problems; design it out
 
 - [ ] **Six Thinking Hats** (Edward de Bono)
   - Problem-solving frameworks
@@ -244,7 +239,7 @@ Final 26 weeks (Weeks 41-66) through Go Deep Dive and JavaScript/TypeScript:
 ### Weeks 11-20 (Architecture Phase)
 - Weeks 11-12: Legacy
 - Weeks 13-14: Finish Bielsa book
-- Weeks 15-17: Leaders Eat Last + A Philosophy of Software Design
+- Weeks 15-17: Leaders Eat Last
 - Weeks 18-20: Start With Why
 
 ### Weeks 21-30 (AI/ML + Break Phase)
@@ -275,11 +270,10 @@ Final 26 weeks (Weeks 41-66) through Go Deep Dive and JavaScript/TypeScript:
 - [ ] Paradigma Guardiola (Pep Guardiola)
 - [ ] Revolución Scaloni (Argentina World Cup)
 
-### Systems & Execution (6 books)
+### Systems & Execution (5 books)
 - [ ] Atomic Habits
 - [ ] High Output Management (Andy Grove)
 - [ ] Measure What Matters (OKRs)
-- [ ] A Philosophy of Software Design (Ousterhout)
 - [ ] Get Scalable
 - [ ] The Design of Extraordinary Things
 
@@ -364,4 +358,4 @@ Final 26 weeks (Weeks 41-66) through Go Deep Dive and JavaScript/TypeScript:
 - User prefers sports leadership (has 7 sports books)
 - Already engaged (started 3 books)
 - Plan shortened from 66 to 44 weeks — reading pace adjusted
-- A Philosophy of Software Design added for architecture phase
+- A Philosophy of Software Design moved to Track 8 (technical, not leadership)

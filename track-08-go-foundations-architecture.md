@@ -50,6 +50,8 @@ Go is the vehicle because it's your work language. The architecture patterns tra
 
 ## Resources
 
+### Go Books
+
 |Resource                      |Cost         |Phase|How to Use                        |
 |------------------------------|-------------|-----|----------------------------------|
 |Let's Go (Alex Edwards)       |~$40         |1    |Read for architecture understanding|
@@ -59,13 +61,26 @@ Go is the vehicle because it's your work language. The architecture patterns tra
 |Go by Example                 |Free         |1    |Quick reference                   |
 |Effective Go                  |Free         |1-2  |Idiomatic patterns                |
 
-**Architecture Resources (Free):**
+### Architecture Books (Language-Agnostic)
+
+|Resource                                       |Cost  |Phase|How to Use                        |
+|-----------------------------------------------|------|-----|----------------------------------|
+|A Philosophy of Software Design (Ousterhout)    |~$25  |2    |Design principles — complexity, deep modules, interfaces|
+|Fundamentals of Software Architecture (Richards & Ford)|~$50|2  |Architecture styles, trade-offs, the architect role|
+
+**Why these two books matter for you:**
+- **Ousterhout** teaches you to think about complexity, module design, and interface design. Short (~180 pages). Every concept directly applies to reviewing Claude Code's output — is this module deep or shallow? Is this interface hiding complexity or leaking it?
+- **Richards & Ford** is specifically about being an architect. It covers architecture styles (layered, microservices, event-driven), trade-off analysis, and how architects communicate decisions. This is your actual job.
+
+### Architecture Resources (Free)
+
 - [Go Project Layout](https://github.com/golang-standards/project-layout) - Standard project structure
 - [Kat Zien - How Do You Structure Your Go Apps](https://www.youtube.com/watch?v=oL6JBUk6tj0) - GopherCon talk
 - [Three Dots Labs - Go with The Domain](https://threedots.tech/post/ddd-lite-in-go-introduction/) - DDD in Go series
 - [Three Dots Labs - Wild Workouts](https://github.com/ThreeDotsLabs/wild-workouts-go-ddd-example) - Full DDD example app
 - [ardanlabs/service](https://github.com/ardanlabs/service) - Production Go service template
 - [Go Time Podcast - Architecture episodes](https://changelog.com/gotime) - Listen during commute
+- [martinfowler.com](https://martinfowler.com) - Architecture patterns and articles (microservices, event sourcing, CQRS)
 
 -----
 
@@ -170,16 +185,27 @@ When Claude Code writes tests, review them using 100 Go Mistakes:
 **Why This Phase is Critical for You:**
 This is where you learn the vocabulary and patterns to give Claude Code precise architectural direction. After this phase, you can say "use hex architecture with ports and adapters" and Claude Code will know exactly what to build — and you'll know how to verify it did it right.
 
-### Week 13: Clean Architecture + Project Structure
+**Two architecture books anchor this phase:**
+- **A Philosophy of Software Design (Ousterhout):** Read during Week 13 (~180 pages). Teaches you to evaluate complexity, module depth, and interface design — the lens you use to review everything Claude Code produces.
+- **Fundamentals of Software Architecture (Richards & Ford):** Read during Weeks 14-16 (~400 pages, skim sections you already grasp). Teaches architecture styles, trade-off analysis, and how architects think — this is literally your role.
+
+### Week 13: Design Principles + Clean Architecture
 
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Tue|6|Study: Clean Architecture principles in Go|
-|Wed-Thu|4|Study: Hex Architecture / Ports & Adapters|
+|Mon-Tue|6|Read: Ousterhout Ch 1-8 (complexity, deep modules, information hiding)|
+|Wed-Thu|4|Study: Clean Architecture + Hex Architecture in Go|
 |Fri|2|Study: [ardanlabs/service](https://github.com/ardanlabs/service) project structure|
-|Weekend|6|Direct Claude Code: Restructure a project with clean architecture. Review.|
+|Weekend|6|Read: Ousterhout Ch 9-18 + Direct Claude Code: Restructure a project. Review.|
 
-**Core Concepts to Master:**
+**Ousterhout Key Concepts (your new review lens):**
+- **Complexity:** The root cause of all software problems. Design it out, don't manage it.
+- **Deep vs Shallow Modules:** Deep modules have simple interfaces but powerful functionality. Shallow modules leak complexity. When Claude Code creates a module, ask: is this deep or shallow?
+- **Information Hiding:** Each module should hide its internal complexity. If Claude Code exposes implementation details through interfaces, that's a red flag.
+- **Interface Design:** Interfaces should be obvious and hard to misuse. Good interfaces reduce cognitive load.
+- **Strategic vs Tactical Programming:** You're the strategic thinker. Claude Code is the tactical executor.
+
+**Clean Architecture Concepts (applied through Go):**
 - **Dependency Rule:** Dependencies point inward (domain has no external dependencies)
 - **Layers in Go:**
   ```
@@ -205,57 +231,71 @@ This is where you learn the vocabulary and patterns to give Claude Code precise 
 - **Interface Placement:** Define interfaces where they're used (consumer side), not where they're implemented
 - **Hex Architecture:** Ports (interfaces) + Adapters (implementations)
 
-**How to Verify Claude Code's Output:**
+**How to Verify Claude Code's Output (using Ousterhout's lens):**
 ```
 "Review this Go project structure. Check that:
 1. Domain package has zero external imports
 2. Interfaces are defined in the domain package
 3. Dependencies point inward (handler → service → domain)
-4. No circular dependencies"
+4. Modules are 'deep' — simple interfaces, rich functionality
+5. No information leaking across layer boundaries"
 ```
 
-### Week 14: Domain-Driven Design in Go
+### Week 14: DDD + Architecture Styles
 
 |Day|Hours|Focus|
 |---|-----|-----|
 |Mon-Tue|6|Study: DDD Lite in Go — entities, value objects, aggregates|
-|Wed-Thu|4|Study: Repository pattern, service layer in Go|
+|Wed-Thu|4|Read: Richards & Ford Part I — architecture styles (layered, microservices, event-driven)|
 |Fri|2|Study: [Three Dots Labs Wild Workouts](https://github.com/ThreeDotsLabs/wild-workouts-go-ddd-example)|
 |Weekend|6|Direct Claude Code: Build a domain model for a real-world problem. Review.|
 
-**Core Concepts:**
+**DDD Core Concepts:**
 - **Entities:** Types with identity (User, Order)
 - **Value Objects:** Immutable types defined by their values (Money, Email)
 - **Repository Interface** (domain package — no implementation details)
 - **Service Layer:** Orchestrates domain operations, depends on interfaces
 
+**Richards & Ford Key Concepts (Part I):**
+- **Architecture Styles:** Layered, microkernel, microservices, event-driven, space-based — when to use each
+- **Architecture Characteristics ("-ilities"):** Scalability, maintainability, testability, deployability — how to evaluate trade-offs
+- **Architecture Decisions:** How to make and document them (ADRs)
+
 **Resources:**
 - [Three Dots Labs: DDD Lite in Go](https://threedots.tech/post/ddd-lite-in-go-introduction/)
 - [Three Dots Labs: Wild Workouts](https://github.com/ThreeDotsLabs/wild-workouts-go-ddd-example)
 
-### Week 15: Dependency Injection + API Design
+### Week 15: DI + API Design + Architect Thinking
 
 |Day|Hours|Focus|
 |---|-----|-----|
 |Mon-Tue|6|Study: Dependency injection in Go (without frameworks)|
-|Wed-Thu|4|Study: RESTful API design patterns|
+|Wed-Thu|4|Read: Richards & Ford Part II — soft skills of architecture (trade-off analysis, communication)|
 |Fri|2|Study: Middleware patterns and chains|
 |Weekend|6|Direct Claude Code: Build REST API with clean architecture + DI. Review.|
 
-**Core Concepts:**
+**Go-Specific Concepts:**
 - **Constructor Injection** (Go's approach — no DI framework needed)
 - **Middleware Pattern** (func(http.Handler) http.Handler)
 - **Context Propagation** through layers for cancellation/timeouts
 - **Error Handling in APIs:** Domain errors → HTTP status codes mapping
 
-**Architect Direction Example:**
+**Richards & Ford Key Concepts (Part II):**
+- **Trade-Off Analysis:** Every architecture decision involves trade-offs. There's no "best" architecture — only "best for this context."
+- **Architecture Decision Records (ADRs):** Document WHY you chose an architecture, not just what. Useful for CLAUDE.md files.
+- **Communicating Architecture:** How to explain architectural decisions to teams. Directly relevant to directing Claude Code.
+- **The Architect's Role:** An architect doesn't write all the code — they make sure the system hangs together. This is exactly your role with Claude Code.
+
+**Architect Direction Example (informed by both books):**
 ```
 "Build a Go REST API with:
 - Constructor injection for all dependencies (no globals)
 - Middleware chain: logging → auth → rate limiting → handler
 - Domain errors mapped to HTTP status codes
 - Context propagation for cancellation
-- Follow hex architecture from Week 13"
+- Follow hex architecture from Week 13
+- Keep modules deep (Ousterhout): simple interfaces, rich implementations
+- Document the architecture decision for layered vs microservices"
 ```
 
 ### Week 16: Testing Architecture
@@ -423,6 +463,9 @@ Create a CLAUDE.md at the start of each project with architecture decisions, bui
 Before moving to Track 10: AI/ML Security, you should be able to:
 
 - [ ] Explain clean / hex architecture to Claude Code precisely
+- [ ] Evaluate module depth (Ousterhout) — is this deep or shallow?
+- [ ] Identify information leaking across boundaries
+- [ ] Choose between architecture styles and explain trade-offs (Richards & Ford)
 - [ ] Review Go project structure for dependency rule violations
 - [ ] Describe DDD patterns (entities, value objects, repositories)
 - [ ] Specify dependency injection requirements for Claude Code
@@ -430,5 +473,5 @@ Before moving to Track 10: AI/ML Security, you should be able to:
 - [ ] Review test suites for proper test pyramid balance
 - [ ] Identify concurrency issues in Claude Code's output
 - [ ] Evaluate Go code against 100 Go Mistakes checklist
-- [ ] Create effective CLAUDE.md files for Go projects
+- [ ] Create effective CLAUDE.md files with architecture decisions documented
 - [ ] Give Claude Code architectural direction that produces production-ready code

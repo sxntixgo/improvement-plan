@@ -7,7 +7,7 @@
 
 ## TL;DR
 
-**Total budget: ~$170** for 4 remaining books across 44 weeks. The plan prioritizes:
+**Total budget: ~$245** for 6 remaining books across 44 weeks. The plan prioritizes:
 - **Books for understanding architecture** — read to understand, not to type along
 - **Free resources first** — most tracks use free online books, courses, and workshops
 - **No paid courses or subscriptions needed** — HTB Academy ($20/month x 2) is the only subscription, and it's already budgeted in Track 10
@@ -44,10 +44,12 @@
 |------------------------------------------|-----|---------------------------------------|---------------------|
 |Let's Go (Edwards)                        |~$40 |Track 8: Software Architecture         |Before Week 9        |
 |Let's Go Further (Edwards)                |~$40 |Track 8: Software Architecture         |Before Week 9        |
+|A Philosophy of Software Design (Ousterhout)|~$25|Track 8: Software Architecture         |Before Week 13       |
+|Fundamentals of Software Architecture (Richards & Ford)|~$50|Track 8: Software Architecture|Before Week 13       |
 |Python Testing with pytest, 2nd ed (Okken)|~$40 |Track 9: Python Core + TDD            |Before Week 30       |
 |AI Engineering (Huyen)                    |~$50 |Track 10: AI/ML Security              |Before Week 21       |
 
-**Total: ~$170**
+**Total: ~$245**
 
 -----
 
@@ -82,13 +84,15 @@
 - Track 7: Wilson LLM Security book (owned)
 
 ### Track 8: Software Architecture (Weeks 9-20)
-**Books to buy:** $80 (Let's Go + Let's Go Further) — Bodner 1st ed + Harsanyi already owned
+**Books to buy:** $155 (Let's Go + Let's Go Further + Ousterhout + Richards & Ford) — Bodner 1st ed + Harsanyi already owned
 
 Read for architectural understanding, not typing along:
 - **Learning Go, 1st ed (Bodner):** Already owned — reference for Go concepts
 - **100 Go Mistakes (Harsanyi):** Already owned — code review checklist for Claude Code output
 - **Let's Go (Edwards):** Read for web app architecture — project structure, middleware, testing patterns
 - **Let's Go Further (Edwards):** Read for production API architecture — auth, rate limiting, deployment
+- **A Philosophy of Software Design (Ousterhout):** Design principles — complexity, deep modules, interface design. Your lens for reviewing Claude Code output.
+- **Fundamentals of Software Architecture (Richards & Ford):** Architecture styles, trade-off analysis, the architect role. This IS your job description.
 
 ### Track 10: AI/ML Security (Weeks 21-28)
 **Books to buy:** $50 (Huyen) — Dursey already owned
@@ -118,10 +122,11 @@ Read for architectural understanding, not typing along:
 |Category       |Cost  |Details                                        |
 |---------------|------|-----------------------------------------------|
 |Go books       |$80   |Let's Go ($40) + Let's Go Further ($40) — Bodner + Harsanyi owned|
+|Architecture   |$75   |Ousterhout ($25) + Richards & Ford ($50)        |
 |Python book    |$40   |Okken pytest                                   |
 |AI/ML books    |$50   |Huyen ($50) — Dursey already owned             |
 |HTB Academy    |~$40  |$20/month x 2 months (Track 10)                |
-|**Total**      |**~$210**|                                            |
+|**Total**      |**~$285**|                                            |
 
 **Books you already own:** 14 (worth ~$500+)
 **Free online resources used:** 15+ (Fast.ai, Hugging Face, Cosmic Python, Percival, Odin Project, etc.)
@@ -132,8 +137,9 @@ Read for architectural understanding, not typing along:
 
 **Books for architectural understanding, free resources for breadth.**
 
-- Go books ($80 remaining) → read for architecture patterns, review Claude Code output
-- AI/ML book ($50 remaining) → understand the systems you'll attack
+- Go books ($80) → read for Go-specific architecture patterns, review Claude Code output
+- Architecture books ($75) → language-agnostic design principles and architect role
+- AI/ML book ($50) → understand the systems you'll attack
 - pytest book ($40) → understand testing concepts to direct Claude Code
 - Everything else → free online resources are sufficient
 

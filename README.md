@@ -150,10 +150,12 @@ Claude Code writes the Python for HTB labs, LangChain apps, and exploit scripts.
 |------------------------------------------|-----|-----------------------------------------|
 |Let's Go (Edwards)                        |~$40 |Track 8: Software Architecture           |
 |Let's Go Further (Edwards)                |~$40 |Track 8: Software Architecture           |
+|A Philosophy of Software Design (Ousterhout)|~$25|Track 8: Software Architecture           |
+|Fundamentals of Software Architecture (Richards & Ford)|~$50|Track 8: Software Architecture |
 |Python Testing with pytest, 2nd ed (Okken)|~$40 |Track 9: Python Core + TDD              |
 |AI Engineering (Huyen)                    |~$50 |Track 10: AI/ML Security                |
 
-**Total: ~$170**
+**Total: ~$245**
 
 -----
 
@@ -233,7 +235,7 @@ Passive content for commutes, lunch breaks, or when you need a break from active
 |Phase|Weeks|Priority Books|
 |-----|-----|--------------|
 |Foundation|1-8|Score Takes Care of Itself, Atomic Habits, High Output Management|
-|Architecture|9-20|Legacy, Captains Class, Leaders Eat Last, A Philosophy of Software Design|
+|Architecture|9-20|Legacy, Captains Class, Leaders Eat Last, Start With Why|
 |AI/ML|21-28|Start With Why, Paradigma Guardiola, Creativity Inc|
 |Python + Capstone|30-43|Elon Musk, Measure What Matters, Revolución Scaloni|
 
