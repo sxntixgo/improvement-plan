@@ -83,6 +83,7 @@ Go is the vehicle because it's your work language. The architecture patterns tra
 - [martinfowler.com](https://martinfowler.com) - Architecture patterns and articles (microservices, event sourcing, CQRS)
 - [C4 Model](https://c4model.com/) - Simon Brown's approach to documenting architecture (4 levels of zoom)
 - [ADR Templates](https://adr.github.io/) - Architecture Decision Records — document WHY you chose an architecture
+- [Architecture Katas](https://fundamentalsofsoftwarearchitecture.com/katas/) - Practice exercises from Richards & Ford — design systems from problem statements
 
 -----
 
@@ -301,10 +302,10 @@ This is where you learn the vocabulary and patterns to give Claude Code precise 
 |---|-----|-----|
 |Mon-Tue|6|Study: Testing strategies (unit, integration, e2e) + interface-based mocking|
 |Wed-Thu|4|Study: Testcontainers for integration tests + httptest for handlers|
-|Fri|2|**Catch-up day** — revisit anything from Weeks 13-15 that needs more time|
+|Fri|2|**Catch-up day** — or try an [Architecture Kata](https://fundamentalsofsoftwarearchitecture.com/katas/) from Richards & Ford's companion site|
 |Weekend|6|Direct Claude Code: Build REST API with clean arch + DI + full test suite. Review.|
 
-**Friday is explicitly catch-up time.** If you're caught up, use it to re-read your favorite Ousterhout or Richards & Ford chapter. If you're behind, you have 2 hours of buffer.
+**Friday is explicitly catch-up time.** If you're caught up, try an Architecture Kata — a short exercise where you design a system from a one-page problem statement, choose architecture styles, identify trade-offs, and write an ADR. These are practice exercises from the authors of Fundamentals of Software Architecture. You can also find more at [TheKataLog on GitHub](https://github.com/TheKataLog).
 
 **Core Concepts:**
 - **Test Pyramid:** Unit tests (domain) → Integration tests (repository) → E2E (handlers)

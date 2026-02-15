@@ -62,6 +62,24 @@ You just spent 12 weeks learning software architecture (Track 8). Now you apply 
 |HackAPrompt       |hackaprompt.com      |Prompt injection practice|
 |Dreadnode/Crucible|crucible.dreadnode.io|CTF-style challenges     |
 
+### AI Red Teaming Tools (Free, Open Source)
+
+|Tool              |URL                                    |Focus                    |
+|------------------|---------------------------------------|-------------------------|
+|Garak (NVIDIA)    |github.com/NVIDIA/garak                |LLM vulnerability scanner — the "nmap for LLMs". Automated probes for prompt injection, jailbreaks, data leakage, hallucination|
+|PyRIT (Microsoft) |github.com/Azure/PyRIT                 |Programmable red team framework. Multi-turn adaptive attack chains. Used in 100+ Microsoft red team ops|
+
+**Why both tools:** Garak is a scanner (point and shoot — automated vulnerability discovery). PyRIT is a framework (you script custom multi-step attack strategies). Use Garak first for broad coverage, then PyRIT for deep, targeted attacks.
+
+### Professional Frameworks (Free)
+
+|Framework         |URL                                    |Focus                    |
+|------------------|---------------------------------------|-------------------------|
+|NIST AI RMF       |nist.gov/itl/ai-risk-management-framework|AI risk governance — the industry standard for framing findings in red team reports (~40 pages)|
+|NIST Gen AI Profile|nvlpubs.nist.gov/nistpubs/ai/nist.ai.600-1.pdf|Generative AI-specific risks — extends AI RMF for LLMs|
+|Google SAIF       |saif.google                            |Secure AI Framework — threat taxonomy, risk map, controls for AI systems|
+|AI Incident Database|incidentdatabase.ai                  |1,200+ real-world AI failures — case studies for threat modeling|
+
 ### Books
 
 |Resource                                      |Cost         |Status/Focus              |
@@ -126,10 +144,20 @@ You already understand LLM vulnerabilities from Track 7 (Wilson book). Now you b
 
 **What You'll Do:**
 - Complete hands-on labs attacking real AI systems
+- **Run Garak scans** against lab targets before manual testing — automated vulnerability discovery
 - Direct Claude Code to build prompt injection exploits
 - Test jailbreaking techniques against LLMs
 - Execute model privacy attacks
 - Document findings in Obsidian
+
+**Garak Setup (Week 23, Day 1):**
+Install and run your first scan before starting HTB labs:
+```
+"Direct Claude Code: Install garak (pip install garak) and run a basic
+scan against a test LLM endpoint. Show me the probe categories available
+(prompt injection, jailbreak, data leakage, etc.) and explain the output."
+```
+Use Garak throughout Weeks 23-24 as your automated scanner alongside manual HTB labs.
 
 **Your Architect Approach:**
 For each lab:
@@ -299,40 +327,57 @@ This is THE chapter for AI red teaming:
 - Document successful prompts in Obsidian
 - Blog post: "My HackAPrompt Solutions + Success Rate Analysis"
 
-**Week 28: Advanced CTF & Final Portfolio**
+**Week 28: Advanced CTF + PyRIT + Final Portfolio**
 
-**Monday-Wednesday (6 hours): Crucible CTF**
+**Monday-Tuesday (4 hours): Crucible CTF**
 - [Crucible by Dreadnode](https://crucible.dreadnode.io/)
 - AI red teaming CTF challenges
 - Apply all techniques from previous weeks
 
-**Thursday-Friday (4 hours): Claude Code SDK - Automated Red Team Agent**
+**Wednesday-Thursday (4 hours): PyRIT — Automated Multi-Turn Attacks**
 
-Direct Claude Code to build an automated red team agent:
+PyRIT (Microsoft's Python Risk Identification Toolkit) goes beyond what Garak does — it scripts adaptive, multi-turn attack chains. Direct Claude Code to build PyRIT attack scripts:
 ```
-"Build an automated prompt injection testing agent using the Claude Agent SDK:
-- Input: target API endpoint + test case library (YAML)
-- Agent systematically tests LLM defenses
-- Chains multiple attack patterns automatically
-- Logs all attempts and responses
-- Classifies results (success/partial/blocked)
-- Output: structured JSON report with findings and severity"
+"Using Microsoft PyRIT, build an automated red team script that:
+- Targets an LLM API endpoint
+- Uses PyRIT's orchestrators for multi-turn conversation attacks
+- Chains prompt injection → follow-up exploitation → data exfiltration
+- Adapts tactics based on model responses
+- Scores results using PyRIT's built-in classifiers
+- Logs full attack sessions for replay and analysis"
 ```
 
-Review the agent's architecture. Does it follow clean architecture? Is it testable?
+Compare PyRIT's multi-turn approach with the Garak scanning you did in Weeks 23-24. When would you use each?
+
+**Also explore:** Claude Agent SDK for building your own custom red team agent (if PyRIT doesn't cover your use case).
+
+**Friday (2 hours): Professional Frameworks for Reporting**
+
+Before writing your final report, study the frameworks that professional AI red teamers reference:
+- **NIST AI RMF** (~40 pages core) — governance language for findings. Map your vulnerabilities to NIST risk categories.
+- **NIST Generative AI Profile** — LLM-specific risk extensions
+- **Google SAIF Risk Map** (saif.google) — threat taxonomy for scoping coverage. Did you test all attack surfaces?
+- **AI Incident Database** (incidentdatabase.ai) — search for real-world precedents similar to your findings. Citing past incidents strengthens reports.
 
 **Weekend (8 hours): Final Red Team Assessment Portfolio Piece**
 
-1. **Target Selection (2 hours)** — Choose or build a complex vulnerable application
-2. **Red Team Engagement (6 hours):**
+1. **Target Selection (1 hour)** — Choose or build a complex vulnerable application
+2. **Automated Scanning (1 hour)** — Run Garak + PyRIT against the target for broad coverage
+3. **Manual Red Team Engagement (4 hours):**
    - Reconnaissance (model identification, architecture)
    - Vulnerability assessment (prompt injection, RAG poisoning, etc.)
    - Exploitation (demonstrate impact)
-   - Professional report writing
+   - Find what the automated tools missed
+4. **Professional Report Writing (2 hours):**
+   - Frame findings using NIST AI RMF categories
+   - Reference MITRE ATLAS techniques
+   - Cite AI Incident Database precedents
+   - Include automated scan results (Garak/PyRIT) + manual findings
 
 **Deliverable:**
-- Professional red team assessment report
+- Professional red team assessment report (framed with NIST AI RMF)
 - PoC exploits (GitHub)
+- Garak scan results + PyRIT attack logs
 - Defensive playbook
 - Blog post on findings
 - Portfolio piece for job applications
@@ -344,6 +389,7 @@ Review the agent's architecture. Does it follow clean architecture? Is it testab
 |Week|Project                      |Output                               |Share             |
 |----|-----------------------------|-------------------------------------|------------------|
 |23-24|HTB Academy lab completions |All modules completed                |HTB profile       |
+|23-24|**Garak scans of lab targets**|**Automated vulnerability scan results**|**GitHub**      |
 |23-24|Prompt injection PoC        |Working exploit with automation      |GitHub            |
 |25  |**Vulnerable RAG app**       |**Document QA + LLM agent**          |**GitHub**        |
 |25  |**RAG/Agent attacks**        |**5+ attack vectors documented**     |**GitHub + Blog** |
@@ -352,8 +398,8 @@ Review the agent's architecture. Does it follow clean architecture? Is it testab
 |27  |**Attack evaluation pipeline**|**Automated testing framework**     |**GitHub**        |
 |27  |HackAPrompt solutions        |Documented strategies + success rates|Blog + GitHub     |
 |28  |Crucible CTF solutions       |Novel attack vectors                 |GitHub            |
-|28  |**Automated red team agent** |**Claude SDK agent**                 |**GitHub**        |
-|28  |**Red team assessment**      |**Professional security report**     |**Portfolio**     |
+|28  |**PyRIT attack scripts**     |**Multi-turn adaptive attack chains**|**GitHub**        |
+|28  |**Red team assessment**      |**Professional report (NIST AI RMF framing)**|**Portfolio**|
 
 -----
 
@@ -381,6 +427,18 @@ Review the agent's architecture. Does it follow clean architecture? Is it testab
 - Model extraction attacks
 - Data poisoning demonstrations
 - Attack automation
+
+**AI Red Teaming Tools:**
+- **Garak (NVIDIA):** Automated LLM vulnerability scanning — probes for prompt injection, jailbreaks, data leakage, hallucination
+- **PyRIT (Microsoft):** Programmable multi-turn attack framework — adaptive chains, scoring, session replay
+- **When to use each:** Garak for broad automated scanning, PyRIT for deep targeted multi-turn attacks
+
+**Professional Frameworks:**
+- **NIST AI RMF:** Governance language for red team reports — Govern, Map, Measure, Manage
+- **NIST Gen AI Profile:** LLM-specific risk extensions to AI RMF
+- **Google SAIF:** Threat taxonomy and risk map — covers data, infrastructure, model, and application layers
+- **MITRE ATLAS:** Adversarial ML techniques mapped like ATT&CK — for technique classification
+- **AI Incident Database:** Real-world AI failures — cite precedents in reports
 
 **Production LLM Security:**
 - **RAG Architecture:** Term-based vs embedding retrievers
@@ -435,18 +493,22 @@ Before moving to Track 9: Python Core, you should be able to:
 
 **Practical Experience (via Claude Code):**
 - Complete HTB Academy AI Red Teamer modules
+- Run Garak scans against LLM targets (automated vulnerability discovery)
 - Direct Claude Code to build prompt injection exploits
 - Direct Claude Code to build RAG applications + attack them
 - Direct Claude Code to build model verification tools
+- Build PyRIT attack scripts (multi-turn adaptive chains)
 - Solve HackAPrompt and Crucible challenges
-- Conduct professional AI red team assessment
+- Conduct professional AI red team assessment (framed with NIST AI RMF)
 
 **Portfolio Pieces:**
 - HTB Academy profile with completed modules
+- Garak scan results + analysis (GitHub)
 - Vulnerable RAG app + LLM agent (GitHub)
 - RAG/Agent attack documentation (blog post)
 - Model verification tool (GitHub)
 - Attack evaluation pipeline (GitHub)
+- PyRIT multi-turn attack scripts (GitHub)
 - Automated red team agent built with Claude Code SDK (GitHub)
 - Professional red team assessment report (portfolio)
 - 5+ blog posts on AI security topics

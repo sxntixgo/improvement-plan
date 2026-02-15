@@ -100,7 +100,9 @@ Read for architectural understanding, not typing along:
 - **AI Engineering (Huyen):** $50 — essential for understanding production AI systems you'll attack
 - **Red Teaming AI (Dursey):** Already owned — AI red teaming methodology
 - **HTB Academy:** ~$20/month x 2 months — hands-on labs (budgeted separately)
-- **Free:** Fast.ai, Hugging Face NLP course, OWASP LLM Top 10, MITRE ATLAS, HackAPrompt, Crucible CTF
+- **Free courses:** Fast.ai, Hugging Face NLP course, OWASP LLM Top 10, MITRE ATLAS, HackAPrompt, Crucible CTF
+- **Free tools:** Garak (NVIDIA — LLM vulnerability scanner), PyRIT (Microsoft — programmable red team framework)
+- **Free frameworks:** NIST AI RMF, NIST Gen AI Profile, Google SAIF, AI Incident Database
 
 ### Track 9: Python Core + TDD (Weeks 30-37)
 **Books to buy:** $40 (Okken)
