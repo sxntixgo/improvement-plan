@@ -81,6 +81,8 @@ Go is the vehicle because it's your work language. The architecture patterns tra
 - [ardanlabs/service](https://github.com/ardanlabs/service) - Production Go service template
 - [Go Time Podcast - Architecture episodes](https://changelog.com/gotime) - Listen during commute
 - [martinfowler.com](https://martinfowler.com) - Architecture patterns and articles (microservices, event sourcing, CQRS)
+- [C4 Model](https://c4model.com/) - Simon Brown's approach to documenting architecture (4 levels of zoom)
+- [ADR Templates](https://adr.github.io/) - Architecture Decision Records — document WHY you chose an architecture
 
 -----
 
@@ -186,17 +188,21 @@ When Claude Code writes tests, review them using 100 Go Mistakes:
 This is where you learn the vocabulary and patterns to give Claude Code precise architectural direction. After this phase, you can say "use hex architecture with ports and adapters" and Claude Code will know exactly what to build — and you'll know how to verify it did it right.
 
 **Two architecture books anchor this phase:**
-- **A Philosophy of Software Design (Ousterhout):** Read during Week 13 (~180 pages). Teaches you to evaluate complexity, module depth, and interface design — the lens you use to review everything Claude Code produces.
-- **Fundamentals of Software Architecture (Richards & Ford):** Read during Weeks 14-16 (~400 pages, skim sections you already grasp). Teaches architecture styles, trade-off analysis, and how architects think — this is literally your role.
+- **A Philosophy of Software Design (Ousterhout):** ~180 pages, read during Week 13. Short and dense — every page applies to reviewing Claude Code's output.
+- **Fundamentals of Software Architecture (Richards & Ford):** ~400 pages, read during Week 15. Designed to be skimmed — skip architecture styles you won't use, focus on trade-off analysis and the architect chapters.
 
-### Week 13: Design Principles + Clean Architecture
+**Pacing principle:** Each week has ONE primary reading focus + hands-on application. No week tries to read two books simultaneously.
+
+### Week 13: Ousterhout — Design Principles
 
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Tue|6|Read: Ousterhout Ch 1-8 (complexity, deep modules, information hiding)|
-|Wed-Thu|4|Study: Clean Architecture + Hex Architecture in Go|
-|Fri|2|Study: [ardanlabs/service](https://github.com/ardanlabs/service) project structure|
-|Weekend|6|Read: Ousterhout Ch 9-18 + Direct Claude Code: Restructure a project. Review.|
+|Mon-Wed|6|Read: Ousterhout Ch 1-12 (complexity, deep modules, information hiding, general-purpose modules)|
+|Thu-Fri|4|Read: Ousterhout Ch 13-18 (naming, comments, consistency, design trends)|
+|Weekend|6|Study: Clean Architecture + Hex Architecture concepts. Explore [ardanlabs/service](https://github.com/ardanlabs/service) structure.|
+|**Slack**||2 hrs built into the weekend — if Ousterhout takes longer, use this time|
+
+**This is a reading-only week.** No Claude Code project. Let the design principles sink in before applying them.
 
 **Ousterhout Key Concepts (your new review lens):**
 - **Complexity:** The root cause of all software problems. Design it out, don't manage it.
@@ -204,6 +210,15 @@ This is where you learn the vocabulary and patterns to give Claude Code precise 
 - **Information Hiding:** Each module should hide its internal complexity. If Claude Code exposes implementation details through interfaces, that's a red flag.
 - **Interface Design:** Interfaces should be obvious and hard to misuse. Good interfaces reduce cognitive load.
 - **Strategic vs Tactical Programming:** You're the strategic thinker. Claude Code is the tactical executor.
+
+### Week 14: Clean/Hex Architecture + DDD — Apply Ousterhout
+
+|Day|Hours|Focus|
+|---|-----|-----|
+|Mon-Tue|6|Study: Clean Architecture + Hex Architecture in Go (ports and adapters)|
+|Wed-Thu|4|Study: DDD Lite in Go — entities, value objects, repositories|
+|Fri|2|Study: [Three Dots Labs Wild Workouts](https://github.com/ThreeDotsLabs/wild-workouts-go-ddd-example)|
+|Weekend|6|Direct Claude Code: Build hex architecture project with DDD domain model. Review using Ousterhout's lens.|
 
 **Clean Architecture Concepts (applied through Go):**
 - **Dependency Rule:** Dependencies point inward (domain has no external dependencies)
@@ -231,6 +246,12 @@ This is where you learn the vocabulary and patterns to give Claude Code precise 
 - **Interface Placement:** Define interfaces where they're used (consumer side), not where they're implemented
 - **Hex Architecture:** Ports (interfaces) + Adapters (implementations)
 
+**DDD Core Concepts:**
+- **Entities:** Types with identity (User, Order)
+- **Value Objects:** Immutable types defined by their values (Money, Email)
+- **Repository Interface** (domain package — no implementation details)
+- **Service Layer:** Orchestrates domain operations, depends on interfaces
+
 **How to Verify Claude Code's Output (using Ousterhout's lens):**
 ```
 "Review this Go project structure. Check that:
@@ -241,50 +262,55 @@ This is where you learn the vocabulary and patterns to give Claude Code precise 
 5. No information leaking across layer boundaries"
 ```
 
-### Week 14: DDD + Architecture Styles
+**Resources:**
+- [Three Dots Labs: DDD Lite in Go](https://threedots.tech/post/ddd-lite-in-go-introduction/)
+- [Three Dots Labs: Wild Workouts](https://github.com/ThreeDotsLabs/wild-workouts-go-ddd-example)
+- [C4 Model](https://c4model.com/) — Simon Brown's approach to documenting architecture (4 levels of zoom)
+
+### Week 15: Richards & Ford — Architecture Styles + Architect Thinking
 
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Tue|6|Study: DDD Lite in Go — entities, value objects, aggregates|
-|Wed-Thu|4|Read: Richards & Ford Part I — architecture styles (layered, microservices, event-driven)|
-|Fri|2|Study: [Three Dots Labs Wild Workouts](https://github.com/ThreeDotsLabs/wild-workouts-go-ddd-example)|
-|Weekend|6|Direct Claude Code: Build a domain model for a real-world problem. Review.|
+|Mon-Wed|6|Read: Richards & Ford Part I — architecture styles (layered, microservices, event-driven). Skim styles you won't use.|
+|Thu-Fri|4|Read: Richards & Ford Part II — trade-off analysis, ADRs, communicating architecture, the architect's role|
+|Weekend|6|Study: DI patterns in Go + Middleware. Light Claude Code experiment: apply one architecture style.|
+|**Slack**||2 hrs built into the weekend — R&F is 400 pages but is designed to be skimmed selectively|
 
-**DDD Core Concepts:**
-- **Entities:** Types with identity (User, Order)
-- **Value Objects:** Immutable types defined by their values (Money, Email)
-- **Repository Interface** (domain package — no implementation details)
-- **Service Layer:** Orchestrates domain operations, depends on interfaces
+**Reading tip:** Richards & Ford covers ~15 architecture styles. You don't need all of them. Focus on: **layered, microservices, event-driven, microkernel.** Skim the rest. Spend more time on Part II (trade-offs, ADRs, the architect role) — that's your actual job.
 
 **Richards & Ford Key Concepts (Part I):**
 - **Architecture Styles:** Layered, microkernel, microservices, event-driven, space-based — when to use each
 - **Architecture Characteristics ("-ilities"):** Scalability, maintainability, testability, deployability — how to evaluate trade-offs
-- **Architecture Decisions:** How to make and document them (ADRs)
-
-**Resources:**
-- [Three Dots Labs: DDD Lite in Go](https://threedots.tech/post/ddd-lite-in-go-introduction/)
-- [Three Dots Labs: Wild Workouts](https://github.com/ThreeDotsLabs/wild-workouts-go-ddd-example)
-
-### Week 15: DI + API Design + Architect Thinking
-
-|Day|Hours|Focus|
-|---|-----|-----|
-|Mon-Tue|6|Study: Dependency injection in Go (without frameworks)|
-|Wed-Thu|4|Read: Richards & Ford Part II — soft skills of architecture (trade-off analysis, communication)|
-|Fri|2|Study: Middleware patterns and chains|
-|Weekend|6|Direct Claude Code: Build REST API with clean architecture + DI. Review.|
-
-**Go-Specific Concepts:**
-- **Constructor Injection** (Go's approach — no DI framework needed)
-- **Middleware Pattern** (func(http.Handler) http.Handler)
-- **Context Propagation** through layers for cancellation/timeouts
-- **Error Handling in APIs:** Domain errors → HTTP status codes mapping
+- **Architecture Decisions:** How to make and document them using [ADR templates](https://adr.github.io/)
 
 **Richards & Ford Key Concepts (Part II):**
 - **Trade-Off Analysis:** Every architecture decision involves trade-offs. There's no "best" architecture — only "best for this context."
 - **Architecture Decision Records (ADRs):** Document WHY you chose an architecture, not just what. Useful for CLAUDE.md files.
 - **Communicating Architecture:** How to explain architectural decisions to teams. Directly relevant to directing Claude Code.
 - **The Architect's Role:** An architect doesn't write all the code — they make sure the system hangs together. This is exactly your role with Claude Code.
+
+**Go-Specific Concepts (for weekend hands-on):**
+- **Constructor Injection** (Go's approach — no DI framework needed)
+- **Middleware Pattern** (func(http.Handler) http.Handler)
+- **Context Propagation** through layers for cancellation/timeouts
+- **Error Handling in APIs:** Domain errors → HTTP status codes mapping
+
+### Week 16: Testing Architecture + REST API Capstone
+
+|Day|Hours|Focus|
+|---|-----|-----|
+|Mon-Tue|6|Study: Testing strategies (unit, integration, e2e) + interface-based mocking|
+|Wed-Thu|4|Study: Testcontainers for integration tests + httptest for handlers|
+|Fri|2|**Catch-up day** — revisit anything from Weeks 13-15 that needs more time|
+|Weekend|6|Direct Claude Code: Build REST API with clean arch + DI + full test suite. Review.|
+
+**Friday is explicitly catch-up time.** If you're caught up, use it to re-read your favorite Ousterhout or Richards & Ford chapter. If you're behind, you have 2 hours of buffer.
+
+**Core Concepts:**
+- **Test Pyramid:** Unit tests (domain) → Integration tests (repository) → E2E (handlers)
+- **Interface-Based Mocking:** Implement the interface in tests, no mock framework
+- **Testcontainers:** Real database in tests (PostgreSQL in Docker)
+- **httptest:** Test HTTP handlers without a running server
 
 **Architect Direction Example (informed by both books):**
 ```
@@ -293,25 +319,10 @@ This is where you learn the vocabulary and patterns to give Claude Code precise 
 - Middleware chain: logging → auth → rate limiting → handler
 - Domain errors mapped to HTTP status codes
 - Context propagation for cancellation
-- Follow hex architecture from Week 13
+- Follow hex architecture from Week 14
 - Keep modules deep (Ousterhout): simple interfaces, rich implementations
-- Document the architecture decision for layered vs microservices"
+- Document the architecture decision for layered vs microservices (ADR)"
 ```
-
-### Week 16: Testing Architecture
-
-|Day|Hours|Focus|
-|---|-----|-----|
-|Mon-Tue|6|Study: Testing strategies — unit, integration, end-to-end|
-|Wed-Thu|4|Study: Testcontainers for integration tests|
-|Fri|2|Study: Interface-based mocking (no mocking frameworks)|
-|Weekend|6|Direct Claude Code: Write full test suite for Week 15 API. Review test quality.|
-
-**Core Concepts:**
-- **Test Pyramid:** Unit tests (domain) → Integration tests (repository) → E2E (handlers)
-- **Interface-Based Mocking:** Implement the interface in tests, no mock framework
-- **Testcontainers:** Real database in tests (PostgreSQL in Docker)
-- **httptest:** Test HTTP handlers without a running server
 
 **How to Review Claude Code's Tests:**
 - Are tests testing behavior, not implementation?

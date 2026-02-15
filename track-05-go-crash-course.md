@@ -283,23 +283,25 @@ Follow our company's style guide"
 
 ## What's Next?
 
-**Week 8: LLM Security Primer**
-- Read Wilson's book
-- Build security context for Python learning
-- Continue using Go at work (with Claude Code assistance)
+**Week 7: Docker Essentials (Track 6)**
+- Container fundamentals for all future projects
 
-**Weeks 9-20: Go Foundations + Software Architecture (Track 8)**
-- Deep Go language mastery
-- Clean architecture, DDD, testing
+**Week 8: LLM Security Primer (Track 7)**
+- Read Wilson's book — security context for everything ahead
+
+**Weeks 9-20: Software Architecture via Go (Track 8)**
+- Deep architecture understanding: clean arch, DDD, testing
 - Immediately applicable to your daily work
 
-**Weeks 21-24: Go Security Tools (Track 11)**
-- Black Hat Go — build offensive security tools
-- 16+ continuous weeks of Go mastery!
+**Weeks 21-28: AI/ML Security (Track 10)**
+- Your career goal — AI red teaming
+- Architecture knowledge from Track 8 helps you understand AI systems
 
-**Weeks 25-32: Python Core (Track 9)**
-- Focus on AI red teaming skills
-- Keep using Go at work daily
+**Weeks 30-37: Python Core + TDD (Track 9)**
+- Deepen Python understanding after using it in Track 10
+
+**Weeks 38-43: Go Security Tools + AI Capstone (Track 11)**
+- Combine everything into a unique portfolio piece
 
 -----
 

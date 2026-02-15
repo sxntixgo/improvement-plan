@@ -11,17 +11,17 @@
 
 -----
 
-## Why Between Claude Code and Python?
+## Why This Week?
 
-This week gives you **security context** before diving into 10 weeks of Python:
+This week gives you **security context** before diving into software architecture and AI/ML security:
 
-- Understand LLM vulnerabilities conceptually
-- See WHY you need Python for AI red teaming
-- Build motivation for the technical tracks ahead
-- Use your new Obsidian system to capture insights
-- Practice Claude Code on security concepts
+- Understand LLM vulnerabilities conceptually — these are the systems you'll eventually attack
+- Build the mental model of AI attack surfaces before studying architecture (Track 8)
+- Use your new Obsidian system to capture insights (Track 2 practice)
+- Practice using Claude Code on security concepts (Track 3 practice)
+- This is the conceptual bridge between foundations (Tracks 1-6) and deep technical work (Tracks 8+)
 
-**You'll start Python Core (Week 9) knowing exactly what you're building toward.**
+**You'll start Software Architecture (Week 9) knowing the security problems you're ultimately building toward solving.**
 
 -----
 
@@ -127,6 +127,12 @@ This is THE practical guide for LLM security, covering:
   - Sci-fi AI failures and their security lessons
   - Preparing for emerging threats
   - Career implications for AI red teamers
+
+**Friday (2 hours): Catch-up + Reflection**
+- Finish any chapters that took longer than planned
+- Re-read the most important sections (Ch 4: Prompt Injection, Ch 8: Supply Chain)
+- Organize Obsidian notes — make sure concepts are linked
+- If caught up: start exploring OWASP LLM Top 10 (Saturday material)
 
 **Key Concepts to Capture in Obsidian:**
 - Prompt injection vs jailbreaking (what's the difference?)
@@ -549,32 +555,31 @@ LLM like ChatGPT?"
 
 ## Checkpoint
 
-Before moving to Track 4 (Python Core), you should be able to:
+Before moving to Track 8 (Software Architecture via Go), you should be able to:
 
 - ✅ Explain the OWASP LLM Top 10 vulnerability classes
 - ✅ Describe how prompt injection attacks work
 - ✅ Understand why jailbreaking is challenging to prevent
 - ✅ Know what training data extraction means
-- ✅ Articulate WHY you need Python for AI red teaming
+- ✅ Understand supply chain risks (malicious models, pickle exploits)
 - ✅ Have 15-20 linked notes in Obsidian on LLM security
-- ✅ Feel motivated to learn Python for security tool building
+- ✅ See how architecture knowledge (Track 8) will help you attack AI systems
 
 -----
 
 ## What's Next?
 
-**Weeks 9-18: Python Core**
-- You'll learn TDD and pytest (for testing AI systems)
-- Architecture patterns (for understanding ML pipelines)
-- Security code review (essential for AI code)
+**Weeks 9-20: Software Architecture via Go (Track 8)**
+- Learn to think in systems — clean architecture, DDD, testing
+- Understand how production systems are built (so you can attack them)
+- Direct Claude Code to build Go projects and review the output
 
-**Every Python skill you learn will directly apply to AI red teaming:**
-- pytest → Testing LLM outputs for vulnerabilities
-- TDD → Building reliable security scanners
-- Code review → Analyzing ML framework code
-- Architecture → Understanding AI system design
+**Weeks 21-28: AI/ML Security (Track 10)**
+- This is your career goal — AI red teaming
+- You'll use the LLM security concepts from this week as your foundation
+- Claude Code writes the Python for labs — you focus on the attacks
 
-**Now you know WHY you're learning Python - you've seen the security problems it will help you solve!**
+**The security concepts you learned this week are the foundation for everything that follows.**
 
 -----
 

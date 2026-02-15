@@ -36,8 +36,8 @@ You just spent 12 weeks learning software architecture (Track 8). Now you apply 
 - **Week 22:** Ch 2 (Foundation Models) - 4 hrs
 - **Week 25:** Ch 6 (RAG and Agents) - 4 hrs CRITICAL
 - **Week 26:** Ch 5 (Prompt Engineering) - 4 hrs CRITICAL for attacks
-- **Week 26:** Ch 7, 9, 10 (Production systems) - 6 hrs
-- **Week 27:** Ch 3-4 (Evaluation) - 4 hrs
+- **Week 27:** Ch 3-4 (Evaluation) + Ch 7, 10 (skim) - 8 hrs
+- **Optional:** Ch 9 (Inference Optimization) — reference reading, not required
 
 **Note:** Phase 5 (Go for AI Security) has moved to Track 11 as the capstone, where Go architecture skills + AI security knowledge combine.
 
@@ -58,6 +58,7 @@ You just spent 12 weeks learning software architecture (Track 8). Now you apply 
 |Fast.ai           |fast.ai              |ML fundamentals          |
 |Hugging Face NLP  |huggingface.co/learn |Transformers, NLP        |
 |OWASP LLM Top 10  |genai.owasp.org      |LLM vulnerabilities      |
+|MITRE ATLAS       |atlas.mitre.org      |Adversarial ML threat framework (ATT&CK for AI)|
 |HackAPrompt       |hackaprompt.com      |Prompt injection practice|
 |Dreadnode/Crucible|crucible.dreadnode.io|CTF-style challenges     |
 
@@ -222,7 +223,7 @@ Direct Claude Code to build attack scripts, then analyze results:
 - 5+ attack vectors documented
 - Defensive recommendations
 
-**Week 26: ML Supply Chain & Production Security**
+**Week 26: ML Supply Chain + Prompt Engineering**
 
 **Monday-Tuesday (6 hours): ML Supply Chain Attacks**
 
@@ -232,6 +233,7 @@ Review supply chain concepts from Track 7 (Wilson book Chapter 8):
 - Pickle exploits in PyTorch/TensorFlow
 - Poisoned datasets
 - ML-BOM and provenance
+- Reference: [MITRE ATLAS](https://atlas.mitre.org/) — adversarial ML threat framework (the "ATT&CK for AI")
 
 **Hands-On (5 hours):** Direct Claude Code to build:
 1. **Malicious pickle file (2 hours)** — Understand the exploit architecture:
@@ -261,16 +263,15 @@ This is THE chapter for AI red teaming:
   - Defense strategies and why they often fail
 - **Techniques for Improving Outputs:** Chain-of-thought (and how to exploit it)
 
-**Friday-Weekend (8 hours): Production AI Systems**
+**Friday (2 hours): Catch-up / HTB Academy**
+- Finish any remaining HTB modules from Weeks 23-24
+- Or catch up on Week 25 RAG attacks if needed
 
-**AI Engineering Ch 7, 9, 10 (6 hours):**
-- **Chapter 7: Finetuning** — Attack implications of finetuned models
-- **Chapter 9: Inference Optimization** — Exploiting quantized models
-- **Chapter 10: AI Engineering Architecture** — Attack surfaces in production systems
-
-**HTB Academy Capstone (2 hours):**
-- Complete any remaining HTB modules
-- Final project or capstone challenge
+**Weekend (6 hours): Apply Prompt Engineering to Attacks**
+- Revisit your RAG app and agent from Week 25
+- Apply prompt engineering techniques from Ch 5 as attack vectors
+- Test adversarial suffixes, delimiter attacks, chain-of-thought exploitation
+- Document new attack findings in Obsidian
 
 -----
 
@@ -278,17 +279,19 @@ This is THE chapter for AI red teaming:
 
 |Week|Focus                               |Resource             |
 |----|------------------------------------|--------------------|
-|27  |Evaluation methodology + HackAPrompt|AI Engineering Ch 3-4 + hackaprompt.com|
+|27  |AI Engineering (remaining chapters) + HackAPrompt|Ch 3-4, 7, 10 + hackaprompt.com|
 |28  |Crucible CTF + Automated Red Team Agent + Final Assessment|crucible.dreadnode.io + Claude SDK|
 
-**Week 27: Evaluation & HackAPrompt**
+**Week 27: Evaluation + Production AI + HackAPrompt**
 
-**Monday-Tuesday (4 hours): AI Engineering Ch 3-4 - Evaluation**
-- **Chapter 3:** Evaluation methodology — how to measure attack success objectively
-- **Chapter 4:** Evaluating AI systems — building reliable evaluation pipelines
-- **Red team application:** Build evaluation pipeline for your attacks
+**Monday-Wednesday (6 hours): AI Engineering — Remaining Chapters**
 
-**Wednesday-Weekend (14 hours): HackAPrompt CTF**
+- **Ch 3-4: Evaluation (3 hours)** — How to measure attack success objectively. Build evaluation pipeline for your attacks.
+- **Ch 7: Finetuning (1.5 hours)** — Skim for attack implications of finetuned models. How does finetuning change model behavior and defenses?
+- **Ch 10: AI Engineering Architecture (1.5 hours)** — Skim for attack surfaces in production AI systems. How are real systems deployed?
+- **Ch 9: Inference Optimization** — OPTIONAL reference reading. Skim if time allows. Not critical for red teaming.
+
+**Thursday-Weekend (12 hours): HackAPrompt CTF**
 - Complete as many levels as possible
 - Direct Claude Code to automate attack attempts
 - Apply evaluation techniques from Ch 3-4

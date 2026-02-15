@@ -91,8 +91,8 @@ Read for architectural understanding, not typing along:
 - **100 Go Mistakes (Harsanyi):** Already owned — code review checklist for Claude Code output
 - **Let's Go (Edwards):** Read for web app architecture — project structure, middleware, testing patterns
 - **Let's Go Further (Edwards):** Read for production API architecture — auth, rate limiting, deployment
-- **A Philosophy of Software Design (Ousterhout):** Design principles — complexity, deep modules, interface design. Your lens for reviewing Claude Code output.
-- **Fundamentals of Software Architecture (Richards & Ford):** Architecture styles, trade-off analysis, the architect role. This IS your job description.
+- **A Philosophy of Software Design (Ousterhout):** Week 13 — design principles, complexity, deep modules. Your lens for reviewing Claude Code output. (~180 pages, one full week)
+- **Fundamentals of Software Architecture (Richards & Ford):** Week 15 — architecture styles, trade-off analysis, the architect role. This IS your job description. (~400 pages, skim selectively)
 
 ### Track 10: AI/ML Security (Weeks 21-28)
 **Books to buy:** $50 (Huyen) — Dursey already owned
@@ -100,7 +100,7 @@ Read for architectural understanding, not typing along:
 - **AI Engineering (Huyen):** $50 — essential for understanding production AI systems you'll attack
 - **Red Teaming AI (Dursey):** Already owned — AI red teaming methodology
 - **HTB Academy:** ~$20/month x 2 months — hands-on labs (budgeted separately)
-- **Free:** Fast.ai, Hugging Face NLP course, OWASP LLM Top 10, HackAPrompt, Crucible CTF
+- **Free:** Fast.ai, Hugging Face NLP course, OWASP LLM Top 10, MITRE ATLAS, HackAPrompt, Crucible CTF
 
 ### Track 9: Python Core + TDD (Weeks 30-37)
 **Books to buy:** $40 (Okken)
