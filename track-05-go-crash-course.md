@@ -13,30 +13,28 @@
 
 ## Why This Week?
 
-Your company uses Go for development. This crash course gets you **functional at work** while you continue your AI red teaming path.
-
-**Goal:** Minimum viable Go knowledge to:
-- Read and understand Go codebases at work
-- Make small changes and fixes
-- Use Claude Code effectively with Go
-- Collaborate with Go developers
-- **NOT become a Go expert** (that's Track 8: Go Foundations, Weeks 9-20)
+Your company uses Go for development. Claude Code writes the Go, but you need to **understand Go well enough to**:
+- Read and review what Claude Code produces
+- Give Claude Code effective Go-specific direction
+- Understand company Go codebases in code reviews
+- Collaborate with Go developers using the right vocabulary
+- **NOT become a Go expert** (that's Track 8: Software Architecture, Weeks 9-20)
 
 -----
 
 ## Self-Assessment: Skip What You Already Know
 
-You've been using Go at work and building tools with Claude Code. Don't waste time on material you've already internalized.
+You've been directing Claude Code to write Go at work. Don't waste time on material you can already recognize.
 
 ```
 Before starting, can you:
-- [ ] Read and understand Go code at work?
-- [ ] Write basic Go functions with error handling?
-- [ ] Use goroutines and channels?
-- [ ] Write Go tests?
-- [ ] Navigate your company's Go codebase?
+- [ ] Read and understand Go code at work (with or without Claude Code help)?
+- [ ] Identify what a Go function does when you see it?
+- [ ] Understand goroutine/channel concepts (even if you can't write them)?
+- [ ] Navigate your company's Go codebase structure?
+- [ ] Review Go code in PRs and give meaningful feedback?
 
-If you checked 4-5: Skip to Saturday (build a tool + contribute to company codebase).
+If you checked 4-5: Skip to Saturday (review company codebase deeply).
 If you checked 2-3: Do the abbreviated version (skip Tour of Go, focus on gaps).
 If you checked 0-1: Follow the full crash course below.
 ```
@@ -218,18 +216,18 @@ if err != nil {
 ## Deliverables
 
 **By end of Week 6, you should have:**
-- [ ] Completed Tour of Go
-- [ ] Worked through Go by Example (key sections)
-- [ ] Built a simple Go tool (HTTP server or CLI)
-- [ ] **Made first contribution to company codebase** (even if tiny!)
-- [ ] Can read and understand company's Go code with Claude Code
+- [ ] Completed Tour of Go (for reading comprehension)
+- [ ] Reviewed Go by Example (key sections — understand, not memorize)
+- [ ] Directed Claude Code to build a simple Go tool and reviewed the output
+- [ ] Can read and understand company's Go code
+- [ ] Can give Claude Code Go-specific direction at work
 - [ ] Comfortable using Git from Track 4 for Go projects
 
 **NOT expected:**
-- ❌ Go expert
-- ❌ Advanced concurrency patterns
-- ❌ All Go idioms
-- ❌ Deep understanding of Go internals
+- You don't need to write Go from memory
+- You don't need advanced concurrency patterns
+- You don't need all Go idioms memorized
+- Claude Code handles implementation — you handle direction and review
 
 -----
 
