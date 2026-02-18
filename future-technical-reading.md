@@ -12,9 +12,27 @@ These directly extend what you learned. High impact for your role.
 
 | Book | Author | Pages | ~Cost | Extends |
 |------|--------|-------|-------|---------|
+| Adversarial AI Attacks, Mitigations, and Defense Strategies | John Sotiropoulos | ~586 | ~$50 | Track 10 (AI/ML Security) |
+| Build a Large Language Model From Scratch | Sebastian Raschka | ~368 | ~$45 | Track 10 (AI/ML Security) |
 | Learning Domain-Driven Design | Vlad Khononov | ~290 | ~$50 | Track 8 (Architecture) |
 | Designing Data-Intensive Applications | Martin Kleppmann | ~550 | ~$45 | Track 8 (Architecture) |
 | Threat Modeling: Designing for Security | Adam Shostack | ~300 | ~$40 | Track 10 (AI/ML Security) |
+
+### Adversarial AI Attacks, Mitigations, and Defense Strategies (Sotiropoulos)
+
+**What it adds:** Comprehensive offense + defense + threat modeling for AI systems. Covers LLMs, computer vision, NLP, and supply chain attacks. Author is **OWASP LLM Top 10 co-lead** — this is the practitioner's manual for AI red teaming.
+
+**When to read:** First after Track 10. This is the single most relevant post-plan book for your AI red teamer role. It deepens everything you learned in Track 10 with a structured offensive/defensive methodology from someone who literally defines the industry standards.
+
+**Why it was deferred:** 586 pages on top of Track 10's already heavy AI security content. Your plan covers the same ground through Huyen + Dursey + hands-on labs. Sotiropoulos adds the OWASP-aligned methodology and broader attack surface coverage.
+
+### Build a Large Language Model From Scratch (Raschka)
+
+**What it adds:** "Know your target" — understand LLM internals from tokenization to attention mechanisms to fine-tuning. Better red teaming comes from understanding how models actually work under the hood. Raschka is a respected ML researcher and the book is hands-on with code.
+
+**When to read:** After Track 10. When you want to move from "test the API surface" to "understand why these attacks work at the model level." This foundation makes your AI red team assessments significantly deeper.
+
+**Why it was deferred:** 368 pages of model internals. Track 10 focuses on attacking AI systems from the outside (which is the immediate job need). Model internals become important when you want to understand *why* attacks succeed, not just *that* they succeed.
 
 ### Learning Domain-Driven Design (Khononov)
 
@@ -48,10 +66,18 @@ Valuable but situational. Pick these up when you encounter the relevant problem 
 
 | Book | Author | Pages | ~Cost | When to Read |
 |------|--------|-------|-------|-------------|
+| Security Engineering, 3rd ed | Ross Anderson | ~1000+ | **FREE** | Reference — read chapters as security questions arise |
 | Software Architecture: The Hard Parts | Richards, Ford, et al. | ~400 | ~$50 | When you face distributed system trade-offs at work |
 | Building Microservices | Sam Newman | ~600 | ~$50 | When microservices become relevant at your job |
 | Concurrency in Go | Katherine Cox-Buday | ~250 | ~$40 | When Go concurrency needs deepening beyond Track 8/11 |
+| Hacking APIs | Corey Ball | ~368 | ~$35 | When you need API pentesting fundamentals for AI system testing |
 | The Alignment Problem | Brian Christian | ~350 | ~$18 | When you want broader AI safety context beyond red teaming |
+
+### Security Engineering, 3rd ed (Ross Anderson)
+
+**What it adds:** The foundational security architecture reference — covers threat modeling, access control, cryptography, system design, economics of security, and much more. Written by one of the most respected security researchers in the world. The 3rd edition is available **FREE online** from Cambridge University Press.
+
+**When to read:** Use as a reference book. Don't read cover-to-cover (1000+ pages). Instead, read specific chapters when security architecture questions arise at work — e.g., the threat modeling chapter before an assessment, the cryptography chapter when reviewing AI model encryption.
 
 ### Software Architecture: The Hard Parts (Richards, Ford, Dehghani, Sadalage)
 
@@ -71,11 +97,27 @@ Valuable but situational. Pick these up when you encounter the relevant problem 
 
 **When to read:** When you're directing Claude Code to build concurrent Go tools and need to review complex concurrency patterns. Track 8 + Black Hat Go may be sufficient.
 
+### Hacking APIs (Corey Ball)
+
+**What it adds:** API pentesting methodology — reconnaissance, authentication attacks, authorization flaws, injection, rate limiting bypass. Most AI systems expose REST/GraphQL APIs, so API security is directly relevant to AI red teaming.
+
+**When to read:** Only if your API pentesting fundamentals need strengthening. Skip if you're already comfortable with API security from your security engineering background.
+
 ### The Alignment Problem (Brian Christian)
 
 **What it adds:** Broader AI safety context — how AI systems learn values, fairness in ML, reward hacking, interpretability. Not a security book, but gives context for why AI red teaming matters beyond just prompt injection.
 
 **When to read:** When you want to articulate the "why" of AI red teaming to stakeholders, or when you're curious about the broader AI safety landscape.
+
+-----
+
+## Watch List: Forthcoming Books
+
+| Book | Author | Pages | Expected | Why Watch |
+|------|--------|-------|----------|-----------|
+| Practical AI Security | Daniel Farlow | ~392 | April 2026 | 30+ hands-on Python demos for AI security testing. O'Reilly. Worth pre-ordering when available. |
+
+**Note:** Your Kindle edition of Red Teaming AI (Dursey) will get a No Starch Press print edition in July 2026 — no need to repurchase unless you want the physical book.
 
 -----
 
@@ -124,11 +166,12 @@ These books were in the original 65-week plan but dropped when restructuring for
 
 | Tier | Books | Total Cost |
 |------|-------|-----------|
-| Tier 1 | 3 books | ~$135 |
-| Tier 2 | 4 books | ~$158 |
-| **All** | **7 books** | **~$293** |
+| Tier 1 | 5 books | ~$230 |
+| Tier 2 | 6 books | ~$193 (includes 1 FREE) |
+| Watch List | 1 book | TBD (forthcoming) |
+| **All** | **12 books** | **~$423** |
 
-No urgency to buy any of these. Purchase when you're ready to read them — after Week 44.
+No urgency to buy any of these. Purchase when you're ready to read them — after Week 44. Security Engineering (Anderson) is free online.
 
 -----
 
@@ -137,18 +180,19 @@ No urgency to buy any of these. Purchase when you're ready to read them — afte
 ```
 44-Week Plan (active learning)
 ├── Track 8: Architecture via Go     → Tier 1: Khononov, Kleppmann extend this
-├── Track 10: AI/ML Security         → Tier 1: Shostack extends this
+├── Track 10: AI/ML Security         → Tier 1: Sotiropoulos, Raschka, Shostack extend this
 ├── Track 9: Python Core             → Dropped books: Black Hat Python, Fluent Python, Asyncio
-└── Track 11: Go Security + Capstone → Tier 2: Cox-Buday extends this
+└── Track 11: Go Security + Capstone → Tier 2: Cox-Buday, Hacking APIs extend this
 
 Dropped Tracks (Track 12 & 13)
 ├── Python Advanced: 3 books — read only if role shifts to writing Python
-└── JS/TS: 2 books + 3 owned as reference — read only if role shifts to web/frontend
+└── JS/TS: 2 books + 4 owned as reference — read only if role shifts to web/frontend
 
 Leadership Reading List (bedtime reading, parallel to plan)
 └── 27 books, all owned, separate from technical reading
 
 Future Technical Reading (THIS LIST — after plan completion)
-├── Tier 1: 3 books, read first
-└── Tier 2: 4 books, read when needed
+├── Tier 1: 5 books, read first (AI security + architecture)
+├── Tier 2: 6 books, read when needed (includes 1 FREE reference)
+└── Watch List: 1 forthcoming book (Practical AI Security, April 2026)
 ```
