@@ -100,9 +100,10 @@ These books were in the original 65-week plan but dropped when restructuring for
 | Programming TypeScript (Cherny) | ~$40 | Not owned | If your work shifts to web/frontend or TypeScript-based AI tools |
 | Zero To Mastery Node.js | ~$40 | Not owned | If you need to understand Node.js backends (some AI apps use them) |
 
-**Why dropped:** Not relevant to AI red teaming goal. You own 3 JS/TS books as reference if you ever need them:
+**Why dropped:** Not relevant to AI red teaming goal. You own 4 JS/TS books as reference if you ever need them:
 - Eloquent JavaScript (Haverbeke) — already owned
 - Web Development with Node and Express (Brown) — already owned
+- Node.js: The Comprehensive Guide (Springer) — already owned
 - You Don't Know JS, 1st ed (Simpson) — already owned
 
 **Total dropped:** 5 books, ~$215 saved. None of these are needed for the architect + AI red teamer path.
