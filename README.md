@@ -243,4 +243,6 @@ Passive content for commutes, lunch breaks, or when you need a break from active
 
 **Full details, checklists, and reading order:** See [leadership-reading-list.md](leadership-reading-list.md)
 
+**After plan completion:** See [future-technical-reading.md](future-technical-reading.md) for 7 technical books that extend this plan (Khononov DDD, Kleppmann DDIA, Shostack Threat Modeling, and more)
+
 -----
