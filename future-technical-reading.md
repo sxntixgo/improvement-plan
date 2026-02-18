@@ -111,6 +111,78 @@ Valuable but situational. Pick these up when you encounter the relevant problem 
 
 -----
 
+## Tier 3: Software Engineering Craft
+
+Broader software engineering books that deepen your architect skills. Read after Tier 1 and Tier 2, or when a specific need arises at work. Two are free.
+
+| Book | Author | Pages | ~Cost | Focus |
+|------|--------|-------|-------|-------|
+| Machine Learning Design Patterns | Lakshmanan, Robinson, Munn (Google) | ~400 | ~$35 | How ML systems are architecturally designed — "know your target" |
+| Building Secure and Reliable Systems | Adkins et al. (Google) | ~555 | **FREE** | Security + reliability intersection — your exact career overlap |
+| Software Engineering at Google | Winters, Manshreck, Wright | ~602 | **FREE** | Engineering at scale — code review, testing philosophy, dependency management |
+| API Design Patterns | JJ Geewax (Google) | ~480 | ~$35 | REST/gRPC design vocabulary for directing Claude Code |
+| Unit Testing Principles, Practices, and Patterns | Vladimir Khorikov | ~304 | ~$40 | What makes tests *good* — judging AI-generated test quality |
+| Team Topologies | Matthew Skelton, Manuel Pais | ~240 | ~$30 | Org design determines system architecture (Conway's Law applied deliberately) |
+| Accelerate | Forsgren, Humble, Kim | ~269 | ~$30 | Research-backed evidence for which engineering practices actually work (DORA metrics) |
+| Refactoring, 2nd ed | Martin Fowler | ~448 | ~$45 | 70+ named refactoring patterns — the vocabulary of code transformation |
+| Understanding Distributed Systems | Roberto Vitillo | ~344 | ~$40 | Practical companion to Kleppmann's DDIA — faster path to distributed systems knowledge |
+
+### Machine Learning Design Patterns (Lakshmanan, Robinson, Munn)
+
+**What it adds:** 30 design patterns for ML systems — data representation, model training, serving, reproducibility, fairness. Written by three Google Cloud ML engineers. Understanding how ML systems are *designed* is prerequisite knowledge for understanding how they can *fail* or be *attacked*.
+
+**When to read:** After Track 10. This is the architectural complement to your AI security knowledge. You'll attack ML systems more effectively when you understand their design patterns.
+
+### Building Secure and Reliable Systems (Adkins et al.)
+
+**What it adds:** The intersection of security engineering and reliability engineering, from Google's security and SRE teams. Covers secure-by-default design, least privilege in infrastructure, recovery planning. **FREE online** from Google.
+
+**When to read:** After Track 8 or 10. This validates and extends your security instincts into systems design. Pairs well with Shostack's Threat Modeling (Tier 1).
+
+### Software Engineering at Google (Winters, Manshreck, Wright)
+
+**What it adds:** How Google manages a 250M-line codebase — code review culture, testing philosophy, dependency management, large-scale changes. When you direct an AI to write code, the chapters on evaluating and accepting code are directly applicable. **FREE online** at abseil.io.
+
+**When to read:** When you want the engineering-culture-at-scale perspective. The code review and testing strategy chapters are immediately useful for your Claude Code workflow.
+
+### API Design Patterns (Geewax)
+
+**What it adds:** Naming conventions, resource design, pagination, filtering, authentication, long-running operations. Covers REST, gRPC, and general patterns. As an architect directing code generation, having principled API design vocabulary lets you specify API contracts precisely.
+
+**When to read:** When you're directing Claude Code to build APIs and want to give more precise specifications.
+
+### Unit Testing Principles, Practices, and Patterns (Khorikov)
+
+**What it adds:** The four pillars of a good unit test, when mocks help vs. hurt, integration testing strategy, testing anti-patterns. 4.57 Goodreads rating — the highest-rated testing book published in recent years. Complements Percival (TDD mechanics) and Okken (pytest) by adding the "philosophy of what makes tests valuable" layer.
+
+**When to read:** After Track 9 Phase 1A (TDD with Percival). When you need to evaluate whether Claude Code's tests are *good*, not just passing.
+
+### Team Topologies (Skelton, Pais)
+
+**What it adds:** Four fundamental team types and three interaction modes. Conway's Law applied deliberately — your team structure determines your system architecture. The language of "stream-aligned teams," "platform teams," and "cognitive load" has become industry standard.
+
+**When to read:** When you start thinking about how team boundaries affect the systems you're designing or attacking.
+
+### Accelerate (Forsgren, Humble, Kim)
+
+**What it adds:** Research-backed evidence for which engineering practices improve outcomes. Introduces the DORA metrics (deployment frequency, lead time, change failure rate, MTTR) that are now industry standard. Every architect should know this framework.
+
+**When to read:** When you want the empirical justification for modern software delivery practices.
+
+### Refactoring, 2nd ed (Fowler)
+
+**What it adds:** 70+ named refactoring patterns with motivation, mechanics, and examples. The vocabulary of code transformation — "Extract Method," "Replace Conditional with Polymorphism," etc. Ousterhout (in your plan) covers the *why* of design; Fowler covers the *how* of transforming code to get there.
+
+**When to read:** Use as a reference book. When you need to tell Claude Code "apply Extract Class here," this is where that vocabulary comes from.
+
+### Understanding Distributed Systems (Vitillo)
+
+**What it adds:** A more practical, concise companion to Kleppmann's DDIA. Covers network stack, consistency models, scalability, reliability, and resiliency. Where DDIA goes deep into theory, Vitillo focuses on actionable knowledge. Read before or alongside Kleppmann.
+
+**When to read:** When you want distributed systems knowledge without committing to Kleppmann's 550 dense pages first.
+
+-----
+
 ## Watch List: Forthcoming Books
 
 | Book | Author | Pages | Expected | Why Watch |
@@ -168,10 +240,11 @@ These books were in the original 65-week plan but dropped when restructuring for
 |------|-------|-----------|
 | Tier 1 | 5 books | ~$230 |
 | Tier 2 | 6 books | ~$193 (includes 1 FREE) |
+| Tier 3 | 9 books | ~$255 (includes 2 FREE) |
 | Watch List | 1 book | TBD (forthcoming) |
-| **All** | **12 books** | **~$423** |
+| **All** | **21 books** | **~$678** |
 
-No urgency to buy any of these. Purchase when you're ready to read them — after Week 44. Security Engineering (Anderson) is free online.
+No urgency to buy any of these. Purchase when you're ready to read them — after Week 44. Three books are free online (Anderson, Google SRE, SWE at Google).
 
 -----
 
@@ -180,8 +253,11 @@ No urgency to buy any of these. Purchase when you're ready to read them — afte
 ```
 44-Week Plan (active learning)
 ├── Track 8: Architecture via Go     → Tier 1: Khononov, Kleppmann extend this
+│                                      Tier 3: API Patterns, Refactoring, Distributed Systems, Team Topologies
 ├── Track 10: AI/ML Security         → Tier 1: Sotiropoulos, Raschka, Shostack extend this
-├── Track 9: Python Core             → Dropped books: Black Hat Python, Fluent Python, Asyncio
+│                                      Tier 3: ML Design Patterns, Secure & Reliable Systems
+├── Track 9: Python Core             → Tier 3: Unit Testing Principles extends this
+│                                      Dropped: Black Hat Python, Fluent Python, Asyncio
 └── Track 11: Go Security + Capstone → Tier 2: Cox-Buday, Hacking APIs extend this
 
 Dropped Tracks (Track 12 & 13)
@@ -192,7 +268,8 @@ Leadership Reading List (bedtime reading, parallel to plan)
 └── 27 books, all owned, separate from technical reading
 
 Future Technical Reading (THIS LIST — after plan completion)
-├── Tier 1: 5 books, read first (AI security + architecture)
+├── Tier 1: 5 books, read first (AI security + architecture deep dives)
 ├── Tier 2: 6 books, read when needed (includes 1 FREE reference)
+├── Tier 3: 9 books, software engineering craft (includes 2 FREE)
 └── Watch List: 1 forthcoming book (Practical AI Security, April 2026)
 ```
