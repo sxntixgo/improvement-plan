@@ -79,6 +79,36 @@ Valuable but situational. Pick these up when you encounter the relevant problem 
 
 -----
 
+## Dropped from Plan (Track 12 & 13)
+
+These books were in the original 65-week plan but dropped when restructuring for the architect role. They're here for reference if your needs change.
+
+### Track 12: Python Advanced (DROPPED)
+
+| Book | ~Cost | Status | When It Would Matter |
+|------|-------|--------|---------------------|
+| Black Hat Python (Seitz & Arnold) | ~$35 | Not owned | If you decide to write Python security tools yourself instead of using Go |
+| Fluent Python (Ramalho) | ~$50 | Not owned | If you need deep Python internals (decorators, metaclasses, data model) for reviewing complex AI codebases |
+| Using Asyncio in Python (Fowler) | ~$50 | Not owned | If you need to review or debug async Python in production AI systems |
+
+**Why dropped:** You're building security tools in Go (your work language), not Python. Claude Code handles async Python. You understand concurrency concepts from Go (Track 8). The architect doesn't need to write advanced Python — they need to review it, which Track 9 covers.
+
+### Track 13: JavaScript/TypeScript (DROPPED)
+
+| Book | ~Cost | Status | When It Would Matter |
+|------|-------|--------|---------------------|
+| Programming TypeScript (Cherny) | ~$40 | Not owned | If your work shifts to web/frontend or TypeScript-based AI tools |
+| Zero To Mastery Node.js | ~$40 | Not owned | If you need to understand Node.js backends (some AI apps use them) |
+
+**Why dropped:** Not relevant to AI red teaming goal. You own 3 JS/TS books as reference if you ever need them:
+- Eloquent JavaScript (Haverbeke) — already owned
+- Web Development with Node and Express (Brown) — already owned
+- You Don't Know JS, 1st ed (Simpson) — already owned
+
+**Total dropped:** 5 books, ~$215 saved. None of these are needed for the architect + AI red teamer path.
+
+-----
+
 ## Not Recommended (Considered and Skipped)
 
 | Book | Why Skip |
@@ -86,7 +116,6 @@ Valuable but situational. Pick these up when you encounter the relevant problem 
 | The Pragmatic Programmer (Hunt & Thomas) | Aimed at working programmers, not architects. Overlaps with Ousterhout + Richards & Ford for your role. |
 | Clean Architecture (Uncle Bob) | Ousterhout + Richards & Ford cover this ground better and more modernly. Clean Architecture is more prescriptive and less nuanced. |
 | Domain-Driven Design (Eric Evans, "Blue Book") | 500+ pages, dense, academic. Khononov (Tier 1) covers the same ground in 290 pages with modern context. Read Evans only if you become a DDD specialist. |
-| Fluent Python (Ramalho) | Aimed at Python developers writing advanced Python. You direct Claude Code — you need to review Python, not write advanced Python yourself. |
 
 -----
 
@@ -108,8 +137,12 @@ No urgency to buy any of these. Purchase when you're ready to read them — afte
 44-Week Plan (active learning)
 ├── Track 8: Architecture via Go     → Tier 1: Khononov, Kleppmann extend this
 ├── Track 10: AI/ML Security         → Tier 1: Shostack extends this
-├── Track 9: Python Core             → (covered — no future reading needed)
+├── Track 9: Python Core             → Dropped books: Black Hat Python, Fluent Python, Asyncio
 └── Track 11: Go Security + Capstone → Tier 2: Cox-Buday extends this
+
+Dropped Tracks (Track 12 & 13)
+├── Python Advanced: 3 books — read only if role shifts to writing Python
+└── JS/TS: 2 books + 3 owned as reference — read only if role shifts to web/frontend
 
 Leadership Reading List (bedtime reading, parallel to plan)
 └── 27 books, all owned, separate from technical reading
