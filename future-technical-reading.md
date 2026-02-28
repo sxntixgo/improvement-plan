@@ -231,6 +231,8 @@ These books were in the original 65-week plan but dropped when restructuring for
 | The Pragmatic Programmer (Hunt & Thomas) | Aimed at working programmers, not architects. Overlaps with Ousterhout + Richards & Ford for your role. |
 | Clean Architecture (Uncle Bob) | Ousterhout + Richards & Ford cover this ground better and more modernly. Clean Architecture is more prescriptive and less nuanced. |
 | Domain-Driven Design (Eric Evans, "Blue Book") | 500+ pages, dense, academic. Khononov (Tier 1) covers the same ground in 290 pages with modern context. Read Evans only if you become a DDD specialist. |
+| StatQuest Illustrated Guides (Starmer) — ML, Neural Networks, Statistics | Beginner-level illustrated introductions. Your plan already covers the same ground deeper via Fast.ai (Week 21), Hugging Face NLP (Week 22), and AI Engineering Ch 2. Raschka (Tier 1) goes far deeper on model internals. Watch the free YouTube videos instead if you need a concept refresher. |
+| Software Engineering for Data Scientists (Nelson) | Aimed at junior data scientists who've never used Git or written tests. You're a Security Engineer — this is well below your baseline. Your plan covers SE fundamentals deeper in your actual languages (Go, Python). |
 
 -----
 
