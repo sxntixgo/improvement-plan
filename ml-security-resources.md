@@ -217,7 +217,26 @@ These are foundational papers that define the field. Read the ones relevant to y
 
 -----
 
-## 8. Datasets & Benchmarks for Testing
+## 8. Books
+
+| Book | Author(s) | Year | Focus | When to Read |
+|------|-----------|------|-------|-------------|
+| **Not with a Bug, But with a Sticker** | Ram Shankar Siva Kumar, Hyrum Anderson | 2024 | Accessible intro to adversarial ML — attacks on computer vision, NLP, and real-world ML systems. Written by Microsoft's ML security leads. Great narrative style. | Track 10 start (Weeks 21-22). Read alongside Fast.ai to understand what can go wrong. |
+| **AI Engineering** | Chip Huyen | 2025 | Already in your plan (Ch 2, 5-6). Covers LLM app architecture, RAG, agents — essential context for understanding *what* you're attacking. | Track 10 (already scheduled) |
+| **The Coming Wave** | Mustafa Suleyman | 2023 | Broader AI risk landscape — containment problem, dual-use technology. Not technical but gives strategic context for *why* AI red teaming matters. | Background reading anytime |
+| **Adversarial Machine Learning** | Anthony D. Joseph, Blaine Nelson, Benjamin I.P. Rubinstein, J.D. Tygar | 2019 | Academic textbook covering adversarial ML theory — evasion, poisoning, privacy attacks with formal threat models. Dense but comprehensive. | Reference during Track 10 for deeper theory on specific attack classes |
+| **Machine Learning Security** (O'Reilly) | Various | 2024 | Practical ML security — covers model security, data security, MLOps security, compliance. O'Reilly style with code examples. | Track 10 Weeks 25-26 (supply chain / defense) |
+| **Prompt Engineering for Generative AI** | James Phoenix, Mike Taylor | 2024 | Practical prompt engineering including adversarial prompting, jailbreaking techniques, and defensive prompt design. | Track 10 Week 23 supplement |
+| **LLM Security** (self-published) | Various community authors | 2024+ | Rapidly evolving space — check for updated titles on the topic as new books are being published frequently | Ongoing reference |
+
+**Top 3 if you only read three:**
+1. **Not with a Bug, But with a Sticker** — Best narrative introduction to adversarial ML
+2. **AI Engineering** (already in plan) — Understand what you're attacking
+3. **Adversarial Machine Learning** (Joseph et al.) — Deep theory when you need it
+
+-----
+
+## 9. Datasets & Benchmarks for Testing
 
 | Resource | Focus | Use Case |
 |----------|-------|----------|
@@ -230,7 +249,7 @@ These are foundational papers that define the field. Read the ones relevant to y
 
 -----
 
-## 9. Architecture Katas for AI Security
+## 10. Architecture Katas for AI Security
 
 Practice exercises you can do during Track 10 to sharpen AI security architecture thinking.
 
@@ -272,7 +291,7 @@ Review a typical ML pipeline for security weaknesses:
 
 -----
 
-## 10. How These Resources Map to Your Plan
+## 11. How These Resources Map to Your Plan
 
 ```
 Track 7 (Week 8): LLM Security Primer
