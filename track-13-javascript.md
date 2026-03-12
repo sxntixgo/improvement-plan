@@ -61,6 +61,65 @@
 |Node.js: The Comprehensive Guide (Springer)  |2-4  |Reference     |
 |JavaScript and jQuery (Jon Duckett)          |1    |Visual supplement (OPTIONAL)|
 
+**Eloquent JavaScript, 4th Edition (Haverbeke) — You're reading 12 of 22 chapters.** Reading Part I (Language) in full. Skipping Part II (Browser/DOM) and Part III (Node) since you learn Node separately with Express.
+
+|Chapter|Title                                      |What to Do                                              |
+|-------|-------------------------------------------|---------------------------------------------------------|
+|1      |Values, Types, and Operators               |⭐ READ (Week 49) — Speed run; focus on JS type coercion  |
+|2      |Program Structure                          |⭐ READ (Week 49) — let/const/var, hoisting               |
+|3      |Functions                                  |⭐ READ (Week 49) — CRITICAL: closures, arrow functions, scope|
+|4      |Data Structures: Objects and Arrays        |⭐ READ (Week 49) — Destructuring, spread, array methods  |
+|5      |Higher-Order Functions                     |⭐ READ (Week 49) — map/filter/reduce, functional patterns|
+|6      |The Secret Life of Objects                 |⭐ READ (Week 50) — CRITICAL: prototypes, `this`, classes |
+|7      |Project: A Robot                           |⭐ READ (Week 50) — Build simulation, practice JS idioms  |
+|8      |Bugs and Errors                            |⭐ READ (Week 50) — JS exception handling, fast review    |
+|9      |Regular Expressions                        |⭐ READ (Week 50) — JS regex methods + ReDoS security angle|
+|10     |Modules                                    |⭐ READ (Week 51) — ES modules vs CommonJS, npm           |
+|11     |Asynchronous Programming                   |⭐ READ (Week 51) — CRITICAL: event loop, promises, async/await|
+|12     |Project: A Programming Language            |⭐ READ (Week 51) — AST concepts for security tooling later|
+|13     |JavaScript and the Browser                 |SKIP — Browser/DOM basics, not needed for security tooling|
+|14     |The Document Object Model                  |SKIP — DOM manipulation, not needed for Node.js focus     |
+|15     |Handling Events                            |SKIP — Browser event handling                             |
+|16     |Project: A Platform Game                   |SKIP — Browser game project                               |
+|17     |Drawing on Canvas                          |SKIP — Canvas API, not relevant                           |
+|18     |HTTP and Forms                             |SKIP — Browser-side HTTP; you learn this server-side with Express|
+|19     |Project: A Pixel Art Editor                |SKIP — Browser project                                    |
+|20     |Node.js                                    |SKIP — Covered in depth with Express book                 |
+|21     |Project: Skill-Sharing Website             |SKIP — Covered by Express project work                    |
+|22     |JavaScript and Performance                 |SKIP — Skim if curious; not essential for your path       |
+
+**Web Development with Node and Express, 2nd Edition (Brown) — You're reading 12 of 23 chapters.** Skipping email, SPA, static content, and maintenance chapters.
+
+|Chapter|Title                                      |What to Do                                              |
+|-------|-------------------------------------------|---------------------------------------------------------|
+|1      |Introducing Express                        |⭐ READ (Week 52) — Framework overview, fast              |
+|2      |Getting Started with Node                  |⭐ READ (Week 52) — Node.js basics                        |
+|3      |Saving Time with Express                   |⭐ READ (Week 52) — Express scaffolding                   |
+|4      |Tidying Up                                 |⭐ READ (Week 52) — Project structure                     |
+|5      |Quality Assurance                          |⭐ READ (Week 52) — Testing with Jest + TypeScript        |
+|6      |The Request and Response Objects           |⭐ READ (Week 52) — Request/response types                |
+|7      |Templating with Handlebars                 |⭐ READ (Week 53) — Type-safe view rendering              |
+|8      |Form Handling                              |⭐ READ (Week 53) — Request body typing, validation       |
+|9      |Cookies and Sessions                       |⭐ READ (Week 53) — Type-safe session data                |
+|10     |Middleware                                 |⭐ READ (Week 53) — CRITICAL: middleware chains, error handling|
+|11     |Sending Email                              |SKIP — Email sending, not relevant to security tooling    |
+|12     |Production Concerns                        |SKIP — Covered in Week 56 deployment section              |
+|13     |Persistence                                |⭐ READ (Week 54) — Database integration with TypeScript  |
+|14     |Routing                                    |⭐ READ (Week 54) — Type-safe route handlers              |
+|15     |REST APIs and JSON                         |SKIP — You build REST APIs hands-on in Weeks 54-56        |
+|16     |Single-Page Applications                   |SKIP — SPA concepts, not your focus                       |
+|17     |Static Content                             |SKIP — Static file serving, trivial                       |
+|18     |Security                                   |⭐ READ (Week 55) — bcrypt, JWT, HTTPS, security headers  |
+|19     |Integrating with Third-Party APIs          |⭐ READ (Week 55) — OAuth, type-safe API clients          |
+|20     |Debugging                                  |SKIP — Debugging basics, you know this                    |
+|21     |Going Live                                 |SKIP — Deployment covered in Week 56 hands-on             |
+|22     |Maintenance                                |SKIP — Long-term maintenance, not relevant yet            |
+|23     |Additional Resources                       |SKIP — Resource list, not a chapter                        |
+
+**You Don't Know JS, 1st Edition (Simpson)** — Use as supplement only. Read scope/closures chapters alongside Eloquent JS Week 49 if you need deeper explanations. Not a primary read.
+
+**Node.js: The Comprehensive Guide (Springer)** — Reference only. Look up specific topics as needed during Weeks 52-56. Not read cover-to-cover.
+
 **Note on Duckett book:**
 - **Use ONLY as visual supplement** during Week 49 (JavaScript basics)
 - Good for: Visual explanations, diagrams, color-coded examples when Eloquent JavaScript is confusing
