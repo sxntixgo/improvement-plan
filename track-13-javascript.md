@@ -45,7 +45,7 @@
 |1    |49-51|JavaScript Fundamentals          |Eloquent JavaScript           |
 |2    |52-56|Node.js & Express with TypeScript|TypeScript Handbook + Brown   |
 |3    |57-58|TypeScript Advanced Essentials   |TypeScript Handbook + Patterns|
-|4    |59-62|Security Focus (JS & TS)         |OWASP + Hands-on              |
+|4    |59-62|Security Focus (JS & TS)         |Eloquent JS Ch 13-15, 18 + OWASP + Hands-on|
 
 -----
 
@@ -61,7 +61,7 @@
 |Node.js: The Comprehensive Guide (Springer)  |2-4  |Reference     |
 |JavaScript and jQuery (Jon Duckett)          |1    |Visual supplement (OPTIONAL)|
 
-**Eloquent JavaScript, 4th Edition (Haverbeke) — You're reading 12 of 22 chapters.** Reading Part I (Language) in full. Skipping Part II (Browser/DOM) and Part III (Node) since you learn Node separately with Express.
+**Eloquent JavaScript, 4th Edition (Haverbeke) — You're reading 17 of 22 chapters.** Reading Part I (Language) in full + security-relevant browser chapters + Node.js. Skipping only project chapters and canvas.
 
 |Chapter|Title                                      |What to Do                                              |
 |-------|-------------------------------------------|---------------------------------------------------------|
@@ -77,14 +77,14 @@
 |10     |Modules                                    |⭐ READ (Week 51) — ES modules vs CommonJS, npm           |
 |11     |Asynchronous Programming                   |⭐ READ (Week 51) — CRITICAL: event loop, promises, async/await|
 |12     |Project: A Programming Language            |⭐ READ (Week 51) — AST concepts for security tooling later|
-|13     |JavaScript and the Browser                 |SKIP — Browser/DOM basics, not needed for security tooling|
-|14     |The Document Object Model                  |SKIP — DOM manipulation, not needed for Node.js focus     |
-|15     |Handling Events                            |SKIP — Browser event handling                             |
-|16     |Project: A Platform Game                   |SKIP — Browser game project                               |
+|13     |JavaScript and the Browser                 |⭐ READ (Week 59) — Browser execution model, security context|
+|14     |The Document Object Model                  |⭐ READ (Week 59) — CRITICAL for DOM-based XSS attacks    |
+|15     |Handling Events                            |⭐ READ (Week 59) — Event handlers are XSS sinks          |
+|16     |Project: A Platform Game                   |SKIP — Browser game project, not security-relevant        |
 |17     |Drawing on Canvas                          |SKIP — Canvas API, not relevant                           |
-|18     |HTTP and Forms                             |SKIP — Browser-side HTTP; you learn this server-side with Express|
+|18     |HTTP and Forms                             |⭐ READ (Week 59) — Browser HTTP, CSRF, form-based attacks|
 |19     |Project: A Pixel Art Editor                |SKIP — Browser project                                    |
-|20     |Node.js                                    |SKIP — Covered in depth with Express book                 |
+|20     |Node.js                                    |⭐ READ (Week 52) — Node.js foundation before Express book|
 |21     |Project: Skill-Sharing Website             |SKIP — Covered by Express project work                    |
 |22     |JavaScript and Performance                 |SKIP — Skim if curious; not essential for your path       |
 
@@ -243,7 +243,7 @@
 
 ### Week 51: Modules, Async Programming & Language Project
 
-**Eloquent JavaScript: Chapters 10-13 (18 hours)**
+**Eloquent JavaScript: Chapters 10-12 (18 hours)**
 
 *Combines original Weeks 51-52. The async chapter is critical and gets the most time. The language project is compressed to a fast-build exercise.*
 
@@ -272,14 +272,11 @@
   - Error handling with try/catch in async functions
   - Exercises: Tracking scalpel
 
-**Weekend (3 hours): Chapters 12-13 (Compressed)**
-- Chapter 12: Project: A Programming Language (2 hours)
+**Weekend (3 hours): Chapter 12**
+- Chapter 12: Project: A Programming Language (3 hours)
   - Build parser + evaluator for Egg language (abbreviated)
   - Focus on understanding AST concepts -- you will need these for security tooling later
   - You already built interpreters; focus on JS-specific implementation style
-- Chapter 13: JavaScript and Performance (1 hour)
-  - Memory management (garbage collection vs Go's GC)
-  - Quick profiling tools overview
 
 **Deliverable:** Working Egg interpreter (GitHub -- abbreviated version is fine)
 
@@ -296,11 +293,16 @@
 
 ### Week 52: TypeScript Fundamentals + Node.js + Express Setup
 
-**Monday-Wednesday (9 hours): TypeScript Basics + Node.js Setup**
+**Monday (2 hours): Eloquent JavaScript Ch 20 - Node.js**
+- Node.js architecture: event loop, non-blocking I/O, streams
+- File system, HTTP module, npm ecosystem
+- Read this BEFORE diving into Express — gives you the foundation the Express book builds on
+
+**Tuesday-Wednesday (7 hours): TypeScript Basics + Node.js Setup**
 
 *TypeScript basics are compressed because you already know static typing from Go. Focus on TS-specific features.*
 
-**TypeScript Handbook (6 hours):**
+**TypeScript Handbook (4 hours):**
 - **The Basics** (1 hour)
   - Static type checking, types vs values, `tsc` compiler
   - Skim quickly -- you understand static types from Go
@@ -698,18 +700,26 @@ class PromptInjectionTester {
 
 ### Week 59: JavaScript Security Fundamentals
 
-**Monday-Wednesday (9 hours): OWASP Top 10 for JavaScript**
+**Monday-Tuesday (6 hours): Eloquent JavaScript Ch 13-15, 18 — Browser Security Foundations**
+
+Read these chapters BEFORE studying XSS — you need to understand the DOM and event model to understand how XSS attacks work:
+- **Ch 13: JavaScript and the Browser (1 hour)** — Browser execution model, same-origin policy, security sandbox
+- **Ch 14: The Document Object Model (2 hours)** — CRITICAL: DOM tree, node manipulation, innerHTML — these are XSS attack surfaces
+- **Ch 15: Handling Events (1.5 hours)** — Event handlers as XSS sinks, event propagation, input handling
+- **Ch 18: HTTP and Forms (1.5 hours)** — Browser HTTP requests, form submissions, CSRF attack surface
+
+**Wednesday-Friday (6 hours): OWASP Top 10 for JavaScript**
 
 **Topics:**
-- XSS (Cross-Site Scripting) (3 hours)
-  - DOM-based XSS
+- XSS (Cross-Site Scripting) (2 hours)
+  - DOM-based XSS (now you understand the DOM from Ch 14)
   - Reflected XSS
   - Stored XSS
-- Prototype Pollution (3 hours)
+- Prototype Pollution (2 hours)
   - Understanding prototypes (you covered this in Week 50 -- now attack them)
   - Attack vectors
   - Defensive coding
-- Injection attacks (3 hours)
+- Injection attacks (2 hours)
   - SQL injection in Node.js
   - Command injection
   - Path traversal
