@@ -30,33 +30,52 @@ Now you direct Claude Code to build Go security tools using your architecture kn
 |Resource                    |Cost         |Focus                  |
 |----------------------------|-------------|-----------------------|
 |Black Hat Go                |Already owned|Offensive security tools|
-|100 Go Mistakes (Harsanyi)  |Already owned|Code review reference  |
+|100 Go Mistakes (Harsanyi)  |Already owned|Code review reference (not read cover-to-cover)|
+
+**Black Hat Go (Steele et al.) — You're reading 6 of 14 chapters.** Skipping Go basics (already know Go), server-side, niche protocols, and topics outside AI red teaming.
+
+|Chapter|Title                                             |What to Do                                              |
+|-------|--------------------------------------------------|---------------------------------------------------------|
+|1      |Go Fundamentals and Concepts                      |SKIP — You already know Go from Tracks 4 and 8           |
+|2      |TCP and Go: Scanners and Proxies                  |⭐ READ (Week 38) — Core networking patterns for security tools|
+|3      |HTTP Clients: Remote Interaction with Tools        |⭐ READ (Week 39) — HTTP client patterns for recon and API testing|
+|4      |HTTP Servers: Routing and Middleware               |SKIP — You're building offensive tools, not web servers   |
+|5      |Exploiting DNS: Recon and More                    |⭐ READ (Week 40) — DNS enumeration, subdomain discovery  |
+|6      |SMB and NTLM: A Peek Down the Rabbit Hole         |SKIP — Niche Windows protocol, not relevant to AI red teaming|
+|7      |Databases and Filesystems: Pilfering and Abusing   |SKIP — Traditional pentest technique, not AI security     |
+|8      |Packet Processing: Living on the Wire              |⭐ READ (Week 41) — Raw packet capture, network analysis   |
+|9      |Exploit Code: Writing and Porting                  |⭐ READ (Week 40) — Exploit writing patterns transfer to AI tool building|
+|10     |Extendable Tools: Using Go Plugins and Lua         |⭐ READ (Week 41) — Plugin architecture for extensible scanner|
+|11     |Cryptography: Implementing and Attacking           |SKIP — Crypto implementation details, not needed for AI tools|
+|12     |Windows: System Interaction and Analysis           |SKIP — Platform-specific, not relevant                    |
+|13     |Steganography: Hiding Data                         |SKIP — Niche technique, not relevant to AI red teaming    |
+|14     |Command and Control: Building a RAT                |SKIP — Building RATs is not your career path              |
 
 -----
 
 ## Phase Overview
 
-|Week|Focus                      |Key Output                          |
-|----|---------------------------|------------------------------------|
-|38  |TCP/UDP networking         |Concurrent port scanner             |
-|39  |HTTP clients, scraping     |Web reconnaissance tool             |
-|40  |DNS, SMB, databases        |DNS enumeration tool                |
-|41  |Packet processing, plugins |Custom security scanner (capstone)  |
-|42  |Go-based LLM Security Tools|Concurrent prompt injection tester  |
-|43  |**AI Red Team CLI Tool**   |**Complete AI security tool in Go** |
+|Week|Focus                      |Black Hat Go Chapters|Key Output                          |
+|----|---------------------------|---------------------|------------------------------------|
+|38  |TCP/UDP networking         |Ch 2                 |Concurrent port scanner             |
+|39  |HTTP clients, scraping     |Ch 3                 |Web reconnaissance tool             |
+|40  |DNS recon + exploit patterns|Ch 5, 9             |DNS enumeration tool                |
+|41  |Packet processing, plugins |Ch 8, 10             |Custom security scanner (capstone)  |
+|42  |Go-based LLM Security Tools|—                    |Concurrent prompt injection tester  |
+|43  |**AI Red Team CLI Tool**   |—                    |**Complete AI security tool in Go** |
 
 -----
 
 ## Phase 1: Go Security Tools (Weeks 38-41)
 
-**Primary Resource:** Black Hat Go (Steele et al.) — Already owned
+**Primary Resource:** Black Hat Go (Steele et al.) — Already owned (selected chapters, see above)
 
-### Week 38: TCP/UDP Networking
+### Week 38: TCP/UDP Networking (Black Hat Go Ch 2)
 
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Tue|6|Read: TCP client/server, port scanning concepts|
-|Wed-Thu|4|Read: UDP, raw sockets patterns|
+|Mon-Tue|6|Read Ch 2: TCP client/server, port scanning concepts|
+|Wed-Thu|4|Read Ch 2 cont'd: UDP, raw sockets patterns|
 |Fri|2|Study: Fan-out/fan-in pattern for concurrent scanning|
 |Weekend|6|Direct Claude Code: Build concurrent port scanner. Review architecture.|
 
@@ -76,30 +95,30 @@ Now you direct Claude Code to build Go security tools using your architecture kn
 - Clean architecture: domain/ for scan types, scanner/ for implementation"
 ```
 
-### Week 39: HTTP Clients & Scraping
+### Week 39: HTTP Clients & Scraping (Black Hat Go Ch 3)
 
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Tue|6|Read: HTTP client patterns, custom transports|
-|Wed-Thu|4|Read: Web scraping, form submission|
+|Mon-Tue|6|Read Ch 3: HTTP client patterns, custom transports|
+|Wed-Thu|4|Read Ch 3 cont'd: Web scraping, form submission|
 |Fri|2|Study: Proxy awareness, TLS configuration|
 |Weekend|6|Direct Claude Code: Build web reconnaissance tool. Review.|
 
-### Week 40: DNS, SMB, and Databases
+### Week 40: DNS Recon + Exploit Patterns (Black Hat Go Ch 5, 9)
 
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Tue|6|Read: DNS enumeration, subdomain discovery|
-|Wed-Thu|4|Read: SMB client, database interaction|
+|Mon-Tue|6|Read Ch 5: DNS enumeration, subdomain discovery|
+|Wed-Thu|4|Read Ch 9: Exploit code patterns — writing and porting exploits in Go|
 |Fri|2|Study: How to combine tools into a recon pipeline|
 |Weekend|6|Direct Claude Code: Build DNS enumeration tool. Review.|
 
-### Week 41: Packet Processing & Plugins (Security Capstone)
+### Week 41: Packet Processing & Plugins (Black Hat Go Ch 8, 10)
 
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Tue|6|Read: Raw packet capture and injection|
-|Wed-Thu|4|Study: Plugin architecture with Go plugins|
+|Mon-Tue|6|Read Ch 8: Raw packet capture and injection|
+|Wed-Thu|4|Read Ch 10: Plugin architecture with Go plugins and Lua|
 |Fri|2|Design: Extensible scanner framework architecture|
 |Weekend|6|Direct Claude Code: Build extensible security scanner. Review.|
 
