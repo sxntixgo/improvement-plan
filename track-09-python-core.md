@@ -61,22 +61,34 @@ This track deepens your ability to:
 
 **Your approach as architect:** Read Percival to understand TDD philosophy and testing strategy. You already understand testing architecture from Go (Track 8). Focus on how TDD methodology guides architectural decisions — not on typing Django code.
 
+**You're reading 10 of 27 chapters.** Skipping deployment chapters, Django-specific UI chapters, and all of Part IV (advanced topics for later).
+
+|Chapter|Title                                           |What to Do                                          |
+|-------|------------------------------------------------|----------------------------------------------------|
+|1      |Getting Django Set Up Using a Functional Test   |⭐ READ — TDD intro, first failing test               |
+|2      |Extending Our FT Using the unittest Module      |⭐ READ — unittest patterns, test structure            |
+|3      |Testing a Simple Home Page with Unit Tests      |⭐ READ — Red-green-refactor cycle                     |
+|4      |What Are We Doing with All These Tests?         |⭐ READ — Refactoring step, TDD philosophy            |
+|5      |Saving User Input                               |⭐ READ — Testing forms and database interactions     |
+|6      |Improving Functional Tests                      |SKIP — Django-specific FT improvements                |
+|7      |Working Incrementally                           |⭐ READ — Core TDD methodology: small steps           |
+|8      |Prettying Up: Layout and Styling                |SKIP — CSS styling, not TDD                          |
+|9      |Testing Deployment Using a Staging Site         |SKIP — Django deployment, not TDD concepts           |
+|10     |Getting to a Production-Ready Deployment        |SKIP — Server provisioning, not TDD concepts         |
+|11     |Automating Deployment with Fabric               |SKIP — Deployment automation, not TDD concepts       |
+|12     |Splitting Our Tests into Multiple Files         |⭐ READ — Test organization and structure              |
+|13     |Validation at the Database Layer                |⭐ READ — Validation patterns + testing               |
+|14     |A Simple Form                                   |⭐ READ — Form testing patterns                       |
+|15     |More Advanced Forms                             |SKIP — Django-specific form patterns                 |
+|16     |Dipping Our Toes into JavaScript                |SKIP — JS testing, not relevant to your goals        |
+|17-27  |Part IV: Advanced Topics                        |SKIP — Spiking, mocking, outside-in, CI (revisit later if needed)|
+
 |Week|Chapters|Focus                                 |
 |----|--------|--------------------------------------|
-|30  |1-4     |Red-Green-Refactor, first Django tests|
-|31  |5-8     |Forms, input validation, database     |
-|32  |9-12    |Refactoring, deployment               |
-|33  |13-16   |Advanced testing patterns             |
-
-**Book Structure:**
-- **Part I (Ch 1-8):** The Basics of TDD and Django
-- **Part II (Ch 9-12):** Going to Production
-- **Part III (Ch 13-16):** Forms and Validation
-- **Part IV (Ch 17-27):** Advanced Topics in Testing (optional for later)
-
-**This track covers Parts I-III** (Chapters 1-16), which provide core TDD skills.
-
-**Part IV (Chapters 17-27)** covers advanced topics like spiking, mocking, outside-in development, and CI - these are optional and can be studied later if needed.
+|30  |1-4     |Red-Green-Refactor, TDD philosophy    |
+|31  |5, 7    |Input testing, working incrementally  |
+|32  |12-14   |Test organization, validation, forms  |
+|33  |—       |Build security tool with TDD (port scanner or log parser)|
 
 **Project:** Build a security tool with TDD (port scanner, log parser)
 
@@ -86,10 +98,27 @@ This track deepens your ability to:
 
 **Resource:** Python Testing with pytest, 2nd ed (Okken) - ~$40
 
+**You're reading 8 of 12 chapters.** Skipping config details, CI setup, and chapters that are reference material.
+
+|Chapter|Title                              |What to Do                                          |
+|-------|-----------------------------------|----------------------------------------------------|
+|1      |Getting Started with pytest        |⭐ READ — Setup, first tests, test discovery          |
+|2      |Writing Test Functions             |⭐ READ — Assertions, expected failures, test structure|
+|3      |pytest Fixtures                    |⭐ READ — THE core concept; maps to Go test helpers    |
+|4      |Builtin Fixtures                   |⭐ READ — tmp_path, capsys, monkeypatch               |
+|5      |Parametrization                    |⭐ READ — Maps directly to Go table-driven tests       |
+|6      |Markers                            |SKIP — @pytest.mark details; reference when needed   |
+|7      |Strategy                           |⭐ READ — Testing strategy and what to test            |
+|8      |Configuration Files                |SKIP — pytest.ini/pyproject.toml config; reference only|
+|9      |Coverage                           |SKIP — Coverage tooling; one-liner: `pytest --cov`   |
+|10     |Mocking                            |⭐ READ — Important for architecture, test isolation   |
+|11     |tox and Continuous Integration     |SKIP — CI setup; not concepts                        |
+|12     |Testing Scripts and Applications   |⭐ READ — Practical patterns for real projects         |
+
 |Week|Chapters|Focus                    |
 |----|--------|-------------------------|
-|34  |1-6     |Fixtures, parametrization|
-|35  |7-12    |Plugins, CI integration  |
+|34  |1-5     |Fixtures, parametrization|
+|35  |7, 10, 12|Strategy, mocking, practical patterns|
 
 -----
 
@@ -100,10 +129,28 @@ This track deepens your ability to:
 **Why only 2 weeks (instead of 4):**
 You already learned architecture in Go (Track 8) and have used Python tools during AI/ML (Track 10). This phase focuses on the **Pythonic equivalents** of patterns you already know, not learning architecture from scratch.
 
+**You're reading 7 of 13 chapters.** Skipping advanced event-driven and CQRS chapters — you covered those patterns in Richards & Ford (Track 8).
+
+|Chapter|Title                                        |What to Do                                          |
+|-------|---------------------------------------------|----------------------------------------------------|
+|1      |Domain Modeling                              |⭐ READ — Pythonic domain model vs Go structs         |
+|2      |Repository Pattern                           |⭐ READ — You know this from Go; learn the Python way |
+|3      |A Brief Interlude: On Coupling and Abstractions|⭐ READ — Pythonic dependency inversion              |
+|4      |Service Layer                                |⭐ READ — Orchestration layer, maps to Go services    |
+|5      |TDD in High Gear and Low Gear               |SKIP — TDD methodology already covered by Percival   |
+|6      |Unit of Work Pattern                         |⭐ READ — Transaction management pattern              |
+|7      |Aggregates and Consistency Boundaries        |⭐ READ — DDD concept, practical for domain design    |
+|8      |Events and the Message Bus                   |SKIP — Event patterns covered in Richards & Ford Ch 14|
+|9      |Going to Town on the Message Bus             |SKIP — Advanced messaging, not needed yet            |
+|10     |Commands and Command Handler                 |SKIP — CQRS detail, covered in Richards & Ford       |
+|11     |Event-Driven Architecture Using Events       |SKIP — Covered in Richards & Ford Ch 14              |
+|12     |Command-Query Responsibility Segregation     |SKIP — Advanced CQRS, revisit if needed              |
+|E      |Epilogue                                     |⭐ READ — Summary and practical advice                |
+
 |Week|Chapters|Focus                                     |
 |----|--------|------------------------------------------|
-|36  |1-6     |Domain modeling, repository, service layer — the Pythonic way|
-|37  |7-12    |Events, CQRS — advanced patterns (skim what you know, deep dive on new concepts)|
+|36  |1-4, 6  |Domain modeling, repository, service layer — the Pythonic way|
+|37  |7, E    |Aggregates + project: Security Findings Aggregator|
 
 **Key Mappings from Go → Python:**
 - Go interfaces → Python Protocols / ABCs
