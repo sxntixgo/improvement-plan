@@ -196,11 +196,34 @@ This is where you learn the vocabulary and patterns to give Claude Code precise 
 
 ### Week 13: Ousterhout — Design Principles
 
+**You're reading 12 of 18 chapters.** Skipping the 3 chapters on comments (you direct Claude Code, not write comments yourself) and 3 chapters that are either motivational or minor.
+
+|Chapter|Title                                      |What to Do                                              |
+|-------|-------------------------------------------|---------------------------------------------------------|
+|1      |Introduction (The Nature of Complexity)    |⭐ READ — Core thesis of the entire book                 |
+|2      |The Nature of Complexity                   |⭐ READ — Defines complexity, symptoms, causes            |
+|3      |Working Code Isn't Enough                  |SKIP — Motivational; you already know this               |
+|4      |Modules Should Be Deep                     |⭐ READ — THE signature concept of this book              |
+|5      |Information Hiding (and Leakage)           |⭐ READ — Core architectural principle                    |
+|6      |General-Purpose Modules are Deeper         |⭐ READ — Counterintuitive but powerful                   |
+|7      |Different Layer, Different Abstraction     |⭐ READ — Directly applies to clean architecture          |
+|8      |Pull Complexity Downwards                  |⭐ READ — Where complexity should live                    |
+|9      |Better Together Or Better Apart?           |⭐ READ — When to split vs combine modules                |
+|10     |Define Errors Out of Existence             |⭐ READ — Very relevant to Go error handling              |
+|11     |Design it Twice                            |⭐ READ — Strategic thinking habit                        |
+|12     |Why Write Comments                         |SKIP — You direct Claude Code to write code; comment strategy is less relevant|
+|13     |Comments Should Describe Things Not Obvious|SKIP — Same reason as Ch 12                             |
+|14     |Choosing Names                             |⭐ READ — Good naming = clear architectural intent        |
+|15     |Write The Comments First                   |SKIP — Same reason as Ch 12                             |
+|16     |Modifying Existing Code                    |SKIP — About hands-on coding, less relevant for architect role|
+|17     |Consistency                                |SKIP — General principle, one-line takeaway: "be consistent"|
+|18     |Code Should Be Obvious                     |⭐ READ — Applies to reviewing Claude Code's output       |
+
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Wed|6|Read: Ousterhout Ch 1-12 (complexity, deep modules, information hiding, general-purpose modules)|
-|Thu-Fri|4|Read: Ousterhout Ch 13-18 (naming, comments, consistency, design trends)|
-|Weekend|6|Study: Clean Architecture + Hex Architecture concepts. Explore [ardanlabs/service](https://github.com/ardanlabs/service) structure.|
+|Mon-Wed|6|Read: Ousterhout Ch 1-2, 4-11 (complexity, deep modules, information hiding, error design)|
+|Thu-Fri|4|Read: Ousterhout Ch 14, 18 + Clean Architecture / Hex Architecture concepts|
+|Weekend|6|Explore [ardanlabs/service](https://github.com/ardanlabs/service) structure. Let design principles sink in.|
 |**Slack**||2 hrs built into the weekend — if Ousterhout takes longer, use this time|
 
 **This is a reading-only week.** No Claude Code project. Let the design principles sink in before applying them.
@@ -270,24 +293,51 @@ This is where you learn the vocabulary and patterns to give Claude Code precise 
 
 ### Week 15: Richards & Ford — Architecture Styles + Architect Thinking
 
+**You're reading ~12 of 24 chapters.** This is a ~400 page book designed to be skimmed selectively. Skip architecture styles you won't use and soft-skill chapters.
+
+|Chapter|Title                                         |What to Do                                          |
+|-------|----------------------------------------------|----------------------------------------------------|
+|1      |Introduction                                  |SKIP — Overview you'll absorb from other chapters   |
+|2      |Architectural Thinking                        |⭐ READ — How architects think vs developers          |
+|3      |Modularity                                    |⭐ READ — Measuring and managing module coupling      |
+|4      |Architecture Characteristics Defined           |⭐ READ — The "-ilities" (scalability, testability)   |
+|5      |Identifying Architecture Characteristics       |⭐ READ — How to choose which "-ilities" matter       |
+|6      |Measuring and Governing Architecture           |SKIP — Metrics tooling; less relevant for your role  |
+|7      |Scope of Architecture Characteristics          |SKIP — Academic; covered enough in Ch 4-5            |
+|8      |Component-Based Thinking                      |⭐ READ — How to decompose systems into components    |
+|9      |Foundations (Architecture Styles)              |⭐ READ — Overview of all styles                      |
+|10     |Layered Architecture Style                    |⭐ READ — The default; understand its trade-offs      |
+|11     |Pipeline Architecture Style                   |SKIP — Niche; not relevant to your work              |
+|12     |Microkernel Architecture Style                |SKIM — Plugin systems; read if relevant to work      |
+|13     |Service-Based Architecture Style              |SKIP — Covered by microservices chapter              |
+|14     |Event-Driven Architecture Style               |⭐ READ — Important for async systems                 |
+|15     |Space-Based Architecture Style                |SKIP — High-scale only; not relevant yet             |
+|16     |Orchestration-Driven SOA                      |SKIP — Legacy pattern                                |
+|17     |Microservices Architecture Style              |⭐ READ — Most common modern style                    |
+|18     |Choosing the Appropriate Architecture Style    |⭐ READ — Decision framework, trade-off analysis      |
+|19     |Architecture Decisions                        |⭐ READ — ADRs, documenting "why"                     |
+|20     |Analyzing Architecture Risk                   |SKIP — Risk matrices; skim if time                   |
+|21     |Diagramming and Presenting Architecture       |SKIP — C4 model (already in resources) covers this   |
+|22     |Making Teams Effective                        |SKIP — Team dynamics; not relevant yet               |
+|23     |Negotiation and Leadership Skills             |SKIP — Soft skills; your leadership books cover this |
+|24     |Developing a Career Path                      |SKIP — Career advice, not technique                  |
+
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Wed|6|Read: Richards & Ford Part I — architecture styles (layered, microservices, event-driven). Skim styles you won't use.|
-|Thu-Fri|4|Read: Richards & Ford Part II — trade-off analysis, ADRs, communicating architecture, the architect's role|
+|Mon-Wed|6|Read: R&F Ch 2-5, 8-10, 14, 17 (architectural thinking, characteristics, key styles)|
+|Thu-Fri|4|Read: R&F Ch 18-19 (choosing styles, architecture decisions/ADRs)|
 |Weekend|6|Study: DI patterns in Go + Middleware. Light Claude Code experiment: apply one architecture style.|
-|**Slack**||2 hrs built into the weekend — R&F is 400 pages but is designed to be skimmed selectively|
+|**Slack**||2 hrs built into the weekend — use for any chapters that took longer|
 
-**Reading tip:** Richards & Ford covers ~15 architecture styles. You don't need all of them. Focus on: **layered, microservices, event-driven, microkernel.** Skim the rest. Spend more time on Part II (trade-offs, ADRs, the architect role) — that's your actual job.
+**Richards & Ford Key Concepts (Foundations):**
+- **Architectural Thinking (Ch 2):** How architects think vs developers — this IS your job description
+- **Architecture Characteristics (Ch 4-5):** The "-ilities" — scalability, maintainability, testability, deployability — how to evaluate trade-offs
+- **Component Decomposition (Ch 8):** How to break systems into the right pieces
 
-**Richards & Ford Key Concepts (Part I):**
-- **Architecture Styles:** Layered, microkernel, microservices, event-driven, space-based — when to use each
-- **Architecture Characteristics ("-ilities"):** Scalability, maintainability, testability, deployability — how to evaluate trade-offs
-- **Architecture Decisions:** How to make and document them using [ADR templates](https://adr.github.io/)
-
-**Richards & Ford Key Concepts (Part II):**
-- **Trade-Off Analysis:** Every architecture decision involves trade-offs. There's no "best" architecture — only "best for this context."
-- **Architecture Decision Records (ADRs):** Document WHY you chose an architecture, not just what. Useful for CLAUDE.md files.
-- **Communicating Architecture:** How to explain architectural decisions to teams. Directly relevant to directing Claude Code.
+**Richards & Ford Key Concepts (Styles + Decisions):**
+- **Architecture Styles (Ch 9-10, 14, 17):** Layered, event-driven, microservices — when to use each and their trade-offs
+- **Choosing Styles (Ch 18):** Decision framework — there's no "best" architecture, only "best for this context"
+- **Architecture Decision Records (Ch 19):** Document WHY you chose an architecture. Useful for CLAUDE.md files.
 - **The Architect's Role:** An architect doesn't write all the code — they make sure the system hangs together. This is exactly your role with Claude Code.
 
 **Go-Specific Concepts (for weekend hands-on):**
