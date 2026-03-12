@@ -32,12 +32,22 @@ You just spent 12 weeks learning software architecture (Track 8). Now you apply 
 |3    |25-26|RAG/Agents + Supply Chain       |Ch 5-6: Prompt Eng + RAG|
 |4    |27-28|Evaluation + Advanced CTF       |Ch 3-4, 7, 9-10        |
 
-**AI Engineering Book Usage (7 chapters, ~18 hours):**
-- **Week 22:** Ch 2 (Foundation Models) - 4 hrs
-- **Week 25:** Ch 6 (RAG and Agents) - 4 hrs CRITICAL
-- **Week 26:** Ch 5 (Prompt Engineering) - 4 hrs CRITICAL for attacks
-- **Week 27:** Ch 3-4 (Evaluation) + Ch 7, 10 (skim) - 8 hrs
-- **Optional:** Ch 9 (Inference Optimization) — reference reading, not required
+**AI Engineering (Huyen) — You're reading 6 of 10 chapters.** Skipping intro, dataset engineering, and inference optimization.
+
+|Chapter|Title                                          |What to Do                                              |
+|-------|-----------------------------------------------|---------------------------------------------------------|
+|1      |Introduction to Building AI Apps with FMs      |SKIP — Overview; you'll absorb this from other chapters  |
+|2      |Understanding Foundation Models                |⭐ READ (Week 22) — Model internals, training, scaling    |
+|3      |Evaluation Methodology                         |⭐ READ (Week 27) — How to measure attack success         |
+|4      |Evaluate AI Systems                            |⭐ READ (Week 27) — Testing AI systems objectively        |
+|5      |Prompt Engineering                             |⭐ READ (Week 26) — CRITICAL for attacks: injection, adversarial suffixes|
+|6      |RAG and Agentic Patterns                       |⭐ READ (Week 25) — CRITICAL: RAG architecture + attack surfaces|
+|7      |Finetuning                                     |SKIM (Week 27) — Attack implications only; skip technique details|
+|8      |Dataset Engineering                            |SKIP — Data pipeline engineering, not relevant to red teaming|
+|9      |Inference Optimization                         |SKIP — Quantization/serving, reference only if needed    |
+|10     |AI Engineering Architecture and User Feedback  |⭐ READ (Week 27) — Production attack surfaces, monitoring|
+
+**Red Teaming AI (Dursey)** — Use as reference throughout. Read relevant sections as you encounter topics in labs and exercises, not cover-to-cover.
 
 **Note:** Phase 5 (Go for AI Security) has moved to Track 11 as the capstone, where Go architecture skills + AI security knowledge combine.
 
@@ -315,9 +325,8 @@ This is THE chapter for AI red teaming:
 **Monday-Wednesday (6 hours): AI Engineering — Remaining Chapters**
 
 - **Ch 3-4: Evaluation (3 hours)** — How to measure attack success objectively. Build evaluation pipeline for your attacks.
-- **Ch 7: Finetuning (1.5 hours)** — Skim for attack implications of finetuned models. How does finetuning change model behavior and defenses?
-- **Ch 10: AI Engineering Architecture (1.5 hours)** — Skim for attack surfaces in production AI systems. How are real systems deployed?
-- **Ch 9: Inference Optimization** — OPTIONAL reference reading. Skim if time allows. Not critical for red teaming.
+- **Ch 10: AI Engineering Architecture (2 hours)** — Attack surfaces in production AI systems. How are real systems deployed?
+- **Ch 7: Finetuning (1 hour)** — Skim for attack implications only: how does finetuning change defenses?
 
 **Thursday-Weekend (12 hours): HackAPrompt CTF**
 - Complete as many levels as possible
@@ -412,13 +421,11 @@ Before writing your final report, study the frameworks that professional AI red 
 - Zero Trust for LLMs
 - Supply Chain Security (ML-BOM)
 
-**From AI Engineering Book (Production):**
+**From AI Engineering Book (6 of 10 chapters):**
 - **Ch 2:** Foundation model internals, training data, scaling laws
 - **Ch 3-4:** Evaluation methodology, testing AI systems objectively
 - **Ch 5:** Prompt engineering, injection attacks and defenses
 - **Ch 6:** RAG architecture, agents with tools, memory systems
-- **Ch 7:** Finetuning techniques and attack surfaces
-- **Ch 9:** Inference optimization, quantization exploits
 - **Ch 10:** Production architecture, monitoring, attack surfaces
 
 **From HTB Academy (Hands-On):**
