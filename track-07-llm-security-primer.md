@@ -54,85 +54,75 @@ This is THE practical guide for LLM security, covering:
 - **Section 2:** Risks, Vulnerabilities, and Remediations (Chapters 4-9)
 - **Section 3:** Building a Security Process and Preparing for the Future (Chapters 10-12)
 
+**You're reading 8 of 12 chapters.** Skipping 4 chapters that are historical intro, general principles, or motivational.
+
+|Chapter|Title                                    |What to Do                                          |
+|-------|-----------------------------------------|----------------------------------------------------|
+|1      |Chatbots Breaking Bad                    |SKIP — Historical intro; Ch 2 covers everything you need|
+|2      |The OWASP Top 10 for LLM Applications   |⭐ READ — The vulnerability taxonomy                  |
+|3      |LLM Architecture and Trust Boundaries   |⭐ READ — Where traditional security models break     |
+|4      |Prompt Injection                         |⭐ READ — THE fundamental LLM vulnerability           |
+|5      |LLM Hallucinations                      |⭐ READ — Security implications of false outputs      |
+|6      |Zero Trust Approach                      |SKIP — General principle you already know; "never trust LLM outputs" is the takeaway|
+|7      |Denial of Service and Denial of Wallet   |⭐ READ — Financial and availability attacks           |
+|8      |Supply Chain Security                    |⭐ READ — Most common real-world attack vector         |
+|9      |Additional Vulnerabilities               |SKIP — Covered in OWASP Top 10 (Ch 2) already        |
+|10     |LLMOps and Development Process           |⭐ READ — How to integrate security into LLM pipelines|
+|11-12  |Future-Proofing & RAISE Framework        |SKIP — Motivational/career advice, not technique     |
+
 **Suggested Pace:**
 
-**Monday (2 hours): Section 1 - Laying the Foundation**
-- **Chapter 1: Chatbots Breaking Bad** (45 min)
-  - The rise of LLMs and ChatGPT
-  - Microsoft Tay failure case study
-  - Introduction to LLM-specific vulnerabilities
-  - Why traditional security doesn't work for LLMs
-
-- **Chapter 2: The OWASP Top 10 for LLM Applications** (45 min) - CRITICAL
+**Monday (2 hours): Foundation + Core Taxonomy**
+- **Chapter 2: The OWASP Top 10 for LLM Applications** (1 hour) - CRITICAL
   - Collaborative creation of OWASP LLM Top 10
   - Overview of all 10 vulnerability classes
   - How they differ from traditional OWASP Top 10
   - **NOTE:** Create Obsidian note linking each vulnerability
 
-- **Chapter 3: LLM Architecture and Trust Boundaries** (30 min)
+- **Chapter 3: LLM Architecture and Trust Boundaries** (1 hour)
   - Trust boundary management in AI systems
   - Where traditional security models break
   - New security paradigms for LLMs
+  - User input as executable code
 
-**Tuesday (2 hours): Section 2 Part A - Core Attack Vectors**
-- **Chapter 4: Prompt Injection** (1 hour) - MOST IMPORTANT
+**Tuesday (2 hours): Core Attack Vectors**
+- **Chapter 4: Prompt Injection** (1.5 hours) - MOST IMPORTANT
   - Direct vs indirect prompt injection
   - Attack techniques and examples
   - Real-world exploitation scenarios
   - Why it's so hard to prevent
   - **Exercise:** Try to craft your own prompt injection
 
-- **Chapter 5: LLM Hallucinations** (45 min)
-  - What causes hallucinations
+- **Chapter 5: LLM Hallucinations** (30 min)
   - Security implications of false information
-  - Verification and validation strategies
-  - Mitigation approaches
+  - RAG as mitigation
+  - Verification strategies
 
-- **Chapter 6: Zero Trust Approach** (15 min)
-  - Applying Zero Trust principles to LLMs
-  - Never trust LLM outputs without verification
-  - Skepticism-first security posture
-
-**Wednesday (2 hours): Section 2 Part B - Advanced Threats**
+**Wednesday (2 hours): Advanced Threats**
 - **Chapter 7: Denial of Service and Denial of Wallet Attacks** (45 min)
   - Financial risks in LLM applications
-  - DoS attacks on AI systems
   - Denial of Wallet (DoW) - API cost attacks
   - Model cloning and theft
   - Rate limiting and cost controls
 
-- **Chapter 8: Supply Chain Security** (1 hour) - CRITICAL FOR TRACK 8
+- **Chapter 8: Supply Chain Security** (1 hour 15 min) - CRITICAL FOR TRACK 10
   - Software Supply Chain Security for ML
   - ML-BOM using CycloneDX SBOM standard
   - Malicious models and datasets
-  - Third-party LLM dependencies
-  - **NOTE:** This connects directly to Track 8 Week 21
+  - Pickle vulnerabilities, safetensors alternative
+  - **NOTE:** This connects directly to Track 10
 
-- **Chapter 9: (Additional Vulnerabilities)** (15 min)
-  - Cover remaining vulnerability classes
-  - Insecure output handling
-  - Model denial of service
-
-**Thursday (2 hours): Section 3 - Defensive Strategies**
+**Thursday (1 hour): Defensive Strategies**
 - **Chapter 10: LLMOps and Development Process** (1 hour)
   - Integrating security into LLM development
   - DevSecOps → MLOps → LLMOps evolution
   - Security testing in CI/CD for AI
   - Continuous monitoring for LLM systems
-  - **NOTE:** Foundation for your future work
 
-- **Chapter 11-12: Future-Proofing & RAISE Framework** (1 hour)
-  - Responsible AI Software Engineering (RAISE)
-  - Future threat landscape
-  - Sci-fi AI failures and their security lessons
-  - Preparing for emerging threats
-  - Career implications for AI red teamers
-
-**Friday (2 hours): Catch-up + Reflection**
+**Friday (1 hour): Catch-up + Reflection**
 - Finish any chapters that took longer than planned
 - Re-read the most important sections (Ch 4: Prompt Injection, Ch 8: Supply Chain)
 - Organize Obsidian notes — make sure concepts are linked
-- If caught up: start exploring OWASP LLM Top 10 (Saturday material)
 
 **Key Concepts to Capture in Obsidian:**
 - Prompt injection vs jailbreaking (what's the difference?)
@@ -147,16 +137,16 @@ This is THE practical guide for LLM security, covering:
 
 **Saturday (5 hours):**
 
-**Morning (2 hours):** Finish reading Wilson book
-- Part 3 - Defense strategies
-- Mitigation techniques
-- Secure AI development practices
-
-**Afternoon (3 hours):** Explore OWASP LLM Top 10
+**Morning (2 hours):** OWASP LLM Top 10 Deep Dive
 - Read all 10 vulnerability categories
 - Compare with Wilson's coverage
 - Create Obsidian note linking the two
 - Identify which ones excite you most
+
+**Afternoon (3 hours):** Hands-on Exploration
+- Browse [HackAPrompt challenges](https://hackaprompt.com/) — don't solve yet, just explore
+- Understand the types of challenges
+- See what prompt injection looks like in practice
 
 **Resources:**
 - [OWASP LLM Top 10](https://genai.owasp.org/) - FREE
@@ -164,42 +154,23 @@ This is THE practical guide for LLM security, covering:
 
 **Sunday (5 hours):**
 
-**Morning (2 hours):** HackAPrompt Exploration
-- Browse [HackAPrompt challenges](https://hackaprompt.com/)
-- Don't try to solve yet - just explore
-- Understand the types of challenges
-- See what prompt injection looks like in practice
-
-**Afternoon (3 hours):** AI Security Reading
+**Morning (2 hours):** AI Security Reading
 - Read AI red teaming blog posts:
   - [HTB - AI Red Teaming Explained](https://www.hackthebox.com/blog/ai-red-teaming-explained)
   - [Mindgard - What is AI Red Teaming](https://mindgard.ai/blog/what-is-ai-red-teaming)
   - [Anthropic - AI Safety Research](https://www.anthropic.com/research)
-- Watch: DEF CON AI Village talks (pick 1-2, ~1 hour)
 - Take notes in Obsidian
+
+**Afternoon (3 hours):** DEF CON AI Village + Note Consolidation
+- Watch DEF CON AI Village talks (pick 2-3, ~1.5 hours)
+- Consolidate all Obsidian notes from the week (1 hour)
+- Write blog post: "LLM Security Landscape Overview" (30 min)
 
 -----
 
 ## Detailed Chapter Breakdown
 
-### Chapter 1: Chatbots Breaking Bad (45 min)
-
-**Key Topics:**
-- ChatGPT's explosive growth (100M users in 2 months)
-- Microsoft Tay's failure (racist tweets in 24 hours)
-- Emergence of LLM-specific security challenges
-- Why traditional web security doesn't apply
-
-**Key Questions to Answer:**
-- What made ChatGPT successful where Tay failed?
-- What security vulnerabilities are unique to LLMs?
-- How do LLM attacks differ from SQL injection or XSS?
-
-**Obsidian Note:** `ChatGPT-vs-Tay-Case-Study.md`
-
------
-
-### Chapter 2: The OWASP Top 10 for LLM Applications (45 min) - CRITICAL
+### Chapter 2: The OWASP Top 10 for LLM Applications (1 hour) - CRITICAL
 
 **Key Topics:**
 - How OWASP LLM Top 10 was created (400+ experts)
@@ -243,7 +214,7 @@ This is THE practical guide for LLM security, covering:
 
 -----
 
-### Chapter 3: LLM Architecture and Trust Boundaries (30 min)
+### Chapter 3: LLM Architecture and Trust Boundaries (1 hour)
 
 **Key Topics:**
 - Traditional security: perimeter defense
@@ -260,7 +231,7 @@ This is THE practical guide for LLM security, covering:
 
 -----
 
-### Chapter 4: Prompt Injection (1 hour) - MOST IMPORTANT
+### Chapter 4: Prompt Injection (1.5 hours) - MOST IMPORTANT
 
 **Why This Chapter Matters:**
 Prompt injection is THE fundamental LLM vulnerability. Everything else builds on this.
@@ -302,44 +273,16 @@ Special strings that make LLMs ignore safety guardrails
 
 -----
 
-### Chapter 5: LLM Hallucinations (45 min)
+### Chapter 5: LLM Hallucinations (30 min)
 
 **Key Topics:**
 - Why LLMs hallucinate (no ground truth, just patterns)
 - Security implications of false information
-- Verification and validation strategies
 - Retrieval-Augmented Generation (RAG) as mitigation
-
-**Real-World Impact:**
-- Legal cases citing fake precedents
-- Medical advice hallucinations
-- Code with security vulnerabilities
-- False security recommendations
-
-**Defense Strategies:**
-- RAG with trusted knowledge bases
-- Citation requirements
-- Confidence scoring
-- Human-in-the-loop verification
 
 **Obsidian Notes:**
 - `LLM-Hallucinations.md`
-- `RAG-Architecture.md` (connects to Track 8 Week 20!)
-
------
-
-### Chapter 6: Zero Trust Approach (15 min)
-
-**Core Principle:**
-> "Never trust LLM outputs. Always verify."
-
-**Key Strategies:**
-- Treat all LLM outputs as untrusted
-- Validate outputs before use
-- Sandboxing and containment
-- Logging and monitoring
-
-**Obsidian Note:** `Zero-Trust-LLMs.md`
+- `RAG-Architecture.md` (connects to Track 10!)
 
 -----
 
@@ -369,7 +312,7 @@ Attacker sends expensive queries repeatedly:
 
 -----
 
-### Chapter 8: Supply Chain Security (1 hour) - CONNECTS TO TRACK 8 WEEK 21
+### Chapter 8: Supply Chain Security (1 hour 15 min) - CONNECTS TO TRACK 10
 
 **Critical Topics:**
 - Malicious models on Hugging Face/GitHub
@@ -434,32 +377,6 @@ DevOps → DevSecOps → MLOps → LLMOps
 **Obsidian Notes:**
 - `LLMOps-Security.md`
 - `Testing-LLM-Applications.md`
-
------
-
-### Chapter 12: Future-Proofing & RAISE Framework (1 hour)
-
-**Responsible AI Software Engineering (RAISE):**
-Framework for building secure AI systems from the ground up
-
-**Sci-Fi AI Failures:**
-Book reviews famous AI disasters from movies:
-- HAL 9000 (2001: A Space Odyssey) - Lack of interpretability
-- Skynet (Terminator) - Excessive agency
-- WOPR (WarGames) - Insufficient safety boundaries
-
-**For each, identifies the OWASP LLM vulnerability that would have caused it!**
-
-**Career Implications:**
-- AI red teaming as emerging role
-- Skills needed (Python, ML, security)
-- Future threat landscape
-- How to stay current
-
-**Obsidian Notes:**
-- `RAISE-Framework.md`
-- `AI-Red-Teaming-Career-Path.md`
-- `Future-LLM-Threats.md`
 
 -----
 
