@@ -8,7 +8,7 @@
 - Sunday: 5 hours
 
 **Mode: Sequential (one track at a time)**
-**Updated: February 15, 2026**
+**Updated: March 12, 2026**
 
 -----
 
@@ -19,11 +19,15 @@ This plan is designed for an **architect who directs Claude Code**, not a hands-
 - **You don't write code — Claude Code does.** You architect systems, review output, and give Claude Code precise directions. Every track focuses on understanding patterns and making architectural decisions, not typing syntax. Track 3 is the most important foundation week because Claude Code is your primary tool.
 - **Go is your work language, but Claude Code writes it.** You need to understand Go architecture deeply enough to review what Claude Code produces, catch design mistakes, and give effective direction. You don't need to memorize syntax — you need to think in systems.
 
-The restructured plan prioritizes **software architecture first, then AI/ML security** — the two things that matter for your role. Python and JavaScript tracks are either repositioned or dropped because Claude Code handles the implementation.
+The plan prioritizes **software architecture first, then AI/ML security** — the two things that matter for your role. Python and JavaScript tracks come later to round out your skills.
 
 -----
 
 ## Priority Order & Timeline
+
+### Part I: Foundation (Weeks 1-8) — 8 weeks
+
+Core skills and tooling that every other track depends on.
 
 |Track|Name                                      |Weeks |Duration |File                                       |
 |-----|------------------------------------------|------|---------|-------------------------------------------|
@@ -34,31 +38,60 @@ The restructured plan prioritizes **software architecture first, then AI/ML secu
 |5    |Go Crash Course                           |6     |1 week   |[track-05-go-crash-course.md](track-05-go-crash-course.md)|
 |6    |Docker Essentials                         |7     |1 week   |[track-06-docker-essentials.md](track-06-docker-essentials.md)|
 |7    |LLM Security Primer                       |8     |1 week   |[track-07-llm-security-primer.md](track-07-llm-security-primer.md)|
+
+### Part II: Architecture (Weeks 9-20) — 12 weeks
+
+Deep software architecture knowledge. Learn to think in systems so you can direct Claude Code effectively and review its output.
+
+|Track|Name                                      |Weeks |Duration |File                                       |
+|-----|------------------------------------------|------|---------|-------------------------------------------|
 |8    |Software Architecture (via Go)            |9-20  |12 weeks |[track-08-go-foundations-architecture.md](track-08-go-foundations-architecture.md)|
+
+### Part III: AI/ML Security (Weeks 21-28) — 8 weeks
+
+Your career goal. Prompt injection, RAG poisoning, model attacks, red team methodology.
+
+|Track|Name                                      |Weeks |Duration |File                                       |
+|-----|------------------------------------------|------|---------|-------------------------------------------|
 |10   |AI/ML Security                            |21-28 |8 weeks  |[track-10-ai-ml-security.md](track-10-ai-ml-security.md)|
-|     |**Break**                                 |      |1 week   |                                           |
+
+### Break (Week 29) — 1 week
+
+### Part IV: Python + Go Security (Weeks 30-43) — 14 weeks
+
+Deepen Python understanding post-AI/ML, then combine Go + AI security into a unique capstone.
+
+|Track|Name                                      |Weeks |Duration |File                                       |
+|-----|------------------------------------------|------|---------|-------------------------------------------|
 |9    |Python Core + TDD                         |30-37 |8 weeks  |[track-09-python-core.md](track-09-python-core.md)|
 |11   |Go Security Tools + AI Capstone           |38-43 |6 weeks  |[track-11-go-security.md](track-11-go-security.md)|
 
-**Total Duration:** 43 learning weeks + 1 break week = **44 weeks (~10 months)**
+### Part V: Advanced Skills (Weeks 44-62) — OPTIONAL — 19 weeks
+
+These tracks broaden your skillset but are not required for your AI red teaming career goal. Complete Part IV first, then decide if you want to continue.
+
+|Track|Name                                      |Weeks |Duration |File                                       |
+|-----|------------------------------------------|------|---------|-------------------------------------------|
+|12   |Python Advanced (AST, async)              |44-49 |6 weeks  |[track-12-python-advanced.md](track-12-python-advanced.md)|
+|13   |JavaScript/TypeScript                     |50-63 |14 weeks |[track-13-javascript.md](track-13-javascript.md)|
+
+**Why optional?** You can do effective AI red teaming without AST manipulation, async Python, or JavaScript. These tracks add breadth — custom static analysis tools, browser security (XSS/DOM), and TypeScript for LLM SDK work — but your core career path is complete after Part IV.
+
+**Core plan:** 43 learning weeks + 1 break = **44 weeks (~10 months)**
+**With optional tracks:** 62 learning weeks + 1 break = **63 weeks (~14.5 months)**
+
+-----
 
 ### Why This Order
 
-**Architecture → AI/ML → Python → Go Security Tools**
+**Foundation → Architecture → AI/ML → Python → Go Security → (Optional: Advanced)**
 
-1. **Architecture first (Track 8):** You need to think in systems to direct Claude Code effectively. Clean architecture, DDD, and testing patterns are the language of good engineering direction.
-2. **AI/ML immediately after (Track 10):** This is your career goal. You don't need Python syntax to understand RAG architecture, prompt injection, or model vulnerabilities — Claude Code writes the code while you focus on concepts and attack surfaces.
-3. **Python after AI/ML (Track 9):** Deepens your understanding of the tools you've already used. Now you understand why pytest works the way it does, how Python architecture differs from Go, and can give Claude Code more precise Python direction.
-4. **Go Security Tools last (Track 11):** Combines everything — Go architecture knowledge + AI security concepts + understanding of how security tools work. The capstone produces an AI Red Team CLI tool in Go.
-
-### What Was Dropped
-
-|Track|Why Dropped|
-|-----|-----------|
-|Track 12: Python Advanced (AST, async)|Not needed for an architect. Claude Code handles async Python. You understand concurrency concepts from Go.|
-|Track 13: JavaScript/TypeScript|Not relevant to your AI red teaming goal. You own 3 JS books if you ever need them later.|
-
-**Savings:** 20 weeks of coding-focused tracks that don't serve your architect + AI red teaming path.
+1. **Foundation first (Tracks 1-7):** Reading, note-taking, tooling, and security context. Everything else builds on these.
+2. **Architecture (Track 8):** You need to think in systems to direct Claude Code effectively. Clean architecture, DDD, and testing patterns are the language of good engineering direction.
+3. **AI/ML immediately after (Track 10):** This is your career goal. You don't need Python syntax to understand RAG architecture, prompt injection, or model vulnerabilities — Claude Code writes the code while you focus on concepts and attack surfaces.
+4. **Python after AI/ML (Track 9):** Deepens your understanding of the tools you've already used. Now you understand why pytest works the way it does, how Python architecture differs from Go, and can give Claude Code more precise Python direction.
+5. **Go Security Tools (Track 11):** Combines everything — Go architecture knowledge + AI security concepts + security tool patterns. The capstone produces an AI Red Team CLI tool in Go.
+6. **Optional advanced tracks (Tracks 12-13):** Broadens your skills if time permits. AST manipulation for custom security tooling, async patterns, and JavaScript/TypeScript for browser security and LLM SDK work.
 
 -----
 
@@ -75,36 +108,39 @@ This is fundamentally different from "learn to code." You're learning to **think
 
 -----
 
-## Weekly Habits
-
-|Habit      |When                     |Output                                   |
-|-----------|-------------------------|-----------------------------------------|
-|Blog update|End of each week         |Progress, learnings, reflections         |
-|Book review|After finishing each book|Published review on blog                 |
-|Code push  |As you build             |Public GitHub repos for relevant projects|
-
------
-
 ## Track Logic
 
 ```
-Reading → Note-Taking → Claude Code Advanced (YOUR PRIMARY TOOL)
-                              ↓
-                    Git Mastery ← Foundation for all development
-                              ↓
-                    Go Crash Course ← Understand your work language
-                              ↓
-                    Docker Essentials ← Infrastructure for all projects
-                              ↓
-                    LLM Security Primer (Wilson book) ← Security context
-                              ↓
-                    Software Architecture via Go ← Think in systems
-                              ↓
-                    AI/ML Security ← YOUR CAREER GOAL (moved up!)
-                              ↓
-                    Python Core + TDD ← Deepen understanding post-AI/ML
-                              ↓
-                    Go Security Tools + AI Capstone ← Combine everything
+Part I: Foundation
+  Reading → Note-Taking → Claude Code Advanced (YOUR PRIMARY TOOL)
+                                ↓
+                      Git Mastery ← Foundation for all development
+                                ↓
+                      Go Crash Course ← Understand your work language
+                                ↓
+                      Docker Essentials ← Infrastructure for all projects
+                                ↓
+                      LLM Security Primer (Wilson book) ← Security context
+
+Part II: Architecture
+                                ↓
+                      Software Architecture via Go ← Think in systems
+
+Part III: AI/ML Security
+                                ↓
+                      AI/ML Security ← YOUR CAREER GOAL
+
+Part IV: Python + Go Security
+                                ↓
+                      Python Core + TDD ← Deepen understanding post-AI/ML
+                                ↓
+                      Go Security Tools + AI Capstone ← Combine everything
+
+Part V: Advanced Skills (OPTIONAL)
+                                ↓
+                      Python Advanced ← AST, async, custom security tools
+                                ↓
+                      JavaScript/TypeScript ← Browser security, LLM SDKs
 ```
 
 **Why AI/ML moved up (from Week 33 to Week 21):**
@@ -123,6 +159,16 @@ Claude Code writes the Python for HTB labs, LangChain apps, and exploit scripts.
 
 -----
 
+## Weekly Habits
+
+|Habit      |When                     |Output                                   |
+|-----------|-------------------------|-----------------------------------------|
+|Blog update|End of each week         |Progress, learnings, reflections         |
+|Book review|After finishing each book|Published review on blog                 |
+|Code push  |As you build             |Public GitHub repos for relevant projects|
+
+-----
+
 ## Books Already Owned
 
 |Book                                          |Track                                   |
@@ -134,13 +180,17 @@ Claude Code writes the Python for HTB labs, LangChain apps, and exploit scripts.
 |Pro Git (Chacon & Straub)                     |Track 4: Git Mastery                    |
 |Developer's Playbook for LLM Security (Wilson)|Track 7: LLM Security Primer            |
 |Test-Driven Development with Python (Percival)|Track 9: Python Core + TDD              |
-|Black Hat Go (Steele et al.)                  |Track 11: Go Security Tools             |
-|Node.js: The Comprehensive Guide (Springer)   |Reference (not in active plan)          |
-|Web Development with Node and Express (Brown) |Reference (not in active plan)          |
-|Eloquent JavaScript (Haverbeke)               |Reference (not in active plan)          |
-|100 Go Mistakes (Harsanyi)                    |Track 8: Software Architecture          |
+|Python Testing with pytest (Okken)            |Track 9: Python Core + TDD              |
+|Architecture Patterns with Python (Percival & Gregory)|Track 9: Python Core + TDD       |
+|100 Go Mistakes (Harsanyi)                    |Track 8 + 11: Architecture + Go Security|
 |Learning Go, 1st ed (Bodner)                  |Track 8: Software Architecture          |
 |Red Teaming AI (Dursey)                       |Track 10: AI/ML Security                |
+|Black Hat Go (Steele et al.)                  |Track 11: Go Security Tools             |
+|Eloquent JavaScript (Haverbeke)               |Track 13: JavaScript/TS (optional)      |
+|Web Development with Node and Express (Brown) |Track 13: JavaScript/TS (optional)      |
+|You Don't Know JS (Simpson)                   |Track 13: JavaScript/TS (optional, supplement)|
+|Node.js: The Comprehensive Guide (Springer)   |Track 13: JavaScript/TS (optional, reference)|
+|JavaScript and jQuery (Duckett)               |Track 13: JavaScript/TS (optional, visual supplement)|
 
 -----
 
@@ -152,10 +202,33 @@ Claude Code writes the Python for HTB labs, LangChain apps, and exploit scripts.
 |Let's Go Further (Edwards)                |~$40 |Track 8: Software Architecture           |
 |A Philosophy of Software Design (Ousterhout)|~$25|Track 8: Software Architecture           |
 |Fundamentals of Software Architecture (Richards & Ford)|~$50|Track 8: Software Architecture |
-|Python Testing with pytest, 2nd ed (Okken)|~$40 |Track 9: Python Core + TDD              |
 |AI Engineering (Huyen)                    |~$50 |Track 10: AI/ML Security                |
 
-**Total: ~$245**
+**Total: ~$205**
+
+-----
+
+## Chapter Selection Summary
+
+Every book has explicit READ/SKIP chapter guidance in its track file. Here's the overview:
+
+|Book|Track|Chapters Read|
+|----|-----|-------------|
+|Speed Reading (Knight)|1|9 of 15|
+|How to Read a Book (Adler)|1|14 of 21|
+|How to Take Smart Notes (Ahrens)|2|9 of 14|
+|Building a Second Brain (Forte)|2|7 of 10|
+|LLM Security (Wilson)|7|8 of 12|
+|Philosophy of Software Design (Ousterhout)|8|12 of 18|
+|Fundamentals of Software Architecture (Richards & Ford)|8|~12 of 24|
+|TDD with Python (Percival)|9|10 of 27|
+|pytest (Okken)|9|8 of 12|
+|Architecture Patterns with Python (Percival & Gregory)|9|7 of 13|
+|AI Engineering (Huyen)|10|6 of 10|
+|Red Teaming AI (Dursey)|10|10 of 11|
+|Black Hat Go (Steele et al.)|11|6 of 14|
+|Eloquent JavaScript (Haverbeke)|13|17 of 22|
+|Web Dev with Node and Express (Brown)|13|12 of 23|
 
 -----
 
@@ -216,7 +289,7 @@ Passive content for commutes, lunch breaks, or when you need a break from active
 
 ## Leadership Reading List (Bedtime Reading)
 
-**28 leadership/business books** - organized for bedtime reading throughout your 44-week journey.
+**28 leadership/business books** - organized for bedtime reading throughout your journey.
 
 **See detailed reading list with checklists:** [leadership-reading-list.md](leadership-reading-list.md)
 
@@ -234,12 +307,13 @@ Passive content for commutes, lunch breaks, or when you need a break from active
 
 |Phase|Weeks|Priority Books|
 |-----|-----|--------------|
-|Foundation|1-8|Score Takes Care of Itself, Atomic Habits, High Output Management|
-|Architecture|9-20|Legacy, Captains Class, Leaders Eat Last, Start With Why|
-|AI/ML|21-28|Start With Why, Paradigma Guardiola, Creativity Inc|
-|Python + Capstone|30-43|Elon Musk, Measure What Matters, Revolución Scaloni|
+|Part I: Foundation|1-8|Score Takes Care of Itself, Atomic Habits, High Output Management|
+|Part II: Architecture|9-20|Legacy, Captains Class, Leaders Eat Last, Start With Why|
+|Part III: AI/ML|21-28|Start With Why, Paradigma Guardiola, Creativity Inc|
+|Part IV: Python + Capstone|30-43|Elon Musk, Measure What Matters, Revolución Scaloni|
+|Part V: Advanced (optional)|44-63|Continue from leadership backlog|
 
-**Reading Pace:** 20-30 pages/night = 1 book every 2-4 weeks = 15-20 books over 44 weeks
+**Reading Pace:** 20-30 pages/night = 1 book every 2-4 weeks
 
 **Full details, checklists, and reading order:** See [leadership-reading-list.md](leadership-reading-list.md)
 
