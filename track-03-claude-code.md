@@ -234,6 +234,61 @@ After this week, Claude Code is your implementation tool in every track:
 
 -----
 
+## Resources
+
+### Official Documentation (Start Here)
+
+- [Claude Code Best Practices](https://code.claude.com/docs/en/best-practices) — Anthropic's official Explore → Plan → Implement → Verify workflow
+- [Claude Code Quickstart](https://code.claude.com/docs/en/quickstart) — Getting started guide
+- [Create Custom Subagents](https://code.claude.com/docs/en/sub-agents) — Official guide to defining subagents in `.claude/agents/`
+- [Agent SDK Overview](https://platform.claude.com/docs/en/agent-sdk/overview) — Official Claude Agent SDK documentation
+- [How Anthropic Teams Use Claude Code (PDF)](https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf) — Internal Anthropic practices and workflows
+
+### Prompting & Advanced Usage Patterns (Mon-Tue)
+
+- [Prompting Best Practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) — Official prompt engineering guide
+- [Claude Code Prompting Guide 2025](https://smartscope.blog/en/generative-ai/claude/claude-code-prompting-official-guidelines-2025/) — 10 essential prompting techniques
+- [The Ultimate Guide to Claude Code (Medium)](https://medium.com/@tonimaxx/the-ultimate-guide-to-claude-code-production-prompts-power-tricks-and-workflow-recipes-42af90ca3b4a) — Battle-tested templates and production prompts
+- [Agentic Coding Recommendations (Armin Ronacher)](https://lucumr.pocoo.org/2025/6/12/agentic-coding/) — Practical agentic coding advice from Flask creator
+- [50 Claude Code Tips & Tricks](https://www.geeky-gadgets.com/claude-code-tips-2/) — Quick reference of power-user patterns
+
+### Hooks, Slash Commands & Automation (Thu)
+
+- [Claude Code Hooks: Complete Guide](https://www.ksred.com/claude-code-hooks-a-complete-guide-to-automating-your-ai-coding-workflow/) — All 15 hook events and handler types
+- [Mastering Claude Hooks (DEV Community)](https://dev.to/bredmond1019/mastering-claude-hooks-building-observable-ai-systems-part-2-2ic4) — Deep-dive on building observable AI systems
+- [awesome-claude-code (GitHub)](https://github.com/hesreallyhim/awesome-claude-code) — Curated list of skills, hooks, slash commands, and plugins
+- [Claude Code System Prompts (GitHub)](https://github.com/Piebald-AI/claude-code-system-prompts) — All system prompts, sub-agent prompts, and tool descriptions extracted from Claude Code
+
+### Claude Agent SDK & AI Agent Building (Fri)
+
+- [Claude Agent SDK Demos (GitHub)](https://github.com/anthropics/claude-agent-sdk-demos) — Official demo repository
+- [DataCamp: Claude Agent SDK Tutorial](https://www.datacamp.com/tutorial/how-to-use-claude-agent-sdk) — Build three projects from one-shot to custom-tool agents
+- [KDnuggets: Getting Started with the Claude Agent SDK](https://www.kdnuggets.com/getting-started-with-the-claude-agent-sdk) — Build a multi-tool CLI agent step by step
+- [The Complete Guide to Building Agents (Nader Dabit)](https://nader.substack.com/p/the-complete-guide-to-building-agents) — Build a code review agent from scratch
+- [Claude Code Everything You Need to Know (GitHub)](https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know) — All-in-one repo: setup, prompt engineering, hooks, BMAD method
+
+### Sub-Agents & Multi-Agent Workflows (Sat)
+
+- [Guide to Claude Code Subagents & Hooks (Arsturn)](https://www.arsturn.com/blog/a-beginners-guide-to-using-subagents-and-hooks-in-claude-code) — Beginner-friendly intro to subagents
+- [Best Practices for Claude Code Subagents (PubNub)](https://www.pubnub.com/blog/best-practices-for-claude-code-sub-agents/) — Production patterns for subagent orchestration
+- [Claude Code Workflow (GitHub)](https://github.com/catlog22/Claude-Code-Workflow) — JSON-driven multi-agent development framework
+- [Agents: Multi-agent Orchestration (GitHub)](https://github.com/wshobson/agents) — 112 specialized agents, 16 orchestrators, 146 skills
+
+### Security Testing with Claude Code (Relevant for AI Red Teaming)
+
+- [Red Team Agent Skills (GitHub)](https://github.com/yechao-zhang/red-team-agent-skills) — Claude Code skills for automated red team operations
+- [AI Red Teaming: Attacking Claude Code Using PyRIT](https://breakpoint-labs.com/ai-red-teaming-part-3-attacking-claude-code-using-pyrit/) — Prompt injection attacks via malicious files in repos
+- [AI for Cyber Defenders (Anthropic Red Team)](https://red.anthropic.com/2025/ai-for-cyber-defenders/) — Anthropic's red team research
+- [How to Red Team Claude (Promptfoo)](https://www.promptfoo.dev/blog/red-team-claude/) — YAML-config-based adversarial testing
+
+### Video Courses & Tutorials
+
+- [Claude Code in Action (Anthropic Official)](https://anthropic.skilljar.com/claude-code-in-action) — Official training covering architecture, implementation, and MCP integration
+- [Video Tutorials (Claude Help Center)](https://support.claude.com/en/collections/10548294-video-tutorials) — Official video collection
+- [Anthropic Academy: Build with Claude](https://www.anthropic.com/learn/build-with-claude) — Official learning hub
+
+-----
+
 ## Checkpoint
 
 You should be able to:
