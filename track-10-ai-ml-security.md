@@ -25,12 +25,12 @@ You just spent 12 weeks learning software architecture (Track 8). Now you apply 
 
 ## Phase Overview
 
-|Phase|Weeks|Focus                           |AI Engineering Chapters|
-|-----|-----|--------------------------------|-----------------------|
-|1    |21-22|ML Fundamentals                 |Ch 2: Foundation Models|
-|2    |23-24|HTB Academy Labs                |-                      |
-|3    |25-26|RAG/Agents + Supply Chain       |Ch 5-6: Prompt Eng + RAG|
-|4    |27-28|Evaluation + Advanced CTF       |Ch 3-4, 7, 9-10        |
+|Phase|Weeks|Focus                           |AI Engineering Chapters|Red Teaming AI Chapters|
+|-----|-----|--------------------------------|-----------------------|-----------------------|
+|1    |21-22|ML Fundamentals                 |Ch 2: Foundation Models|Ch 1-2: Mindset + Methodology|
+|2    |23-24|HTB Academy Labs                |-                      |Ch 3, 4, 5, 6, 8: Core Attacks|
+|3    |25-26|RAG/Agents + Supply Chain       |Ch 5-6: Prompt Eng + RAG|Ch 7: Agentic Exploitation|
+|4    |27-28|Evaluation + Advanced CTF       |Ch 3-4, 7, 10          |Ch 9-10: Advanced + Reporting|
 
 **AI Engineering (Huyen) — You're reading 6 of 10 chapters.** Skipping intro, dataset engineering, and inference optimization.
 
@@ -47,7 +47,21 @@ You just spent 12 weeks learning software architecture (Track 8). Now you apply 
 |9      |Inference Optimization                         |SKIP — Quantization/serving, reference only if needed    |
 |10     |AI Engineering Architecture and User Feedback  |⭐ READ (Week 27) — Production attack surfaces, monitoring|
 
-**Red Teaming AI (Dursey)** — Use as reference throughout. Read relevant sections as you encounter topics in labs and exercises, not cover-to-cover.
+**Red Teaming AI (Dursey) — You're reading 10 of 11 chapters.** Skipping only the futures chapter.
+
+|Chapter|Title                                             |What to Do                                              |
+|-------|--------------------------------------------------|---------------------------------------------------------|
+|1      |The New Attack Surface: Thinking in Graphs        |⭐ READ (Week 21) — Mental model for AI attack surfaces   |
+|2      |The Engagement: An AI Red Teamer's Methodology    |⭐ READ (Week 21) — Red team methodology, your career framework|
+|3      |Reconnaissance: Mapping the AI Terrain            |⭐ READ (Week 23) — Recon techniques before HTB labs      |
+|4      |Poisoning the Well: Corrupting AI Data            |⭐ READ (Week 24) — Data poisoning attacks, pairs with HTB labs|
+|5      |Fooling the Oracle: Evasive Attacks at Inference  |⭐ READ (Week 24) — Adversarial examples, evasion attacks |
+|6      |Hijacking the Conversation: LLM Prompt Injection  |⭐ READ (Week 23) — Core skill, pairs with HTB prompt injection labs|
+|7      |Seizing Control: Agentic System Exploitation      |⭐ READ (Week 25) — Pairs with RAG/agent building week    |
+|8      |Stealing the Brain: Model Extraction              |⭐ READ (Week 24) — Model theft attacks, pairs with HTB labs|
+|9      |Graphs of Pain: Advanced Attack Sequences         |⭐ READ (Week 28) — Advanced chained attacks for final assessment|
+|10     |The Endgame: Reporting for Maximum Impact         |⭐ READ (Week 28) — Red team reporting, essential for portfolio|
+|11     |The Next Frontier: The Future of AI Red Teaming   |SKIP — Speculative futures, not actionable now            |
 
 **Note:** Phase 5 (Go for AI Security) has moved to Track 11 as the capstone, where Go architecture skills + AI security knowledge combine.
 
@@ -104,10 +118,16 @@ You just spent 12 weeks learning software architecture (Track 8). Now you apply 
 
 |Week|Focus                                |Resource               |Hours|
 |----|-------------------------------------|-----------------------|-----|
-|21  |Deep Learning basics, neural networks|Fast.ai Part 1         |18   |
+|21  |Deep Learning basics, neural networks|Fast.ai Part 1 + **Dursey Ch 1-2**|18   |
 |22  |NLP, transformers, foundation models |Hugging Face NLP + **AI Engineering Ch 2**|18|
 
-**Week 21: Deep Learning Foundations**
+**Week 21: Deep Learning Foundations + Red Teaming Mindset**
+
+**Monday-Tuesday (6 hours): Red Teaming AI Ch 1-2**
+- **Ch 1: Thinking in Graphs** — Mental model for AI attack surfaces. How to think about AI systems as attack graphs
+- **Ch 2: The Engagement** — AI red teamer's methodology. This is YOUR career framework — internalize it
+
+**Wednesday-Sunday (12 hours): Fast.ai Part 1**
 - Fast.ai Practical Deep Learning Part 1
 - Focus on understanding: neural networks, training, evaluation
 - Understand loss functions, optimization concepts
@@ -132,7 +152,6 @@ You just spent 12 weeks learning software architecture (Track 8). Now you apply 
 - Continue Hugging Face course
 - Study transformer architecture diagrams
 - Document foundation model concepts in Obsidian
-- Read relevant sections of Red Teaming AI (Dursey)
 
 **Why This Matters:**
 You already understand LLM vulnerabilities from Track 7 (Wilson book). Now you build the ML foundation to:
@@ -149,8 +168,12 @@ You already understand LLM vulnerabilities from Track 7 (Wilson book). Now you b
 
 |Week|Focus                                |HTB Modules                      |
 |----|-------------------------------------|---------------------------------|
-|23  |Prompt injection, jailbreaking       |HTB: Introduction to Red Teaming AI, Prompt Injection labs|
-|24  |Model privacy attacks, adversarial AI|HTB: Model extraction, Data poisoning labs|
+|23  |Prompt injection, jailbreaking       |HTB labs + **Dursey Ch 3, 6**|
+|24  |Model privacy attacks, adversarial AI|HTB labs + **Dursey Ch 4, 5, 8**|
+
+**Week 23 Reading:** Read Dursey Ch 3 (Reconnaissance) and Ch 6 (Prompt Injection) before starting HTB labs. These give you the methodology and attack taxonomy that make the labs more effective.
+
+**Week 24 Reading:** Read Dursey Ch 4 (Data Poisoning), Ch 5 (Evasion Attacks), and Ch 8 (Model Extraction) alongside HTB labs on the same topics.
 
 **What You'll Do:**
 - Complete hands-on labs attacking real AI systems
@@ -185,8 +208,8 @@ For each lab:
 
 |Week|Focus                                 |Resource                    |
 |----|--------------------------------------|----------------------------|
-|25  |**RAG & Agent security**              |**AI Engineering Ch 6 + LangChain hands-on**|
-|26  |**ML Supply Chain + Production**      |**Ch 5, 7, 9, 10 + hands-on exploits**|
+|25  |**RAG & Agent security**              |**AI Engineering Ch 6 + Dursey Ch 7 + LangChain hands-on**|
+|26  |**ML Supply Chain + Production**      |**AI Engineering Ch 5, 7, 10 + hands-on exploits**|
 
 **Week 25: RAG & Agent Security - CRITICAL**
 
@@ -196,7 +219,12 @@ For each lab:
 - You need to understand the ARCHITECTURE to attack it effectively
 - This is where your Track 8 systems thinking pays off
 
-**Monday-Tuesday (4 hours): AI Engineering Chapter 6 - RAG and Agents** MUST READ
+**Monday (2 hours): Red Teaming AI Chapter 7 - Agentic System Exploitation**
+- How attackers exploit agentic AI systems
+- Tool abuse, control flow hijacking, prompt injection via tools
+- Read BEFORE building your own agent — you'll know what to attack
+
+**Tuesday-Wednesday (4 hours): AI Engineering Chapter 6 - RAG and Agents** MUST READ
 - **Retrieval-Augmented Generation (RAG):**
   - Term-based retrievers (BM25, TF-IDF)
   - Embedding-based retrievers (vector databases)
@@ -318,7 +346,7 @@ This is THE chapter for AI red teaming:
 |Week|Focus                               |Resource             |
 |----|------------------------------------|--------------------|
 |27  |AI Engineering (remaining chapters) + HackAPrompt|Ch 3-4, 7, 10 + hackaprompt.com|
-|28  |Crucible CTF + Automated Red Team Agent + Final Assessment|crucible.dreadnode.io + Claude SDK|
+|28  |Crucible CTF + Automated Red Team Agent + Final Assessment|crucible.dreadnode.io + **Dursey Ch 9-10** + Claude SDK|
 
 **Week 27: Evaluation + Production AI + HackAPrompt**
 
@@ -338,7 +366,11 @@ This is THE chapter for AI red teaming:
 
 **Week 28: Advanced CTF + PyRIT + Final Portfolio**
 
-**Monday-Tuesday (4 hours): Crucible CTF**
+**Monday (2 hours): Red Teaming AI Ch 9-10**
+- **Ch 9: Advanced Attack Sequences** — Chained multi-step attacks. Read before your final assessment
+- **Ch 10: Reporting for Maximum Impact** — How to write red team reports that drive action. Essential for your portfolio piece
+
+**Tuesday-Wednesday (4 hours): Crucible CTF**
 - [Crucible by Dreadnode](https://crucible.dreadnode.io/)
 - AI red teaming CTF challenges
 - Apply all techniques from previous weeks
@@ -427,6 +459,16 @@ Before writing your final report, study the frameworks that professional AI red 
 - **Ch 5:** Prompt engineering, injection attacks and defenses
 - **Ch 6:** RAG architecture, agents with tools, memory systems
 - **Ch 10:** Production architecture, monitoring, attack surfaces
+
+**From Red Teaming AI (Dursey) (10 of 11 chapters):**
+- **Ch 1-2:** Attack surface graphs, red team engagement methodology
+- **Ch 3:** Reconnaissance and AI terrain mapping
+- **Ch 4-5:** Data poisoning, evasion attacks at inference
+- **Ch 6:** LLM prompt injection (deep dive)
+- **Ch 7:** Agentic system exploitation
+- **Ch 8:** Model extraction and theft
+- **Ch 9:** Advanced chained attack sequences
+- **Ch 10:** Red team reporting for maximum impact
 
 **From HTB Academy (Hands-On):**
 - Practical prompt injection exploitation
