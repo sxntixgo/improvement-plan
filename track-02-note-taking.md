@@ -37,7 +37,7 @@ Everything you learn needs a home. Setting up Obsidian with proper structure mea
 
 |Day     |Hours|Activity                                                  |Resource               |
 |--------|-----|----------------------------------------------------------|-----------------------|
-|Weekdays|8    |Read How to Take Smart Notes (all parts)                  |How to Take Smart Notes|
+|Weekdays|8    |Read How to Take Smart Notes (selected chapters, see below)|How to Take Smart Notes|
 |Sat     |5    |Install Obsidian, explore interface, watch intro tutorials|Obsidian Help Docs     |
 |Sun     |5    |Install plugins: Dataview, Templater, Obsidian Git        |Obsidian Help Docs     |
 
@@ -55,52 +55,51 @@ Everything you learn needs a home. Setting up Obsidian with proper structure mea
 - Six Steps to Successful Writing (Ch 9-14)
 - Appendix: Glimpse into Luhmann's Zettelkasten
 
+**You're reading 9 of 14 chapters + intro.** Skipping 5 chapters that are motivational, about publishing, or generic habit advice.
+
+|Section                         |Chapters  |What to Do                                              |
+|--------------------------------|----------|--------------------------------------------------------|
+|Introduction                    |—         |⭐ READ — Why traditional note-taking fails              |
+|Foundation                      |1-3       |⭐ READ — Zettelkasten overview, workflow, tools          |
+|A Few Things to Keep in Mind    |4         |SKIP — Common misconceptions, not essential             |
+|Underlying Principles           |5-7       |⭐ READ — Core principles of the method                  |
+|Let the Work Carry You Forward  |8         |SKIP — Motivational, not technique                      |
+|Six Steps (first 3)             |9-11      |⭐ READ — THE CORE TECHNIQUE                             |
+|Develop Ideas                   |12        |⭐ READ — How connections create ideas                   |
+|Share Your Insight              |13        |SKIP — About turning notes into manuscripts/publications|
+|Make It a Habit                 |14        |SKIP — Generic habit advice                             |
+|Appendix                        |—         |SKIP — Historical interest only                         |
+
 **Reading Schedule:**
 
-**Monday-Tuesday (4 hours): Foundation + Principles**
-
-**Monday (2 hours):**
+**Monday (2 hours): Foundation**
 - **Introduction** (15 min) - Why traditional note-taking fails
 - **Ch 1: Everything You Need to Know** (30 min) - Zettelkasten overview
   - Niklas Luhmann's productivity secret (90,000 notes, 58 books)
   - The slip-box system explained
-  - Why this is revolutionary
 - **Ch 2: Everything You Need to Do** (30 min) - Basic workflow
   - Three types of notes: fleeting, literature, permanent
   - How to process information
-  - The feedback loop
 - **Ch 3: Everything You Need to Have** (15 min) - Required tools
   - Minimal tool requirements
   - Why simplicity matters
-- **Ch 4: A Few Things to Keep in Mind** (30 min)
-  - Common misconceptions
-  - Setting realistic expectations
+- **Practice** (30 min) - Create your first fleeting notes from what you just read
 
-**Tuesday (2 hours):**
+**Tuesday (1.5 hours): Principles**
 - **Ch 5: Writing Is the Only Thing That Matters** (30 min) - CRITICAL
   - Note-taking IS the work
   - Why you must write while reading
-  - Knowledge work = writing work
 - **Ch 6: Simplicity Is Paramount** (30 min)
   - Keep the system simple
   - Avoid over-organizing
-  - One tool, one format
 - **Ch 7: Nobody Ever Starts From Scratch** (30 min)
   - Building on previous notes
   - How connections emerge
-  - The slip-box as conversation partner
-- **Ch 8: Let the Work Carry You Forward** (30 min)
-  - Motivation through momentum
-  - Positive feedback loops
-  - Making writing easier
 
-**Wednesday-Thursday (4 hours): The Six Steps - MOST IMPORTANT**
-
-**Wednesday (2 hours):**
+**Wednesday (2 hours): The Six Steps - MOST IMPORTANT**
 - **Ch 9: Separate and Interlocking Tasks** (30 min)
   - Breaking writing into steps
   - Multitasking vs task-switching
-  - The right order of operations
 - **Ch 10: Read for Understanding** (45 min) - Connects to Track 1!
   - How to read effectively
   - Taking literature notes
@@ -111,22 +110,18 @@ Everything you learn needs a home. Setting up Obsidian with proper structure mea
   - How to link notes effectively
   - **Exercise:** Create 3-5 permanent notes from this book
 
-**Thursday (2 hours):**
+**Thursday (1 hour): Developing Ideas**
 - **Ch 12: Develop Ideas** (30 min)
   - How ideas emerge from connections
   - Following interest vs planning topics
   - Letting the slip-box guide you
-- **Ch 13: Share Your Insight** (30 min)
-  - Turning notes into manuscripts
-  - Bottom-up writing process
-  - From Zettelkasten to published work
-- **Ch 14: Make It a Habit** (30 min)
-  - Building the daily practice
-  - Overcoming resistance
-  - Integration with your workflow
-- **Appendix** (30 min) - Optional but valuable
-  - Glimpse into Luhmann's actual Zettelkasten
-  - Software considerations
+- **Practice** (30 min) - Link your permanent notes together, review your system so far
+
+**Friday (1.5 hours): Practice & Consolidation**
+- Apply Zettelkasten method to Track 1 material (45 min)
+  - Create literature notes from Speed Reading and How to Read a Book
+  - Convert key insights into permanent notes
+- Review and refine your note-taking workflow (45 min)
 
 **Key Concepts to Remember:**
 1. **Fleeting notes:** Quick captures, temporary
@@ -134,10 +129,6 @@ Everything you learn needs a home. Setting up Obsidian with proper structure mea
 3. **Permanent notes:** Standalone atomic ideas
 4. **Links over tags:** Connect concepts, don't just categorize
 5. **Write to think:** Note-taking is thinking on paper
-
-**Sources:**
-- [How to Take Smart Notes book details](https://readingraphics.com/book-summary-how-to-take-smart-notes/)
-- [Book summary by Ali Abdaal](https://aliabdaal.com/book-notes/how-to-take-smart-notes/)
 
 -----
 
@@ -148,25 +139,35 @@ Everything you learn needs a home. Setting up Obsidian with proper structure mea
 - Part Two: The Method - CODE (Ch 4-7)
 - Part Three: The Shift (Ch 8-10)
 
+**You're reading 7 of 10 chapters.** Skipping 3 chapters that are personal story, creative theory, or motivational.
+
+|Section                             |Chapters|What to Do                                       |
+|------------------------------------|--------|-------------------------------------------------|
+|Where It All Started                |1       |SKIP — Tiago's personal story, not actionable    |
+|What Is a Second Brain?             |2       |⭐ READ — Core concept definition                 |
+|How a Second Brain Works            |3       |⭐ READ — CODE method overview                    |
+|Capture—Keep What Resonates         |4       |⭐ READ — What to save and what to skip            |
+|Organize—Save for Actionability     |5       |⭐ READ — THE PARA METHOD                         |
+|Distill—Find the Essence            |6       |⭐ READ — Progressive summarization               |
+|Express—Show Your Work              |7       |⭐ READ — Intermediate Packets, building in public|
+|The Art of Creative Execution       |8       |SKIP — Creative theory, not practical for your goals|
+|The Essential Habits of Digital Organizers|9  |⭐ READ — Weekly/monthly reviews, checklists      |
+|The Path of Self-Expression         |10      |SKIP — Motivational closing, not technique        |
+
 **Reading Schedule:**
 
-**Monday (2 hours): Part One - Foundation**
-- **Ch 1: Where It All Started** (40 min)
-  - Tiago's personal health crisis
-  - Discovery of knowledge management
-  - Why he built a second brain
-  - The problem: information overload
-- **Ch 2: What Is a Second Brain?** (45 min) - CRITICAL
+**Monday (2 hours): Foundation**
+- **Ch 2: What Is a Second Brain?** (1 hour) - CRITICAL
   - External knowledge system vs biological brain
   - Why you can't "just remember everything"
   - The promise of a second brain
   - How it complements your thinking
-- **Ch 3: How a Second Brain Works** (35 min)
+- **Ch 3: How a Second Brain Works** (1 hour)
   - Introduction to CODE method
   - Overview of the complete workflow
   - Setting expectations
 
-**Tuesday (2 hours): Part Two - The CODE Method (C & O)**
+**Tuesday (2 hours): The CODE Method (C & O)**
 - **Ch 4: Capture—Keep What Resonates** (1 hour) - FIRST STEP
   - What to save (and what to skip)
   - The 12 favorite capture problems
@@ -180,10 +181,9 @@ Everything you learn needs a home. Setting up Obsidian with proper structure mea
   - **Resources:** Topics of ongoing interest
   - **Archives:** Inactive items from other categories
   - Why organize by actionability, not topic
-  - Cathedral vs Bazaar approach
   - **Exercise:** Create PARA folders in Obsidian (prep for Weekend)
 
-**Wednesday (2 hours): Part Two - The CODE Method (D & E)**
+**Wednesday (2 hours): The CODE Method (D & E)**
 - **Ch 6: Distill—Find the Essence** (1 hour) - PROGRESSIVE SUMMARIZATION
   - Layer 1: Save the source
   - Layer 2: Bold the important parts
@@ -197,26 +197,19 @@ Everything you learn needs a home. Setting up Obsidian with proper structure mea
   - Intermediate Packets concept
   - Building blocks of knowledge work
   - Share before you're ready
-  - Building in public
   - From consumption to creation
   - **Exercise:** Plan your blog/portfolio
 
-**Thursday (2 hours): Part Three - The Shift & Integration**
-- **Ch 8: The Art of Creative Execution** (40 min)
-  - Divergence and convergence
-  - Archipelago of Ideas
-  - Dialup vs Dial-down modes
-  - Creative execution in practice
-- **Ch 9: The Essential Habits of Digital Organizers** (40 min)
+**Thursday (1 hour): Essential Habits**
+- **Ch 9: The Essential Habits of Digital Organizers** (1 hour)
   - Project Checklists (kickoff, completion)
   - Weekly and Monthly Reviews
   - Noticing habits that build the system
   - **Exercise:** Schedule your first Weekly Review
-- **Ch 10: The Path of Self-Expression** (40 min)
-  - Finding your voice
-  - Shift from consumer to creator
-  - Your unique perspective matters
-  - Integration with your life and career
+
+**Friday (1 hour): Practice & Integration**
+- Apply PARA + CODE to your existing notes (30 min)
+- Set up capture workflow: test saving from browser, phone, and Claude Code (30 min)
 
 **Key Frameworks:**
 
@@ -251,7 +244,7 @@ Everything you learn needs a home. Setting up Obsidian with proper structure mea
 
 |Day     |Hours|Activity                                                     |Resource               |
 |--------|-----|-------------------------------------------------------------|-----------------------|
-|Weekdays|8    |Read Building a Second Brain (all parts)                     |Building a Second Brain|
+|Weekdays|8    |Read Building a Second Brain (selected chapters, see below)  |Building a Second Brain|
 |Sat     |5    |Create PARA folder structure, design templates               |Obsidian + your notes  |
 |Sun     |5    |Set up sync (Synology/Möbius or Obsidian Sync), test workflow|Your infrastructure    |
 
