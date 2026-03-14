@@ -13,6 +13,8 @@ These directly extend what you learned. High impact for your role.
 | Book | Author | Pages | ~Cost | Extends |
 |------|--------|-------|-------|---------|
 | Adversarial AI Attacks, Mitigations, and Defense Strategies | John Sotiropoulos | ~586 | ~$50 | Track 10 (AI/ML Security) |
+| Not with a Bug, But with a Sticker | Ram Shankar Siva Kumar & Hyrum Anderson | ~300 | ~$30 | Track 10 (AI/ML Security) |
+| AI-Native LLM Security | Vaibhav Malik, Ken Huang, Ads Dawson | ~400 | ~$50 | Track 10 (AI/ML Security) |
 | Build a Large Language Model From Scratch | Sebastian Raschka | ~368 | ~$45 | Track 10 (AI/ML Security) |
 | Learning Domain-Driven Design | Vlad Khononov | ~290 | ~$50 | Track 8 (Architecture) |
 | Designing Data-Intensive Applications | Martin Kleppmann | ~550 | ~$45 | Track 8 (Architecture) |
@@ -25,6 +27,22 @@ These directly extend what you learned. High impact for your role.
 **When to read:** First after Track 10. This is the single most relevant post-plan book for your AI red teamer role. It deepens everything you learned in Track 10 with a structured offensive/defensive methodology from someone who literally defines the industry standards.
 
 **Why it was deferred:** 586 pages on top of Track 10's already heavy AI security content. Your plan covers the same ground through Huyen + Dursey + hands-on labs. Sotiropoulos adds the OWASP-aligned methodology and broader attack surface coverage.
+
+### Not with a Bug, But with a Sticker (Kumar & Anderson)
+
+**What it adds:** The most accessible practitioner account of adversarial ML threats, written by the founder of Microsoft's AI Red Team and a leading adversarial ML researcher. Foreword by Bruce Schneier. Covers adversarial examples, data poisoning, model evasion, and real-world attack case studies drawn from hundreds of interviews with researchers, policymakers, and national security experts.
+
+**When to read:** Early post-plan — pairs well with Sotiropoulos. Where Sotiropoulos gives you the OWASP-aligned methodology, Kumar & Anderson give you the strategic "why this matters" perspective from someone who built Microsoft's red teaming program. Good for developing your professional narrative around AI red teaming.
+
+**Why it was deferred:** Accessible and relatively short (~300 pages), but adds breadth rather than depth to Track 10. Your plan already covers the same attack categories through Dursey + hands-on labs. This book adds the institutional and policy context.
+
+### AI-Native LLM Security (Malik, Huang, Dawson)
+
+**What it adds:** The most current (2025) practitioner guide focused specifically on LLM security with OWASP alignment. Covers trust boundary mapping, regulatory alignment, deep profiles of each OWASP Top 10 risk, MLSecOps practices, and CI/CD security. All three authors are OWASP Top 10 for LLM core team members.
+
+**When to read:** After Track 10, alongside Sotiropoulos. Where Sotiropoulos covers broad adversarial AI (including classic ML), this book goes deep on LLM-specific security with the latest OWASP thinking. Essential for staying current on the standards you'll be assessed against professionally.
+
+**Why it was deferred:** Significant overlap with Wilson (Track 7) and the OWASP LLM Top 10 coverage already in the plan. The value-add is the 2025 updates, deeper OWASP profiles, and MLSecOps integration — all of which are more valuable after you've built the foundational understanding.
 
 ### Build a Large Language Model From Scratch (Raschka)
 
@@ -67,6 +85,9 @@ Valuable but situational. Pick these up when you encounter the relevant problem 
 | Book | Author | Pages | ~Cost | When to Read |
 |------|--------|-------|-------|-------------|
 | Security Engineering, 3rd ed | Ross Anderson | ~1000+ | **FREE** | Reference — read chapters as security questions arise |
+| Beyond the Algorithm: AI, Security, Privacy, and Ethics | Omar Santos & Petar Radanliev | ~400 | ~$50 | Broad AI security reference — threats, risk assessment, compliance |
+| Generative AI Security: Theories and Practices | Ken Huang, Yang Wang, et al. | ~450 | ~$60 | GenAI architectures, DevSecOps for AI, global AI regulations |
+| Large Language Models in Cybersecurity | Kucharavy et al. | ~300 | **FREE** | LLM threats from a national security angle — open access |
 | Software Architecture: The Hard Parts | Richards, Ford, et al. | ~400 | ~$50 | When you face distributed system trade-offs at work |
 | Building Microservices | Sam Newman | ~600 | ~$50 | When microservices become relevant at your job |
 | Concurrency in Go | Katherine Cox-Buday | ~250 | ~$40 | When Go concurrency needs deepening beyond Track 8/11 |
@@ -78,6 +99,24 @@ Valuable but situational. Pick these up when you encounter the relevant problem 
 **What it adds:** The foundational security architecture reference — covers threat modeling, access control, cryptography, system design, economics of security, and much more. Written by one of the most respected security researchers in the world. The 3rd edition is available **FREE online** from Cambridge University Press.
 
 **When to read:** Use as a reference book. Don't read cover-to-cover (1000+ pages). Instead, read specific chapters when security architecture questions arise at work — e.g., the threat modeling chapter before an assessment, the cryptography chapter when reviewing AI model encryption.
+
+### Beyond the Algorithm (Santos & Radanliev)
+
+**What it adds:** Broad AI security reference covering threats, vulnerabilities, attack vectors, risk assessment, and compliance. Santos is a Cisco Distinguished Engineer, DEF CON Red Team Village lead, and OWASP board member — strong practitioner credentials across both traditional and AI security.
+
+**When to read:** When you need a comprehensive reference that bridges traditional security and AI security. Useful for understanding how AI security fits into enterprise risk frameworks and compliance requirements.
+
+### Generative AI Security (Huang, Wang, et al.)
+
+**What it adds:** Comprehensive reference covering GenAI architectures, data and model security, LLMOps/DevSecOps integration, prompt engineering for security, and global AI regulations. Lead author is a core contributor to both the OWASP Top 10 for LLMs and the NIST GenAI Working Group — directly involved in shaping the standards.
+
+**When to read:** When you need depth on the regulatory and governance side of AI security, or when integrating security into ML pipelines (DevSecOps for AI). Complements Sotiropoulos (offense/defense) with the governance and operations perspective.
+
+### Large Language Models in Cybersecurity (Kucharavy et al.)
+
+**What it adds:** Open-access academic book from the Swiss Cyber-Defence Campus covering LLM fundamentals, private information leakage, phishing/social engineering with LLMs, code vulnerability introduction, and regulatory levers. **FREE to download** — excellent for understanding LLM threats from a national security and policy angle.
+
+**When to read:** After Track 10, or anytime you need the national security perspective on LLM threats. The open-access format makes this zero-risk to explore. Good for strengthening the policy and regulatory sections of red team reports.
 
 ### Software Architecture: The Hard Parts (Richards, Ford, Dehghani, Sadalage)
 
@@ -183,6 +222,31 @@ Broader software engineering books that deepen your architect skills. Read after
 
 -----
 
+## Academic References: Adversarial ML Foundations
+
+Deep academic texts on adversarial machine learning. Not practitioner guides — these are for understanding the theoretical foundations of why attacks work. Read selectively when you need to go deeper on a specific attack class or want to understand the research behind a technique.
+
+| Book | Author | Publisher | Year | ~Cost | Focus |
+|------|--------|-----------|------|-------|-------|
+| Adversarial Robustness for Machine Learning | Pin-Yu Chen & Cho-Jui Hsieh | Elsevier | 2023 | ~$100 | Most complete academic textbook — attack algorithms, verification methods, defense techniques, threat models |
+| Adversarial Machine Learning: Attack Surfaces, Defence Mechanisms, Learning Theories | Chivukula et al. | Springer | 2023 | ~$80 | Game-theoretic adversarial deep learning, perturbation-based privacy, defenses across CV/NLP/cybersecurity |
+| Adversarial Machine Learning | Joseph, Nelson, Rubinstein, Tygar | Cambridge University Press | 2019 | ~$55 | The foundational reference — most-cited comprehensive introduction by UC Berkeley, Google, and UMelbourne researchers |
+
+### How to use these
+
+These are **reference books**, not cover-to-cover reads. Use them when:
+
+- **You encounter an attack in practice and want to understand the theory behind it** — e.g., why C&W attacks succeed where FGSM fails
+- **You need to write a technically rigorous red team report** — citing academic foundations strengthens your findings
+- **You want to move beyond known attack recipes** — understanding the math lets you develop novel attack variations
+- **Job interviews or certifications require theoretical depth** — these books demonstrate domain expertise
+
+**Recommended starting point:** Joseph et al. (2019) is the most accessible despite being slightly older. It establishes the conceptual framework that Chen & Hsieh (2023) and Chivukula et al. (2023) build on.
+
+**Note:** The academic papers listed in `ml-security-resources.md` cover the same ground in shorter form. Start with the papers; reach for these books when you need the full theoretical treatment.
+
+-----
+
 ## Watch List: Forthcoming Books
 
 | Book | Author | Pages | Expected | Why Watch |
@@ -241,13 +305,14 @@ These books were in the original 65-week plan but dropped when restructuring for
 
 | Tier | Books | Total Cost |
 |------|-------|-----------|
-| Tier 1 | 5 books | ~$230 |
-| Tier 2 | 6 books | ~$193 (includes 1 FREE) |
+| Tier 1 | 7 books | ~$310 |
+| Tier 2 | 9 books | ~$303 (includes 2 FREE) |
 | Tier 3 | 9 books | ~$255 (includes 2 FREE) |
+| Academic References | 3 books | ~$235 |
 | Watch List | 1 book | TBD (forthcoming) |
-| **All** | **21 books** | **~$678** |
+| **All** | **29 books** | **~$1,103** |
 
-No urgency to buy any of these. Purchase when you're ready to read them — after Week 44. Three books are free online (Anderson, Google SRE, SWE at Google).
+No urgency to buy any of these. Purchase when you're ready to read them — after Week 44. Four books are free online (Anderson, Google SRE, SWE at Google, Kucharavy LLMs in Cybersecurity).
 
 -----
 
@@ -257,7 +322,9 @@ No urgency to buy any of these. Purchase when you're ready to read them — afte
 44-Week Plan (active learning)
 ├── Track 8: Architecture via Go     → Tier 1: Khononov, Kleppmann extend this
 │                                      Tier 3: API Patterns, Refactoring, Distributed Systems, Team Topologies
-├── Track 10: AI/ML Security         → Tier 1: Sotiropoulos, Raschka, Shostack extend this
+├── Track 10: AI/ML Security         → Tier 1: Sotiropoulos, Kumar & Anderson, Malik et al., Raschka, Shostack extend this
+│                                      Tier 2: Santos, Huang et al., Kucharavy et al. (FREE) add breadth
+│                                      Academic: Joseph et al., Chen & Hsieh, Chivukula et al. for theory
 │                                      Tier 3: ML Design Patterns, Secure & Reliable Systems
 ├── Track 9: Python Core             → Tier 3: Unit Testing Principles extends this
 │                                      Dropped: Black Hat Python, Fluent Python, Asyncio
@@ -271,8 +338,9 @@ Leadership Reading List (bedtime reading, parallel to plan)
 └── 27 books, all owned, separate from technical reading
 
 Future Technical Reading (THIS LIST — after plan completion)
-├── Tier 1: 5 books, read first (AI security + architecture deep dives)
-├── Tier 2: 6 books, read when needed (includes 1 FREE reference)
+├── Tier 1: 7 books, read first (AI security + architecture deep dives)
+├── Tier 2: 9 books, read when needed (includes 2 FREE)
 ├── Tier 3: 9 books, software engineering craft (includes 2 FREE)
+├── Academic References: 3 books, adversarial ML theory
 └── Watch List: 1 forthcoming book (Practical AI Security, April 2026)
 ```

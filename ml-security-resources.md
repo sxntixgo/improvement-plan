@@ -272,7 +272,61 @@ Review a typical ML pipeline for security weaknesses:
 
 -----
 
-## 10. How These Resources Map to Your Plan
+## 10. Books: AI/ML Security Library
+
+Your plan uses three books actively (Wilson in Track 7, Dursey + Huyen in Track 10). The broader field has a growing library of practitioner and academic books. These are catalogued here for reference; see `future-technical-reading.md` for reading order and prioritization.
+
+### Books Already in Your Plan
+
+| Book | Author | Publisher | Year | Status |
+|------|--------|-----------|------|--------|
+| The Developer's Playbook for Large Language Model Security | Steve Wilson | O'Reilly | 2024 | **Owned** — Track 7 |
+| Red Teaming AI: A Field Manual for Attacking Intelligent Systems | Philip A. Dursey | No Starch Press | 2026 | **Owned** — Track 10 |
+| AI Engineering | Chip Huyen | O'Reilly | 2025 | To purchase — Track 10 |
+
+### Practitioner Books (Post-Plan Reading)
+
+| Book | Author | Publisher | Year | ~Cost | Focus |
+|------|--------|-----------|------|-------|-------|
+| Not with a Bug, But with a Sticker | Ram Shankar Siva Kumar & Hyrum Anderson | Wiley | 2023 | ~$30 | Adversarial ML threats from Microsoft's AI Red Team founder. Accessible, real-world case studies. Foreword by Bruce Schneier. |
+| Adversarial AI Attacks, Mitigations, and Defense Strategies | John Sotiropoulos | Packt | 2024 | ~$50 | Most hands-on guide bridging traditional adversarial ML with LLM/GenAI security. ~580 pages. OWASP LLM Top 10 co-lead. |
+| Beyond the Algorithm: AI, Security, Privacy, and Ethics | Omar Santos & Petar Radanliev | Pearson | 2024 | ~$50 | Broad AI security reference. Cisco Distinguished Engineer, DEF CON Red Team Village lead. |
+| AI-Native LLM Security | Vaibhav Malik, Ken Huang, Ads Dawson | Packt | 2025 | ~$50 | Most current LLM security guide. Trust boundaries, MLSecOps, CI/CD security. All authors OWASP Top 10 for LLM core team. |
+| Generative AI Security: Theories and Practices | Ken Huang, Yang Wang, et al. | Springer | 2024 | ~$60 | GenAI architectures, DevSecOps for AI, global AI regulations. OWASP + NIST GenAI Working Group contributor. |
+| Large Language Models in Cybersecurity | Kucharavy et al. | Springer | 2024 | **FREE** | Open-access. Swiss Cyber-Defence Campus. LLM threats from national security angle. |
+
+### Academic References
+
+| Book | Author | Publisher | Year | ~Cost | Focus |
+|------|--------|-----------|------|-------|-------|
+| Adversarial Robustness for Machine Learning | Pin-Yu Chen & Cho-Jui Hsieh | Elsevier | 2023 | ~$100 | Most complete academic textbook — attack algorithms, verification, defenses, threat models. |
+| Adversarial Machine Learning: Attack Surfaces, Defence Mechanisms, Learning Theories | Chivukula et al. | Springer | 2023 | ~$80 | Game-theoretic adversarial deep learning, perturbation-based privacy, CV/NLP/cybersecurity defenses. |
+| Adversarial Machine Learning | Joseph, Nelson, Rubinstein, Tygar | Cambridge UP | 2019 | ~$55 | Foundational reference. Most-cited comprehensive introduction. UC Berkeley, Google, UMelbourne researchers. |
+
+### How the Books Relate to Each Other
+
+```
+Foundational Theory                    Practitioner Guides                  Your Plan (Active)
+─────────────────                      ───────────────────                  ──────────────────
+Joseph et al. (2019)                   Kumar & Anderson (2023)              Wilson (Track 7)
+  └─ foundational concepts               └─ why adversarial ML matters       └─ OWASP LLM Top 10
+Chen & Hsieh (2023)                    Sotiropoulos (2024)                  Dursey (Track 10)
+  └─ attack/defense algorithms            └─ hands-on offense + defense       └─ red team methodology
+Chivukula et al. (2023)                Santos & Radanliev (2024)            Huyen (Track 10)
+  └─ game theory + deep learning          └─ broad AI security + compliance   └─ production AI systems
+                                       Huang et al. (2024)
+                                         └─ GenAI governance + DevSecOps
+                                       Malik et al. (2025)
+                                         └─ LLM-specific, latest OWASP
+                                       Kucharavy et al. (2024) — FREE
+                                         └─ national security perspective
+```
+
+**Reading order after plan completion:** Sotiropoulos → Kumar & Anderson → Malik et al. → then branch based on need (Santos for compliance, Huang for governance, academic texts for theory depth).
+
+-----
+
+## 11. How These Resources Map to Your Plan
 
 ```
 Track 7 (Week 8): LLM Security Primer
@@ -327,4 +381,6 @@ Your plan already covers the core tools and resources well. The main gaps are:
 
 5. **Community and researchers** — Following Carlini, Willison, Rehberger, and the Trail of Bits blog keeps you current as the field evolves rapidly.
 
-**No additional cost.** Everything in this document is free.
+6. **Books beyond your plan** — Section 10 catalogues the broader AI/ML security book landscape. Your plan's three books (Wilson, Dursey, Huyen) cover the essentials; the post-plan reading list in `future-technical-reading.md` prioritizes what to read next.
+
+**No additional cost for sections 1-9.** Everything except the books in section 10 is free.
