@@ -991,3 +991,138 @@
 **Index**
 
 -----
+
+## Book 7: Threat Modeling: Designing for Security
+
+**Author:** Adam Shostack
+**Publisher:** Wiley (2014) | **Pages:** ~624 | **ISBN:** 9781118809990
+
+-----
+
+**Introduction** (xxi)
+
+### Part I: Getting Started
+
+#### Chapter 1: Dive In and Threat Model! (3)
+- Learning to Threat Model
+- Threat Modeling on Your Own
+- Checklists for Diving In and Threat Modeling
+- Summary
+
+#### Chapter 2: Strategies for Threat Modeling (29)
+- "What's Your Threat Model?"
+- Brainstorming Your Threats
+- Structured Approaches to Threat Modeling
+- Models of Software
+- Summary
+
+-----
+
+### Part II: Finding Threats
+
+#### Chapter 3: STRIDE (61)
+- Understanding STRIDE and Why It's Useful
+- Spoofing Threats
+- Tampering Threats
+- Repudiation Threats
+- Information Disclosure Threats
+- Denial-of-Service Threats
+- Elevation of Privilege Threats
+- Extended Example: STRIDE Threats against Acme-DB
+- STRIDE Variants
+- Exit Criteria
+- Summary
+
+#### Chapter 4: Attack Trees (87)
+- Working with Attack Trees
+- Representing a Tree
+- Example Attack Tree
+
+#### Chapter 5: Attack Libraries (101)
+
+#### Chapter 6: Privacy Tools (111)
+
+-----
+
+### Part III: Managing and Addressing Threats
+
+#### Chapter 7: Processing and Managing Threats (125)
+
+#### Chapter 8: Defensive Tactics and Technologies (145)
+
+#### Chapter 9: Trade-Offs When Addressing Threats (167)
+
+#### Chapter 10: Validating That Threats Are Addressed (189)
+
+#### Chapter 11: Threat Modeling Tools (203)
+
+-----
+
+### Part IV: Threat Modeling in Technologies and Tricky Areas
+
+#### Chapter 12: Requirements Cookbook (217)
+- Development Requirements vs. Acquisition Requirements
+
+#### Chapter 13: Web and Cloud Threats (243)
+- Web Threats
+- Cloud Tenant Threats
+- Cloud Provider Threats
+- Mobile Threats
+- Summary
+
+#### Chapter 14: Accounts and Identity (253)
+- Account Life Cycles
+- Authentication
+- Account Recovery
+- Names, IDs, and SSNs
+- Summary
+
+#### Chapter 15: Human Factors and Usability (293)
+- Models of People
+- Models of Software Scenarios
+- Threat Elicitation Techniques
+- Tools and Techniques for Addressing Human Factors
+- User Interface Tools and Techniques
+- Testing for Human Factors
+- Perspective on Usability and Ceremonies
+- Summary
+
+#### Chapter 16: Threats to Cryptosystems (333)
+- Cryptographic Primitives
+- Classic Threat Actors
+- Attacks against Cryptosystems
+- Building with Crypto
+- Things to Remember about Crypto
+- Secret Systems: Kerckhoffs and His Principles
+
+-----
+
+### Part V: Taking It to the Next Level
+
+#### Chapter 17: Bringing Threat Modeling to Your Organization (355)
+
+#### Chapter 18: Experimental Approaches (385)
+
+#### Chapter 19: Architecting for Success (407)
+
+-----
+
+### Appendices
+
+**Appendix A:** Helpful Tools (421)
+
+**Appendix B:** Threat Trees (429)
+
+**Appendix C:** Attacker Lists (477)
+
+**Appendix D:** Elevation of Privilege: The Cards (501)
+
+**Appendix E:** Case Studies (511)
+
+**Glossary** (533)
+
+**Bibliography** (543)
+
+**Index** (567)
+
+-----
