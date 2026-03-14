@@ -293,3 +293,229 @@
 **Index** (189)
 
 -----
+
+## Book 3: AI-Native LLM Security
+
+**Authors:** Vaibhav Malik, Ken Huang & Ads Dawson
+**Publisher:** Packt (December 2025) | **Pages:** ~400 | **ISBN:** 9781836203759
+
+-----
+
+### Part 1: Understanding the LLM Security Landscape
+
+#### Chapter 1: Fundamentals and Introduction to Large Language Models
+
+#### Chapter 2: Securing Large Language Models
+
+#### Chapter 3: The Dual Nature of LLM Risks: Inherent Vulnerabilities and Malicious Actors
+
+#### Chapter 4: Mapping Trust Boundaries in LLM Architectures
+
+#### Chapter 5: Aligning LLM Security with Organizational Objectives and Regulatory Landscapes
+
+-----
+
+### Part 2: OWASP Top 10 for LLM Applications — Deep Dive
+
+#### Chapter 6: Identifying and Prioritizing LLM Security Risks with OWASP
+
+#### Chapter 7: Diving Deep: Profiles of the Top 10 LLM Security Risks
+
+#### Chapter 8: Mitigating LLM Risks: Strategies and Techniques for Each OWASP Category
+
+#### Chapter 9: Identifying Risk Profiles for Different LLM Application Types
+- Adapting the Top 10 to chatbots and conversational AI systems
+  - SaaS
+  - Cloud AI platforms
+  - Private deployments
+- Applying the Top 10 to content generation and creative AI applications
+- Scaling the Top 10 for enterprise-wide LLM deployment and governance
+  - Framework for enterprise governance
+  - Implementing best practices for security
+
+-----
+
+### Part 3: Emerging Threats and Operational Security
+
+#### Chapter 10: Emerging Threats & Promising Defensive Innovations
+- Emerging threats:
+  - Attacks on AI agents
+  - Deepfake
+  - Automated social engineering
+  - Advanced supply chain attacks and model poisoning
+  - Zero-day vulnerabilities in LLM frameworks
+  - Cross-model attacks and transferability
+  - Quantum computing threats
+  - AI-driven malware and autonomous attacks
+  - Ethical manipulation and psychological impacts
+  - Challenges in explainability and transparency
+  - Integration with critical infrastructure
+  - Globalization of threat actors
+  - Evolution of attack tools and techniques
+- Promising defensive innovations:
+  - Reinforcement learning for safe and accurate LLMs
+  - Differential privacy for protecting sensitive data in LLMs
+  - Adversarial training for strengthening LLM defenses
+  - Explainable AI (XAI)
+  - Secure model architectures for inherent resistance to attacks
+  - Federated learning for decentralized training and enhanced privacy
+  - Additional frontier research topics in LLM security
+  - The evolving regulatory landscape
+
+#### Chapter 11: Integrating Security into the LLM Development Life Cycle: From Data Curation to Deployment
+- Secure data collection, curation, and preprocessing
+- Protecting model integrity during training and validation
+- Conducting rigorous security testing and evaluation
+
+#### Chapter 12: Monitoring, Incident Response, and Continuous Improvement
+- Designing comprehensive monitoring and alerting strategies
+  - The monitoring hierarchy for LLM systems
+  - Key monitoring metrics and indicators
+  - Building a monitoring architecture
+  - Implementing effective alerting strategies
+  - Case study — monitoring architecture for an enterprise LLM platform
+- Detecting anomalies and potential security incidents in LLM systems
+  - Understanding LLM anomaly types
+  - Detection techniques for LLM security
+  - Configuring detectors and alarms
+- Developing and executing effective incident response plans
+  - Fundamentals of LLM incident response planning
+  - Investigation and analysis techniques for LLM incidents
+  - Containment and remediation strategies
+- Conducting post-incident reviews and root cause analysis
+  - Structured post-incident review processes
+  - Root cause analysis for LLM security incidents
+  - Identifying actionable lessons and improvements
+- Driving continuous improvement of LLM security posture
+  - Establishing a security improvement framework
+  - Leveraging threat intelligence and emerging best practices
+
+#### Chapter 13: (Final chapter — title not publicly available)
+
+**Index**
+
+-----
+
+## Book 4: Build a Large Language Model (From Scratch)
+
+**Author:** Sebastian Raschka
+**Publisher:** Manning (2024) | **Pages:** ~368 | **ISBN:** 9781633437166
+
+-----
+
+### Chapter 1: Understanding Large Language Models
+- 1.1 What is an LLM?
+- 1.2 Applications of LLMs
+- 1.3 Stages of building and using LLMs
+- 1.4 Introducing the transformer architecture
+- 1.5 Utilizing large datasets
+- 1.6 A closer look at the GPT architecture
+- 1.7 Building a large language model
+
+### Chapter 2: Working with Text Data
+- 2.1 Understanding word embeddings
+- 2.2 Tokenizing text
+- 2.3 Converting tokens into token IDs
+- 2.4 Adding special context tokens
+- 2.5 Byte pair encoding
+- 2.6 Data sampling with a sliding window
+- 2.7 Creating token embeddings
+- 2.8 Encoding word positions
+
+### Chapter 3: Coding Attention Mechanisms
+- 3.1 The problem with modeling long sequences
+- 3.2 Capturing data dependencies with attention mechanisms
+- 3.3 Attending to different parts of the input with self-attention
+- 3.4 Implementing self-attention with trainable weights
+- 3.5 Hiding future words with causal attention
+- 3.6 Extending single-head attention to multi-head attention
+
+### Chapter 4: Implementing a GPT Model from Scratch to Generate Text
+- 4.1 Coding an LLM architecture
+- 4.2 Normalizing activations with layer normalization
+- 4.3 Implementing a feed forward network with GELU activations
+- 4.4 Adding shortcut connections
+- 4.5 Connecting attention and linear layers in a transformer block
+- 4.6 Coding the GPT model
+- 4.7 Generating text
+
+### Chapter 5: Pretraining on Unlabeled Data
+- 5.1 Evaluating generative text models
+  - 5.1.1 Using GPT to generate text
+  - 5.1.2 Calculating the text generation loss
+  - 5.1.3 Calculating the training and validation set losses
+- 5.2 Training an LLM
+- 5.3 Decoding strategies to control randomness
+  - 5.3.1 Temperature scaling
+  - 5.3.2 Top-k sampling
+  - 5.3.3 Modifying the text generation function
+- 5.4 Loading and saving model weights in PyTorch
+- 5.5 Loading pretrained weights from OpenAI
+
+### Chapter 6: Fine-tuning for Classification
+- 6.1 Different categories of fine-tuning
+- 6.2 Preparing the dataset
+- 6.3 Creating data loaders
+- 6.4 Initializing a model with pretrained weights
+- 6.5 Adding a classification head
+- 6.6 Calculating the classification loss and accuracy
+- 6.7 Fine-tuning the model on supervised data
+- 6.8 Using the LLM as a spam classifier
+
+### Chapter 7: Fine-tuning to Follow Instructions
+- 7.1 Introduction to instruction fine-tuning
+- 7.2 Preparing a dataset for supervised instruction fine-tuning
+- 7.3 Organizing data into training batches
+- 7.4 Creating data loaders for an instruction dataset
+- 7.5 Loading a pretrained LLM
+- 7.6 Fine-tuning the LLM on instruction data
+- 7.7 Extracting and saving responses
+- 7.8 Evaluating the fine-tuned LLM
+- 7.9 Conclusions
+  - 7.9.1 What's next?
+  - 7.9.2 Staying up to date in a fast-moving field
+  - 7.9.3 Final words
+
+-----
+
+### Appendices
+
+#### Appendix A: Introduction to PyTorch
+- A.1 What is PyTorch?
+  - A.1.1 The three core components of PyTorch
+  - A.1.2 Defining deep learning
+  - A.1.3 Installing PyTorch
+- A.2 Understanding tensors
+  - A.2.1 Scalars, vectors, matrices, and tensors
+  - A.2.2 Tensor data types
+  - A.2.3 Common PyTorch tensor operations
+- A.3 Seeing models as computation graphs
+- A.4 Automatic differentiation made easy
+- A.5 Implementing multilayer neural networks
+- A.6 Setting up efficient data loaders
+- A.7 A typical training loop
+- A.8 Saving and loading models
+- A.9 Optimizing training performance with GPUs
+  - A.9.1 PyTorch computations on GPU devices
+  - A.9.2 Single-GPU training
+  - A.9.3 Training with multiple GPUs
+
+#### Appendix B: References and Further Reading
+
+#### Appendix C: Exercise Solutions
+
+#### Appendix D: Adding Bells and Whistles to the Training Loop
+- D.1 Learning rate warmup
+- D.2 Cosine decay
+- D.3 Gradient clipping
+- D.4 The modified training function
+
+#### Appendix E: Parameter-Efficient Fine-tuning with LoRA
+- E.1 Introduction to LoRA
+- E.2 Preparing the dataset
+- E.3 Initializing the model
+- E.4 Parameter-efficient fine-tuning with LoRA
+
+**Index**
+
+-----
