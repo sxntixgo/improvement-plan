@@ -519,3 +519,475 @@
 **Index**
 
 -----
+
+## Book 5: Learning Domain-Driven Design
+
+**Author:** Vlad Khononov | **Foreword:** Julie Lerman
+**Publisher:** O'Reilly (2021) | **Pages:** ~290 | **ISBN:** 9781098100131
+
+-----
+
+### Part I: Strategic Design
+
+#### Chapter 1: Analyzing Business Domains
+- What Is a Business Domain?
+- What Is a Subdomain?
+- Types of Subdomains
+  - Core Subdomains
+  - Generic Subdomains
+  - Supporting Subdomains
+- Comparing Subdomains
+- Identifying Subdomain Boundaries
+- Conclusion
+- Exercises
+
+#### Chapter 2: Discovering Domain Knowledge
+- Business Problems
+- Knowledge Discovery
+- Communication
+- What Is a Ubiquitous Language?
+- Language of the Business
+- Conclusion
+- Exercises
+
+#### Chapter 3: Managing Domain Complexity
+- What Is a Bounded Context?
+- Bounded Contexts Versus Subdomains
+- Boundaries
+  - Physical Boundaries
+  - Ownership Boundaries
+- Bounded Contexts in Real Life
+- Conclusion
+- Exercises
+
+#### Chapter 4: Integrating Bounded Contexts
+- Cooperation
+  - Partnership
+  - Shared Kernel
+- Customer–Supplier
+  - Conformist
+  - Anticorruption Layer
+  - Open-Host Service
+- Separate Ways
+  - Communication Issues
+  - Generic Subdomains
+  - Model Differences
+- Context Map
+- Conclusion
+- Exercises
+
+-----
+
+### Part II: Tactical Design
+
+#### Chapter 5: Implementing Simple Business Logic
+- Transaction Script
+  - Implementation
+  - It's Not That Easy!
+  - When to Use Transaction Script
+- Active Record
+  - Implementation
+  - When to Use Active Record
+- Be Pragmatic
+- Conclusion
+- Exercises
+
+#### Chapter 6: Tackling Complex Business Logic
+- History
+- Domain Model
+- Implementation
+  - Complexity
+  - Ubiquitous Language
+  - Building Blocks
+    - Value Objects
+    - Entities
+    - Aggregates
+    - Domain Services
+  - Complexity Management
+- Conclusion
+- Exercises
+
+#### Chapter 7: Modeling the Dimension of Time
+- Event Sourcing
+  - Search
+  - Analysis
+  - Source of Truth
+  - Event Store
+- Event-Sourced Domain Model
+  - Advantages
+  - Disadvantages
+- Conclusion
+- Exercises
+
+#### Chapter 8: Architectural Patterns
+- Business Logic Versus Architectural Patterns
+- Layered Architecture
+  - Presentation Layer
+  - Business Logic Layer
+  - Data Access Layer
+  - Communication Between Layers
+  - Variation
+  - When to Use Layered Architecture
+- Ports & Adapters
+  - Terminology
+  - Dependency Inversion Principle
+  - Integration of Infrastructural Components
+  - Variants
+  - When to Use Ports & Adapters
+- Command-Query Responsibility Segregation (CQRS)
+  - Polyglot Modeling
+  - Implementation
+  - Projecting Read Models
+  - Challenges
+  - Model Segregation
+  - When to Use CQRS
+  - Scope
+- Conclusion
+- Exercises
+
+#### Chapter 9: Communication Patterns
+- Model Translation
+  - Stateless Model Translation
+  - Stateful Model Translation
+- Integrating Aggregates
+  - Outbox
+- Saga
+- Process Manager
+- Conclusion
+- Exercises
+
+-----
+
+### Part III: Applying Domain-Driven Design in Practice
+
+#### Chapter 10: Design Heuristics
+- Heuristics
+- Bounded Contexts
+- Business Logic Implementation Patterns
+- Architectural Patterns
+- Testing Strategy
+- Conclusion
+- Exercises
+
+#### Chapter 11: Evolving Design Decisions
+- Changes in Subdomains
+- Changes in the Domain's Complexity
+- Strategic Design Concerns
+- Tactical Design Concerns
+- Organizational Changes
+- Domain Knowledge
+- Growth
+- Conclusion
+- Exercises
+
+#### Chapter 12: EventStorming
+- What Is EventStorming?
+- Who Should Participate in EventStorming?
+- What Do You Need for EventStorming?
+- The EventStorming Process
+  - Step 1: Unstructured Exploration
+  - Step 2: Timelines
+  - Step 3: Pain Points
+  - Step 4: Pivotal Events
+  - Step 5: Commands
+  - Step 6: Policies
+  - Step 7: Read Models
+  - Step 8: External Systems
+  - Step 9: Aggregates
+  - Step 10: Bounded Contexts
+- Variants
+- When to Use EventStorming
+- Facilitation Tips
+- Remote EventStorming
+- Conclusion
+- Exercises
+
+#### Chapter 13: Domain-Driven Design in the Real World
+- Strategic Analysis
+- Understand the Business Domain
+- Explore the Current Design
+- Modernization Strategy
+  - Strategic Modernization
+  - Tactical Modernization
+- Cultivate a Ubiquitous Language
+- Pragmatic Domain-Driven Design
+- Selling Domain-Driven Design
+- Undercover Domain-Driven Design
+- Conclusion
+- Exercises
+
+-----
+
+### Part IV: Relationships to Other Methodologies and Patterns
+
+#### Chapter 14: Microservices
+- What Is a Service?
+- What Is a Microservice?
+- Method as a Service: Perfect Microservices?
+- Design Goal
+- System Complexity
+- Microservices as Deep Services
+- Microservices as Deep Modules
+- Domain-Driven Design and Microservices' Boundaries
+  - Bounded Contexts
+  - Aggregates
+  - Subdomains
+- Conclusion
+- Exercises
+
+#### Chapter 15: Event-Driven Architecture
+- Event-Driven Architecture
+- Events
+  - Event Types
+  - Designing Events
+- Conclusion
+- Exercises
+
+#### Chapter 16: Data Mesh
+- Analytical Data Management Platforms
+  - Operational Versus Analytical Data
+- Analytical Models
+  - Fact Tables
+  - Dimension Tables
+  - Analytical Models
+- Data Management Challenges
+- Data Mesh
+  - Domain Ownership
+  - Data as a Product
+  - Self-Serve Data Infrastructure
+  - Federated Computational Governance
+- Conclusion
+- Exercises
+
+**Closing Words**
+
+**Appendix A: Applying DDD: A Case Study**
+
+**Appendix B: Answers to Exercise Questions**
+
+**Index**
+
+-----
+
+## Book 6: Designing Data-Intensive Applications
+
+**Author:** Martin Kleppmann
+**Publisher:** O'Reilly (2017) | **Pages:** ~550 | **ISBN:** 9781449373320
+
+-----
+
+### Part I: Foundations of Data Systems
+
+#### Chapter 1: Reliable, Scalable, and Maintainable Applications
+- Thinking About Data Systems
+- Reliability
+  - Hardware Faults
+  - Software Errors
+  - Human Errors
+  - How Important Is Reliability?
+- Scalability
+  - Describing Load
+  - Describing Performance
+  - Approaches for Coping with Load
+- Maintainability
+  - Operability: Making Life Easy for Operations
+  - Simplicity: Managing Complexity
+  - Evolvability: Making Change Easy
+- Summary
+
+#### Chapter 2: Data Models and Query Languages
+- Relational Model Versus Document Model
+  - The Birth of NoSQL
+  - The Object-Relational Mismatch
+  - Many-to-One and Many-to-Many Relationships
+  - Are Document Databases Repeating History?
+  - Relational Versus Document Databases Today
+- Query Languages for Data
+  - Declarative Queries on the Web
+  - MapReduce Querying
+- Graph-Like Data Models
+  - Property Graphs
+  - The Cypher Query Language
+  - Graph Queries in SQL
+  - Triple-Stores and SPARQL
+  - The Foundation: Datalog
+- Summary
+
+#### Chapter 3: Storage and Retrieval
+- Data Structures That Power Your Database
+  - Hash Indexes
+  - SSTables and LSM-Trees
+  - B-Trees
+  - Comparing B-Trees and LSM-Trees
+  - Other Indexing Structures
+- Transaction Processing or Analytics?
+  - Data Warehousing
+  - Stars and Snowflakes: Schemas for Analytics
+- Column-Oriented Storage
+  - Column Compression
+  - Sort Order in Column Storage
+  - Writing to Column-Oriented Storage
+  - Aggregation: Data Cubes and Materialized Views
+- Summary
+
+#### Chapter 4: Encoding and Evolution
+- Formats for Encoding Data
+  - Language-Specific Formats
+  - JSON, XML, and Binary Variants
+  - Thrift and Protocol Buffers
+  - Avro
+  - The Merits of Schemas
+- Modes of Dataflow
+  - Dataflow Through Databases
+  - Dataflow Through Services: REST and RPC
+  - Message-Passing Dataflow
+- Summary
+
+-----
+
+### Part II: Distributed Data
+
+#### Chapter 5: Replication
+- Leaders and Followers
+  - Synchronous Versus Asynchronous Replication
+  - Setting Up New Followers
+  - Handling Node Outages
+  - Implementation of Replication Logs
+- Problems with Replication Lag
+  - Reading Your Own Writes
+  - Monotonic Reads
+  - Consistent Prefix Reads
+  - Solutions for Replication Lag
+- Multi-Leader Replication
+  - Use Cases for Multi-Leader Replication
+  - Handling Write Conflicts
+  - Multi-Leader Replication Topologies
+- Leaderless Replication
+  - Writing to the Database When a Node Is Down
+  - Limitations of Quorum Consistency
+  - Sloppy Quorums and Hinted Handoff
+  - Detecting Concurrent Writes
+- Summary
+
+#### Chapter 6: Partitioning
+- Partitioning and Replication
+- Partitioning of Key-Value Data
+  - Partitioning by Key Range
+  - Partitioning by Hash of Key
+  - Skewed Workloads and Relieving Hot Spots
+- Partitioning and Secondary Indexes
+  - Partitioning Secondary Indexes by Document
+  - Partitioning Secondary Indexes by Term
+- Rebalancing Partitions
+  - Strategies for Rebalancing
+  - Operations: Automatic or Manual Rebalancing
+- Request Routing
+- Summary
+
+#### Chapter 7: Transactions
+- The Slippery Concept of a Transaction
+  - The Meaning of ACID
+  - Single-Object and Multi-Object Operations
+- Weak Isolation Levels
+  - Read Committed
+  - Snapshot Isolation and Repeatable Read
+  - Preventing Lost Updates
+  - Write Skew and Phantoms
+- Serializability
+  - Actual Serial Execution
+  - Two-Phase Locking (2PL)
+  - Serializable Snapshot Isolation (SSI)
+- Summary
+
+#### Chapter 8: The Trouble with Distributed Systems
+- Faults and Partial Failures
+  - Cloud Computing and Supercomputing
+- Unreliable Networks
+  - Network Faults in Practice
+  - Detecting Faults
+  - Timeouts and Unbounded Delays
+  - Synchronous Versus Asynchronous Networks
+- Unreliable Clocks
+  - Monotonic Versus Time-of-Day Clocks
+  - Clock Synchronization and Accuracy
+  - Relying on Synchronized Clocks
+  - Process Pauses
+- Knowledge, Truth, and Lies
+  - The Truth Is Defined by the Majority
+  - Byzantine Faults
+  - System Model and Reality
+- Summary
+
+#### Chapter 9: Consistency and Consensus
+- Consistency Guarantees
+- Linearizability
+  - What Makes a System Linearizable?
+  - Relying on Linearizability
+  - Implementing Linearizable Systems
+  - The Cost of Linearizability
+- Ordering Guarantees
+  - Ordering and Causality
+  - Sequence Number Ordering
+  - Total Order Broadcast
+- Distributed Transactions and Consensus
+  - Atomic Commit and Two-Phase Commit (2PC)
+  - Distributed Transactions in Practice
+  - Fault-Tolerant Consensus
+  - Membership and Coordination Services
+- Summary
+
+-----
+
+### Part III: Derived Data
+
+#### Chapter 10: Batch Processing
+- Batch Processing with Unix Tools
+  - Simple Log Analysis
+  - The Unix Philosophy
+- MapReduce and Distributed Filesystems
+  - MapReduce Job Execution
+  - Reduce-Side Joins and Grouping
+  - Map-Side Joins
+  - The Output of Batch Workflows
+  - Comparing MapReduce to Distributed Databases
+- Beyond MapReduce
+  - Materialization of Intermediate State
+  - Graphs and Iterative Processing
+  - High-Level APIs and Languages
+- Summary
+
+#### Chapter 11: Stream Processing
+- Transmitting Event Streams
+  - Messaging Systems
+  - Partitioned Logs
+- Databases and Streams
+  - Keeping Systems in Sync
+  - Change Data Capture
+  - Event Sourcing
+  - State, Streams, and Immutability
+- Processing Streams
+  - Uses of Stream Processing
+  - Reasoning About Time
+  - Stream Joins
+  - Fault Tolerance
+- Summary
+
+#### Chapter 12: The Future of Data Systems
+- Data Integration
+  - Combining Specialized Tools by Deriving Data
+  - Batch and Stream Processing
+- Unbundling Databases
+  - Composing Data Storage Technologies
+  - Designing Applications Around Dataflow
+  - Observing Derived State
+- Aiming for Correctness
+  - The End-to-End Argument for Databases
+  - Enforcing Constraints
+  - Timeliness and Integrity
+  - Trust, but Verify
+- Doing the Right Thing
+- Summary
+
+**Index**
+
+-----
