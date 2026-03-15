@@ -78,6 +78,21 @@ These directly extend what you learned. High impact for your role.
 
 -----
 
+## Gap-Filling Reading (from March 2026 Gap Analysis)
+
+Topics identified in the [gap analysis](GAP-ANALYSIS-2026-03.md) that the 44-week plan doesn't cover. These are awareness-level gaps — not critical for plan completion, but worth reading when the topic becomes relevant.
+
+| Gap | Where to Read | Cost | Notes |
+|-----|---------------|------|-------|
+| Privacy-preserving AI (differential privacy, federated learning) | Sotiropoulos Ch 10, Book 3 Ch 10 | Covered by Tier 1 | Understand defenses to find bypass opportunities |
+| AI regulation & compliance (EU AI Act, liability) | Book 3 Ch 5, Book 4 Ch 8 | Covered by Tier 2 | Strengthens red team report framing |
+| Social engineering with LLMs (phishing at scale) | Book 6 Ch 8 | **FREE** | Open access — read anytime |
+| LLM-generated code vulnerabilities | Book 6 Ch 9 | **FREE** | Open access — directly relevant to Claude Code workflow |
+
+**Book 6 (LLMs in Cybersecurity)** is free and open access. Chapters 8 and 9 are short, zero-cost reads that address two of these gaps immediately.
+
+-----
+
 ## Tier 2: Read When a Specific Need Arises
 
 Valuable but situational. Pick these up when you encounter the relevant problem at work.

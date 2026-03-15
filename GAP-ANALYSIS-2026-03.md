@@ -260,12 +260,12 @@ Before identifying gaps, credit where it's due. These topics are well-covered ac
 |---|-----|----------|--------|--------|
 | 1 | Deepfakes and GAN-based attacks | HIGH | Add 2-day module to Track 10 | Medium |
 | 2 | Adversarial attacks beyond LLMs | MEDIUM-HIGH | Flag for post-plan; reprioritize future reading | None (plan) |
-| 3 | Privacy-preserving AI defenses | MEDIUM | Add half-day reading block | Low |
-| 4 | AI regulation and compliance | MEDIUM | Add 2-hour block to Week 28 | Low |
+| 3 | Privacy-preserving AI defenses | MEDIUM | Further reading (Book 1 Ch 10, Book 3 Ch 10) | None (plan) |
+| 4 | AI regulation and compliance | MEDIUM | Further reading (Book 3 Ch 5, Book 4 Ch 8) | None (plan) |
 | 5 | MLSecOps / AI security lifecycle | MEDIUM | Flag for post-plan reading | None (plan) |
 | 6 | Trojan/backdoor attack taxonomy | MEDIUM-LOW | No change; Dursey Ch 4 sufficient | None |
 | 7 | Formal verification / certified defense | LOW | No change; reference only | None |
-| 8 | Social engineering with LLMs | MEDIUM | Add 1-hour awareness block | Low |
+| 8 | Social engineering with LLMs | MEDIUM | Further reading (Book 6 Ch 8, free) | None (plan) |
 | 9 | LLM-generated code vulnerabilities | MEDIUM | Add 2-hour module (high relevance to workflow) | Low |
 | 10 | Game-theoretic adversarial ML | LOW | No change; academic only | None |
 
@@ -280,34 +280,20 @@ Before identifying gaps, credit where it's due. These topics are well-covered ac
    - Reference: Book 6 Ch 9 (free, open access)
    - Replace 2 hours of catch-up time in Week 27
 
-2. **Track 10 Week 28 — Add "AI Regulatory Landscape" (2 hours)**
-   - Strengthen your reporting week with compliance context
-   - Reference: EU AI Act overview + NIST AI RMF (already in plan)
-   - Fits naturally with the existing "professional frameworks" block
-
-3. **Track 10 Week 22 — Add "Privacy-Preserving AI Concepts" (2 hours)**
-   - Conceptual only: differential privacy, federated learning, their weaknesses
-   - Makes you a better attacker by understanding defenses
-   - Reference: Conceptual overview, no book purchase needed
-
-4. **Track 10 Week 27 — Add "LLMs as Social Engineering Tools" (1 hour)**
-   - Awareness-level: how LLMs enable scaled phishing and manipulation
-   - Reference: Book 6 Ch 8 (free, open access)
-
-**Total time added:** ~7 hours across 3 weeks. This fits within existing slack/catch-up time without extending the plan.
+**Total time added:** ~2 hours. Fits within existing slack/catch-up time.
 
 ### Changes to Defer (post-plan)
 
-5. **Deepfakes and GAN-based attacks** — Most significant gap, but adding a full module would overload Track 10. Instead:
+2. **Deepfakes and GAN-based attacks** — Most significant gap, but adding a full module would overload Track 10. Instead:
    - Add to Tier 1 future reading notes: "Sotiropoulos Ch 12 is your first priority after plan completion"
    - Consider adding a standalone 1-week "Deepfakes & Synthetic Media" mini-track between Track 10 and Track 9 if you find you have extra capacity
 
-6. **Adversarial attacks beyond LLMs** — Reprioritize future reading order:
+3. **Adversarial attacks beyond LLMs** — Reprioritize future reading order:
    - Sotiropoulos should be read FIRST after plan completion (covers both LLM and classical ML attacks)
    - Book 7 (Chen & Hsieh) Part 2 and Part 5 for cross-modality attack depth
    - "Not with a Bug, But with a Sticker" for physical-world adversarial context
 
-7. **MLSecOps depth** — Operational knowledge that deepens with professional experience. Sotiropoulos Part 5 and Book 3 Ch 11-12 when you start professional engagements.
+4. **MLSecOps depth** — Operational knowledge that deepens with professional experience. Sotiropoulos Part 5 and Book 3 Ch 11-12 when you start professional engagements.
 
 ---
 
@@ -338,4 +324,4 @@ The plan's **LLM-focused red teaming core is solid** — no critical gaps in the
 - **Contextual gaps** (regulation, privacy defenses, social engineering) that make you a more complete professional
 - **Meta gap** (LLM-generated code vulnerabilities) that's uniquely relevant to your Claude Code workflow
 
-The 4 recommended in-plan changes add ~7 hours of awareness-level content. The bigger gaps (deepfakes, cross-modality attacks) are correctly deferred to post-plan reading, but Sotiropoulos should be explicitly prioritized as the #1 post-plan book since it fills the most gaps.
+The 1 recommended in-plan change adds ~2 hours of content. Everything else is deferred to post-plan reading, but Sotiropoulos should be explicitly prioritized as the #1 post-plan book since it fills the most gaps.
