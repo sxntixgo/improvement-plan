@@ -399,9 +399,69 @@
 ## Book 4: Beyond the Algorithm: AI, Security, Privacy, and Ethics
 
 **Authors:** Omar Santos & Petar Radanliev
-**Publisher:** TBD | **Pages:** ~400 | **Cost:** ~$50
+**Publisher:** Pearson (January 2024) | **Pages:** ~400 | **ISBN:** 9780138268459
 
-TOC: (To be researched)
+-----
+
+#### Chapter 1: Historical Overview of Artificial Intelligence (AI) and Machine Learning (ML)
+- The Story of Eva
+- The Origins
+- Advancements of AI
+- Understanding AI and ML
+- Comparison of ML Algorithms
+- Problems to Consider When Choosing a Suitable Algorithm
+- Applications of ML Algorithms
+- Use Cases for AI and ML
+- Ethical Challenges in AI and ML
+- Privacy and Security Challenges
+- AI and ML in Cybersecurity
+- Cyber Risk from AI and ML
+- Concluding the Story of Eva
+- Summary
+- Test Your Skills
+- Exercises
+
+#### Chapter 2: Fundamentals of AI and ML Technologies and Implementations
+- What Are the Leading AI and ML Technologies and Algorithms?
+- Understanding Generative AI
+- Generative Adversarial Networks (GANs)
+- Variational Autoencoders (VAEs)
+- Autoregressive Models
+- Restricted Boltzmann Machines (RBMs)
+- Normalizing Flows
+
+#### Chapter 3: Emerging AI Trends
+- OpenAI's GPT-4 and Beyond: A Breakthrough in Large Language Models
+- Prompt Engineering
+- Hugging Face
+- Contributions to the NLP Landscape
+- Auto-GPT: A Revolutionary Step in Autonomous AI Applications
+- Responsibilities and Limitations
+
+#### Chapter 4: The Cornerstones of AI and Machine Learning Security
+- (Fundamental principles and best practices for safeguarding AI systems; goes beyond the OWASP Top 10 for LLMs)
+
+#### Chapter 5: Hacking AI Systems
+- (Deep dive into techniques and methodologies for exploiting AI vulnerabilities; prompt injection and other attacks)
+
+#### Chapter 6: System and Infrastructure Security
+- (Securing the underlying platforms on which AI and ML models operate)
+
+#### Chapter 7: Privacy and Ethics: Navigating Privacy and Ethics in an AI-Infused World
+- (Data collection, storage, security risks; personal privacy violations; algorithmic bias; user autonomy; accountability challenges)
+
+#### Chapter 8: Legal and Regulatory Compliance for Artificial Intelligence (AI) Systems
+- Conversational AI
+- Patentability of AI Algorithms
+- Copyright Protection for AI-Generated Content
+- Trademark Protection for AI Systems
+- Trade Secret Protection for AI Development
+- Liability and Accountability
+- Ethical Development and Deployment
+- International Collaboration and Standards in AI
+- Future Trends and Outlook in AI Compliance
+
+**Index**
 
 -----
 
@@ -442,9 +502,61 @@ TOC: (To be researched)
 
 -----
 
-## Book 6: Large Language Models in Cybersecurity (Kucharavy et al.)
+## Book 6: Large Language Models in Cybersecurity
 
-TOC: (To be researched)
+**Editors:** Andrei Kucharavy, Octave Plancherel, Valentin Mulder, Alain Mermoud & Vincent Lenders
+**Publisher:** Springer (May 2024) | **Pages:** ~247 | **ISBN:** 9783031548260 | **FREE** (Open Access)
+
+-----
+
+### Part I: Introduction
+
+#### Chapter 1: From Deep Neural Language Models to LLMs
+#### Chapter 2: Adapting LLMs to Downstream Applications
+#### Chapter 3: Overview of Existing LLM Families
+#### Chapter 4: Conversational Agents
+#### Chapter 5: Fundamental Limitations of Generative LLMs
+#### Chapter 6: Tasks for LLMs and their Evaluation
+
+-----
+
+### Part II: LLMs in Cybersecurity
+
+#### Chapter 7: Private Information Leakage in LLMs
+#### Chapter 8: Phishing and Social Engineering in the Age of LLMs
+#### Chapter 9: Vulnerabilities Introduced by LLMs through Code Suggestions
+#### Chapter 10: LLM Controls Execution Flow Hijacking
+#### Chapter 11: LLM-Aided Social Media Influence Operations
+#### Chapter 12: Deep(er) Web Indexing with LLMs
+
+-----
+
+### Part III: Exposure
+
+#### Chapter 13: LLM Adoption Trends and Associated Risks
+#### Chapter 14: The Flow of Investments in the LLM Space
+#### Chapter 15: Insurance Outlook for LLM-Induced Risk
+#### Chapter 16: Copyright-Related Risks in the Creation and Use of ML/AI Systems
+#### Chapter 17: Monitoring Emerging Trends in LLM Research
+
+-----
+
+### Part IV: Mitigation
+
+#### Chapter 18: Enhancing Security Awareness and Education for LLMs
+#### Chapter 19: Towards Privacy-Preserving LLMs
+#### Chapter 20–21: (Titles not publicly indexed — mitigation techniques for safe LLM deployment)
+#### Chapter 22: LLM Detectors
+#### Chapter 23–24: (Titles not publicly indexed — additional mitigation chapters)
+
+-----
+
+### Part V: Conclusion
+
+#### Chapter 25: Standards for LLM Security
+#### Chapter 26: Exploring the Dual Role of LLMs in Cybersecurity: Threats and Defenses
+
+**Index**
 
 -----
 
