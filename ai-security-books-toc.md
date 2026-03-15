@@ -560,9 +560,70 @@
 
 -----
 
-## Book 7: Adversarial Robustness for Machine Learning (Chen & Hsieh)
+## Book 7: Adversarial Robustness for Machine Learning
 
-TOC: (To be researched)
+**Authors:** Pin-Yu Chen & Cho-Jui Hsieh
+**Publisher:** Elsevier (2022) | **ISBN:** 9780128240205
+
+-----
+
+### Part 1: Background
+
+#### Chapter 1: Background and Motivation
+- Mathematical notations and ML basics; motivating examples for adversarial robustness
+
+-----
+
+### Part 2: Adversarial Attacks
+
+#### Chapter 2: White-Box Attack
+#### Chapter 3: Soft-Label Black-Box Attack
+#### Chapter 4: Decision-Based Attack
+#### Chapter 5: Attack Transferability
+#### Chapter 6: Attacks in the Physical World
+
+-----
+
+### Part 3: Verification
+
+#### Chapter 7: Convex Relaxation Framework
+#### Chapter 8: Layer-Wise Relaxation (Primal Algorithms)
+#### Chapter 9: Dual Approach
+#### Chapter 10: Probabilistic Verification
+
+-----
+
+### Part 4: Defense
+
+#### Chapter 11: Adversarial Training
+#### Chapter 12: Certified Defense
+#### Chapter 13: Randomization
+#### Chapter 14: Detection Methods
+
+-----
+
+### Part 5: Adversarial Examples Beyond Image Classification
+
+#### Chapter 15: Robustness of Other Machine Learning Models Beyond Neural Networks
+#### Chapter 16: NLP Models
+#### Chapter 17: Graph Neural Network
+#### Chapter 18: Recommender Systems
+#### Chapter 19: Reinforcement Learning
+#### Chapter 20: Speech Models
+#### Chapter 21: Multi-Modal Models
+
+-----
+
+### Part 6: Other Threat Models and Applications
+
+#### Chapter 22: Backdoor Attack and Defense
+#### Chapter 23: Data Poisoning Attack and Defense
+#### Chapter 24: Transfer Learning
+#### Chapter 25: Explainability and Interpretability
+#### Chapter 26: Representation Learning
+#### Chapter 27: Privacy and Watermarking
+
+**Index**
 
 -----
 
