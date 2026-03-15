@@ -668,8 +668,42 @@
 
 -----
 
-## Book 9: Adversarial Machine Learning (Joseph et al., 2019)
+## Book 9: Adversarial Machine Learning
 
-TOC: (To be researched)
+**Authors:** Anthony D. Joseph, Blaine Nelson, Benjamin I. P. Rubinstein & J. D. Tygar
+**Publisher:** Cambridge University Press (March 2019) | **ISBN:** 9781107043466
+
+-----
+
+### Part I: Overview of Adversarial Machine Learning
+
+#### Chapter 1: Introduction
+#### Chapter 2: Background and Notation
+#### Chapter 3: A Framework for Secure Learning
+
+-----
+
+### Part II: Causative Attacks on Machine Learning
+
+#### Chapter 4: Attacking a Hypersphere Learner
+#### Chapter 5: Availability Attack Case Study: SpamBayes
+#### Chapter 6: Integrity Attack Case Study: PCA Detector
+
+-----
+
+### Part III: Exploratory Attacks on Machine Learning
+
+#### Chapter 7: Privacy-Preserving Mechanisms for SVM Learning
+#### Chapter 8: Near-Optimal Evasion of Classifiers
+
+-----
+
+### Part IV: Future Directions in Adversarial Machine Learning
+
+#### Chapter 9: Adversarial Machine Learning Challenges
+
+-----
+
+**Appendixes** | **Glossary** | **References** | **Index**
 
 -----
