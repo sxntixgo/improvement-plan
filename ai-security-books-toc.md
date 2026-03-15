@@ -627,9 +627,44 @@
 
 -----
 
-## Book 8: Adversarial Machine Learning (Chivukula et al.)
+## Book 8: Adversarial Machine Learning: Attack Surfaces, Defence Mechanisms, Learning Theories in Artificial Intelligence
 
-TOC: (To be researched)
+**Authors:** Aneesh Sreevallabh Chivukula, Xinghao Yang, Bo Liu, Wei Liu & Wanlei Zhou
+**Publisher:** Springer (March 2023) | **Pages:** ~302 | **ISBN:** 9783030997717
+
+-----
+
+#### Chapter 1: Adversarial Machine Learning
+- Adversarial Learning Frameworks
+- Adversarial Algorithms Comparisons
+- Adversarial Security Mechanisms
+- Adversarial Examples Taxonomies
+- Stochastic Game Illustration
+
+#### Chapter 2: Adversarial Deep Learning
+- Learning Curve Analysis
+- Adversarial Loss Functions
+- Adversarial Examples in Deep Networks
+- Generative Adversarial Networks
+- Transfer Learning for Domain Adaptation
+
+#### Chapter 3: Security and Privacy in Adversarial Learning
+
+#### Chapter 4: Game Theoretical Adversarial Deep Learning
+- Game theoretical strategies for generating adversarial manipulations
+
+#### Chapter 5: Adversarial Defense Mechanisms for Supervised Learning
+
+#### Chapter 6: Physical World Adversarial Attacks on Images and Texts
+- Adversarial Attacks on Images (Gradient-Based, Score-Based, Decision-Based, Transformation-Based)
+- Adversarial Attacks on Texts (Character-Level, Word-Level, Sentence-Level, Multilevel)
+- Spam Filtering (Text Spam, Image Spam, Biometric Spam)
+
+#### Chapter 7: Adversarial Perturbation for Privacy Preservation
+- Visual Data Privacy Models
+- Privacy Protection Mechanisms Using Adversarial Perturbations (File-Level, Object-Level, Feature-Level)
+
+**Index**
 
 -----
 
