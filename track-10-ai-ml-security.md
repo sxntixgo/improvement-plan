@@ -345,7 +345,7 @@ This is THE chapter for AI red teaming:
 
 |Week|Focus                               |Resource             |
 |----|------------------------------------|--------------------|
-|27  |AI Engineering (remaining chapters) + HackAPrompt|Ch 3-4, 7, 10 + hackaprompt.com|
+|27  |AI Engineering (remaining chapters) + LLM Code Vulns + HackAPrompt|Ch 3-4, 7, 10 + Book 6 Ch 9 (free) + hackaprompt.com|
 |28  |Crucible CTF + Automated Red Team Agent + Final Assessment|crucible.dreadnode.io + **Dursey Ch 9-10** + Claude SDK|
 
 **Week 27: Evaluation + Production AI + HackAPrompt**
@@ -356,7 +356,17 @@ This is THE chapter for AI red teaming:
 - **Ch 10: AI Engineering Architecture (2 hours)** — Attack surfaces in production AI systems. How are real systems deployed?
 - **Ch 7: Finetuning (1 hour)** — Skim for attack implications only: how does finetuning change defenses?
 
-**Thursday-Weekend (12 hours): HackAPrompt CTF**
+**Thursday (2 hours): LLM-Generated Code Vulnerabilities**
+
+How do LLMs systematically introduce security flaws through code suggestions? This is directly relevant — Claude Code writes all your code.
+
+- Read: [Large Language Models in Cybersecurity](https://link.springer.com/book/10.1007/978-3-031-54827-7) Ch 9 (free, open access) — vulnerability patterns in LLM code suggestions
+- Common vulnerability classes: injection flaws, hardcoded secrets, insecure defaults, missing input validation, outdated API usage
+- How to review AI-generated code for security issues
+- Apply to your own workflow: what should you watch for when reviewing Claude Code output?
+- Document a personal checklist in Obsidian: "Security Review for AI-Generated Code"
+
+**Friday-Weekend (10 hours): HackAPrompt CTF**
 - Complete as many levels as possible
 - Direct Claude Code to automate attack attempts
 - Apply evaluation techniques from Ch 3-4
@@ -436,6 +446,7 @@ Before writing your final report, study the frameworks that professional AI red 
 |25  |**RAG/Agent attacks**        |**5+ attack vectors documented**     |**GitHub + Blog** |
 |26  |**Malicious pickle exploit** |**PyTorch RCE demonstration**        |**Demo only**     |
 |26  |**Model verification tool**  |**Scan Hugging Face models**         |**GitHub**        |
+|27  |**AI-generated code security checklist**|**Personal review checklist for Claude Code output**|**Obsidian**|
 |27  |**Attack evaluation pipeline**|**Automated testing framework**     |**GitHub**        |
 |27  |HackAPrompt solutions        |Documented strategies + success rates|Blog + GitHub     |
 |28  |Crucible CTF solutions       |Novel attack vectors                 |GitHub            |
@@ -488,6 +499,11 @@ Before writing your final report, study the frameworks that professional AI red 
 - **Google SAIF:** Threat taxonomy and risk map — covers data, infrastructure, model, and application layers
 - **MITRE ATLAS:** Adversarial ML techniques mapped like ATT&CK — for technique classification
 - **AI Incident Database:** Real-world AI failures — cite precedents in reports
+
+**LLM-Generated Code Security:**
+- Common vulnerability patterns in AI-generated code
+- Security review checklist for Claude Code output
+- Reference: Book 6 Ch 9 (free, open access)
 
 **Production LLM Security:**
 - **RAG Architecture:** Term-based vs embedding retrievers
