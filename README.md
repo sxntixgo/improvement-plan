@@ -183,7 +183,12 @@ Claude Code writes the Python for HTB labs, LangChain apps, and exploit scripts.
 |Python Testing with pytest (Okken)            |Track 9: Python Core + TDD              |
 |Architecture Patterns with Python (Percival & Gregory)|Track 9: Python Core + TDD       |
 |100 Go Mistakes (Harsanyi)                    |Track 8 + 11: Architecture + Go Security|
-|Learning Go, 1st ed (Bodner)                  |Track 8: Software Architecture          |
+|Learning Go (Bodner)                          |Track 8: Software Architecture          |
+|Let's Go (Edwards)                            |Track 8: Software Architecture          |
+|Let's Go Further (Edwards)                    |Track 8: Software Architecture          |
+|A Philosophy of Software Design (Ousterhout)  |Track 8: Software Architecture          |
+|Fundamentals of Software Architecture (Richards & Ford)|Track 8: Software Architecture |
+|AI Engineering (Huyen)                        |Track 10: AI/ML Security                |
 |Red Teaming AI (Dursey)                       |Track 10: AI/ML Security                |
 |Black Hat Go (Steele et al.)                  |Track 11: Go Security Tools             |
 |Eloquent JavaScript (Haverbeke)               |Track 13: JavaScript/TS (optional)      |
@@ -194,17 +199,19 @@ Claude Code writes the Python for HTB labs, LangChain apps, and exploit scripts.
 
 -----
 
-## Books to Purchase
+## Remaining Costs
 
-|Book                                      |Cost |Track                                    |
-|------------------------------------------|-----|-----------------------------------------|
-|Let's Go (Edwards)                        |~$40 |Track 8: Software Architecture           |
-|Let's Go Further (Edwards)                |~$40 |Track 8: Software Architecture           |
-|A Philosophy of Software Design (Ousterhout)|~$25|Track 8: Software Architecture           |
-|Fundamentals of Software Architecture (Richards & Ford)|~$50|Track 8: Software Architecture |
-|AI Engineering (Huyen)                    |~$50 |Track 10: AI/ML Security                |
+**All books in this plan are owned. No book purchases remain.**
 
-**Total: ~$205**
+The only outstanding cost is one subscription:
+
+|Item                     |Cost         |Track                   |Needed By|
+|-------------------------|-------------|------------------------|---------|
+|HTB Academy AI Red Teamer|~$20/mo × 2  |Track 10: AI/ML Security|Week 23  |
+
+**Total remaining: ~$40**
+
+Everything else in the plan runs on free resources — Go by Example, Effective Go, Three Dots Labs, martinfowler.com, C4 Model, Architecture Katas, Garak, OWASP LLM Top 10, HackAPrompt, and the Python books (Percival and Cosmic Python are free online).
 
 -----
 
