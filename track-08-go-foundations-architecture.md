@@ -56,7 +56,7 @@ Go is the vehicle because it's your work language. The architecture patterns tra
 |------------------------------|-------------|-----|----------------------------------|
 |Let's Go (Alex Edwards)       |~$40         |1    |Read for architecture understanding|
 |Let's Go Further (Alex Edwards)|~$40        |3    |Read for production patterns      |
-|Learning Go, 1st ed (Bodner)  |Already owned|1-3  |Reference for Go concepts         |
+|Learning Go, 2nd ed (Bodner)  |Already owned|1-3  |Reference for Go concepts         |
 |100 Go Mistakes (Harsanyi)    |Already owned|1-3  |Code review checklist             |
 |Go by Example                 |Free         |1    |Quick reference                   |
 |Effective Go                  |Free         |1-2  |Idiomatic patterns                |
@@ -90,7 +90,7 @@ Go is the vehicle because it's your work language. The architecture patterns tra
 ## Phase 1: Go Web App Architecture (Weeks 9-12)
 
 **Primary Resource:** Let's Go (Alex Edwards) — read for architectural understanding
-**Reference:** Learning Go, 1st ed (Bodner) — look up concepts as needed
+**Reference:** Learning Go, 2nd ed (Bodner) — look up concepts as needed
 
 **Your approach:** Read Edwards chapter by chapter. Understand the project structure, routing patterns, middleware chain, and database layer. Then direct Claude Code to build the same app, giving it architectural specifications. Review what Claude Code produces.
 
@@ -165,7 +165,7 @@ When Claude Code writes tests, review them using 100 Go Mistakes:
 
 |Day|Hours|Focus|
 |---|-----|-----|
-|Mon-Tue|6|Read Bodner Ch 12-13: Goroutines, channels, select (focused study)|
+|Mon-Tue|6|Read Bodner Ch 12 (Concurrency in Go) + Ch 14 (The Context): goroutines, channels, select, context propagation|
 |Wed-Thu|4|Study: Concurrency patterns — fan-out/fan-in, pipeline, worker pool|
 |Fri|2|Read: How concurrency applies to web apps (background tasks, graceful shutdown)|
 |Weekend|6|Direct Claude Code: Add concurrency to the web app. Review for race conditions.|
