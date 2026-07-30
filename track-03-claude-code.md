@@ -261,11 +261,18 @@ After this week, Claude Code is your implementation tool in every track:
 
 ### Claude Agent SDK & AI Agent Building (Fri)
 
-- [Claude Agent SDK Demos (GitHub)](https://github.com/anthropics/claude-agent-sdk-demos) — Official demo repository
-- [DataCamp: Claude Agent SDK Tutorial](https://www.datacamp.com/tutorial/how-to-use-claude-agent-sdk) — Build three projects from one-shot to custom-tool agents
-- [KDnuggets: Getting Started with the Claude Agent SDK](https://www.kdnuggets.com/getting-started-with-the-claude-agent-sdk) — Build a multi-tool CLI agent step by step
-- [The Complete Guide to Building Agents (Nader Dabit)](https://nader.substack.com/p/the-complete-guide-to-building-agents) — Build a code review agent from scratch
-- [Claude Code Everything You Need to Know (GitHub)](https://github.com/wesammustafa/Claude-Code-Everything-You-Need-to-Know) — All-in-one repo: setup, prompt engineering, hooks, BMAD method
+> **⚠️ Version churn — read this first (verified July 2026).** The Agent SDK ships ~weekly at parity with Claude Code (latest ~0.3.220). It has already broken its own API: the **V2 Session API** (`unstable_v2_createSession`, `send()`/`stream()`) was an experimental preview and was **removed in 0.3.142**. The **stable API is `query()`** (pass an `AsyncIterable` or `options.resume` for multi-turn). The current package is **`@anthropic-ai/claude-agent-sdk`** (TS) / **`claude-agent-sdk`** (Python 3.10+) — *not* the legacy `@anthropic-ai/claude-code`. Any tutorial that predates ~mid-2025, or shows `query()` imported from `@anthropic-ai/claude-code`, or uses the V2 `send()/stream()` pattern, is teaching a dead interface. When a third-party guide disagrees with the docs, the docs win. Check the CHANGELOG before you copy any example.
+
+**Official — primary sources (start here):**
+- [Building Agents with the Claude Agent SDK (Anthropic blog)](https://claude.com/blog/building-agents-with-the-claude-agent-sdk) — Official conceptual primer: the agent loop (gather context → act → verify), tool design, and when to reach for the SDK
+- [Agent SDK Overview (docs)](https://platform.claude.com/docs/en/agent-sdk/overview) — Official reference; see the `sessions`, `streaming-vs-single-mode`, and Python/TypeScript sub-pages
+- [TypeScript SDK CHANGELOG (GitHub)](https://github.com/anthropics/claude-agent-sdk-typescript/blob/main/CHANGELOG.md) — The source of truth for what's current vs removed. Skim before trusting any tutorial. (Python SDK: `anthropics/claude-agent-sdk-python`)
+- [Claude Agent SDK Demos (GitHub)](https://github.com/anthropics/claude-agent-sdk-demos) — Official demos (email, research, chat agents). Active. ⚠️ The "Hello World V2" example uses the removed V2 session API — treat it as historical, not a template.
+
+**Third-party tutorials (verify the publish date against the CHANGELOG before following):**
+- [DataCamp: Claude Agent SDK Tutorial](https://www.datacamp.com/tutorial/how-to-use-claude-agent-sdk) — Three projects, one-shot to custom-tool agents
+- [KDnuggets: Getting Started with the Claude Agent SDK](https://www.kdnuggets.com/getting-started-with-the-claude-agent-sdk) — Multi-tool CLI agent, step by step
+- [The Complete Guide to Building Agents (Nader Dabit)](https://nader.substack.com/p/the-complete-guide-to-building-agents) — Code review agent from scratch
 
 ### Sub-Agents & Multi-Agent Workflows (Sat)
 
