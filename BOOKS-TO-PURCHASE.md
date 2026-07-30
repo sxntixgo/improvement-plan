@@ -2,6 +2,7 @@
 
 **Last Updated:** February 7, 2026
 **Your Status:** Currently reading "A Philosophy of Software Design"
+**Books Purchased:** 6/7 required books ✅ ($220 invested)
 
 ---
 
@@ -115,15 +116,17 @@
 ## 📊 Purchase Summary
 
 ### Required Books Only
-| Track | Books | Cost |
-|-------|-------|------|
-| 8: Python Core | Python Testing with pytest | $40 |
-| 9: AI/ML Security | AI Engineering + HTB (2 months) | $90 |
-| 10: Python Advanced | Using Asyncio in Python | $50 |
-| 11: Go Deep Dive | Learning Go + Let's Go + 100 Go Mistakes | $130 |
-| 12: JavaScript/TypeScript | None (all free) | $0 |
+| Track | Books | Cost | Status |
+|-------|-------|------|--------|
+| 8: Python Core | Python Testing with pytest | $40 | ✅ PURCHASED |
+| 9: AI/ML Security | AI Engineering + HTB (2 months) | $90 | ✅ Book purchased, ⏰ HTB Week 21 |
+| 10: Python Advanced | Using Asyncio in Python | $50 | ⏰ Buy by Week 26 |
+| 11: Go Deep Dive | Learning Go + Let's Go + 100 Go Mistakes | $130 | ✅ ALL PURCHASED |
+| 12: JavaScript/TypeScript | None (all free) | $0 | N/A |
 
-**REQUIRED TOTAL: ~$310**
+**ORIGINAL REQUIRED TOTAL: ~$310**
+**ALREADY PURCHASED: $220 ✅**
+**REMAINING REQUIRED: $90**
 
 ---
 
@@ -264,34 +267,38 @@
 
 ## 📋 Shopping List Template
 
-### Copy this for easy purchasing:
-
-```markdown
-## Required Books ($310)
+### ✅ Already Purchased ($220)
 
 Track 8 - Python Core:
-- [ ] Python Testing with pytest, 2nd ed (Okken) - $40
+- [x] **Python Testing with pytest, 2nd ed (Okken)** - $40 ✅
 
 Track 9 - AI/ML Security:
-- [ ] AI Engineering (Chip Huyen) - $50
-- [ ] HTB Academy subscription (2 months) - $40
-
-Track 10 - Python Advanced:
-- [ ] Using Asyncio in Python (Fowler) - $50
+- [x] **AI Engineering (Chip Huyen)** - $50 ✅
 
 Track 11 - Go Deep Dive:
-- [ ] Learning Go, 2nd ed (Bodner) - $50
-- [ ] Let's Go (Alex Edwards) - $40
-- [ ] 100 Go Mistakes (Harsanyi) - $40
+- [x] **Learning Go, 2nd ed (Bodner)** - $50 ✅
+- [x] **Let's Go (Alex Edwards)** - $40 ✅
+- [x] **100 Go Mistakes (Harsanyi)** - $40 ✅
 
-## Optional Books ($40 recommended)
+### 🛒 Still Need to Purchase ($90)
 
-- [ ] Programming TypeScript (Cherny) - $40 ✅ RECOMMENDED
+Track 9 - AI/ML Security:
+- [ ] **HTB Academy subscription (2 months)** - $40 ⏰ Buy Week 21
+
+Track 10 - Python Advanced:
+- [ ] **Using Asyncio in Python (Fowler)** - $50 ⏰ Buy by Week 26
+
+### Optional Books ($40 recommended)
+
+- [ ] Programming TypeScript (Cherny) - $40 ✅ RECOMMENDED (Week 52)
 - [ ] Fluent Python, 2nd ed (Ramalho) - $50 (skip)
 - [ ] Node.js Design Patterns, 3rd ed - $45 (skip)
 
-TOTAL: $350 (required + recommended optional)
-```
+---
+
+**INVESTED SO FAR: $220 ✅**
+**REMAINING REQUIRED: $90**
+**TOTAL WITH OPTIONAL: $130**
 
 ---
 
@@ -304,8 +311,13 @@ TOTAL: $350 (required + recommended optional)
 - Total required investment: $310
 - Recommended total: $350
 
-**Books purchased recently (need to track):**
-- User mentioned buying "a few lately" - need to update which ones
+**Books purchased recently:**
+- ✅ Python Testing with pytest, 2nd ed (Okken) - $40
+- ✅ AI Engineering (Chip Huyen) - $50
+- ✅ Learning Go, 2nd ed (Bodner) - $50
+- ✅ Let's Go (Alex Edwards) - $40
+- ✅ 100 Go Mistakes (Harsanyi) - $40
+- **Total invested: $220** 💰
 
 ---
 
