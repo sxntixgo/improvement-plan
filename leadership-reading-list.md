@@ -47,10 +47,10 @@
   - **HIGHLY RECOMMENDED for Python Core track**
   - Key lesson: Character > talent, humility + discipline
 
-- [x] **The Captains Class** (Sam Walker) - STARTED
+- [x] **The Captains Class** (Sam Walker) - ✅ COMPLETED
   - Leadership from any position, championship mentality
-  - ~350 pages | Est. 3 weeks
-  - Continue reading during AI/ML Security track
+  - ~350 pages
+  - Key takeaway: Lead from any position, dogged determination
 
 - [ ] **Leaders Eat Last** (Simon Sinek)
   - Service mindset, taking care of yourself
@@ -176,20 +176,20 @@
 
 ## Progress Tracker
 
-**Books Started:** 3/27
+**Books Started:** 2/27
 - [x] The Southwest Airlines Way
-- [x] The Captains Class
 - [x] Marcelo Bielsa: Los 11 Caminos al Gol
 
-**Books Completed:** 0/27
+**Books Completed:** 1/27 ✅
+- [x] **The Captains Class** (Sam Walker) - Completed Feb 2026
 
 **Current Reading:**
 - [ ] The Southwest Airlines Way (finish this)
-- [ ] The Captains Class (finish this)
 - [ ] Marcelo Bielsa: Los 11 Caminos al Gol (finish this)
 
 **Next Up:**
-- [ ] The Score Takes Care of Itself (START IMMEDIATELY - perfect for Week 1!)
+- [ ] **The Score Takes Care of Itself** (Bill Walsh) - START NEXT
+- [ ] **Legacy** (All Blacks) - Great for building discipline
 
 -----
 
@@ -262,11 +262,11 @@ Final 26 weeks (Weeks 41-66) through Go Deep Dive and JavaScript/TypeScript:
 ## Quick Reference: Books by Type
 
 ### Sports Leadership (7 books)
-- [x] The Southwest Airlines Way
+- [x] The Southwest Airlines Way (in progress)
 - [ ] The Score Takes Care of Itself (Bill Walsh - 49ers)
 - [ ] Legacy (All Blacks rugby)
-- [x] The Captains Class (championship teams)
-- [x] Marcelo Bielsa: Los 11 Caminos al Gol
+- [x] **The Captains Class** (championship teams) - ✅ COMPLETED
+- [x] Marcelo Bielsa: Los 11 Caminos al Gol (in progress)
 - [ ] Paradigma Guardiola (Pep Guardiola)
 - [ ] Revolución Scaloni (Argentina World Cup)
 
@@ -346,16 +346,15 @@ Final 26 weeks (Weeks 41-66) through Go Deep Dive and JavaScript/TypeScript:
 
 ## Update Log
 
-**Last Updated:** February 15, 2026
+**Last Updated:** February 7, 2026
 
 **Current Status:**
-- 3 books started
-- 0 books completed
-- Plan restructured to 44 weeks (architect-focused)
+- 2 books in progress
+- 1 book completed ✅ (The Captains Class)
+- Plan is 66 weeks (AI Red Teaming path)
 - Next book: The Score Takes Care of Itself
 
 **Notes:**
 - User prefers sports leadership (has 7 sports books)
-- Already engaged (started 3 books)
-- Plan shortened from 66 to 44 weeks — reading pace adjusted
-- A Philosophy of Software Design moved to Track 8 (technical, not leadership)
+- First completion: The Captains Class ✅
+- Also completed technical books: Building a Second Brain, Wilson LLM Security
