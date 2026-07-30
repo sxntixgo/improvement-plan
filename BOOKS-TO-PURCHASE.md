@@ -120,13 +120,13 @@
 |-------|-------|------|--------|
 | 8: Python Core | Python Testing with pytest | $40 | ✅ PURCHASED |
 | 9: AI/ML Security | AI Engineering + HTB (2 months) | $90 | ✅ Book purchased, ⏰ HTB Week 21 |
-| 10: Python Advanced | Using Asyncio in Python | $50 | ⏰ Buy by Week 26 |
 | 11: Go Deep Dive | Learning Go + Let's Go + 100 Go Mistakes | $130 | ✅ ALL PURCHASED |
-| 12: JavaScript/TypeScript | None (all free) | $0 | N/A |
+| 12: Python Advanced | None (all free - Beazley workshops) | $0 | ✅ FREE |
+| 13: JavaScript/TypeScript | None (all free) | $0 | ✅ FREE |
 
-**ORIGINAL REQUIRED TOTAL: ~$310**
+**ORIGINAL REQUIRED TOTAL: ~$260** (updated)
 **ALREADY PURCHASED: $220 ✅**
-**REMAINING REQUIRED: $90**
+**REMAINING REQUIRED: $40** (HTB Academy only!)
 
 ---
 
@@ -280,13 +280,13 @@ Track 11 - Go Deep Dive:
 - [x] **Let's Go (Alex Edwards)** - $40 ✅
 - [x] **100 Go Mistakes (Harsanyi)** - $40 ✅
 
-### 🛒 Still Need to Purchase ($90)
+### 🛒 Still Need to Purchase ($40 only!)
 
 Track 9 - AI/ML Security:
 - [ ] **HTB Academy subscription (2 months)** - $40 ⏰ Buy Week 21
 
-Track 10 - Python Advanced:
-- [ ] **Using Asyncio in Python (Fowler)** - $50 ⏰ Buy by Week 26
+~~Track 12 - Python Advanced:~~
+- ~~Using Asyncio in Python~~ - ❌ **NOT NEEDED** (FREE resources sufficient)
 
 ### Optional Books ($40 recommended)
 
@@ -297,8 +297,8 @@ Track 10 - Python Advanced:
 ---
 
 **INVESTED SO FAR: $220 ✅**
-**REMAINING REQUIRED: $90**
-**TOTAL WITH OPTIONAL: $130**
+**REMAINING REQUIRED: $40** (HTB Academy only!)
+**TOTAL WITH OPTIONAL: $80** (HTB + Programming TypeScript)
 
 ---
 
