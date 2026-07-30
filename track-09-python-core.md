@@ -92,6 +92,8 @@ This track deepens your ability to:
 
 **Project:** Build a security tool with TDD (port scanner, log parser)
 
+**Watch (supplement, ~1 hr — during Week 30):** Ian Cooper — *TDD, Where Did It All Go Wrong* (free on YouTube). Percival teaches you to *do* TDD; this talk is the standard corrective on how it goes wrong — test behavior through public interfaces, not implementation; stop mocking everything. It targets your actual job here: reviewing the tests Claude Code writes and catching brittle, over-mocked suites before they calcify. Higher leverage for an architect than another testing chapter.
+
 -----
 
 ## Phase 1B: pytest Mastery (Weeks 34-35)

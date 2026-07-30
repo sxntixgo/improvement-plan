@@ -170,6 +170,10 @@ When Claude Code writes tests, review them using 100 Go Mistakes:
 |Fri|2|Read: How concurrency applies to web apps (background tasks, graceful shutdown)|
 |Weekend|6|Direct Claude Code: Add concurrency to the web app. Review for race conditions.|
 
+**Watch (supplement, ~1 hr — fold into Wed-Thu):** Go concurrency is the one topic here where a static chapter underperforms watching the model drawn out. These two are the source material Bodner summarizes:
+- Rob Pike — *Concurrency Is Not Parallelism* (free on YouTube). The mental model: concurrency is about structure, parallelism is about execution. Sharpens "when NOT to use goroutines."
+- Rob Pike — *Go Concurrency Patterns* (Google I/O 2012, free on YouTube). Channels, fan-out/fan-in, and the pipeline pattern you'll direct Claude Code to build.
+
 **Architect Focus:**
 - When to use goroutines vs when NOT to
 - Buffered vs unbuffered channels — architectural implications
@@ -193,6 +197,12 @@ This is where you learn the vocabulary and patterns to give Claude Code precise 
 - **Fundamentals of Software Architecture (Richards & Ford):** ~400 pages, read during Week 15. Designed to be skimmed — skip architecture styles you won't use, focus on trade-off analysis and the architect chapters.
 
 **Pacing principle:** Each week has ONE primary reading focus + hands-on application. No week tries to read two books simultaneously.
+
+**Watch (supplement, ~1.5 hrs across the phase):** Richards & Ford is one authoritative voice on architecture styles. Judgment comes from watching credible architects *disagree* on trade-offs, so pair the reading with:
+- Martin Fowler — *The Many Meanings of Event-Driven Architecture* (GOTO, free on YouTube). Shows that a named style hides several different designs — exactly the trade-off nuance to internalize.
+- Simon Brown — *Modular Monoliths* (GOTO, free on YouTube). A deliberate counter to microservices-by-default; strengthens your ability to push back on Claude Code reaching for the wrong style.
+
+These are a counterweight to a single-author view, not new required reading.
 
 ### Week 13: Ousterhout — Design Principles
 
