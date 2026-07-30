@@ -66,32 +66,23 @@ Deepen Python understanding post-AI/ML, then combine Go + AI security into a uni
 |9    |Python Core + TDD                         |30-37 |8 weeks  |[track-09-python-core.md](track-09-python-core.md)|
 |11   |Go Security Tools + AI Capstone           |38-43 |6 weeks  |[track-11-go-security.md](track-11-go-security.md)|
 
-### Part V: Advanced Skills (Weeks 44-62) — OPTIONAL — 19 weeks
+**Total plan: 43 learning weeks + 1 break = 44 weeks (~10 months)**
 
-These tracks broaden your skillset but are not required for your AI red teaming career goal. Complete Part IV first, then decide if you want to continue.
+The plan ends at Track 11. There is no optional phase.
 
-|Track|Name                                      |Weeks |Duration |File                                       |
-|-----|------------------------------------------|------|---------|-------------------------------------------|
-|12   |Python Advanced (AST, async)              |44-49 |6 weeks  |[track-12-python-advanced.md](track-12-python-advanced.md)|
-|13   |JavaScript/TypeScript                     |50-63 |14 weeks |[track-13-javascript.md](track-13-javascript.md)|
-
-**Why optional?** You can do effective AI red teaming without AST manipulation, async Python, or JavaScript. These tracks add breadth — custom static analysis tools, browser security (XSS/DOM), and TypeScript for LLM SDK work — but your core career path is complete after Part IV.
-
-**Core plan:** 43 learning weeks + 1 break = **44 weeks (~10 months)**
-**With optional tracks:** 62 learning weeks + 1 break = **63 weeks (~14.5 months)**
+**Previously dropped:** Python Advanced (AST, async) and JavaScript/TypeScript were once staged as an optional Part V. They were cut because neither is required for the AI red teaming goal — the architect reviews Python rather than writing advanced Python, and JS/TS is not on the critical path. See [future-technical-reading.md](future-technical-reading.md) for the rationale and for what to read instead if your needs change. The archived track files live in [archive/](archive/).
 
 -----
 
 ### Why This Order
 
-**Foundation → Architecture → AI/ML → Python → Go Security → (Optional: Advanced)**
+**Foundation → Architecture → AI/ML → Python → Go Security**
 
 1. **Foundation first (Tracks 1-7):** Reading, note-taking, tooling, and security context. Everything else builds on these.
 2. **Architecture (Track 8):** You need to think in systems to direct Claude Code effectively. Clean architecture, DDD, and testing patterns are the language of good engineering direction.
 3. **AI/ML immediately after (Track 10):** This is your career goal. You don't need Python syntax to understand RAG architecture, prompt injection, or model vulnerabilities — Claude Code writes the code while you focus on concepts and attack surfaces.
 4. **Python after AI/ML (Track 9):** Deepens your understanding of the tools you've already used. Now you understand why pytest works the way it does, how Python architecture differs from Go, and can give Claude Code more precise Python direction.
-5. **Go Security Tools (Track 11):** Combines everything — Go architecture knowledge + AI security concepts + security tool patterns. The capstone produces an AI Red Team CLI tool in Go.
-6. **Optional advanced tracks (Tracks 12-13):** Broadens your skills if time permits. AST manipulation for custom security tooling, async patterns, and JavaScript/TypeScript for browser security and LLM SDK work.
+5. **Go Security Tools (Track 11):** Combines everything — Go architecture knowledge + AI security concepts + security tool patterns. The capstone produces an AI Red Team CLI tool in Go. This is where the plan ends.
 
 -----
 
@@ -135,12 +126,8 @@ Part IV: Python + Go Security
                       Python Core + TDD ← Deepen understanding post-AI/ML
                                 ↓
                       Go Security Tools + AI Capstone ← Combine everything
-
-Part V: Advanced Skills (OPTIONAL)
                                 ↓
-                      Python Advanced ← AST, async, custom security tools
-                                ↓
-                      JavaScript/TypeScript ← Browser security, LLM SDKs
+                             DONE (Week 43)
 ```
 
 **Why AI/ML moved up (from Week 33 to Week 21):**
@@ -191,11 +178,16 @@ Claude Code writes the Python for HTB labs, LangChain apps, and exploit scripts.
 |AI Engineering (Huyen)                        |Track 10: AI/ML Security                |
 |Red Teaming AI (Dursey)                       |Track 10: AI/ML Security                |
 |Black Hat Go (Steele et al.)                  |Track 11: Go Security Tools             |
-|Eloquent JavaScript (Haverbeke)               |Track 13: JavaScript/TS (optional)      |
-|Web Development with Node and Express (Brown) |Track 13: JavaScript/TS (optional)      |
-|You Don't Know JS (Simpson)                   |Track 13: JavaScript/TS (optional, supplement)|
-|Node.js: The Comprehensive Guide (Springer)   |Track 13: JavaScript/TS (optional, reference)|
-|JavaScript and jQuery (Duckett)               |Track 13: JavaScript/TS (optional, visual supplement)|
+
+**Owned but not used by this plan** (kept as reference if your needs change — see [future-technical-reading.md](future-technical-reading.md)):
+
+|Book                                          |Note                                    |
+|----------------------------------------------|----------------------------------------|
+|Eloquent JavaScript (Haverbeke)               |JS/TS not on the critical path          |
+|Web Development with Node and Express (Brown) |JS/TS not on the critical path          |
+|You Don't Know JS (Simpson)                   |JS/TS not on the critical path          |
+|Node.js: The Comprehensive Guide (Springer)   |JS/TS not on the critical path          |
+|JavaScript and jQuery (Duckett)               |JS/TS not on the critical path          |
 
 -----
 
@@ -234,8 +226,6 @@ Every book has explicit READ/SKIP chapter guidance in its track file. Here's the
 |AI Engineering (Huyen)|10|6 of 10|
 |Red Teaming AI (Dursey)|10|10 of 11|
 |Black Hat Go (Steele et al.)|11|6 of 14|
-|Eloquent JavaScript (Haverbeke)|13|17 of 22|
-|Web Dev with Node and Express (Brown)|13|12 of 23|
 
 -----
 
@@ -318,7 +308,6 @@ Passive content for commutes, lunch breaks, or when you need a break from active
 |Part II: Architecture|9-20|Legacy, Captains Class, Leaders Eat Last, Start With Why|
 |Part III: AI/ML|21-28|Start With Why, Paradigma Guardiola, Creativity Inc|
 |Part IV: Python + Capstone|30-43|Elon Musk, Measure What Matters, Revolución Scaloni|
-|Part V: Advanced (optional)|44-63|Continue from leadership backlog|
 
 **Reading Pace:** 20-30 pages/night = 1 book every 2-4 weeks
 

