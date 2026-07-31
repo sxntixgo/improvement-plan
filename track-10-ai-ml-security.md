@@ -112,6 +112,22 @@ You just spent 12 weeks learning software architecture (Track 8). Now you apply 
 |AI Engineering (Huyen)                        |~$50         |Production AI systems     |
 |Red Teaming AI (Dursey)                       |Already owned|Red teaming               |
 
+### 2026 Developments — Agentic & MCP Security (added after plan authored; all FREE)
+
+The field moved between when this plan was written and 2026. These are **new attack surfaces**, not more of the same — the biggest methodological shift of 2026 is that agents (autonomous, tool-using, memory-holding) are now the primary target, and the protocol that wires tools to models (MCP) is a fast-growing vulnerability class. This is squarely your career goal, so treat these as core, not optional.
+
+|Resource                                      |URL                  |Why it matters                        |
+|----------------------------------------------|---------------------|--------------------------------------|
+|**OWASP Top 10 for Agentic Applications (2026)**|genai.owasp.org|The new benchmark for agent security (ASI01–ASI10), published Dec 2025. Separate from the LLM Top 10. Read this — it is the vocabulary the industry now uses|
+|**MCP security corpus**                       |NSA MCP hardening guide + OWASP GenAI + genai.owasp.org|Model Context Protocol had 40+ CVEs disclosed Jan–Apr 2026 (tool poisoning, confused-deputy, token passthrough). MCP is how Claude Code/agents get tools — you already use it (Track 3). Now learn to attack it|
+|**DeepTeam**                                  |trydeepteam.com      |Open-source LLM red-teaming framework mapped directly to OWASP LLM Top 10 + the Agentic Top 10 + NIST AI RMF. Complements Garak/PyRIT|
+|**Inspect (UK AISI)**                         |inspect.aisi.org.uk  |The standard open eval framework for AI safety/security testing; Petri and much 2026 tooling is built on it|
+|**Petri (Anthropic)**                         |github.com/safety-research/petri|Anthropic's MIT-licensed auditing tool — auditor/target/judge loop over simulated tool-use scenarios. Directly relevant to agentic misalignment testing|
+
+**The OWASP Agentic Top 10 (ASI01–ASI10), for reference:** ASI01 Agent Goal Hijack · ASI02 Tool Misuse & Exploitation · ASI03 Identity & Privilege Abuse · ASI04 Agentic Supply Chain · ASI05 Unexpected Code Execution (RCE) · ASI06 Memory & Context Poisoning · ASI07 Insecure Inter-Agent Communication · ASI08 Cascading Failures · ASI09 Human-Agent Trust Exploitation · ASI10 Rogue Agents.
+
+*(These fold into Week 25, the agent-security week. See the note there. Certifications — CAISP, OffSec OSAI+/AI-300, EC-Council COASP, SANS SEC536 — also emerged in 2026 but are expensive and optional; HTB Academy remains the plan's hands-on spine. Revisit certs only when job-hunting, as a résumé signal.)*
+
 -----
 
 ## Phase 1: ML Fundamentals (Weeks 21-22)
@@ -242,6 +258,10 @@ For each lab:
   - Short-term vs long-term memory
   - Conversation history management
   - **Attack surfaces:** Memory poisoning, history injection
+
+**Frame the week with the OWASP Agentic Top 10 (2026) — ~1 hr, Monday.** Before building, skim the OWASP Top 10 for Agentic Applications (see the "2026 Developments" resources above). It's the current industry vocabulary and most of it maps onto what you build this week: ASI01 Agent Goal Hijack and ASI02 Tool Misuse pair with Dursey Ch 7; ASI06 Memory & Context Poisoning is exactly the memory attack above. When you attack your agent (weekend), label each finding with its ASI ID — that's how a 2026 red-team report reads.
+
+**MCP as an attack surface (~1 hr, fold into the build).** Your agent's tools may be wired via MCP — the same protocol you set up for Claude Code in Track 3. In 2026 that's a top attack surface: **tool poisoning** (a malicious tool description injects instructions), **confused-deputy** and **token passthrough** (a server forwards your credentials downstream). If your agent uses any MCP tool, add one deliberately poisoned tool description and watch it hijack the agent's behavior, then note the fix (validate tool metadata, don't pass tokens through). Reference the NSA MCP hardening guide and OWASP.
 
 **Wednesday-Friday (6 hours): Direct Claude Code to Build RAG App**
 Now that you understand RAG/agent architecture, direct Claude Code to build one:
